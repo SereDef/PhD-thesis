@@ -6,24 +6,50 @@ book:
   title: "Under the skin"
   subtitle: "Early-life stress exposure and the co-occurrence of mental and physical health problems"
   author: "Serena Defina"
-  cover-image: cover.png
+  cover-image: cover.png  
   # date: "3/25/2025"
   chapters:
     - index.qmd
-    - 0.introduction.qmd
-    - 1.chapter1.qmd
+    - 0.Introduction/introduction.qmd
+    - part: "ELS"
+      chapters:
+      - 1.Chapter/ELS-comorbidity.qmd
+    - part: "Comorbidity"
+      chapters:
+      - 2.Chapter/ELS-cardiacMRI.qmd
+  
+  page-navigation: true
+  page-footer: 
+    left: "Serena Defina, 2025" 
+    right: 
+      - icon: github
+        href: https://github.com/SereDef/PhD-thesis
 
+# Only number sections 2 levels below the chapter level
+number-depth: 3
 
+# Bibliography
 csl: apa.csl
 bibliography: references.bib
 
+# Outputs
 format:
   html:
     theme: cosmo
   pdf:
     documentclass: scrreprt
+    # Display refecerences after every chapter
+    # needs pandoc version >= 2.11 to work
     # filters:
-    #  - ./_extensions/pandoc-ext/section-bibliographies/section-bibliographies.lua # needs pandoc version >= 2.11 to work
+    #  - ./_extensions/pandoc-ext/section-bibliographies/section-bibliographies.lua
+    # Add index
+    # include-in-header: 
+    #   text: |
+    #     \usepackage{makeidx}
+    #     \makeindex
+    # include-after-body: 
+    #   text: |
+    #     \printindex
 
 
 

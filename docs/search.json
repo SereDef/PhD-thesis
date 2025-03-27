@@ -2,31 +2,85 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Preface",
+    "title": "Under the skin",
     "section": "",
-    "text": "Promotors: Henning Tiemier\nCo-promotors: Charlotte Cecil Janine Felix",
+    "text": "Preface",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Preface</span>"
+      "Preface"
     ]
   },
   {
-    "objectID": "0.introduction.html",
-    "href": "0.introduction.html",
-    "title": "2  Introduction",
+    "objectID": "index.html#preface",
+    "href": "index.html#preface",
+    "title": "Under the skin",
     "section": "",
-    "text": "Dear reader,\noh my good why does this not update\nThis an that (Fraser et al., 2013; R Core Team, 2021)\n\n3 References\n\n\n\n\nFraser, A., Macdonald-Wallis, C., Tilling, K., Boyd, A., Golding, J., Davey Smith, G., Henderson, J., Macleod, J., Molloy, L., Ness, A., Ring, S., Nelson, S. M., & Lawlor, D. A. (2013). Cohort profile: The avon longitudinal study of parents and children: ALSPAC mothers cohort [Journal Article]. Int J Epidemiol, 42(1), 97–110. https://doi.org/10.1093/ije/dys066\n\n\nR Core Team. (2021). R: A language and environment for statistical computing [Journal Article]. https://www.R-project.org/",
+    "text": "Promotors:\nHenning Tiemier\n\n\nCo-promotors:\nCharlotte Cecil \nJanine Felix\n\n\nAknowledgements\nTODO",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introduction</span>"
+      "Preface"
     ]
   },
   {
-    "objectID": "1.chapter1.html",
-    "href": "1.chapter1.html",
-    "title": "3  Chapter 1",
+    "objectID": "0.Introduction/introduction.html",
+    "href": "0.Introduction/introduction.html",
+    "title": "Introduction",
     "section": "",
-    "text": "In summary, this book has no content whatsoever (Boyd et al., 2012; Fraser et al., 2013).\nBut I shall write it anyway cause.\n\n4 References\n\n\n\n\nBoyd, A., Golding, J., Macleod, J., Lawlor, D. A., Fraser, A., Henderson, J., Molloy, L., Ness, A., Ring, S., & Davey Smith, G. (2012). Cohort profile: The ’children of the 90s’—the index offspring of the avon longitudinal study of parents and children [Journal Article]. International Journal of Epidemiology, 42(1), 111–127. https://doi.org/10.1093/ije/dys064\n\n\nFraser, A., Macdonald-Wallis, C., Tilling, K., Boyd, A., Golding, J., Davey Smith, G., Henderson, J., Macleod, J., Molloy, L., Ness, A., Ring, S., Nelson, S. M., & Lawlor, D. A. (2013). Cohort profile: The avon longitudinal study of parents and children: ALSPAC mothers cohort [Journal Article]. Int J Epidemiol, 42(1), 97–110. https://doi.org/10.1093/ije/dys066",
+    "text": "References",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Chapter 1</span>"
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "0.Introduction/introduction.html#references",
+    "href": "0.Introduction/introduction.html#references",
+    "title": "Introduction",
+    "section": "",
+    "text": "Fraser, A., Macdonald-Wallis, C., Tilling, K., Boyd, A., Golding, J., Davey Smith, G., Henderson, J., Macleod, J., Molloy, L., Ness, A., Ring, S., Nelson, S. M., & Lawlor, D. A. (2013). Cohort profile: The avon longitudinal study of parents and children: ALSPAC mothers cohort [Journal Article]. Int J Epidemiol, 42(1), 97–110. https://doi.org/10.1093/ije/dys066\n\n\nR Core Team. (2021). R: A language and environment for statistical computing [Journal Article]. https://www.R-project.org/",
+    "crumbs": [
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "1.Chapter/ELS-comorbidity.html",
+    "href": "1.Chapter/ELS-comorbidity.html",
+    "title": "1  Chapter",
+    "section": "",
+    "text": "1.1 Early-life stress and comorbidity\nIn summary, this book has no content whatsoever (Boyd et al., 2012; Fraser et al., 2013).\nBut I shall write it anyway cause.",
+    "crumbs": [
+      "ELS",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Chapter</span>"
+    ]
+  },
+  {
+    "objectID": "1.Chapter/ELS-comorbidity.html#references",
+    "href": "1.Chapter/ELS-comorbidity.html#references",
+    "title": "1  Chapter",
+    "section": "References",
+    "text": "References\n\n\n\n\nBoyd, A., Golding, J., Macleod, J., Lawlor, D. A., Fraser, A., Henderson, J., Molloy, L., Ness, A., Ring, S., & Davey Smith, G. (2012). Cohort profile: The ’children of the 90s’—the index offspring of the avon longitudinal study of parents and children [Journal Article]. International Journal of Epidemiology, 42(1), 111–127. https://doi.org/10.1093/ije/dys064\n\n\nFraser, A., Macdonald-Wallis, C., Tilling, K., Boyd, A., Golding, J., Davey Smith, G., Henderson, J., Macleod, J., Molloy, L., Ness, A., Ring, S., Nelson, S. M., & Lawlor, D. A. (2013). Cohort profile: The avon longitudinal study of parents and children: ALSPAC mothers cohort [Journal Article]. Int J Epidemiol, 42(1), 97–110. https://doi.org/10.1093/ije/dys066",
+    "crumbs": [
+      "ELS",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Chapter</span>"
+    ]
+  },
+  {
+    "objectID": "2.Chapter/ELS-cardiacMRI.html",
+    "href": "2.Chapter/ELS-cardiacMRI.html",
+    "title": "2  Chapter",
+    "section": "",
+    "text": "2.1 Cradiac MRI\nIn summary, this book has no content whatsoever (Boyd et al., 2012; Fraser et al., 2013).\nBut I shall write it anyway cause.",
+    "crumbs": [
+      "Comorbidity",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Chapter</span>"
+    ]
+  },
+  {
+    "objectID": "2.Chapter/ELS-cardiacMRI.html#references",
+    "href": "2.Chapter/ELS-cardiacMRI.html#references",
+    "title": "2  Chapter",
+    "section": "References",
+    "text": "References\n\n\n\n\nBoyd, A., Golding, J., Macleod, J., Lawlor, D. A., Fraser, A., Henderson, J., Molloy, L., Ness, A., Ring, S., & Davey Smith, G. (2012). Cohort profile: The ’children of the 90s’—the index offspring of the avon longitudinal study of parents and children [Journal Article]. International Journal of Epidemiology, 42(1), 111–127. https://doi.org/10.1093/ije/dys064\n\n\nFraser, A., Macdonald-Wallis, C., Tilling, K., Boyd, A., Golding, J., Davey Smith, G., Henderson, J., Macleod, J., Molloy, L., Ness, A., Ring, S., Nelson, S. M., & Lawlor, D. A. (2013). Cohort profile: The avon longitudinal study of parents and children: ALSPAC mothers cohort [Journal Article]. Int J Epidemiol, 42(1), 97–110. https://doi.org/10.1093/ije/dys066",
+    "crumbs": [
+      "Comorbidity",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Chapter</span>"
     ]
   }
 ]

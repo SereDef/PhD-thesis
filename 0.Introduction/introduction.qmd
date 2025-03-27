@@ -1,0 +1,12 @@
+
+# Introduction {.unnumbered}
+
+Dear reader, 
+
+oh my good why does this not update
+
+This an that [@Rcore2021; @Fraser2013]
+
+See @sec-chapter1 for additional discussion.
+
+## References {.unnumbered}
