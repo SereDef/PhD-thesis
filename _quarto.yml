@@ -1,0 +1,28 @@
+project:
+  type: book
+
+book:
+  title: "Under the skin"
+  subtitle: "Early-life stress exposure and the co-occurrence of mental and physical health problems"
+  author: "Serena Defina"
+  cover-image: cover.png
+  # date: "3/25/2025"
+  chapters:
+    - index.qmd
+    - 0.introduction.qmd
+    - 1.chapter1.qmd
+
+
+csl: apa.csl
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrreprt
+    # filters:
+    #  - ./_extensions/pandoc-ext/section-bibliographies/section-bibliographies.lua # needs pandoc version >= 2.11 to work
+
+
+

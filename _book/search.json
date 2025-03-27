@@ -1,0 +1,32 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Under the skin",
+    "section": "",
+    "text": "Preface\nPromotors:\nCo-promotors:",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "0.introduction.html",
+    "href": "0.introduction.html",
+    "title": "1  Introduction",
+    "section": "",
+    "text": "This is a book created from markdown and executable code.\nThis an that (Fraser et al., 2013; R Core Team, 2021)\n\n\n\n\nFraser, A., Macdonald-Wallis, C., Tilling, K., Boyd, A., Golding, J., Davey Smith, G., Henderson, J., Macleod, J., Molloy, L., Ness, A., Ring, S., Nelson, S. M., & Lawlor, D. A. (2013). Cohort profile: The avon longitudinal study of parents and children: ALSPAC mothers cohort [Journal Article]. Int J Epidemiol, 42(1), 97–110. https://doi.org/10.1093/ije/dys066\n\n\nR Core Team. (2021). R: A language and environment for statistical computing [Journal Article]. https://www.R-project.org/",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "1.chapter1.html",
+    "href": "1.chapter1.html",
+    "title": "2  Chapter 1",
+    "section": "",
+    "text": "In summary, this book has no content whatsoever (Boyd et al., 2012; Fraser et al., 2013)\n\n\n\n\nBoyd, A., Golding, J., Macleod, J., Lawlor, D. A., Fraser, A., Henderson, J., Molloy, L., Ness, A., Ring, S., & Davey Smith, G. (2012). Cohort profile: The ’children of the 90s’—the index offspring of the avon longitudinal study of parents and children [Journal Article]. International Journal of Epidemiology, 42(1), 111–127. https://doi.org/10.1093/ije/dys064\n\n\nFraser, A., Macdonald-Wallis, C., Tilling, K., Boyd, A., Golding, J., Davey Smith, G., Henderson, J., Macleod, J., Molloy, L., Ness, A., Ring, S., Nelson, S. M., & Lawlor, D. A. (2013). Cohort profile: The avon longitudinal study of parents and children: ALSPAC mothers cohort [Journal Article]. Int J Epidemiol, 42(1), 97–110. https://doi.org/10.1093/ije/dys066",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Chapter 1</span>"
+    ]
+  }
+]
