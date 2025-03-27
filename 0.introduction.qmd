@@ -4,3 +4,5 @@
 This is a book created from markdown and executable code.
 
 This an that [@Rcore2021; @Fraser2013]
+
+# References

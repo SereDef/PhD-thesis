@@ -2,3 +2,5 @@
 # Chapter 1
 
 In summary, this book has no content whatsoever [@Fraser2013; @Boyd2012]
+
+# References
