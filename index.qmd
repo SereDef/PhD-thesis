@@ -1,15 +1,25 @@
 ## Preface {.unnumbered}
 
+::: {.quotify}
+*"In the depth of winter, I found there was, within me, an invincible summer."*<br>
+Albert Camus – Summer (1954)
+:::
 
+#### AUTHOR
+|       Serena Defina
 
-### Promotors: 
-    Henning Tiemier
+#### PROMOTOR
+|       Henning Tiemier
 
-### Co-promotors:
-    Charlotte Cecil 
-    Janine Felix
+#### CO-PROMOTORS
+|       Charlotte A.M. Cecil
+|       Janine F. Felix
+
+:::{.callout-note}
+This is a work in progress. Stay tuned :)
+:::
 
 \newpage
 
-### Aknowledgements 
+## Aknowledgements 
 TODO

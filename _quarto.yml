@@ -5,25 +5,35 @@ project:
 book:
   title: "Under the skin"
   subtitle: "Early-life stress exposure and the co-occurrence of mental and physical health problems"
-  author: "Serena Defina"
+  # author: "Serena Defina"
   cover-image: cover.png  
   # date: "3/25/2025"
   chapters:
     - index.qmd
     - 0.Introduction/introduction.qmd
-    - part: "ELS"
+    - part: "PART 1: ELS"
       chapters:
       - 1.Chapter/ELS-comorbidity.qmd
-    - part: "Comorbidity"
+    - part: "PART 2: Comorbidity"
       chapters:
       - 2.Chapter/ELS-cardiacMRI.qmd
   
+  sidebar:
+    title: "Under the skin"
+    subtitle: "Early-life stress exposure and the co-occurrence of mental and physical health problems"
+    style: docked
+    background: '#f0ebe2'
+  search: true
   page-navigation: true
+  repo-url: https://github.com/SereDef/PhD-thesis
+  repo-actions: [source, issue]
+  downloads: [pdf]
+
   page-footer: 
     left: "Serena Defina, 2025" 
     right: 
       - icon: github
-        href: https://github.com/SereDef/PhD-thesis
+        href: https://github.com/SereDef
 
 # Only number sections 2 levels below the chapter level
 number-depth: 3
@@ -35,9 +45,10 @@ bibliography: references.bib
 # Outputs
 format:
   html:
-    theme: cosmo
+    theme: [cosmo, custom_styles.scss]
   pdf:
     documentclass: scrreprt
+    # fontfamily: arial
     # Display refecerences after every chapter
     # needs pandoc version >= 2.11 to work
     # filters:

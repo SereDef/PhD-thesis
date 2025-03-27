@@ -14,7 +14,17 @@
     "href": "index.html#preface",
     "title": "Under the skin",
     "section": "",
-    "text": "Promotors:\nHenning Tiemier\n\n\nCo-promotors:\nCharlotte Cecil \nJanine Felix\n\n\nAknowledgements\nTODO",
+    "text": "“In the depth of winter, I found there was, within me, an invincible summer.” Albert Camus – Summer (1954)\n\n\nAUTHOR\n      Serena Defina\n\n\nPROMOTOR\n      Henning Tiemier\n\n\nCO-PROMOTORS\n      Charlotte A.M. Cecil\n      Janine F. Felix\n\n\n\n\n\n\nNote\n\n\n\nThis is a work in progress. Stay tuned :)",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "index.html#aknowledgements",
+    "href": "index.html#aknowledgements",
+    "title": "Under the skin",
+    "section": "Aknowledgements",
+    "text": "Aknowledgements\nTODO",
     "crumbs": [
       "Preface"
     ]
@@ -42,23 +52,23 @@
   {
     "objectID": "1.Chapter/ELS-comorbidity.html",
     "href": "1.Chapter/ELS-comorbidity.html",
-    "title": "1  Chapter",
+    "title": "1  Chapter: ELS and adolescent comorbidity",
     "section": "",
-    "text": "1.1 Early-life stress and comorbidity\nIn summary, this book has no content whatsoever (Boyd et al., 2012; Fraser et al., 2013).\nBut I shall write it anyway cause.",
+    "text": "Effects of pre- and postnatal early-life stress on internalizing, adiposity and their comorbidity\nIn summary, this book has no content whatsoever (Boyd et al., 2012; Fraser et al., 2013). But I shall write it anyway cause. Cause I kind of do have no choice so, checking justification works",
     "crumbs": [
-      "ELS",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Chapter</span>"
+      "PART 1: ELS",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Chapter: ELS and adolescent comorbidity</span>"
     ]
   },
   {
     "objectID": "1.Chapter/ELS-comorbidity.html#references",
     "href": "1.Chapter/ELS-comorbidity.html#references",
-    "title": "1  Chapter",
+    "title": "1  Chapter: ELS and adolescent comorbidity",
     "section": "References",
     "text": "References\n\n\n\n\nBoyd, A., Golding, J., Macleod, J., Lawlor, D. A., Fraser, A., Henderson, J., Molloy, L., Ness, A., Ring, S., & Davey Smith, G. (2012). Cohort profile: The ’children of the 90s’—the index offspring of the avon longitudinal study of parents and children [Journal Article]. International Journal of Epidemiology, 42(1), 111–127. https://doi.org/10.1093/ije/dys064\n\n\nFraser, A., Macdonald-Wallis, C., Tilling, K., Boyd, A., Golding, J., Davey Smith, G., Henderson, J., Macleod, J., Molloy, L., Ness, A., Ring, S., Nelson, S. M., & Lawlor, D. A. (2013). Cohort profile: The avon longitudinal study of parents and children: ALSPAC mothers cohort [Journal Article]. Int J Epidemiol, 42(1), 97–110. https://doi.org/10.1093/ije/dys066",
     "crumbs": [
-      "ELS",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Chapter</span>"
+      "PART 1: ELS",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Chapter: ELS and adolescent comorbidity</span>"
     ]
   },
   {
@@ -68,7 +78,7 @@
     "section": "",
     "text": "2.1 Cradiac MRI\nIn summary, this book has no content whatsoever (Boyd et al., 2012; Fraser et al., 2013).\nBut I shall write it anyway cause.",
     "crumbs": [
-      "Comorbidity",
+      "PART 2: Comorbidity",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Chapter</span>"
     ]
   },
@@ -79,7 +89,7 @@
     "section": "References",
     "text": "References\n\n\n\n\nBoyd, A., Golding, J., Macleod, J., Lawlor, D. A., Fraser, A., Henderson, J., Molloy, L., Ness, A., Ring, S., & Davey Smith, G. (2012). Cohort profile: The ’children of the 90s’—the index offspring of the avon longitudinal study of parents and children [Journal Article]. International Journal of Epidemiology, 42(1), 111–127. https://doi.org/10.1093/ije/dys064\n\n\nFraser, A., Macdonald-Wallis, C., Tilling, K., Boyd, A., Golding, J., Davey Smith, G., Henderson, J., Macleod, J., Molloy, L., Ness, A., Ring, S., Nelson, S. M., & Lawlor, D. A. (2013). Cohort profile: The avon longitudinal study of parents and children: ALSPAC mothers cohort [Journal Article]. Int J Epidemiol, 42(1), 97–110. https://doi.org/10.1093/ije/dys066",
     "crumbs": [
-      "Comorbidity",
+      "PART 2: Comorbidity",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Chapter</span>"
     ]
   }

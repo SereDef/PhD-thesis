@@ -1,0 +1,40 @@
+/*-- scss:defaults --*/
+
+/* Colors */
+$theme-blue: #084873;
+$theme-grey: #677281;
+$theme-sand: #E6DDCE;
+
+$link-color: lighten($theme-blue, 10%);
+
+// Titles & headers
+.title, .sidebar-title {
+  color: $theme-blue;
+  font-weight: 600;
+  text-align: center;
+}
+
+.subtitle.lead {
+  color: $theme-grey;
+  font-weight: 550;
+  font-size: 25px;
+  // text-align: center;
+}
+
+h2 {
+  color: lighten($theme-blue, 5%) !important;
+}
+
+
+// Paragraphs 
+p {
+  margin-bottom: 0px !important;
+  margin-top: 0px !important;
+  padding-top: 10px !important;
+  padding-bottom: 0px !important;
+  text-align: justify;
+}
+
+.quotify p {
+  text-align: right !important;
+}

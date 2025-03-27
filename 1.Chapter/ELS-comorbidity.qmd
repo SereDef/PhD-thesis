@@ -1,9 +1,7 @@
 
-# Chapter {#sec-chapter1}
-## Early-life stress and comorbidity 
+# Chapter: ELS and adolescent comorbidity {#sec-chapter1}
+## Effects of pre- and postnatal early-life stress on internalizing, adiposity and their comorbidity {.unnumbered}
 
-In summary, this book has no content whatsoever [@Fraser2013; @Boyd2012].
-
-But I shall write it anyway cause.
+In summary, this book has no content whatsoever [@Fraser2013; @Boyd2012]. But I shall write it anyway cause. Cause I kind of do have no choice so, checking justification works
 
 ## References {.unnumbered}
