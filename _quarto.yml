@@ -11,16 +11,19 @@ book:
   chapters:
     - index.qmd
     - 0.Introduction/introduction.qmd
-    - part: "PART 1: ELS"
+    - part: "PART 1: The role of ELS in the development of mental and physical health"
       chapters:
       - 1.Chapter/ELS-comorbidity.qmd
-    - part: "PART 2: Comorbidity"
+      - 2.Chapter/ELS-lifestyle-moderators.qmd
+      - 3.Chapter/ELS-brain.qmd
+      - 4.Chapter/ELS-heart.qmd
+    - part: "PART 2: Reciprocal relationships between mental and physical health problems"
       chapters:
-      - 2.Chapter/ELS-cardiacMRI.qmd
+      - 5.Chapter/longitudinal-codevelopment.qmd
+    - discussion.qmd
   
   sidebar:
-    title: "Under the skin"
-    subtitle: "Early-life stress exposure and the co-occurrence of mental and physical health problems"
+    title: "Under the skin<br><span style='color: #677281; font-weight: 500'>Early-life stress exposure and the co-occurrence of mental and physical health problems</span><br>"
     style: docked
     background: '#f0ebe2'
   search: true
@@ -46,6 +49,8 @@ bibliography: references.bib
 format:
   html:
     theme: [cosmo, custom_styles.scss]
+    grid:
+      sidebar-width: 600px
   pdf:
     documentclass: scrreprt
     # fontfamily: arial

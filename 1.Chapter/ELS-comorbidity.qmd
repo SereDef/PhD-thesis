@@ -1,7 +1,24 @@
 
-# Chapter: ELS and adolescent comorbidity {#sec-chapter1}
-## Effects of pre- and postnatal early-life stress on internalizing, adiposity and their comorbidity {.unnumbered}
+# ELS and adolescent psycho-physical health {#sec-chapter1}
+
+Adapted from:
+
+::: {.manuscript-title}
+Differential effects of pre- and postnatal early-life stress on internalizing, adiposity and their comorbidity 
+:::
+
+::: {.manuscript-authors}
+**Defina, S.**, Woofenden, T., Baltramonaityte, V., Pariante, C. M., Lekadir, K., Jaddoe, V. W., Serdarevic, F., Tiemeier, H., Walton, E., Felix, J. F., & Cecil, C. A. M., *on behalf of the EarlyCause Consortium. (2023). *JAACAP*. [DOI](https://doi.org/10.1016/j.jaac.2023.05.034)
+:::
+
+## Abstact {.unnumbered}
+
+## Introduction
 
 In summary, this book has no content whatsoever [@Fraser2013; @Boyd2012]. But I shall write it anyway cause. Cause I kind of do have no choice so, checking justification works
+
+## Methods
+
+## Discussion
 
 ## References {.unnumbered}
