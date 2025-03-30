@@ -48,7 +48,7 @@ bibliography: references.bib
 # Outputs
 format:
   html:
-    theme: [cosmo, custom_styles.scss]
+    theme: [cosmo, style_web.scss]
     grid:
       sidebar-width: 600px
   pdf:
@@ -66,6 +66,8 @@ format:
     # include-after-body: 
     #   text: |
     #     \printindex
+  docx:
+    reference-doc: style_doc.docx
 
 
 
