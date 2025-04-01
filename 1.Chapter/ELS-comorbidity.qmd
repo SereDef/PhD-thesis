@@ -12,20 +12,22 @@ Adapted from:
 :::
 
 ## Abstract {.unnumbered}
- <ins>Objective</ins>: Depression and obesity are two highly prevalent and often comorbid conditions. Exposure to early-life stress (ELS) has been associated with both depression and obesity in adulthood, as well as their preclinical manifestations during development. However, it remains unclear whether: *(i)* associations differ depending on the timing of stress exposure (prenatal vs postnatal) and *(ii)* ELS is a shared risk factor underlying the comorbidity between the two conditions.
+ [Objective]{.underline}: Depression and obesity are two highly prevalent and often comorbid conditions. Exposure to early-life stress (ELS) has been associated with both depression and obesity in adulthood, as well as their preclinical manifestations during development. However, it remains unclear whether: *(i)* associations differ depending on the timing of stress exposure (prenatal vs postnatal) and *(ii)* ELS is a shared risk factor underlying the comorbidity between the two conditions.
 
- <ins>Method</ins>: Leveraging data from two large population-based birth cohorts (ALSPAC: n=8428 (52% male participants); Generation R: n=4268 (48% male participants)), we constructed comprehensive cumulative measures of prenatal (in utero) and postnatal (from birth to 10 years) ELS. At age 13.5 years we assessed: a) internalizing symptoms (using maternal reports); b) fat mass percentage (using dual-energy X-ray absorptiometry); c) their comorbidity, defined as the co-occurrence of high internalizing and high adiposity.
+ [Method]{.underline}: Leveraging data from two large population-based birth cohorts (ALSPAC: n=8428 (52% male participants); Generation R: n=4268 (48% male participants)), we constructed comprehensive cumulative measures of prenatal (in utero) and postnatal (from birth to 10 years) ELS. At age 13.5 years we assessed: a) internalizing symptoms (using maternal reports); b) fat mass percentage (using dual-energy X-ray absorptiometry); c) their comorbidity, defined as the co-occurrence of high internalizing and high adiposity.
 
- <ins>Results</ins>: Both prenatal (*total effect* [95%CI] = 0.20 [0.16; 0.22]) and postnatal stress ($\beta$ [95%CI] = 0.22 [0.17; 0.25]) were associated with higher internalizing symptoms, with evidence of a more prominent role of postnatal stress. A weaker association (primarily driven by prenatal stress) was observed between stress and adiposity (prenatal: 0.07 [0.05; 0.09]; postnatal: 0.04 [0.01; 0.07]). Both pre- (OR [95%CI] = 1.70 [1.47; 1.97]) and postnatal stress (1.87 [1.61; 2.17]) were associated with an increased risk of developing comorbidity.
+ [Results]{.underline}: Both prenatal (*total effect* [95%CI] = 0.20 [0.16; 0.22]) and postnatal stress ($\beta$ [95%CI] = 0.22 [0.17; 0.25]) were associated with higher internalizing symptoms, with evidence of a more prominent role of postnatal stress. A weaker association (primarily driven by prenatal stress) was observed between stress and adiposity (prenatal: 0.07 [0.05; 0.09]; postnatal: 0.04 [0.01; 0.07]). Both pre- (OR [95%CI] = 1.70 [1.47; 1.97]) and postnatal stress (1.87 [1.61; 2.17]) were associated with an increased risk of developing comorbidity.
 
- <ins>Conclusion</ins>: We found evidence of *(i)* timing and *(ii)* shared causal effects of ELS on psycho-cardiometabolic health in adolescence, but future research is warranted to clarify how these associations may unfold over time.
+ [Conclusion]{.underline}: We found evidence of *(i)* timing and *(ii)* shared causal effects of ELS on psycho-cardiometabolic health in adolescence, but future research is warranted to clarify how these associations may unfold over time.
 
 ## Introduction
 
-In summary, this book has no content whatsoever [@Fraser2013; @Boyd2012]. But I shall write it anyway cause. Cause I kind of do have no choice so, checking justification works
+In summary, this book has no content whatsoever [@RN243; @RN225]. But I shall write it anyway cause. Cause I kind of do have no choice so, checking justification works
 
 ## Methods
 
 ## Discussion
 
 ## References {.unnumbered}
+::: {.sectionrefs}
+:::

@@ -43,7 +43,7 @@ number-depth: 3
 
 # Bibliography
 csl: apa.csl
-bibliography: references.bib
+bibliography: [references.bib, 1.Chapter/ELS-comorbidity_bibliography.bib]
 
 # Outputs
 format:
@@ -55,8 +55,12 @@ format:
     documentclass: scrreprt
     # fontfamily: arial
     # Display refecerences after every chapter
-    # needs pandoc version >= 2.11 to work
-    # filters:
+    # -- needs pandoc version >= 2.11 to work
+    filters:
+      - quarto
+      - section-bibliographies
+    reference-section-title: References
+    citeproc: true # false is recomented but does not work 
     #  - ./_extensions/pandoc-ext/section-bibliographies/section-bibliographies.lua
     # Add index
     # include-in-header: 
@@ -68,6 +72,13 @@ format:
     #     \printindex
   docx:
     reference-doc: style_doc.docx
+     # Display refecerences after every chapter
+    filters:
+      - quarto
+      - section-bibliographies
+    reference-section-title: References
+    citeproc: true # false is recomented but does not work 
+
 
 
 

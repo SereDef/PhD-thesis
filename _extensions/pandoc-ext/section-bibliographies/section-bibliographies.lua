@@ -1,9 +1,11 @@
+--- ADAPTED FROM:
 --- section-bibliographies - chapter-wise reference sections
 ---
 --- Copyright: © 2018 Jesse Rosenthal, 2020–2024 Albert Krewinkel
 --- License: MIT – see LICENSE for details
 
 -- pandoc.utils.citeproc exists since pandoc 2.19.1
+
 PANDOC_VERSION:must_be_at_least {2,19,1}
 
 local List = require 'pandoc.List'
@@ -121,7 +123,7 @@ local function create_section_bibliography (meta, opts)
     section = pandoc.Blocks(section):walk{
       Cite = function (cite)
         cite.citations = cite.citations:map(function(c)
-            c.id = c.id .. suffix
+            c.id = c.id --.. suffix
             return c
         end)
         return cite
@@ -135,7 +137,7 @@ local function create_section_bibliography (meta, opts)
     }
     newmeta.references = deepcopy(references)
     for i, ref in ipairs(newmeta.references) do
-      newmeta.references[i].id = ref.id .. suffix
+      newmeta.references[i].id = ref.id --.. suffix
     end
     return citeproc(pandoc.Pandoc(section, newmeta)).blocks
   end
