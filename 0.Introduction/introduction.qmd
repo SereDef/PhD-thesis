@@ -10,3 +10,5 @@ This an that [@Rcore2021; @Fraser2013]
 See @sec-chapter1 for additional discussion.
 
 ## References {.unnumbered}
+::: {.sectionrefs}
+:::

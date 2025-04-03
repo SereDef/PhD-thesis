@@ -1,13 +1,13 @@
 project:
   type: book
-  output-dir: docs
+  output-dir: docs # for GitHub pages deployment
 
 book:
   title: "Under the skin"
   subtitle: "Early-life stress exposure and the co-occurrence of mental and physical health problems"
   # author: "Serena Defina"
+  # date: "4/25/2025"
   cover-image: cover.png  
-  # date: "3/25/2025"
   chapters:
     - index.qmd
     - 0.Introduction/introduction.qmd
@@ -33,7 +33,7 @@ book:
   downloads: [pdf]
 
   page-footer: 
-    left: "Serena Defina, 2025" 
+    left: "Author: Serena Defina, 2025. Built with sweat, tears and Quarto." 
     right: 
       - icon: github
         href: https://github.com/SereDef
@@ -50,18 +50,20 @@ format:
   html:
     theme: [cosmo, style_web.scss]
     grid:
-      sidebar-width: 600px
+      sidebar-width: 600px # Increase sidebar for longer chapter titles
+  
   pdf:
-    documentclass: scrreprt
-    # fontfamily: arial
-    # Display refecerences after every chapter
-    # -- needs pandoc version >= 2.11 to work
+    documentclass: scrreport # scrbook 
+    # mainfont: Bookman
+    # sansfont: Bookman
+    pagestyle: headings
     filters:
       - quarto
-      - section-bibliographies
-    reference-section-title: References
+      - section-bibliographies  # Display refecerences after every chapter
+    reference-section-title: References # TODO: References do displayed for unnambered chapters..?
     citeproc: true # false is recomented but does not work 
-    #  - ./_extensions/pandoc-ext/section-bibliographies/section-bibliographies.lua
+    includes:
+      in_header: 'gt_packages.sty' # Esure gt tables are rendered properly
     # Add index
     # include-in-header: 
     #   text: |
