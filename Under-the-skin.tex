@@ -1,0 +1,802 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+%
+\documentclass[
+  letterpaper,
+  DIV=11,
+  numbers=noendperiod]{scrreport}
+
+\usepackage{amsmath,amssymb}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else  
+    % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\ifLuaTeX
+  \usepackage{luacolor}
+  \usepackage[soul]{lua-ul}
+\else
+  \usepackage{soul}
+  
+\fi
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\setcounter{secnumdepth}{3}
+% Make \paragraph and \subparagraph free-standing
+\ifx\paragraph\undefined\else
+  \let\oldparagraph\paragraph
+  \renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+  \let\oldsubparagraph\subparagraph
+  \renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+% definitions for citeproc citations
+\NewDocumentCommand\citeproctext{}{}
+\NewDocumentCommand\citeproc{mm}{%
+  \begingroup\def\citeproctext{#2}\cite{#1}\endgroup}
+\makeatletter
+ % allow citations to break across lines
+ \let\@cite@ofmt\@firstofone
+ % avoid brackets around text for \cite:
+ \def\@biblabel#1{}
+ \def\@cite#1#2{{#1\if@tempswa , #2\fi}}
+\makeatother
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newenvironment{CSLReferences}[2] % #1 hanging-indent, #2 entry-spacing
+ {\begin{list}{}{%
+  \setlength{\itemindent}{0pt}
+  \setlength{\leftmargin}{0pt}
+  \setlength{\parsep}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1
+   \setlength{\leftmargin}{\cslhangindent}
+   \setlength{\itemindent}{-1\cslhangindent}
+  \fi
+  % set entry spacing
+  \setlength{\itemsep}{#2\baselineskip}}}
+ {\end{list}}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{\hfill\break\parbox[t]{\linewidth}{\strut\ignorespaces#1\strut}}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{\strut#1\strut}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{\strut#1\strut}}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+
+% gt_packages.sty
+\usepackage{multirow}    % For multirow cells
+\usepackage{colortbl}    % For colored cells in tables
+\usepackage{xcolor}      % For custom colors
+\usepackage{array}       % For advanced table formatting
+\usepackage{booktabs}    % For professional-looking tables
+\usepackage{longtable}   % For tables that span multiple pages
+\usepackage{caption}     % For table captions
+\usepackage{graphicx}    % For including images in tables
+\KOMAoption{captions}{tableheading}
+\makeatletter
+\@ifpackageloaded{tcolorbox}{}{\usepackage[skins,breakable]{tcolorbox}}
+\@ifpackageloaded{fontawesome5}{}{\usepackage{fontawesome5}}
+\definecolor{quarto-callout-color}{HTML}{909090}
+\definecolor{quarto-callout-note-color}{HTML}{0758E5}
+\definecolor{quarto-callout-important-color}{HTML}{CC1914}
+\definecolor{quarto-callout-warning-color}{HTML}{EB9113}
+\definecolor{quarto-callout-tip-color}{HTML}{00A047}
+\definecolor{quarto-callout-caution-color}{HTML}{FC5300}
+\definecolor{quarto-callout-color-frame}{HTML}{acacac}
+\definecolor{quarto-callout-note-color-frame}{HTML}{4582ec}
+\definecolor{quarto-callout-important-color-frame}{HTML}{d9534f}
+\definecolor{quarto-callout-warning-color-frame}{HTML}{f0ad4e}
+\definecolor{quarto-callout-tip-color-frame}{HTML}{02b875}
+\definecolor{quarto-callout-caution-color-frame}{HTML}{fd7e14}
+\makeatother
+\makeatletter
+\@ifpackageloaded{bookmark}{}{\usepackage{bookmark}}
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\AtBeginDocument{%
+\ifdefined\contentsname
+  \renewcommand*\contentsname{Table of contents}
+\else
+  \newcommand\contentsname{Table of contents}
+\fi
+\ifdefined\listfigurename
+  \renewcommand*\listfigurename{List of Figures}
+\else
+  \newcommand\listfigurename{List of Figures}
+\fi
+\ifdefined\listtablename
+  \renewcommand*\listtablename{List of Tables}
+\else
+  \newcommand\listtablename{List of Tables}
+\fi
+\ifdefined\figurename
+  \renewcommand*\figurename{Figure}
+\else
+  \newcommand\figurename{Figure}
+\fi
+\ifdefined\tablename
+  \renewcommand*\tablename{Table}
+\else
+  \newcommand\tablename{Table}
+\fi
+}
+\@ifpackageloaded{float}{}{\usepackage{float}}
+\floatstyle{ruled}
+\@ifundefined{c@chapter}{\newfloat{codelisting}{h}{lop}}{\newfloat{codelisting}{h}{lop}[chapter]}
+\floatname{codelisting}{Listing}
+\newcommand*\listoflistings{\listof{codelisting}{List of Listings}}
+\makeatother
+\makeatletter
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
+\makeatother
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\usepackage{bookmark}
+
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  pdftitle={Under the skin},
+  colorlinks=true,
+  linkcolor={blue},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={Blue},
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Under the skin}
+\usepackage{etoolbox}
+\makeatletter
+\providecommand{\subtitle}[1]{% add subtitle to \maketitle
+  \apptocmd{\@title}{\par {\large #1 \par}}{}{}
+}
+\makeatother
+\subtitle{Early-life stress exposure and the co-occurrence of mental and
+physical health problems}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+\renewcommand*\contentsname{Table of contents}
+{
+\hypersetup{linkcolor=}
+\setcounter{tocdepth}{2}
+\tableofcontents
+}
+\bookmarksetup{startatroot}
+
+\chapter*{PREFACE}\label{preface}
+\addcontentsline{toc}{chapter}{PREFACE}
+
+\markboth{PREFACE}{PREFACE}
+
+\emph{``In the depth of winter, I found there was, within me, an
+invincible summer.''} Albert Camus -- Summer (1954)
+
+\subsubsection*{AUTHOR}\label{author}
+\addcontentsline{toc}{subsubsection}{AUTHOR}
+
+~~~~~~Serena Defina
+
+\subsubsection*{PROMOTOR}\label{promotor}
+\addcontentsline{toc}{subsubsection}{PROMOTOR}
+
+~~~~~~Henning Tiemier
+
+\subsubsection*{CO-PROMOTORS}\label{co-promotors}
+\addcontentsline{toc}{subsubsection}{CO-PROMOTORS}
+
+~~~~~~Charlotte A.M. Cecil\\
+\strut ~~~~~~Janine F. Felix
+
+\begin{tcolorbox}[enhanced jigsaw, left=2mm, toprule=.15mm, colback=white, bottomtitle=1mm, coltitle=black, leftrule=.75mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Note}, arc=.35mm, opacityback=0, colframe=quarto-callout-note-color-frame, titlerule=0mm, toptitle=1mm, breakable, rightrule=.15mm, colbacktitle=quarto-callout-note-color!10!white, opacitybacktitle=0.6, bottomrule=.15mm]
+
+This is a work in progress. Stay tuned :)
+
+\end{tcolorbox}
+
+\newpage
+
+\section*{Aknowledgements}\label{aknowledgements}
+\addcontentsline{toc}{section}{Aknowledgements}
+
+\markright{Aknowledgements}
+
+TODO
+
+\bookmarksetup{startatroot}
+
+\chapter*{INTRODUCTION}\label{introduction}
+\addcontentsline{toc}{chapter}{INTRODUCTION}
+
+\markboth{INTRODUCTION}{INTRODUCTION}
+
+Dear reader,
+
+oh my good why does this not update
+
+This an that (Fraser et al., 2013; R Core Team, 2021)
+
+See Chapter~\ref{sec-chapter1} for additional discussion.
+
+\section*{References}\label{references}
+\addcontentsline{toc}{section}{References}
+
+\markright{References}
+
+\part{PART 1: The role of ELS in the development of mental and physical
+health}
+
+\chapter{ELS and adolescent psycho-physical health}\label{sec-chapter1}
+
+Adapted from:
+
+\textbf{Differential effects of pre- and postnatal early-life stress on
+internalizing, adiposity and their comorbidity}
+
+\textbf{Defina, S.}, Woofenden, T., Baltramonaityte, V., Pariante, C.
+M., Lekadir, K., Jaddoe, V. W., Serdarevic, F., Tiemeier, H., Walton,
+E., Felix, J. F., \& Cecil, C. A. M., *on behalf of the EarlyCause
+Consortium. (2023). \emph{JAACAP}.
+\href{https://doi.org/10.1016/j.jaac.2023.05.034}{DOI}
+
+\section*{Abstract}\label{abstract}
+\addcontentsline{toc}{section}{Abstract}
+
+\markright{Abstract}
+
+\ul{Objective}: Depression and obesity are two highly prevalent and
+often comorbid conditions. Exposure to early-life stress (ELS) has been
+associated with both depression and obesity in adulthood, as well as
+their preclinical manifestations during development. However, it remains
+unclear whether: \emph{(i)} associations differ depending on the timing
+of stress exposure (prenatal vs postnatal) and \emph{(ii)} ELS is a
+shared risk factor underlying the comorbidity between the two
+conditions.
+
+\ul{Method}: Leveraging data from two large population-based birth
+cohorts (ALSPAC: n=8428 (52\% male participants); Generation R: n=4268
+(48\% male participants)), we constructed comprehensive cumulative
+measures of prenatal (in utero) and postnatal (from birth to 10 years)
+ELS. At age 13.5 years we assessed: a) internalizing symptoms (using
+maternal reports); b) fat mass percentage (using dual-energy X-ray
+absorptiometry); c) their comorbidity, defined as the co-occurrence of
+high internalizing and high adiposity.
+
+\ul{Results}: Both prenatal (\emph{total effect} {[}95\%CI{]} = 0.20
+{[}0.16; 0.22{]}) and postnatal stress (\(\beta\) {[}95\%CI{]} = 0.22
+{[}0.17; 0.25{]}) were associated with higher internalizing symptoms,
+with evidence of a more prominent role of postnatal stress. A weaker
+association (primarily driven by prenatal stress) was observed between
+stress and adiposity (prenatal: 0.07 {[}0.05; 0.09{]}; postnatal: 0.04
+{[}0.01; 0.07{]}). Both pre- (OR {[}95\%CI{]} = 1.70 {[}1.47; 1.97{]})
+and postnatal stress (1.87 {[}1.61; 2.17{]}) were associated with an
+increased risk of developing comorbidity.
+
+\ul{Conclusion}: We found evidence of \emph{(i)} timing and \emph{(ii)}
+shared causal effects of ELS on psycho-cardiometabolic health in
+adolescence, but future research is warranted to clarify how these
+associations may unfold over time.
+
+\section{Introduction}\label{introduction-1}
+
+In summary, this book has no content whatsoever (Elsenburg et al., 2017;
+Wiklund et al., 2008). But I shall write it anyway cause. Cause I kind
+of do have no choice so, checking justification works
+
+\section{Methods}\label{methods}
+
+\section{Results}\label{results}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.5400}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.2300}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.2300}}@{}}
+
+\caption{\label{tbl-table1.1}My interesting caption.}
+
+\tabularnewline
+
+\toprule\noalign{}
+\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{1.0000} + 4\tabcolsep}@{}}{%
+\begin{minipage}[b]{\linewidth}\raggedright
+\textbf{Sample descriptives}\\
+Generation R (GenR) and ALSPAC cohorts\strut
+\end{minipage}} \\
+\midrule\noalign{}
+\endhead
+\midrule\noalign{}
+\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{1.0000} + 4\tabcolsep}@{}}{%
+{\ul{Note}: Sample descriptives pooled across 30 imputed datasets. BMI =
+Body-mass index.}} \\
+\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{1.0000} + 4\tabcolsep}@{}}{%
+\begin{minipage}[t]{\linewidth}\raggedright
+{\textsuperscript{a}} {\textbf{Ethnic backgroung grouping}:\\
+\ul{Africa and Middle East} = Iran (n=11); Iraq (10); South Africa (8);
+Angola (7); Eritrea (7); Israel (6); Cameroon (5); Egypt (5); Nigeria
+(5); Ethiopia (4); Algeria (3); Ghana (3); Lebanon (3); Liberia (3);
+Syria (3); Tanzania (3); Côte d\textquotesingle Ivoire (2); Guinea (2);
+Mozambique (2); Saudi Arabia (2); Senegal (2); Zimbabwe (2); Africa (1);
+Armenia (1); Burundi (1); Congo (1); French Congo (1); Gambia (1); Kenya
+(1); Mali (1); Mauritania (1); Palestine (1); Sierra Leone (1); Somalia
+(1); Sudan (1); Togo (1); Tunisia (1); Uganda (1); Yemen (1).\\
+\ul{Asia and Oceania} = Indonesia (n=23); Pakistan (9); Australia (6);
+China (6); Japan (6); Philippines (6); Thailand (6); India (5);
+Afghanistan (4); Hongkong (4); South Korea (4); Vietnam (4); Bangladesh
+(3); Korea (3); Taiwan (3); Kazakhstan (2); New Zealand (2); Dutch New
+Guinea (1); East Timor (1); Singapore (1); Sri Lanka (1).\\
+\ul{Europe} = Germany (n=55); Belgium (35); United Kingdom (30); France
+(29); Portugal (22); Spain (18); Yugoslavia (18); Poland (16); Italy
+(12); Bosnia-Herzegovina (11); Russia (10); Croatia (7); Czech Republic
+(7); Switzerland (7); Hungary (6); North Macedonia (6);
+Serbia-Montenegro (5); Denmark (4); Ireland (4); Norway (4); Sweden (4);
+Greece (3); Lithuania (3); Romania (3); Austria (2); Kosovo (2); Ukraine
+(2); Canary Islands (1); Estonia (1); Finland (1); Luxembourg (1);
+Madeira Islands (1); Moldova (1); Monaco (1); Slovakia (1); Slovenia
+(1).\\
+\ul{Latin America} = Colombia (n=18); Brazil (11); Dominican Republic
+(8); Chile (6); Venezuela (6); Cuba (4); Mexico (4); Argentina (3); Peru
+(3); Ecuador (2); Guyana (2); Belize (1); Bolivia (1); Haiti (1);
+Paraguay (1); Trinidad and Tobago (1).\\
+\ul{North America} = United States of America (n=16); Canada (9).}\strut
+\end{minipage}} \\
+\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{1.0000} + 4\tabcolsep}@{}}{%
+{\textsuperscript{b}} {\textbf{Maternal education}: low = ``secondary,
+phase 2'' or lower in GenR, ``None'', ``CSE'', ``Vocational'' or ``O
+level'' in ALSPAC; medium = ``higher, phase 1'' in GenR, ``A level'' in
+ALSPAC; high = ``higher, phase 2'' in GenR, ``(College or university)
+degree'' in ALSPAC. Categorization based on ISCED 2011.}} \\
+\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{1.0000} + 4\tabcolsep}@{}}{%
+{\textsuperscript{c}} {\textbf{Household income}: low = \textless{}
+€1600 /month in GenR, \textless{} £200 /week in ALSPAC; medium = between
+€1600 and € 4000 /month in GenR, between £200 and £400 /week in ALSPAC;
+high = \textgreater{} € 4000 /month in GenR, \textgreater{} £400 /week
+in ALSPAC.}} \\
+\bottomrule\noalign{}
+\endlastfoot
+\textbf{~} & \begin{minipage}[t]{\linewidth}\raggedright
+\textbf{GenR\\
+(\emph{n} = 4268)}\strut
+\end{minipage} & \begin{minipage}[t]{\linewidth}\raggedright
+\textbf{ALSPAC\\
+(\emph{n} = 8428)}\strut
+\end{minipage} \\
+\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{1.0000} + 4\tabcolsep}@{}}{%
+\textbf{Prenatal stress}, median (range)} \\
+~ Total score & 0.42 (0--2.60) & 0.48 (0--2.34) \\
+~ Life events & 0.13 (0--0.67) & 0.07 (0--0.57) \\
+~ Contextual risk & 0.25 (0--1.00) & 0.25 (0--0.88) \\
+~ Parental risk & 0.00 (0--0.71) & 0.10 (0--0.83) \\
+~ Interpersonal risk & 0.06 (0--0.95) & 0.00 (0--0.84) \\
+\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{1.0000} + 4\tabcolsep}@{}}{%
+\textbf{Postnatal stress}, median (range)} \\
+~ Total score & 0.64 (0--3.59) & 2.69 (0.17--16.43) \\
+~ Life events & 0.23 (0--0.82) & 1.07 (0--3.50) \\
+~ Contextual risk & 0.20 (0--1.00) & 0.50 (0--2.90) \\
+~ Parental risk & 0.00 (0--0.79) & 0.57 (0--3.62) \\
+~ Interpersonal risk & 0.00 (0--0.79) & 0.29 (0--5.49) \\
+~ Direct victimization & 0.13 (0--0.86) & 0.00 (0--3.10) \\
+\textbf{Internalizing score}, median (range) & 4.00 (0--41) & 1.00
+(0--10) \\
+\textbf{Fat mass percentage}, median (range) & 24.7 (8.5--54.6) & 23.9
+(4.9--56.3) \\
+\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{1.0000} + 4\tabcolsep}@{}}{%
+\textbf{Outcome groups}, n (\%)} \\
+~ Healthy & 2791 (65) & 5916 (70) \\
+~ High internalizing & 623 (15) & 795 (9) \\
+~ High adiposity & 631 (15) & 1476 (18) \\
+~ Comorbid & 223 (5) & 241 (3) \\
+\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{1.0000} + 4\tabcolsep}@{}}{%
+\textbf{Sex}, n (\%)} \\
+~ Male participants & 2087 (48) & 4370 (52) \\
+~ Female participants & 2181 (52) & 4058 (48) \\
+\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{1.0000} + 4\tabcolsep}@{}}{%
+\textbf{Ethnic background}, n (\%)} \\
+~ Africa and Middle East \textsuperscript{a} & 115 (2.7) &
+\multirow{11}{=}{~} \\
+~ Asia and Oceania \textsuperscript{a} & 100 (2.3) \\
+~ Cape Verdean & 100 (2.3) \\
+~ Dutch & 2673 (62.6) \\
+~ Dutch Antillean & 118 (2.8) \\
+~ Europe \textsuperscript{a} & 334 (7.8) \\
+~ Latin America \textsuperscript{a} & 72 (1.7) \\
+~ Moroccan & 176 (4.1) \\
+~ North America \textsuperscript{a} & 25 (0.6) \\
+~ Surinamese & 296 (6.9) \\
+~ Turkish & 247 (5.8) \\
+\textbf{Age of the child}, median (range), years & 13.5 (12.6--16.6) &
+13.5 (12.8--15.0) \\
+\textbf{Pre-pregnancy} \textbf{BMI}, median (range),
+kg/m\textsuperscript{2} & 22.6 (14.4--50.2) & 22.1 (12.5--48.6) \\
+\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{1.0000} + 4\tabcolsep}@{}}{%
+\textbf{Maternal smoking}, n (\%)} \\
+~ Never & 3228 (76) & 4412 (52) \\
+~ Until (early) pregnancy & 390 (9) & 2524 (30) \\
+~ During pregnancy & 650 (15) & 1492 (18) \\
+\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{1.0000} + 4\tabcolsep}@{}}{%
+\textbf{Maternal alcohol consumption}, GenR: n (\%); ALSPAC: median
+(range)} \\
+~ Never & 1694 (40) & \multirow{4}{=}{0.50 (0 -- 3.5)} \\
+~ Until early pregnancy & 596 (14) \\
+~ Continued occasionally & 1570 (37) \\
+~ Continued frequently & 407 (10) \\
+\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{1.0000} + 4\tabcolsep}@{}}{%
+\textbf{Maternal education}, n (\%) \textsuperscript{b}} \\
+~ Low & 1716 (40.2) & 4216 (50.0) \\
+~ Medium & 1278 (29.9) & 3001 (35.6) \\
+~ High & 1274 (29.9) & 1212 (14.4) \\
+\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{1.0000} + 4\tabcolsep}@{}}{%
+\textbf{Household income}, n (\%) \textsuperscript{c}} \\
+~ Low & 702 (16.4) & 1318 (15.6) \\
+~ Medium & 2070 (48.5) & 4324 (51.3) \\
+~ High & 1497 (35.1) & 2786 (33.1) \\
+
+\end{longtable}
+
+See Table~\ref{tbl-table1.1} for desctiptives.
+
+\section{Discussion}\label{discussion}
+
+\section*{References}\label{references-1}
+\addcontentsline{toc}{section}{References}
+
+\markright{References}
+
+\phantomsection\label{refs--1}
+\begin{CSLReferences}{1}{0}
+\bibitem[\citeproctext]{ref-RN225}
+Elsenburg, L. K., Wijk, K. J. E. van, Liefbroer, A. C., \& Smidt, N.
+(2017). Accumulation of adverse childhood events and overweight in
+children: A systematic review and meta-analysis {[}Journal Article{]}.
+\emph{Obesity (Silver Spring)}, \emph{25}(5), 820--832.
+\url{https://doi.org/10.1002/oby.21797}
+
+\bibitem[\citeproctext]{ref-RN243}
+Wiklund, P., Toss, F., Weinehall, L., Hallmans, G., Franks, P. W.,
+Nordstrom, A., \& Nordstrom, P. (2008). Abdominal and gynoid fat mass
+are associated with cardiovascular risk factors in men and women
+{[}Journal Article{]}. \emph{The Journal of Clinical Endocrinology \&
+Metabolism}, \emph{93}(11), 4360--4366.
+
+\end{CSLReferences}
+
+\chapter{Lifestyle factors, ELS and adolescent psycho-physical
+health}\label{sec-chapter2}
+
+Adapted from:
+
+The role of lifestyle factors in the association between early-life
+stress and adolescent psycho-physical health: Moderation analysis in two
+European birth cohorts
+
+\textbf{Defina, S.}, Woofenden, T., Baltramonaityte, V., Tiemeier, H.,
+Fairchild, G., Felix, J. F., Cecil, C.A.M., \& Walton, E. (2024).
+\emph{Preventive Medicine}.
+\href{https://doi.org/10.1016/j.ypmed.2024.107926}{DOI}
+
+\section*{Abstact}\label{abstact}
+\addcontentsline{toc}{section}{Abstact}
+
+\markright{Abstact}
+
+\section{Introduction}\label{introduction-2}
+
+In summary, this book has no content whatsoever (Boyd et al., 2012;
+Fraser et al., 2013). But I shall write it anyway cause. Cause I kind of
+do have no choice so, checking justification works
+
+\section{Methods}\label{methods-1}
+
+\section{Discussion}\label{discussion-1}
+
+\section*{References}\label{references-2}
+\addcontentsline{toc}{section}{References}
+
+\markright{References}
+
+\section*{References}\label{bibliography--2}
+\addcontentsline{toc}{section}{References}
+
+\phantomsection\label{refs--2}
+\begin{CSLReferences}{1}{0}
+\bibitem[\citeproctext]{ref-Boyd2012}
+Boyd, A., Golding, J., Macleod, J., Lawlor, D. A., Fraser, A.,
+Henderson, J., Molloy, L., Ness, A., Ring, S., \& Davey Smith, G.
+(2012). Cohort profile: The 'children of the 90s'---the index offspring
+of the avon longitudinal study of parents and children {[}Journal
+Article{]}. \emph{International Journal of Epidemiology}, \emph{42}(1),
+111--127. \url{https://doi.org/10.1093/ije/dys064}
+
+\bibitem[\citeproctext]{ref-Fraser2013}
+Fraser, A., Macdonald-Wallis, C., Tilling, K., Boyd, A., Golding, J.,
+Davey Smith, G., Henderson, J., Macleod, J., Molloy, L., Ness, A., Ring,
+S., Nelson, S. M., \& Lawlor, D. A. (2013). Cohort profile: The avon
+longitudinal study of parents and children: ALSPAC mothers cohort
+{[}Journal Article{]}. \emph{Int J Epidemiol}, \emph{42}(1), 97--110.
+\url{https://doi.org/10.1093/ije/dys066}
+
+\end{CSLReferences}
+
+\chapter{ELS and intracortical myelination}\label{sec-chapter3}
+
+Adapted from:
+
+Early-life stress exposure and intracortical myelination in childhood: a
+population-based neuroimaging study
+
+\textbf{Defina, S.}, Manzoni, D., Tiemeier, H., Brouwer, R.M., Cecil,
+C.A.M., \& Muetzel R.L. (\emph{in preparation})
+
+\section*{Abstact}\label{abstact-1}
+\addcontentsline{toc}{section}{Abstact}
+
+\markright{Abstact}
+
+\section{Introduction}\label{introduction-3}
+
+In summary, this book has no content whatsoever (Boyd et al., 2012;
+Fraser et al., 2013). But I shall write it anyway cause. Cause I kind of
+do have no choice so, checking justification works
+
+\section{Methods}\label{methods-2}
+
+\section{Discussion}\label{discussion-2}
+
+\section*{References}\label{references-3}
+\addcontentsline{toc}{section}{References}
+
+\markright{References}
+
+\section*{References}\label{bibliography--3}
+\addcontentsline{toc}{section}{References}
+
+\phantomsection\label{refs--3}
+\begin{CSLReferences}{1}{0}
+\bibitem[\citeproctext]{ref-Boyd2012}
+Boyd, A., Golding, J., Macleod, J., Lawlor, D. A., Fraser, A.,
+Henderson, J., Molloy, L., Ness, A., Ring, S., \& Davey Smith, G.
+(2012). Cohort profile: The 'children of the 90s'---the index offspring
+of the avon longitudinal study of parents and children {[}Journal
+Article{]}. \emph{International Journal of Epidemiology}, \emph{42}(1),
+111--127. \url{https://doi.org/10.1093/ije/dys064}
+
+\bibitem[\citeproctext]{ref-Fraser2013}
+Fraser, A., Macdonald-Wallis, C., Tilling, K., Boyd, A., Golding, J.,
+Davey Smith, G., Henderson, J., Macleod, J., Molloy, L., Ness, A., Ring,
+S., Nelson, S. M., \& Lawlor, D. A. (2013). Cohort profile: The avon
+longitudinal study of parents and children: ALSPAC mothers cohort
+{[}Journal Article{]}. \emph{Int J Epidemiol}, \emph{42}(1), 97--110.
+\url{https://doi.org/10.1093/ije/dys066}
+
+\end{CSLReferences}
+
+\chapter{ELS and cardiac morphology}\label{sec-chapter4}
+
+Adapted from:
+
+Early-life stress exposure and heart morphology in childhood: a
+prospective population-based study
+
+\textbf{Defina, S.}, Kamphuis, A., Gaillard, R., \& Felix, J. F.
+(\emph{in preparation})
+
+\section*{Abstact}\label{abstact-2}
+\addcontentsline{toc}{section}{Abstact}
+
+\markright{Abstact}
+
+\section{Introduction}\label{introduction-4}
+
+In summary, this book has no content whatsoever (Boyd et al., 2012;
+Fraser et al., 2013). But I shall write it anyway cause. Cause I kind of
+do have no choice so, checking justification works
+
+\section{Methods}\label{methods-3}
+
+\section{Discussion}\label{discussion-3}
+
+\section*{References}\label{references-4}
+\addcontentsline{toc}{section}{References}
+
+\markright{References}
+
+\part{PART 2: Reciprocal relationships between mental and physical
+health problems}
+
+\section*{References}\label{bibliography--4}
+\addcontentsline{toc}{section}{References}
+
+\phantomsection\label{refs--4}
+\begin{CSLReferences}{1}{0}
+\bibitem[\citeproctext]{ref-Boyd2012}
+Boyd, A., Golding, J., Macleod, J., Lawlor, D. A., Fraser, A.,
+Henderson, J., Molloy, L., Ness, A., Ring, S., \& Davey Smith, G.
+(2012). Cohort profile: The 'children of the 90s'---the index offspring
+of the avon longitudinal study of parents and children {[}Journal
+Article{]}. \emph{International Journal of Epidemiology}, \emph{42}(1),
+111--127. \url{https://doi.org/10.1093/ije/dys064}
+
+\bibitem[\citeproctext]{ref-Fraser2013}
+Fraser, A., Macdonald-Wallis, C., Tilling, K., Boyd, A., Golding, J.,
+Davey Smith, G., Henderson, J., Macleod, J., Molloy, L., Ness, A., Ring,
+S., Nelson, S. M., \& Lawlor, D. A. (2013). Cohort profile: The avon
+longitudinal study of parents and children: ALSPAC mothers cohort
+{[}Journal Article{]}. \emph{Int J Epidemiol}, \emph{42}(1), 97--110.
+\url{https://doi.org/10.1093/ije/dys066}
+
+\end{CSLReferences}
+
+\chapter{Longitudinal psycho-physical
+co-development}\label{sec-chapter5}
+
+Adapted from:
+
+Longitudinal co-development of depressive symptoms and cardio-metabolic
+risk factors from childhood to young adulthood
+
+Defina, S., Cecil, C.A.M., Felix, J.F., Walton, E., \& Tiemeier, H.
+(\emph{under revision})
+
+\section*{Abstact}\label{abstact-3}
+\addcontentsline{toc}{section}{Abstact}
+
+\markright{Abstact}
+
+\section{Introduction}\label{introduction-5}
+
+In summary, this book has no content whatsoever (Boyd et al., 2012;
+Fraser et al., 2013). But I shall write it anyway cause. Cause I kind of
+do have no choice so, checking justification works
+
+\section{Methods}\label{methods-4}
+
+\section{Discussion}\label{discussion-4}
+
+\section*{References}\label{references-5}
+\addcontentsline{toc}{section}{References}
+
+\markright{References}
+
+\bookmarksetup{startatroot}
+
+\chapter*{DISCUSSION}\label{discussion-5}
+\addcontentsline{toc}{chapter}{DISCUSSION}
+
+\markboth{DISCUSSION}{DISCUSSION}
+
+See Chapter~\ref{sec-chapter1} for whatever whatever.
+
+\section*{References}\label{references-6}
+\addcontentsline{toc}{section}{References}
+
+\markright{References}
+
+\section*{References}\label{bibliography--5}
+\addcontentsline{toc}{section}{References}
+
+\phantomsection\label{refs--5}
+\begin{CSLReferences}{1}{0}
+\bibitem[\citeproctext]{ref-Boyd2012}
+Boyd, A., Golding, J., Macleod, J., Lawlor, D. A., Fraser, A.,
+Henderson, J., Molloy, L., Ness, A., Ring, S., \& Davey Smith, G.
+(2012). Cohort profile: The 'children of the 90s'---the index offspring
+of the avon longitudinal study of parents and children {[}Journal
+Article{]}. \emph{International Journal of Epidemiology}, \emph{42}(1),
+111--127. \url{https://doi.org/10.1093/ije/dys064}
+
+\bibitem[\citeproctext]{ref-Fraser2013}
+Fraser, A., Macdonald-Wallis, C., Tilling, K., Boyd, A., Golding, J.,
+Davey Smith, G., Henderson, J., Macleod, J., Molloy, L., Ness, A., Ring,
+S., Nelson, S. M., \& Lawlor, D. A. (2013). Cohort profile: The avon
+longitudinal study of parents and children: ALSPAC mothers cohort
+{[}Journal Article{]}. \emph{Int J Epidemiol}, \emph{42}(1), 97--110.
+\url{https://doi.org/10.1093/ije/dys066}
+
+\end{CSLReferences}
+
+\chapter*{References}\label{bibliography}
+\addcontentsline{toc}{chapter}{References}
+
+\phantomsection\label{refs}
+\begin{CSLReferences}{1}{0}
+\bibitem[\citeproctext]{ref-Boyd2012}
+Boyd, A., Golding, J., Macleod, J., Lawlor, D. A., Fraser, A.,
+Henderson, J., Molloy, L., Ness, A., Ring, S., \& Davey Smith, G.
+(2012). Cohort profile: The 'children of the 90s'---the index offspring
+of the avon longitudinal study of parents and children {[}Journal
+Article{]}. \emph{International Journal of Epidemiology}, \emph{42}(1),
+111--127. \url{https://doi.org/10.1093/ije/dys064}
+
+\bibitem[\citeproctext]{ref-RN225}
+Elsenburg, L. K., Wijk, K. J. E. van, Liefbroer, A. C., \& Smidt, N.
+(2017). Accumulation of adverse childhood events and overweight in
+children: A systematic review and meta-analysis {[}Journal Article{]}.
+\emph{Obesity (Silver Spring)}, \emph{25}(5), 820--832.
+\url{https://doi.org/10.1002/oby.21797}
+
+\bibitem[\citeproctext]{ref-Fraser2013}
+Fraser, A., Macdonald-Wallis, C., Tilling, K., Boyd, A., Golding, J.,
+Davey Smith, G., Henderson, J., Macleod, J., Molloy, L., Ness, A., Ring,
+S., Nelson, S. M., \& Lawlor, D. A. (2013). Cohort profile: The avon
+longitudinal study of parents and children: ALSPAC mothers cohort
+{[}Journal Article{]}. \emph{Int J Epidemiol}, \emph{42}(1), 97--110.
+\url{https://doi.org/10.1093/ije/dys066}
+
+\bibitem[\citeproctext]{ref-Rcore2021}
+R Core Team. (2021). \emph{R: A language and environment for statistical
+computing} {[}Journal Article{]}. \url{https://www.R-project.org/}
+
+\bibitem[\citeproctext]{ref-RN243}
+Wiklund, P., Toss, F., Weinehall, L., Hallmans, G., Franks, P. W.,
+Nordstrom, A., \& Nordstrom, P. (2008). Abdominal and gynoid fat mass
+are associated with cardiovascular risk factors in men and women
+{[}Journal Article{]}. \emph{The Journal of Clinical Endocrinology \&
+Metabolism}, \emph{93}(11), 4360--4366.
+
+\end{CSLReferences}
+
+
+
+\end{document}

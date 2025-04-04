@@ -54,24 +54,13 @@ format:
   
   pdf:
     documentclass: scrreport # scrbook 
-    # mainfont: Bookman
-    # sansfont: Bookman
-    pagestyle: headings
+    keep-tex: true
     filters:
       - quarto
       - section-bibliographies  # Display refecerences after every chapter
     reference-section-title: References # TODO: References do displayed for unnambered chapters..?
     citeproc: true # false is recomented but does not work 
-    includes:
-      in_header: 'gt_packages.sty' # Esure gt tables are rendered properly
-    # Add index
-    # include-in-header: 
-    #   text: |
-    #     \usepackage{makeidx}
-    #     \makeindex
-    # include-after-body: 
-    #   text: |
-    #     \printindex
+    include-in-header: style_pdf.sty # Esure tables are rendered properly
   docx:
     reference-doc: style_doc.docx
      # Display refecerences after every chapter

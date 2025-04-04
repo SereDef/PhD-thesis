@@ -76,3 +76,19 @@ p {
 .quotify p {
   text-align: right !important;
 }
+
+//Tables
+.thesis_tbl .row_group {
+  background-color: lighten($theme-sand, 10%) !important;
+  padding-top: 8px !important; 
+  padding-bottom: 8px !important;
+  border-top-style: solid; 
+  border-top-width: 1px; 
+  border-top-color: $theme-sand; 
+  border-bottom-style: solid; 
+  border-bottom-width: 1px; 
+  border-bottom-color: $theme-sand; 
+  border-left-style: none; 
+  border-right-style: none; 
+  vertical-align: middle;
+}
