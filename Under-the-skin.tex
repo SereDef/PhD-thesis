@@ -251,7 +251,7 @@ invincible summer.''} Albert Camus -- Summer (1954)
 ~~~~~~Charlotte A.M. Cecil\\
 \strut ~~~~~~Janine F. Felix
 
-\begin{tcolorbox}[enhanced jigsaw, left=2mm, toprule=.15mm, colback=white, bottomtitle=1mm, coltitle=black, leftrule=.75mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Note}, arc=.35mm, opacityback=0, colframe=quarto-callout-note-color-frame, titlerule=0mm, toptitle=1mm, breakable, rightrule=.15mm, colbacktitle=quarto-callout-note-color!10!white, opacitybacktitle=0.6, bottomrule=.15mm]
+\begin{tcolorbox}[enhanced jigsaw, colframe=quarto-callout-note-color-frame, colback=white, breakable, toprule=.15mm, opacityback=0, coltitle=black, titlerule=0mm, colbacktitle=quarto-callout-note-color!10!white, rightrule=.15mm, bottomrule=.15mm, opacitybacktitle=0.6, bottomtitle=1mm, toptitle=1mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Note}, arc=.35mm, leftrule=.75mm, left=2mm]
 
 This is a work in progress. Stay tuned :)
 
@@ -277,7 +277,7 @@ Dear reader,
 
 oh my good why does this not update
 
-This an that (Fraser et al., 2013; R Core Team, 2021)
+This an that (Fraser et al., 2013; R Core Team, 2021a)
 
 See Chapter~\ref{sec-chapter1} for additional discussion.
 
@@ -342,20 +342,295 @@ associations may unfold over time.
 
 \section{Introduction}\label{introduction-1}
 
-In summary, this book has no content whatsoever (Elsenburg et al., 2017;
-Wiklund et al., 2008). But I shall write it anyway cause. Cause I kind
-of do have no choice so, checking justification works
+The co-occurrence of depression and obesity is a rising public health
+concern, affecting increasingly younger populations (Sutaria et al.,
+2019). Individuals with obesity are \textasciitilde30-40\% more likely
+to develop depression compared to the general population
+(Pereira-Miranda et al., 2017). In turn, depression also increases the
+risk of developing obesity (Pratt \& Brody, 2014) and related
+cardiometabolic disease (Hare et al., 2014). While the relationship
+between depression and adiposity is likely multifactorial and complex,
+the observed comorbidity between the two may be partially explained by
+shared environmental risk factors, such as exposure to stressful
+experiences early in life (Shonkoff et al., 2012).
+
+Indeed, early-life stress (ELS) is a well-established risk factor for
+both adult depression (Li et al., 2016) and obesity (Danese \& Tan,
+2014). In children and adolescents, ELS exposure in utero and
+postnatally (e.g., adverse childhood experiences) have been separately
+linked to preclinical manifestations of depression, such as
+internalizing problems (Cecil et al., 2017; Van den Bergh et al., 2020),
+and several adiposity measures (Burgueño et al., 2020; Elsenburg et al.,
+2017).
+
+Identifying critical exposure windows (i.e., prenatal vs postnatal) can
+provide important insights into the best timing for prevention and
+intervention programs, and shed light on the mechanisms through which
+stress may lead to disease (Hartman \& Belsky, 2018). However, very few
+studies prospectively investigated the influence of both pre- and
+postnatal stress on these outcomes, and, because stress shows continuity
+over time, it is unclear whether \emph{(a)} previously reported
+postnatal associations may partly reflect preceding prenatal exposures
+(i.e., prenatal ELS as confounder), and \emph{(b)} observed prenatal
+associations may be partly mediated by postnatal ELS (i.e., postnatal
+ELS as mediator).
+
+Further, existing studies have examined ELS associations with
+internalizing and adiposity either separately (Slopen et al., 2014) or
+as part of a broader ``multisystemic'' disease constructs (Juster et
+al., 2016). It remains unknown whether ELS represents a shared risk
+factor for comorbid emotional problems and adiposity. Establishing such
+association is important, since protocols for the integrated detection
+and management of these health conditions are lacking (Anwar et al.,
+2018), and differential patterns of ELS exposure may help identify
+subgroups of adolescents at higher risk for comorbidity.
+
+To address these gaps, we leveraged longitudinal data from two
+population-based prospective birth cohorts to examine \emph{(i)} how
+pre- and postnatal ELS (up to age 10 years) associate to internalizing
+symptoms and adiposity in early adolescence (i.e., at age 13 years),
+taking into account potential confounding and mediation effects; and
+\emph{(ii)} whether ELS accounts for comorbidity between internalizing
+problems and excess adiposity, above its contribution to each health
+outcome individually. Based on previous findings, we expect that both
+pre- and postnatal ELS prospectively associate with internalizing
+symptoms and adiposity, as well as their comorbidity. No a priori
+hypotheses were specified regarding the relative importance of pre- vs
+postnatal ELS.
 
 \section{Methods}\label{methods}
 
+This manuscript follows STROBE guidelines (Elm et al., 2008).
+
+\subsection{Participants}\label{participants}
+
+Our sample was drawn from two population-based cohorts: the Generation R
+Study (GenR), including 9,778 pregnant women in Rotterdam (the
+Netherlands), who delivered their babies between April 2002 and January
+2006 (Kooijman et al., 2016); and the Avon Longitudinal Study of Parents
+and Children (ALSPAC) involving 14,541 pregnant women in Avon (UK), with
+delivery dates between April 1991 and December 1992 (Boyd et al., 2013;
+Fraser et al., 2013). The
+\href{http://www.bristol.ac.uk/alspac/researchers/our-data/}{ALSPAC
+website} contains details of all the data that is available through a
+fully searchable data dictionary and variable search tool.
+
+Response rates at the 13 years follow-up were 64\% in GenR and 61\% in
+ALSPAC. Participants with \textgreater{} 50\% missing ELS variables in
+the pre- or postnatal period were excluded, as were all twins. In the
+case of non-twin siblings, only one was selected (see Figure S1,
+available online). The final sample included 4268 (GenR) and 8428
+(ALSPAC) children.
+
+\subsubsection{Ethical standards}\label{ethical-standards}
+
+Ethical approval was obtained from the medical ethical committee of
+Erasmus MC, University Medical Center Rotterdam and from the ALSPAC
+Ethics and Law Committee and the Local Research Ethics Committees.
+Written informed consent was obtained for all participants and both
+studies conform with the World Medical Association Declaration of
+Helsinki (2013).
+
+\subsection{Measures}\label{measures}
+
+\subsubsection{Prenatal and postnatal
+ELS}\label{prenatal-and-postnatal-els}
+
+The prenatal (i.e., maternal exposure during pregnancy) and postnatal
+(i.e.~from birth to 10 years) cumulative ELS scores comprise information
+about five stress domains in line with previous literature (Cecil et
+al., 2014; Rijlaarsdam et al., 2016): life events (e.g., death of a
+parent), contextual risk (e.g., financial difficulties), parental risk
+(e.g., parental psychopathology), interpersonal risk (e.g., family
+conflicts) and direct victimization (only postnatally, e.g.~maltreatment
+or bullying). Note that, consistent with other work using this measure
+(Schuurmans et al., 2022), we use the term ``postnatal'' (in contrast to
+``prenatal'') to encompass stressors experienced across childhood (i.e.,
+until the age of 10 years), rather than immediately following birth. A
+detailed description of the ELS scores is provided in online
+\textbf{Supplement 1} (see also the score's
+\href{https://github.com/SereDef/cumulative-ELS-score}{GitHub
+repository} for further details and scripts). Briefly,
+\textasciitilde100 stress items were selected from each cohort,
+dichotomized into no risk (=0) or risk (=1), and assigned to a domain
+based on expert knowledge (see Figure~\ref{fig-1.1} for an overview of
+included items). Within each domain, dichotomized risks were summed and
+divided by the number of items in the domain. Finally, domain scores
+were summed within periods to obtain prenatal and postnatal stress
+scores.
+
+\begin{figure}
+
+\centering{
+
+\includegraphics[width=1\textwidth,height=\textheight]{1.Chapter/F1_ELStime.pdf}
+
+}
+
+\caption{\label{fig-1.1}\textbf{Temporal structure of the prenatal and
+postnatal early-life stress (ELS) score}Note: The two graphs summarize
+the complex temporal structure of the prenatal (on the left) and
+postnatal (on the right) ELS scores. Time is depicted on the x-axis on
+the scale of weeks (gestation) for prenatal and years for postnatal
+items. For each question/item on the y-axis, a coloured dot represents
+the timepoint(s) at which the item was measured, and a grey shadow
+indicates the time period the question refers to (e.g., ``since
+pregnancy'' or ``in the last year''). Red dots and labels refer to
+ALSPAC items and blue dots/labels refer to Generation R items. Items are
+grouped by domain, as indicated by the background color (yellow for life
+events, red for contextual risk, blue for parental risk, green for
+interpersonal risk and purple for direct victimization). The solid black
+vertical line indicates the beginning of the exposure period of
+interest, i.e., conception (or start of pregnancy) for prenatal items
+and birth for postnatal items. The dashed grey lines additionally
+provide temporal markers, i.e., trimesters in the prenatal period and a
+span of 1 year in the postnatal period.}
+
+\end{figure}%
+
+\subsubsection{Internalizing symptoms}\label{internalizing-symptoms}
+
+Internalizing symptoms were measured at an average age of 13.5 years
+(range: 12.5-16.8 years) using the Child behavior checklist (CBCL 6-18)
+(Achenbach, 1999) in GenR and the Strengths and difficulties
+questionnaire (SDQ) (Goodman et al., 2000) in ALSPAC. Both instruments
+are well-validated parental reports of emotional and behavioral
+functioning referring to the past 6 months, and have been shown to be
+comparable (Goodman \& Scott, 1999). The CBCL internalizing subscale
+consists of 32 items rated on a 3-point scale, e.g., \emph{``my child
+feels worthless or inferior''}. The SDQ emotional problems subscale
+contains 5 items rated on a 3-point scale, e.g., \emph{``often unhappy,
+down-hearted or tearful''}.
+
+\subsubsection{Adiposity (fat mass)}\label{adiposity-fat-mass}
+
+Body composition was measured using a dual-energy X-ray absorptiometry
+(DXA) scanner at an average age of 13.5 years (range: 12.5-16.6 years).
+Technical details of these measurements are provided elsewhere (Boyd et
+al., 2013; Voortman et al., 2016). Fat mass percentage was calculated by
+dividing the total body fat mass (kg) by the weight (kg) and multiplying
+by 100. To explore the importance of body fat distribution, measurements
+of android fat mass were also extracted from DXA scans.
+
+\subsubsection{Comorbidity}\label{comorbidity}
+
+To compute psycho-cardiometabolic comorbidity, internalizing symptoms
+and fat mass percentage were first dichotomized into high versus
+low-moderate, based on a cohort-specific 80th percentile cut-off value.
+The dichotomized values were then used to assign children to four
+groups: ``healthy'' (both outcomes \textless80th percentile); ``high
+internalizing'' (internalizing \textgreater80th \& fat mass percentage
+≤80th); ``high adiposity'' (internalizing ≤80th \& fat mass percentage
+\textgreater80th); and ``comorbid'' (both outcomes \textgreater80th
+percentile). For additional information see Table~\ref{tbl-1.1} and
+online \textbf{Supplement 2}.
+
+\subsubsection{Covariates}\label{covariates}
+
+During pregnancy, mothers reported on their smoking status, alcohol
+consumption, and pre-pregnancy body mass index (BMI). Information about
+child sex and date of birth was extracted from registries. Ethnic
+background (only available for GenR children) was determined by
+questionnaire-based assessment of the country of origin of participants'
+parents. Following Statistics Netherlands' guidelines (Alders, 2001), if
+one of the parents was born abroad, the child's ethnicity was determined
+according to that parent. If both parents were born abroad, the child
+was classified according to the mother's birthplace. Six large national
+groups were identified (i.e., Cape Verdean, Dutch, Dutch Antillean,
+Moroccan, Surinamese, and Turkish). Smaller national groups were
+aggregated into five additional categories: ``Africa and Middle East'',
+``Asia and Oceania'', ``Europe'', ``Latin America'', and ``North
+America'' (\textbf{Figure S5}). See Table~\ref{tbl-1.1} and online
+\textbf{Supplement 3} for additional information on covariates
+measurement and distribution.
+
+\subsection{Statistical analysis}\label{statistical-analysis}
+
+Analyses were run separately in the two cohorts, using R version 4.0.3
+(R Core Team, 2021b) All scripts are available on the project
+\href{https://github.com/SereDef/association-ELS-PCM-project}{GitHub
+repository}. Missing values in the exposure, covariate and outcome
+variables were imputed by conditional multiple imputation (Van Buuren,
+2018) using 60 iterations and 30 imputed datasets (for a complete
+assessment of missing values and detailed imputation strategy see
+\textbf{Supplement 4} and \textbf{Table S1}, available online). Model
+parameters were fit in each imputed dataset and then pooled according to
+Rubin's rules. Pre- and postnatal stress, internalizing and adiposity
+were standardized using a z transformation. All statistical tests were
+two-sided and interpreted at a p-value significance threshold of 0.05.
+To account for multiple comparisons, false discovery rate (FDR)
+correction was applied.
+
+\subsubsection{Association of prenatal ELS with internalizing symptoms
+and
+adiposity}\label{association-of-prenatal-els-with-internalizing-symptoms-and-adiposity}
+
+For each continuous outcome (i.e., internalizing and adiposity), we
+performed a causal mediation analysis featuring prenatal stress as the
+exposure and postnatal stress as mediator (Wang \& Arah, 2015). The
+method is described in detail in online \textbf{Supplement 5}. In
+summary, the ``total'' effect of prenatal ELS on each outcome was
+decomposed into a direct (i.e., not due to postnatal ELS) and indirect
+pathway (i.e., acting through postnatal ELS), allowing us to quantify
+the direct and mediated contribution of prenatal stress.
+
+\subsubsection{Association of postnatal ELS with internalizing symptoms
+and
+adiposity}\label{association-of-postnatal-els-with-internalizing-symptoms-and-adiposity}
+
+For each continuous outcome, four multiple linear regression models were
+run: 1) baseline (covariate only) model; 2) prenatal stress + covariates
+model; 3) postnatal stress + covariates model; and 4) prenatal +
+postnatal stress + covariates model. The baseline model served as
+reference for the computation of R\textsubscript{inc}\^{}2; the prenatal
+model was used to ensure comparability of estimates between approaches.
+
+\subsubsection{Association of prenatal and postnatal ELS with
+comorbidity}\label{association-of-prenatal-and-postnatal-els-with-comorbidity}
+
+For the combined comorbidity outcome, two multinomial logistic
+regression models were performed, using the ``healthy'' group as
+reference, and pre-/postnatal stress as independent predictors. The odds
+ratios (OR) and 95\% confidence intervals (CI) of developing comorbidity
+were visually compared to those of developing high internalizing and
+high adiposity only, to determine whether pre-/postnatal stress
+influence comorbidity beyond either health problem alone.
+
+\subsubsection{Follow-up and sensitivity
+analyses}\label{follow-up-and-sensitivity-analyses}
+
+We examined effect modification by sex and by ethnic background - in
+GenR only, given its multi-ethnical composition (Kooijman et al., 2016).
+Additionally, to explore the relative contribution of different types of
+stress, three regression models (for internalizing, adiposity and
+comorbidity) were run including all 9 domain scores (4 prenatal and 5
+postnatal) as independent predictors.
+
+To assess the impact of the imputation procedure on our results, we ran
+the analyses in the subsample with complete outcome data (i.e., both
+internalizing and adiposity). Finally, we tested the stability of our
+results using android fat mass as an alternative measure of adiposity.
+
 \section{Results}\label{results}
+
+\subsection{Sample descriptives}\label{sample-descriptives}
+
+Sample characteristics were pooled across imputed datasets and
+summarized in Table~\ref{tbl-1.1}. Briefly, the ALSPAC sample included
+8428 (48\% male) children, whose mothers were 30\% highly educated
+(i.e., held a college or university degree). The GenR sample included
+4268 (52\% male) participants, 62\% of which were ``Dutch'' and 14\% had
+highly educated (i.e., ``higher, phase 2'') mothers. Pre- and postnatal
+ELS were moderately correlated (r = GenR: 0.56; ALSPAC: 0.48; see online
+Supplement 1), whereas the correlation between internalizing symptoms
+and adiposity was weak (r = GenR: 0.15; ALSPAC: 0.11).
 
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.5400}}
   >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.2300}}
   >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.2300}}@{}}
 
-\caption{\label{tbl-table1.1}My interesting caption.}
+\caption{\label{tbl-1.1}My interesting caption.}
 
 \tabularnewline
 
@@ -495,9 +770,291 @@ kg/m\textsuperscript{2} & 22.6 (14.4--50.2) & 22.1 (12.5--48.6) \\
 
 \end{longtable}
 
-See Table~\ref{tbl-table1.1} for desctiptives.
+\subsection{Associations of prenatal ELS with internalizing symptoms and
+adiposity}\label{associations-of-prenatal-els-with-internalizing-symptoms-and-adiposity}
+
+Results of the mediation analysis linking prenatal stress to
+internalizing and adiposity were highly consistent across cohorts (see
+Figure~\ref{fig-1.2} and online \textbf{Table S2}).
+
+About \textasciitilde60\% of the total effect (TE) of prenatal stress on
+internalizing symptoms (TE {[}95\%CI{]} = GenR: 0.27 {[}0.23;0.30{]};
+ALSPAC: 0.16 {[}0.13;0.18{]}) was mediated through postnatal stress
+(GenR: 0.16 {[}0.14;0.19{]}; ALSPAC: 0.10 {[}0.08;0.11{]}). The TE of
+prenatal stress on adiposity (GenR: 0.12 {[}0.09;0.15{]}; ALSPAC: 0.04
+{[}0.03;0.06{]}) was smaller compared to internalizing and largely
+(\textasciitilde70\%) operating via the direct pathway (GenR: 0.08
+{[}0.04;0.12{]}; ALSPAC: 0.03 {[}0.01;0.05{]}).
+
+\begin{figure}
+
+\centering{
+
+\includegraphics[width=1\textwidth,height=\textheight]{1.Chapter/F2_CMAres.pdf}
+
+}
+
+\caption{\label{fig-1.2}\textbf{Prenatal early-life stress (ELS)
+contribution (causal mediation analysis results)}Note: The causal
+estimates for the total effect (TE), natural direct (NDE) and natural
+indirect effect (NIE) of prenatal stress on internalizing symptoms (A.
+Generation R and B. ALSPAC) and adiposity (C. Generation R and D.
+ALSPAC) are displayed in the grey boxes. The percentage of the total
+effect due to direct and indirect pathway is reported between brackets
+and the respective p-values are marked in grey. The predominant path is
+highlighted with a thicker arrow. NDE = natural direct effect; NIE =
+natural indirect effect; TE = total effect.}
+
+\end{figure}%
+
+\subsection{Association of postnatal ELS with internalizing symptoms and
+adiposity}\label{association-of-postnatal-els-with-internalizing-symptoms-and-adiposity-1}
+
+Results of the hierarchical regressions examining the association of
+postnatal stress with internalizing and adiposity were also largely
+similar across cohorts (see Figure~\ref{fig-1.3}; online \textbf{Tables
+S3 and S4}).
+
+Higher postnatal stress associated with increased internalizing symptoms
+both before (\(\beta\) {[}95\%CI{]} = GenR: 0.33 {[}0.29;0.37{]};
+ALSPAC: 0.22 {[}0.19;0.25{]}) and after adjustment for prenatal stress
+(GenR: 0.27 {[}0.22;0.31{]}; ALSPAC: 0.19 {[}0.15;0.22{]}).
+
+Higher postnatal stress also associated with increased adiposity (GenR:
+0.10 {[}0.07;0.13{]}; ALSPAC: 0.03 {[}0.01;0.05{]}). The association
+remained after prenatal stress adjustment in GenR (0.07
+{[}0.03;0.11{]}), but not in ALSPAC (0.02 {[}0.00;0.05{]}).
+
+\begin{figure}
+
+\centering{
+
+\includegraphics[width=1\textwidth,height=\textheight]{1.Chapter/F3_regress.pdf}
+
+}
+
+\caption{\label{fig-1.3}\textbf{Postnatal early-life stress (ELS)
+contribution (hierarchical regression results)}Note: In each cohort (A.
+Generation R and B. ALSPAC), the standardized beta estimates of pre- and
+postnatal ELS (and their 95\% confidence intervals) are represented
+along the x-axis, using different color sets for internalizing symptoms
+(light and dark blue) and adiposity (yellow and orange). Estimates
+generated by the prenatal only model are presented on the first row and
+marked in lighter colours (i.e., light blue and yellow); these
+correspond to the TE displayed in Figure 2. Postnatal ELS beta
+estimates, before (round marker) and after (square marker) prenatal
+adjustment, are displayed in darker colors (blue and orange). For each
+model, the total and incremental R2 is reported in the legend below the
+graphs. The first number provides an indication of total model fit; the
+latter quantifies the increase in variance explained due to the
+introduction of the predictor (compared to the covariate only model).}
+
+\end{figure}%
+
+\subsection{Association of prenatal and postnatal ELS with
+comorbidity}\label{association-of-prenatal-and-postnatal-els-with-comorbidity-1}
+
+Higher stress in the prenatal (OR {[}95\%CI{]} = GenR: 2.13
+{[}1.84;2.47{]}; ALSPAC: 1.48 {[}1.28;1.71{]}) and postnatal periods
+(GenR: 2.37 {[}2.05;2.75{]}; ALSPAC: 1.61 {[}1.39;1.87{]}) was
+associated with higher odds of belonging to the comorbidity group
+compared to the healthy group (see Figure~\ref{fig-1.4} and online
+\textbf{Table S5}). This association was the strongest compared to all
+other (single-outcome) groups. However, the CIs of the comorbidity
+estimates did overlap with those of high internalizing only
+(Figure~\ref{fig-1.4} C and D).
+
+\begin{figure}
+
+\centering{
+
+\includegraphics[width=1\textwidth,height=\textheight]{1.Chapter/F4_comorb.pdf}
+
+}
+
+\caption{\label{fig-1.4}\textbf{Pre- and postnatal early-life stress
+(ELS) and psycho-cardiometabolic comorbidity}(A, B) Scatterplots of
+internalizing symptoms (on the x axis) and fat mass percentage (on the
+y-axis), for the Generation R (A) and ALSPAC (B) cohorts. The univariate
+distributions of both primary outcomes are shown on the respective axes,
+with darker shadow indicating the 80th percentile cut-off used in
+construction of the comorbidity variable. Colour indicates the assigned
+group (green = healthy; blue = high internalizing; yellow = high
+adiposity; red = comorbid). Group sizes (i.e., n and percent of the
+total cohort sample) were pooled across imputed datasets and reported on
+the right of each scatterplot.(C, D) Effect estimates for pre- and
+postnatal stress (and their 95\%CIs) on the odds ratio (OR) scale are
+represented along the x-axis, with different colours depending on the
+comparison they refer to (yellow = healthy vs.~high adiposity; blue =
+healthy vs.~high internalizing; red = healthy vs.~comorbid), in
+Generation R (C) and ALSPAC (D) children.}
+
+\end{figure}%
+
+\subsection{Follow-up analyses}\label{follow-up-analyses}
+
+\subsubsection{Interaction with sex and ethnic
+background}\label{interaction-with-sex-and-ethnic-background}
+
+After stratifying by sex, in GenR, the association between prenatal ELS
+and adiposity was larger in girls than in boys (\emph{Z}=1.89,
+\emph{p}=.029), whereas that of postnatal ELS was slightly larger in
+boys (\emph{Z}=-1.38, \emph{p}=.083). A similar pattern of associations
+was found in ALSPAC but with smaller magnitudes (see \textbf{Figures
+S2-S4} and \textbf{Tables S6-S9}, available online).
+
+In GenR, Cape Verdian and Dutch Antillean children experienced the
+highest cumulative prenatal and postnatal stress followed by Turkish,
+Surinamese and Moroccan children (\textbf{Figure S5-B}). We did not find
+evidence for a significant interaction between pre- or postnatal ELS and
+the examined ethnic background groups on any outcome of interest (i.e.,
+internalizing symptoms, adiposity or comorbidity; see \textbf{Table S10}
+and \textbf{Figure S5-C}, available online). Note however that the
+association between pre-/postnatal ELS and comorbidity in the ``North
+American'' group could not be estimated due to insufficient number of
+observations (i.e., comorbidity group size ≤ 5).
+
+\subsubsection{Contribution of specific stress
+domains}\label{contribution-of-specific-stress-domains}
+
+Across cohorts, internalizing symptoms were consistently associated with
+higher prenatal and postnatal parental risk (e.g., parental
+psychopathology), postnatal life events and direct victimization (see
+\textbf{Figure S6} and \textbf{Table S11}, available online). We found
+no consistent associations for adiposity. Only postnatal parental risk
+was consistently associated comorbidity status (vs.~healthy) across
+cohorts (see \textbf{Figure S7} and \textbf{Table S12}, available
+online).
+
+\subsubsection{Sensitivity analyses}\label{sensitivity-analyses}
+
+Restricting the analyses to participants with complete outcome data (n =
+GenR: 2749; ALSPAC: 4096) did not substantively change the reported
+findings (see \textbf{Figure S8} and \textbf{Tables S13-S15}, available
+online), nor did the use of android fat mass rather than fat mass
+percentage as a proxy of adiposity (see \textbf{Figure S9} and
+\textbf{Table S16}, available online). None of the main conclusions was
+impacted by FDR correction.
 
 \section{Discussion}\label{discussion}
+
+Our aim was to elucidate the role of ELS on adolescent internalizing
+problems and adiposity, as well as their comorbidity, based on
+prospective data from two population birth cohorts. We highlight two key
+findings. Firstly, exposure to cumulative stress is strongly associated
+with internalizing symptoms (especially postnatal ELS) and, to a lesser
+extent, with adiposity (especially prenatal ELS). Secondly, both pre-
+and postnatal stress associate with psycho-cardiometabolic comorbidity
+more strongly than to individual health outcomes.
+
+Our first objective was to disentangle the relative contribution of
+prenatal and postnatal stress exposure to adolescent internalizing
+symptoms and adiposity.
+
+We found that, although both pre- and postnatal ELS contribute to
+internalizing symptoms, the impact of postnatal stress is larger and it
+is not explained by prenatal confounding, while \textasciitilde60\% of
+the prenatal effect was mediated though postnatal stress. This finding
+aligns with previous studies investigating the contribution of prenatal
+and postnatal exposure to specific stressors (Clayborne et al., 2021;
+Plant et al., 2015), and holds promising clinical implications given
+that several aspects of the postnatal environment may be modifiable (Yap
+et al., 2016). In particular, parental risk factors (such as
+psychopathology), direct victimization (e.g., maltreatment) and life
+events emerged as independent predictors of internalizing symptoms in
+our exploratory analyses, indicating that these may represent important
+targets for intervention.
+
+To our knowledge, no study to date has explored such timing effects on
+adiposity or related outcomes. Here, we found that \textasciitilde70\%
+of the effect of prenatal stress on adiposity was ``direct'' (i.e., not
+mediated by postnatal stress); the effect of postnatal stress, both as
+mediator and as predictor in the adjusted models, was smaller and
+resulted statistically significant only in GenR. While it is important
+to note that the effect sizes observed in the adiposity models were
+markedly smaller than for internalizing symptoms, these findings provide
+some indication that fat accumulation processes could be particularly
+vulnerable to (stress-induced) alterations of the prenatal environment.
+This is in line with previous theoretical (Barker, 1998; Gluckman et
+al., 2008) and empirical (Entringer et al., 2012; Entringer, 2013)
+accounts showcasing the impact of stress and stress hormones during
+prenatal life on the programming of metabolic function and obesity risk.
+In our exploratory follow-up analyses, we additionally found some
+evidence that adiposity may be more strongly associated with prenatal
+stress in girls, versus postnatal stress in boys. However previous
+accounts of these sex differences are mixed (Murphy et al., 2017;
+Paternain et al., 2013), and differences in pubertal development may be
+an important confounding factor that was not accounted for in our
+analysis.
+
+It is also possible that stronger associations between postnatal ELS and
+adiposity will emerge later in development. Indeed, accumulating
+postnatal risks may influence biological (e.g., inflammatory and
+neuro-endocrine) and behavioral factors (e.g., diet and exercise) that
+in turn increase physical health burden, but this might become evident
+only later in life (Danese \& Tan, 2014; Elsenburg et al., 2017).
+
+Our second aim was to examine whether ELS relates to
+psycho-cardiometabolic comorbidity, as suggested by some theoretical
+accounts (Juster et al., 2016), but never explicitly investigated
+before. If comorbidity was a discrete stress-related pathophysiological
+process, then the effect of ELS on comorbidity would differ from the
+effect of ELS on mental and physical health separately. This expectation
+was partially confirmed by our data: ELS increased the risk of
+developing comorbidity compared to being healthy and this estimate was
+highest relative to all other groups. However, the overlap between CIs
+of the comorbidity and the internalizing-only estimate indicates that
+neither pre- nor postnatal stress levels were sufficient to predict
+whether a child will develop comorbidity vs.~internalizing problems
+alone. Notably, cross-sectional correlations between internalizing and
+adiposity at age 13 were small (and so were the comorbidity group
+sizes), which may partly explain these findings. However, comorbidity is
+known to increase with age (Barnett et al., 2012) and it is possible
+that pre- / postnatal stress may serve as better discriminators between
+comorbidity and internalizing problems in older samples, with higher
+comorbidity rates.
+
+This study has several important strengths. We analysed data from two
+large population-based cohorts with remarkably consistent results, which
+adds confidence to the robustness and generalizability of our findings.
+We used a longitudinal and comprehensive assessment of ELS, enabling us
+to quantify the relative contribution of pre- and postnatal exposure to
+a broad spectrum of stressors. We focused on two pre-clinical health
+markers which manifest in adolescence and may be important targets for
+early prevention. Also, the challenge of incomplete data and possible
+selection bias was thoroughly addressed by multiple imputation and
+sensitivity analyses. However, it is important to note that our measures
+of ELS and internalizing symptoms rely primarily on parent reports,
+which might have introduced information bias. Further, although several
+important confounders were taken into account, it will be important in
+the future to examine the role of other potential contributors,
+including (epi-)genetic influences (Inoue et al., 2022), pubertal
+status, disability/functional impairment and other behavioral factors
+(e.g., sleep, exercise, diet).
+
+In conclusion, current approaches to the prevention and management of
+depression and obesity have yielded limited success. We believe the
+adoption of an integrated, developmental framework is necessary to
+improve our understanding and set the stage for better detection and
+prevention of these disorders, both in isolation and in their comorbid
+form. We provide evidence that both pre- and postnatal ELS associate
+with adolescent internalizing symptoms (with prenatal \textless{}
+postnatal stress), adiposity (with prenatal \textgreater{} postnatal
+stress), and their comorbidity at age 13. While recommendations for how
+to best intervene when a higher psychosocial stress burden is identified
+are still at embryonic stage, one novel suggestion emerging from our
+findings is that prenatal stress may be an underrecognized factor for
+identifying children at higher risk of overweight. We would therefore
+advice clinicians to enquire about prenatal stress exposure as part of
+routine pediatric assessments, so that adequate monitoring and lifestyle
+preventative measures can be introduced as early as infancy.
+
+Finally, as we follow these children, it will be informative to see how
+these associations evolve over time. For instance, the association
+between ELS exposure and adiposity-related outcomes may not emerge fully
+until adulthood and it is possible that the nature of the relation
+between ELS and comorbidity also differs as a function of developmental
+stage.
 
 \section*{References}\label{references-1}
 \addcontentsline{toc}{section}{References}
@@ -506,19 +1063,288 @@ See Table~\ref{tbl-table1.1} for desctiptives.
 
 \phantomsection\label{refs--1}
 \begin{CSLReferences}{1}{0}
-\bibitem[\citeproctext]{ref-RN225}
+\bibitem[\citeproctext]{ref-Achenbach1999}
+Achenbach, T. M. (1999). The child behavior checklist and related
+instruments {[}Book Section{]}. In \emph{The use of psychological
+testing for treatment planning and outcomes assessment, 2nd ed.} (pp.
+429--466). Lawrence Erlbaum Associates Publishers.
+
+\bibitem[\citeproctext]{ref-Alders2001}
+Alders, M. (2001). \emph{Classification of the population with a foreign
+background in the netherlands} {[}Journal Article{]}.
+
+\bibitem[\citeproctext]{ref-Anwar2018}
+Anwar, N., Kuppili, P. P., \& Balhara, Y. P. S. (2018). Depression and
+physical noncommunicable diseases: The need for an integrated approach
+{[}Journal Article{]}. \emph{WHO South-East Asia Journal of Public
+Health}, \emph{6}(1), 12--17.
+
+\bibitem[\citeproctext]{ref-Barker1998}
+Barker, D. J. (1998). In utero programming of chronic disease {[}Journal
+Article{]}. \emph{Clinical Science (London, England: 1979)},
+\emph{95}(2), 115--128.
+
+\bibitem[\citeproctext]{ref-Barnett2012}
+Barnett, K., Mercer, S. W., Norbury, M., Watt, G., Wyke, S., \& Guthrie,
+B. (2012). Epidemiology of multimorbidity and implications for health
+care, research, and medical education: A cross-sectional study
+{[}Journal Article{]}. \emph{The Lancet}, \emph{380}(9836), 37--43.
+\url{https://doi.org/10.1016/S0140-6736(12)60240-2}
+
+\bibitem[\citeproctext]{ref-Boyd2013}
+Boyd, A., Golding, J., Macleod, J., Lawlor, D. A., Fraser, A.,
+Henderson, J., Molloy, L., Ness, A., Ring, S., \& Davey Smith, G.
+(2013). Cohort profile: The 'children of the 90s'---the index offspring
+of the avon longitudinal study of parents and children {[}Journal
+Article{]}. \emph{International Journal of Epidemiology}, \emph{42}(1),
+111--127. \url{https://doi.org/10.1093/ije/dys064}
+
+\bibitem[\citeproctext]{ref-Burgueuxf1o2020}
+Burgueño, A. L., Juarez, Y. R., Genaro, A. M., \& Tellechea, M. L.
+(2020). Systematic review and meta-analysis on the relationship between
+prenatal stress and metabolic syndrome intermediate phenotypes
+{[}Journal Article{]}. \emph{International Journal of Obesity},
+\emph{44}(1), 1--12. \url{https://doi.org/10.1038/s41366-019-0423-z}
+
+\bibitem[\citeproctext]{ref-Cecil2014}
+Cecil, C. A., Lysenko, L. J., Jaffee, S. R., Pingault, J. B., Smith, R.
+G., Relton, C. L., Woodward, G., McArdle, W., Mill, J., \& Barker, E. D.
+(2014). Environmental risk, oxytocin receptor gene (OXTR) methylation
+and youth callous-unemotional traits: A 13-year longitudinal study
+{[}Journal Article{]}. \emph{Mol Psychiatry}, \emph{19}(10), 1071--1077.
+\url{https://doi.org/10.1038/mp.2014.95}
+
+\bibitem[\citeproctext]{ref-Cecil2017}
+Cecil, C. A., Viding, E., Fearon, P., Glaser, D., \& McCrory, E. J.
+(2017). Disentangling the mental health impact of childhood abuse and
+neglect {[}Journal Article{]}. \emph{Child Abuse \& Neglect}, \emph{63},
+106--119. \url{https://doi.org/10.1016/j.chiabu.2016.11.024}
+
+\bibitem[\citeproctext]{ref-Clayborne2021}
+Clayborne, Z. M., Nilsen, W., Torvik, F. A., Gustavson, K., Bekkhus, M.,
+Gilman, S. E., Khandaker, G. M., Fell, D. B., \& Colman, I. (2021).
+Prenatal maternal stress, child internalizing and externalizing
+symptoms, and the moderating role of parenting: Findings from the
+norwegian mother, father, and child cohort study {[}Journal Article{]}.
+\emph{Psychological Medicine}, 1--11.
+\url{https://doi.org/10.1017/S0033291721004311}
+
+\bibitem[\citeproctext]{ref-Danese2014}
+Danese, A., \& Tan, M. (2014). Childhood maltreatment and obesity:
+Systematic review and meta-analysis {[}Journal Article{]}. \emph{Mol
+Psychiatry}, \emph{19}(5), 544--554.
+\url{https://doi.org/10.1038/mp.2013.54}
+
+\bibitem[\citeproctext]{ref-vonElm2008}
+Elm, E. von, Altman, D. G., Egger, M., Pocock, S. J., Gøtzsche, P. C.,
+\& Vandenbroucke, J. P. (2008). The strengthening the reporting of
+observational studies in epidemiology (STROBE) statement: Guidelines for
+reporting observational studies {[}Journal Article{]}. \emph{J Clin
+Epidemiol}, \emph{61}(4), 344--349.
+\url{https://doi.org/10.1016/j.jclinepi.2007.11.008}
+
+\bibitem[\citeproctext]{ref-Elsenburg2017}
 Elsenburg, L. K., Wijk, K. J. E. van, Liefbroer, A. C., \& Smidt, N.
 (2017). Accumulation of adverse childhood events and overweight in
 children: A systematic review and meta-analysis {[}Journal Article{]}.
 \emph{Obesity (Silver Spring)}, \emph{25}(5), 820--832.
 \url{https://doi.org/10.1002/oby.21797}
 
-\bibitem[\citeproctext]{ref-RN243}
-Wiklund, P., Toss, F., Weinehall, L., Hallmans, G., Franks, P. W.,
-Nordstrom, A., \& Nordstrom, P. (2008). Abdominal and gynoid fat mass
-are associated with cardiovascular risk factors in men and women
-{[}Journal Article{]}. \emph{The Journal of Clinical Endocrinology \&
-Metabolism}, \emph{93}(11), 4360--4366.
+\bibitem[\citeproctext]{ref-Entringer2013}
+Entringer, S. (2013). Impact of stress and stress physiology during
+pregnancy on child metabolic function and obesity risk {[}Journal
+Article{]}. \emph{Current Opinion in Clinical Nutrition and Metabolic
+Care}, \emph{16}(3), 320--327.
+\url{https://doi.org/10.1097/MCO.0b013e32835e8d80}
+
+\bibitem[\citeproctext]{ref-Entringer2012}
+Entringer, S., Buss, C., Swanson, J. M., Cooper, D. M., Wing, D. A.,
+Waffarn, F., \& Wadhwa, P. D. (2012). Fetal programming of body
+composition, obesity, and metabolic function: The role of intrauterine
+stress and stress biology {[}Journal Article{]}. \emph{J Nutr Metab},
+\emph{2012}, 632548. \url{https://doi.org/10.1155/2012/632548}
+
+\bibitem[\citeproctext]{ref-Fraser2013}
+Fraser, A., Macdonald-Wallis, C., Tilling, K., Boyd, A., Golding, J.,
+Davey Smith, G., Henderson, J., Macleod, J., Molloy, L., Ness, A., Ring,
+S., Nelson, S. M., \& Lawlor, D. A. (2013). Cohort profile: The avon
+longitudinal study of parents and children: ALSPAC mothers cohort
+{[}Journal Article{]}. \emph{Int J Epidemiol}, \emph{42}(1), 97--110.
+\url{https://doi.org/10.1093/ije/dys066}
+
+\bibitem[\citeproctext]{ref-Gluckman2008}
+Gluckman, P. D., Hanson, M. A., Cooper, C., \& Thornburg, K. L. (2008).
+Effect of in utero and early-life conditions on adult health and disease
+{[}Journal Article{]}. \emph{New England Journal of Medicine},
+\emph{359}(1), 61--73.
+
+\bibitem[\citeproctext]{ref-Goodman2000}
+Goodman, R., Ford, T., Richards, H., Gatward, R., \& Meltzer, H. (2000).
+The development and well-being assessment: Description and initial
+validation of an integrated assessment of child and adolescent
+psychopathology {[}Journal Article{]}. \emph{J Child Psychol
+Psychiatry}, \emph{41}(5), 645--655.
+
+\bibitem[\citeproctext]{ref-Goodman1999}
+Goodman, R., \& Scott, S. (1999). Comparing the strengths and
+difficulties questionnaire and the child behavior checklist: Is small
+beautiful? {[}Journal Article{]}. \emph{Journal of Abnormal Child
+Psychology}, \emph{27}(1), 17--24.
+\url{https://doi.org/10.1023/A:1022658222914}
+
+\bibitem[\citeproctext]{ref-Hare2014}
+Hare, D. L., Toukhsati, S. R., Johansson, P., \& Jaarsma, T. (2014).
+Depression and cardiovascular disease: A clinical review {[}Journal
+Article{]}. \emph{Eur Heart J}, \emph{35}(21), 1365--1372.
+\url{https://doi.org/10.1093/eurheartj/eht462}
+
+\bibitem[\citeproctext]{ref-Hartman2018}
+Hartman, S., \& Belsky, J. (2018). Prenatal programming of postnatal
+plasticity revisited-and extended {[}Journal Article{]}. \emph{Dev
+Psychopathol}, \emph{30}(3), 825--842.
+\url{https://doi.org/10.1017/s0954579418000548}
+
+\bibitem[\citeproctext]{ref-Inoue2022}
+Inoue, Y., Graff, M., Howard, A. G., Highland, H. M., Young, K. L.,
+Harris, K. M., North, K. E., Li, Y., Duan, Q., \& Gordon-Larsen, P.
+(2022). Do adverse childhood experiences and genetic obesity risk
+interact in relation to body mass index in young adulthood? Findings
+from the national longitudinal study of adolescent to adult health
+{[}Journal Article{]}. \emph{Pediatr Obes}, \emph{17}(6), e12885.
+\url{https://doi.org/10.1111/ijpo.12885}
+
+\bibitem[\citeproctext]{ref-Juster2016}
+Juster, R. P., Russell, J. J., Almeida, D., \& Picard, M. (2016).
+Allostatic load and comorbidities: A mitochondrial, epigenetic, and
+evolutionary perspective {[}Journal Article{]}. \emph{Dev Psychopathol},
+\emph{28}(4pt1), 1117--1146.
+\url{https://doi.org/10.1017/s0954579416000730}
+
+\bibitem[\citeproctext]{ref-Kooijman2016}
+Kooijman, M. N., Kruithof, C. J., Duijn, C. M. van, Duijts, L., Franco,
+O. H., Ijzendoorn, M. H. van, Jongste, J. C. de, Klaver, C. C. W., Lugt,
+A. van der, Mackenbach, J. P., Moll, H. A., Peeters, R. P., Raat, H.,
+Rings, E. H. H. M., Rivadeneira, F., Schroeff, M. P. van der, Steegers,
+E. A. P., Tiemeier, H., Uitterlinden, A. G., \ldots{} Jaddoe, V. W. V.
+(2016). The generation r study: Design and cohort update 2017 {[}Journal
+Article{]}. \emph{European Journal of Epidemiology}, \emph{31}(12),
+1243--1264. \url{https://doi.org/10.1007/s10654-016-0224-9}
+
+\bibitem[\citeproctext]{ref-Li2016}
+Li, M., D'Arcy, C., \& Meng, X. (2016). Maltreatment in childhood
+substantially increases the risk of adult depression and anxiety in
+prospective cohort studies: Systematic review, meta-analysis, and
+proportional attributable fractions {[}Journal Article{]}. \emph{Psychol
+Med}, \emph{46}(4), 717--730.
+\url{https://doi.org/10.1017/s0033291715002743}
+
+\bibitem[\citeproctext]{ref-Murphy2017}
+Murphy, M. O., Cohn, D. M., \& Loria, A. S. (2017). Developmental
+origins of cardiovascular disease: Impact of early life stress in humans
+and rodents {[}Journal Article{]}. \emph{Neurosci Biobehav Rev},
+\emph{74}(Pt B), 453--465.
+\url{https://doi.org/10.1016/j.neubiorev.2016.07.018}
+
+\bibitem[\citeproctext]{ref-Paternain2013}
+Paternain, L., De La Garza, A., Batlle, M., Milagro, F., Martinez, J.
+A., \& Campion, J. (2013). Prenatal stress increases the obesogenic
+effects of a high-fat-sucrose diet in adult rats in a sex-specific
+manner {[}Journal Article{]}. \emph{Stress}, \emph{16}(2), 220--232.
+
+\bibitem[\citeproctext]{ref-Pereira-Miranda2017}
+Pereira-Miranda, E., Costa, P. R. F., Queiroz, V. A. O., Pereira-Santos,
+M., Santana, M. L. P., \& Santana, M. L. P. (2017). Overweight and
+obesity associated with higher depression prevalence in adults: A
+systematic review and meta-analysis {[}Journal Article{]}. \emph{J Am
+Coll Nutr}, \emph{36}(3), 223--233.
+\url{https://doi.org/10.1080/07315724.2016.1261053}
+
+\bibitem[\citeproctext]{ref-Plant2015}
+Plant, D. T., Pariante, C. M., Sharp, D., \& Pawlby, S. (2015). Maternal
+depression during pregnancy and offspring depression in adulthood: Role
+of child maltreatment {[}Journal Article{]}. \emph{Br J Psychiatry},
+\emph{207}(3), 213--220. \url{https://doi.org/10.1192/bjp.bp.114.156620}
+
+\bibitem[\citeproctext]{ref-Pratt2014}
+Pratt, L. A., \& Brody, D. J. (2014). Depression and obesity in the u.s.
+Adult household population, 2005-2010 {[}Journal Article{]}. \emph{NCHS
+Data Brief}, \emph{167}, 1--8.
+
+\bibitem[\citeproctext]{ref-R2021}
+R Core Team. (2021). \emph{R: A language and environment for statistical
+computing} {[}Journal Article{]}. \url{https://www.R-project.org/}
+
+\bibitem[\citeproctext]{ref-Rijlaarsdam2016}
+Rijlaarsdam, J., Pappa, I., Walton, E., Bakermans-Kranenburg, M. J.,
+Mileva-Seitz, V. R., Rippe, R. C., Roza, S. J., Jaddoe, V. W., Verhulst,
+F. C., Felix, J. F., Cecil, C. A., Relton, C. L., Gaunt, T. R., McArdle,
+W., Mill, J., Barker, E. D., Tiemeier, H., \& van, Ij. M. H. (2016). An
+epigenome-wide association meta-analysis of prenatal maternal stress in
+neonates: A model approach for replication {[}Journal Article{]}.
+\emph{Epigenetics}, \emph{11}(2), 140--149.
+\url{https://doi.org/10.1080/15592294.2016.1145329}
+
+\bibitem[\citeproctext]{ref-Schuurmans2022}
+Schuurmans, I. K., Luik, A. I., Maat, D. A. de, Hillegers, M. H. J.,
+Ikram, M. A., \& Cecil, C. A. M. (2022). The association of early life
+stress with IQ-achievement discrepancy in children: A population-based
+study {[}Journal Article{]}. \emph{Child Development}, \emph{93}(6),
+1837--1847. \url{https://doi.org/10.1111/cdev.13825}
+
+\bibitem[\citeproctext]{ref-Shonkoff2012}
+Shonkoff, J. P., Garner, A. S., Siegel, B. S., Dobbins, M. I., Earls, M.
+F., Garner, A. S., McGuinn, L., Pascoe, J., \& Wood, D. L. (2012). The
+lifelong effects of early childhood adversity and toxic stress
+{[}Journal Article{]}. \emph{Pediatrics}, \emph{129}(1), e232--e246.
+\url{https://doi.org/10.1542/peds.2011-2663}
+
+\bibitem[\citeproctext]{ref-Slopen2014}
+Slopen, N., Koenen, K. C., \& Kubzansky, L. D. (2014). Cumulative
+adversity in childhood and emergent risk factors for long-term health
+{[}Journal Article{]}. \emph{J Pediatr}, \emph{164}(3), 631-8.e1-2.
+\url{https://doi.org/10.1016/j.jpeds.2013.11.003}
+
+\bibitem[\citeproctext]{ref-Sutaria2019}
+Sutaria, S., Devakumar, D., Yasuda, S. S., Das, S., \& Saxena, S.
+(2019). Is obesity associated with depression in children? Systematic
+review and meta-analysis {[}Journal Article{]}. \emph{Archives of
+Disease in Childhood}, \emph{104}(1), 64--74.
+\url{https://doi.org/10.1136/archdischild-2017-314608}
+
+\bibitem[\citeproctext]{ref-vanBuuren2018}
+Van Buuren, S. (2018). \emph{Flexible imputation of missing data} (2nd
+ed.). Chapman; Hall/CRC. \url{https://doi.org/10.1201/9780429492259}
+
+\bibitem[\citeproctext]{ref-VandenBergh2020}
+Van den Bergh, B. R. H., Heuvel, M. I. van den, Lahti, M., Braeken, M.,
+Rooij, S. R. de, Entringer, S., Hoyer, D., Roseboom, T., Räikkönen, K.,
+King, S., \& Schwab, M. (2020). Prenatal developmental origins of
+behavior and mental health: The influence of maternal stress in
+pregnancy {[}Journal Article{]}. \emph{Neurosci Biobehav Rev},
+\emph{117}, 26--64.
+\url{https://doi.org/10.1016/j.neubiorev.2017.07.003}
+
+\bibitem[\citeproctext]{ref-Voortman2016}
+Voortman, T., Leermakers, E. T. M., Franco, O. H., Jaddoe, V. W. V.,
+Moll, H. A., Hofman, A., Hooven, E. H. van den, \& Kiefte-de Jong, J. C.
+(2016). A priori and a posteriori dietary patterns at the age of 1~year
+and body composition at the age of 6~years: The generation r study
+{[}Journal Article{]}. \emph{European Journal of Epidemiology},
+\emph{31}(8), 775--783. \url{https://doi.org/10.1007/s10654-016-0179-x}
+
+\bibitem[\citeproctext]{ref-Wang2015}
+Wang, A., \& Arah, O. A. (2015). G-computation demonstration in causal
+mediation analysis {[}Journal Article{]}. \emph{Eur J Epidemiol},
+\emph{30}(10), 1119--1127.
+\url{https://doi.org/10.1007/s10654-015-0100-z}
+
+\bibitem[\citeproctext]{ref-Yap2016}
+Yap, M. B. H., Morgan, A. J., Cairns, K., Jorm, A. F., Hetrick, S. E.,
+\& Merry, S. (2016). Parents in prevention: A meta-analysis of
+randomized controlled trials of parenting interventions to prevent
+internalizing problems in children from birth to age 18 {[}Journal
+Article{]}. \emph{Clinical Psychology Review}, \emph{50}, 138--158.
+\url{https://doi.org/10.1016/j.cpr.2016.10.003}
 
 \end{CSLReferences}
 
@@ -761,6 +1587,34 @@ longitudinal study of parents and children: ALSPAC mothers cohort
 
 \phantomsection\label{refs}
 \begin{CSLReferences}{1}{0}
+\bibitem[\citeproctext]{ref-Achenbach1999}
+Achenbach, T. M. (1999). The child behavior checklist and related
+instruments {[}Book Section{]}. In \emph{The use of psychological
+testing for treatment planning and outcomes assessment, 2nd ed.} (pp.
+429--466). Lawrence Erlbaum Associates Publishers.
+
+\bibitem[\citeproctext]{ref-Alders2001}
+Alders, M. (2001). \emph{Classification of the population with a foreign
+background in the netherlands} {[}Journal Article{]}.
+
+\bibitem[\citeproctext]{ref-Anwar2018}
+Anwar, N., Kuppili, P. P., \& Balhara, Y. P. S. (2018). Depression and
+physical noncommunicable diseases: The need for an integrated approach
+{[}Journal Article{]}. \emph{WHO South-East Asia Journal of Public
+Health}, \emph{6}(1), 12--17.
+
+\bibitem[\citeproctext]{ref-Barker1998}
+Barker, D. J. (1998). In utero programming of chronic disease {[}Journal
+Article{]}. \emph{Clinical Science (London, England: 1979)},
+\emph{95}(2), 115--128.
+
+\bibitem[\citeproctext]{ref-Barnett2012}
+Barnett, K., Mercer, S. W., Norbury, M., Watt, G., Wyke, S., \& Guthrie,
+B. (2012). Epidemiology of multimorbidity and implications for health
+care, research, and medical education: A cross-sectional study
+{[}Journal Article{]}. \emph{The Lancet}, \emph{380}(9836), 37--43.
+\url{https://doi.org/10.1016/S0140-6736(12)60240-2}
+
 \bibitem[\citeproctext]{ref-Boyd2012}
 Boyd, A., Golding, J., Macleod, J., Lawlor, D. A., Fraser, A.,
 Henderson, J., Molloy, L., Ness, A., Ring, S., \& Davey Smith, G.
@@ -769,12 +1623,78 @@ of the avon longitudinal study of parents and children {[}Journal
 Article{]}. \emph{International Journal of Epidemiology}, \emph{42}(1),
 111--127. \url{https://doi.org/10.1093/ije/dys064}
 
-\bibitem[\citeproctext]{ref-RN225}
+\bibitem[\citeproctext]{ref-Boyd2013}
+Boyd, A., Golding, J., Macleod, J., Lawlor, D. A., Fraser, A.,
+Henderson, J., Molloy, L., Ness, A., Ring, S., \& Davey Smith, G.
+(2013). Cohort profile: The 'children of the 90s'---the index offspring
+of the avon longitudinal study of parents and children {[}Journal
+Article{]}. \emph{International Journal of Epidemiology}, \emph{42}(1),
+111--127. \url{https://doi.org/10.1093/ije/dys064}
+
+\bibitem[\citeproctext]{ref-Burgueuxf1o2020}
+Burgueño, A. L., Juarez, Y. R., Genaro, A. M., \& Tellechea, M. L.
+(2020). Systematic review and meta-analysis on the relationship between
+prenatal stress and metabolic syndrome intermediate phenotypes
+{[}Journal Article{]}. \emph{International Journal of Obesity},
+\emph{44}(1), 1--12. \url{https://doi.org/10.1038/s41366-019-0423-z}
+
+\bibitem[\citeproctext]{ref-Cecil2014}
+Cecil, C. A., Lysenko, L. J., Jaffee, S. R., Pingault, J. B., Smith, R.
+G., Relton, C. L., Woodward, G., McArdle, W., Mill, J., \& Barker, E. D.
+(2014). Environmental risk, oxytocin receptor gene (OXTR) methylation
+and youth callous-unemotional traits: A 13-year longitudinal study
+{[}Journal Article{]}. \emph{Mol Psychiatry}, \emph{19}(10), 1071--1077.
+\url{https://doi.org/10.1038/mp.2014.95}
+
+\bibitem[\citeproctext]{ref-Cecil2017}
+Cecil, C. A., Viding, E., Fearon, P., Glaser, D., \& McCrory, E. J.
+(2017). Disentangling the mental health impact of childhood abuse and
+neglect {[}Journal Article{]}. \emph{Child Abuse \& Neglect}, \emph{63},
+106--119. \url{https://doi.org/10.1016/j.chiabu.2016.11.024}
+
+\bibitem[\citeproctext]{ref-Clayborne2021}
+Clayborne, Z. M., Nilsen, W., Torvik, F. A., Gustavson, K., Bekkhus, M.,
+Gilman, S. E., Khandaker, G. M., Fell, D. B., \& Colman, I. (2021).
+Prenatal maternal stress, child internalizing and externalizing
+symptoms, and the moderating role of parenting: Findings from the
+norwegian mother, father, and child cohort study {[}Journal Article{]}.
+\emph{Psychological Medicine}, 1--11.
+\url{https://doi.org/10.1017/S0033291721004311}
+
+\bibitem[\citeproctext]{ref-Danese2014}
+Danese, A., \& Tan, M. (2014). Childhood maltreatment and obesity:
+Systematic review and meta-analysis {[}Journal Article{]}. \emph{Mol
+Psychiatry}, \emph{19}(5), 544--554.
+\url{https://doi.org/10.1038/mp.2013.54}
+
+\bibitem[\citeproctext]{ref-vonElm2008}
+Elm, E. von, Altman, D. G., Egger, M., Pocock, S. J., Gøtzsche, P. C.,
+\& Vandenbroucke, J. P. (2008). The strengthening the reporting of
+observational studies in epidemiology (STROBE) statement: Guidelines for
+reporting observational studies {[}Journal Article{]}. \emph{J Clin
+Epidemiol}, \emph{61}(4), 344--349.
+\url{https://doi.org/10.1016/j.jclinepi.2007.11.008}
+
+\bibitem[\citeproctext]{ref-Elsenburg2017}
 Elsenburg, L. K., Wijk, K. J. E. van, Liefbroer, A. C., \& Smidt, N.
 (2017). Accumulation of adverse childhood events and overweight in
 children: A systematic review and meta-analysis {[}Journal Article{]}.
 \emph{Obesity (Silver Spring)}, \emph{25}(5), 820--832.
 \url{https://doi.org/10.1002/oby.21797}
+
+\bibitem[\citeproctext]{ref-Entringer2013}
+Entringer, S. (2013). Impact of stress and stress physiology during
+pregnancy on child metabolic function and obesity risk {[}Journal
+Article{]}. \emph{Current Opinion in Clinical Nutrition and Metabolic
+Care}, \emph{16}(3), 320--327.
+\url{https://doi.org/10.1097/MCO.0b013e32835e8d80}
+
+\bibitem[\citeproctext]{ref-Entringer2012}
+Entringer, S., Buss, C., Swanson, J. M., Cooper, D. M., Wing, D. A.,
+Waffarn, F., \& Wadhwa, P. D. (2012). Fetal programming of body
+composition, obesity, and metabolic function: The role of intrauterine
+stress and stress biology {[}Journal Article{]}. \emph{J Nutr Metab},
+\emph{2012}, 632548. \url{https://doi.org/10.1155/2012/632548}
 
 \bibitem[\citeproctext]{ref-Fraser2013}
 Fraser, A., Macdonald-Wallis, C., Tilling, K., Boyd, A., Golding, J.,
@@ -784,16 +1704,185 @@ longitudinal study of parents and children: ALSPAC mothers cohort
 {[}Journal Article{]}. \emph{Int J Epidemiol}, \emph{42}(1), 97--110.
 \url{https://doi.org/10.1093/ije/dys066}
 
-\bibitem[\citeproctext]{ref-Rcore2021}
-R Core Team. (2021). \emph{R: A language and environment for statistical
-computing} {[}Journal Article{]}. \url{https://www.R-project.org/}
+\bibitem[\citeproctext]{ref-Gluckman2008}
+Gluckman, P. D., Hanson, M. A., Cooper, C., \& Thornburg, K. L. (2008).
+Effect of in utero and early-life conditions on adult health and disease
+{[}Journal Article{]}. \emph{New England Journal of Medicine},
+\emph{359}(1), 61--73.
 
-\bibitem[\citeproctext]{ref-RN243}
-Wiklund, P., Toss, F., Weinehall, L., Hallmans, G., Franks, P. W.,
-Nordstrom, A., \& Nordstrom, P. (2008). Abdominal and gynoid fat mass
-are associated with cardiovascular risk factors in men and women
-{[}Journal Article{]}. \emph{The Journal of Clinical Endocrinology \&
-Metabolism}, \emph{93}(11), 4360--4366.
+\bibitem[\citeproctext]{ref-Goodman2000}
+Goodman, R., Ford, T., Richards, H., Gatward, R., \& Meltzer, H. (2000).
+The development and well-being assessment: Description and initial
+validation of an integrated assessment of child and adolescent
+psychopathology {[}Journal Article{]}. \emph{J Child Psychol
+Psychiatry}, \emph{41}(5), 645--655.
+
+\bibitem[\citeproctext]{ref-Goodman1999}
+Goodman, R., \& Scott, S. (1999). Comparing the strengths and
+difficulties questionnaire and the child behavior checklist: Is small
+beautiful? {[}Journal Article{]}. \emph{Journal of Abnormal Child
+Psychology}, \emph{27}(1), 17--24.
+\url{https://doi.org/10.1023/A:1022658222914}
+
+\bibitem[\citeproctext]{ref-Hare2014}
+Hare, D. L., Toukhsati, S. R., Johansson, P., \& Jaarsma, T. (2014).
+Depression and cardiovascular disease: A clinical review {[}Journal
+Article{]}. \emph{Eur Heart J}, \emph{35}(21), 1365--1372.
+\url{https://doi.org/10.1093/eurheartj/eht462}
+
+\bibitem[\citeproctext]{ref-Hartman2018}
+Hartman, S., \& Belsky, J. (2018). Prenatal programming of postnatal
+plasticity revisited-and extended {[}Journal Article{]}. \emph{Dev
+Psychopathol}, \emph{30}(3), 825--842.
+\url{https://doi.org/10.1017/s0954579418000548}
+
+\bibitem[\citeproctext]{ref-Inoue2022}
+Inoue, Y., Graff, M., Howard, A. G., Highland, H. M., Young, K. L.,
+Harris, K. M., North, K. E., Li, Y., Duan, Q., \& Gordon-Larsen, P.
+(2022). Do adverse childhood experiences and genetic obesity risk
+interact in relation to body mass index in young adulthood? Findings
+from the national longitudinal study of adolescent to adult health
+{[}Journal Article{]}. \emph{Pediatr Obes}, \emph{17}(6), e12885.
+\url{https://doi.org/10.1111/ijpo.12885}
+
+\bibitem[\citeproctext]{ref-Juster2016}
+Juster, R. P., Russell, J. J., Almeida, D., \& Picard, M. (2016).
+Allostatic load and comorbidities: A mitochondrial, epigenetic, and
+evolutionary perspective {[}Journal Article{]}. \emph{Dev Psychopathol},
+\emph{28}(4pt1), 1117--1146.
+\url{https://doi.org/10.1017/s0954579416000730}
+
+\bibitem[\citeproctext]{ref-Kooijman2016}
+Kooijman, M. N., Kruithof, C. J., Duijn, C. M. van, Duijts, L., Franco,
+O. H., Ijzendoorn, M. H. van, Jongste, J. C. de, Klaver, C. C. W., Lugt,
+A. van der, Mackenbach, J. P., Moll, H. A., Peeters, R. P., Raat, H.,
+Rings, E. H. H. M., Rivadeneira, F., Schroeff, M. P. van der, Steegers,
+E. A. P., Tiemeier, H., Uitterlinden, A. G., \ldots{} Jaddoe, V. W. V.
+(2016). The generation r study: Design and cohort update 2017 {[}Journal
+Article{]}. \emph{European Journal of Epidemiology}, \emph{31}(12),
+1243--1264. \url{https://doi.org/10.1007/s10654-016-0224-9}
+
+\bibitem[\citeproctext]{ref-Li2016}
+Li, M., D'Arcy, C., \& Meng, X. (2016). Maltreatment in childhood
+substantially increases the risk of adult depression and anxiety in
+prospective cohort studies: Systematic review, meta-analysis, and
+proportional attributable fractions {[}Journal Article{]}. \emph{Psychol
+Med}, \emph{46}(4), 717--730.
+\url{https://doi.org/10.1017/s0033291715002743}
+
+\bibitem[\citeproctext]{ref-Murphy2017}
+Murphy, M. O., Cohn, D. M., \& Loria, A. S. (2017). Developmental
+origins of cardiovascular disease: Impact of early life stress in humans
+and rodents {[}Journal Article{]}. \emph{Neurosci Biobehav Rev},
+\emph{74}(Pt B), 453--465.
+\url{https://doi.org/10.1016/j.neubiorev.2016.07.018}
+
+\bibitem[\citeproctext]{ref-Paternain2013}
+Paternain, L., De La Garza, A., Batlle, M., Milagro, F., Martinez, J.
+A., \& Campion, J. (2013). Prenatal stress increases the obesogenic
+effects of a high-fat-sucrose diet in adult rats in a sex-specific
+manner {[}Journal Article{]}. \emph{Stress}, \emph{16}(2), 220--232.
+
+\bibitem[\citeproctext]{ref-Pereira-Miranda2017}
+Pereira-Miranda, E., Costa, P. R. F., Queiroz, V. A. O., Pereira-Santos,
+M., Santana, M. L. P., \& Santana, M. L. P. (2017). Overweight and
+obesity associated with higher depression prevalence in adults: A
+systematic review and meta-analysis {[}Journal Article{]}. \emph{J Am
+Coll Nutr}, \emph{36}(3), 223--233.
+\url{https://doi.org/10.1080/07315724.2016.1261053}
+
+\bibitem[\citeproctext]{ref-Plant2015}
+Plant, D. T., Pariante, C. M., Sharp, D., \& Pawlby, S. (2015). Maternal
+depression during pregnancy and offspring depression in adulthood: Role
+of child maltreatment {[}Journal Article{]}. \emph{Br J Psychiatry},
+\emph{207}(3), 213--220. \url{https://doi.org/10.1192/bjp.bp.114.156620}
+
+\bibitem[\citeproctext]{ref-Pratt2014}
+Pratt, L. A., \& Brody, D. J. (2014). Depression and obesity in the u.s.
+Adult household population, 2005-2010 {[}Journal Article{]}. \emph{NCHS
+Data Brief}, \emph{167}, 1--8.
+
+\bibitem[\citeproctext]{ref-Rcore2021}
+R Core Team. (2021a). \emph{R: A language and environment for
+statistical computing} {[}Journal Article{]}.
+\url{https://www.R-project.org/}
+
+\bibitem[\citeproctext]{ref-R2021}
+R Core Team. (2021b). \emph{R: A language and environment for
+statistical computing} {[}Journal Article{]}.
+\url{https://www.R-project.org/}
+
+\bibitem[\citeproctext]{ref-Rijlaarsdam2016}
+Rijlaarsdam, J., Pappa, I., Walton, E., Bakermans-Kranenburg, M. J.,
+Mileva-Seitz, V. R., Rippe, R. C., Roza, S. J., Jaddoe, V. W., Verhulst,
+F. C., Felix, J. F., Cecil, C. A., Relton, C. L., Gaunt, T. R., McArdle,
+W., Mill, J., Barker, E. D., Tiemeier, H., \& van, Ij. M. H. (2016). An
+epigenome-wide association meta-analysis of prenatal maternal stress in
+neonates: A model approach for replication {[}Journal Article{]}.
+\emph{Epigenetics}, \emph{11}(2), 140--149.
+\url{https://doi.org/10.1080/15592294.2016.1145329}
+
+\bibitem[\citeproctext]{ref-Schuurmans2022}
+Schuurmans, I. K., Luik, A. I., Maat, D. A. de, Hillegers, M. H. J.,
+Ikram, M. A., \& Cecil, C. A. M. (2022). The association of early life
+stress with IQ-achievement discrepancy in children: A population-based
+study {[}Journal Article{]}. \emph{Child Development}, \emph{93}(6),
+1837--1847. \url{https://doi.org/10.1111/cdev.13825}
+
+\bibitem[\citeproctext]{ref-Shonkoff2012}
+Shonkoff, J. P., Garner, A. S., Siegel, B. S., Dobbins, M. I., Earls, M.
+F., Garner, A. S., McGuinn, L., Pascoe, J., \& Wood, D. L. (2012). The
+lifelong effects of early childhood adversity and toxic stress
+{[}Journal Article{]}. \emph{Pediatrics}, \emph{129}(1), e232--e246.
+\url{https://doi.org/10.1542/peds.2011-2663}
+
+\bibitem[\citeproctext]{ref-Slopen2014}
+Slopen, N., Koenen, K. C., \& Kubzansky, L. D. (2014). Cumulative
+adversity in childhood and emergent risk factors for long-term health
+{[}Journal Article{]}. \emph{J Pediatr}, \emph{164}(3), 631-8.e1-2.
+\url{https://doi.org/10.1016/j.jpeds.2013.11.003}
+
+\bibitem[\citeproctext]{ref-Sutaria2019}
+Sutaria, S., Devakumar, D., Yasuda, S. S., Das, S., \& Saxena, S.
+(2019). Is obesity associated with depression in children? Systematic
+review and meta-analysis {[}Journal Article{]}. \emph{Archives of
+Disease in Childhood}, \emph{104}(1), 64--74.
+\url{https://doi.org/10.1136/archdischild-2017-314608}
+
+\bibitem[\citeproctext]{ref-vanBuuren2018}
+Van Buuren, S. (2018). \emph{Flexible imputation of missing data} (2nd
+ed.). Chapman; Hall/CRC. \url{https://doi.org/10.1201/9780429492259}
+
+\bibitem[\citeproctext]{ref-VandenBergh2020}
+Van den Bergh, B. R. H., Heuvel, M. I. van den, Lahti, M., Braeken, M.,
+Rooij, S. R. de, Entringer, S., Hoyer, D., Roseboom, T., Räikkönen, K.,
+King, S., \& Schwab, M. (2020). Prenatal developmental origins of
+behavior and mental health: The influence of maternal stress in
+pregnancy {[}Journal Article{]}. \emph{Neurosci Biobehav Rev},
+\emph{117}, 26--64.
+\url{https://doi.org/10.1016/j.neubiorev.2017.07.003}
+
+\bibitem[\citeproctext]{ref-Voortman2016}
+Voortman, T., Leermakers, E. T. M., Franco, O. H., Jaddoe, V. W. V.,
+Moll, H. A., Hofman, A., Hooven, E. H. van den, \& Kiefte-de Jong, J. C.
+(2016). A priori and a posteriori dietary patterns at the age of 1~year
+and body composition at the age of 6~years: The generation r study
+{[}Journal Article{]}. \emph{European Journal of Epidemiology},
+\emph{31}(8), 775--783. \url{https://doi.org/10.1007/s10654-016-0179-x}
+
+\bibitem[\citeproctext]{ref-Wang2015}
+Wang, A., \& Arah, O. A. (2015). G-computation demonstration in causal
+mediation analysis {[}Journal Article{]}. \emph{Eur J Epidemiol},
+\emph{30}(10), 1119--1127.
+\url{https://doi.org/10.1007/s10654-015-0100-z}
+
+\bibitem[\citeproctext]{ref-Yap2016}
+Yap, M. B. H., Morgan, A. J., Cairns, K., Jorm, A. F., Hetrick, S. E.,
+\& Merry, S. (2016). Parents in prevention: A meta-analysis of
+randomized controlled trials of parenting interventions to prevent
+internalizing problems in children from birth to age 18 {[}Journal
+Article{]}. \emph{Clinical Psychology Review}, \emph{50}, 138--158.
+\url{https://doi.org/10.1016/j.cpr.2016.10.003}
 
 \end{CSLReferences}
 
