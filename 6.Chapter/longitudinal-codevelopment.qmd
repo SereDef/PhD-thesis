@@ -1,0 +1,24 @@
+
+# Longitudinal psycho-physical co-development {#sec-chapter6}
+
+Adapted from:
+
+::: {.manuscript-title}
+Longitudinal co-development of depressive symptoms and cardio-metabolic risk factors from childhood to young adulthood
+:::
+
+::: {.manuscript-authors} 
+Defina, S., Cecil, C.A.M., Felix, J.F., Walton, E., & Tiemeier, H. (*under revision*)
+:::
+
+## Abstact {.unnumbered}
+
+## Introduction
+
+In summary, this book has no content whatsoever [@Fraser2013; @Boyd2012]. But I shall write it anyway cause. Cause I kind of do have no choice so, checking justification works
+
+## Methods
+
+## Discussion
+
+## References {.unnumbered}

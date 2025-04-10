@@ -1,9 +1,20 @@
 ## PREFACE {.unnumbered}
 
-::: {.quotify}
-*"In the depth of winter, I found there was, within me, an invincible summer."*<br>
-Albert Camus – Summer (1954)
+:::{.callout-note}
+This is a work in progress. Stay tuned :)
 :::
+
+Dear reader,
+
+Let me begin this book the only way that feels right: with a little note of honesty. Writing this was hard, much harder than I anticipated. Perhaps out of pride, or because of this irresistible greed I feel to dissect and point out limitations - that, I am told, makes for a good scientist as much as a horrible friend - I kept wondering whether any of this would be worth your time.
+
+I guess 5-years-ago me hoped, at this point, they could promise you sensational scientific breakthroughs and game-changing statistical tricks ahead. Well, it looks like we may both have to settle for a somewhat less glamourous, but perhaps more truthful, process of scientific discovery. 
+
+So here is a collection of small steps toward understanding, many little increments of knowledge, a couple of false starts, a few frustratingly inconclusive results, and a handful of insights (some grim, some hopeful).
+
+Still here? Didn’t think so... let’s talk about early-life stress, shall we?
+
+\newpage
 
 #### AUTHOR
 |       Serena Defina
@@ -15,8 +26,11 @@ Albert Camus – Summer (1954)
 |       Charlotte A.M. Cecil
 |       Janine F. Felix
 
-:::{.callout-note}
-This is a work in progress. Stay tuned :)
+\newpage
+
+::: {.quotify}
+*"In the depth of winter, I found there was, within me, an invincible summer."*<br>
+Albert Camus – Summer (1954)
 :::
 
 \newpage

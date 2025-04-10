@@ -10,16 +10,16 @@ book:
   cover-image: cover.png  
   chapters:
     - index.qmd
-    - 0.Introduction/introduction.qmd
+    - 1.Introduction/introduction.qmd
     - part: "PART 1: The role of ELS in the development of mental and physical health"
       chapters:
-      - 1.Chapter/ELS-comorbidity.qmd
-      - 2.Chapter/ELS-lifestyle-moderators.qmd
-      - 3.Chapter/ELS-brain.qmd
-      - 4.Chapter/ELS-heart.qmd
+      - 2.Chapter/ELS-comorbidity.qmd
+      - 3.Chapter/ELS-lifestyle-moderators.qmd
+      - 4.Chapter/ELS-brain.qmd
+      - 5.Chapter/ELS-heart.qmd
     - part: "PART 2: Reciprocal relationships between mental and physical health problems"
       chapters:
-      - 5.Chapter/longitudinal-codevelopment.qmd
+      - 6.Chapter/longitudinal-codevelopment.qmd
     - discussion.qmd
   
   sidebar:
@@ -43,7 +43,9 @@ number-depth: 3
 
 # Bibliography
 csl: apa.csl
-bibliography: [references.bib, 1.Chapter/ELS-comorbidity_bibliography.bib]
+bibliography: [references.bib, 
+               1.Introduction/introduction_bibliography.bib, 
+               2.Chapter/ELS-comorbidity_bibliography.bib]
 
 # Outputs
 format:
@@ -61,6 +63,7 @@ format:
     reference-section-title: References # TODO: References do displayed for unnambered chapters..?
     citeproc: true # false is recomented but does not work 
     include-in-header: style_pdf.sty # Esure tables are rendered properly
+
   docx:
     reference-doc: style_doc.docx
      # Display refecerences after every chapter
