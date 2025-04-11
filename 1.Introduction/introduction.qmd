@@ -1,7 +1,4 @@
-
-<!-- # INTRODUCTION {.unnumbered} -->
-
-# INTRODUCTION {#sec-chapter1}
+# General Introduction {#sec-chapter1}
 
 ## Early-life stress (ELS)
 When my mother was pregnant with me, my older brother died of a congenital condition. I never met the little guy, never experienced any grief myself. Yet, for the longest time I thought that, somehow, his death had cast a sort of shadow over the rest of my life. And I was not the only one. The idea that exposure to stressful experiences during *"critical" periods* of early development wields profound, long-term impact on emotional and physiological regulation, is nothing new. Sigmund Freud, among others, made quite a sensational career out of it, and - perhaps partly because of the success of psychoanalytic theories - the scientific literature on the topic today is almost intimidatingly vast.
@@ -16,13 +13,11 @@ Systematic scientific investigations into ELS and its consequences, really gaine
 
 Interestingly, parallel to this growing interest in the effects of stress and psychosocial factors on physical health, the early 2000s also witnessed a surge of epidemiological studies uncovering the relationship between depression and cardio-metabolic health problems[@Penninx2001; @VanderKooy2007; @Luppino2010]. Historically, these two conditions had been largely investigated as separate entities, each with distinct risk factors and treatment approaches. Their connection was not entirely overlooked (see for example early theoretical work by @Engel1977), but it remained peripheral to mainstream medical research until relatively recently.
 
-As more studies reported a co-occurrence of depression with cardio-metabolic conditions,  many potential mechanisms have been proposed to explain it [Milaneschi]. for example they could share common cause
-
-More recent meta-analytic estimates, leveraging both cross-sectional and longitudinal studies, further suggest a bidirectional relationship between depression and cardio-metabolic health problems [@Mannan2016; @Zhou2024].
+As more evidence accumulated that depression and cardio-metabolic conditions tend to co-occur [@Anwar2018; @Blasco2020; @Gutiérrez-Rojas2020], several potential mechanisms have been proposed to explain this observed comorbidity [@Milaneschi2019]. One possibility is that these conditions share common risk factors, such as genetic liability for instance, but also ELS exposure, as discussed above and supported by a recent large scale meta-analysis [@Souama2023]. It is also possible that experiencing depression may directly increase the risk of developing cardio-metabolic health problems later in life. For example, in two meta-analyses based on longitudinal data, depression was found to be risk factor for obesity and diabetes [@Mannan2016; @Ditmars2022]. Other longitudinal meta-analyses however, have also shown, in turn, that poor cardio-metabolic health was a robust predictor of later depression [@Zhou2024], supporting the hypothesis of a bi-directional relationship.
 
 ## An integrative approach
 
-So far, we have described a triangle of relationships - i.e., between *a)* ELS and mental health, *b)* ELS and cardio-metabolic health, and *c)* mental and cardio-metabolic health (@fig-thesis-summary A), which received considerable attention in the medical literature. This isn't surprising. Depression and cardio-metabolic conditions are among the leading causes of death and disability worldwide, shaping an enormous public health burden which is largely preventable **[REF]**. ELS is a promising shared risk factor, which can be measured years - and even decades - before clinical symptoms emerge, making it an ideal candidate for informing early detection and improving the integrated prevention of psycho-physical health problems.
+So far, we have described a triangle of relationships - i.e., between *a)* ELS and mental health, *b)* ELS and cardio-metabolic health, and *c)* mental and cardio-metabolic health (@fig-thesis-summary A), which received considerable attention in the medical literature. This isn't surprising. Depression and cardio-metabolic conditions are among the leading causes of death and disability worldwide, shaping an enormous public health burden which is largely preventable [@Anwar2018]. ELS is a promising shared risk factor, which can be measured years - and even decades - before clinical symptoms emerge, making it an ideal candidate for informing early detection and improving the integrated prevention of psycho-physical health problems.
 
 ::: {.content-visible when-format="html"}
 ![**Schematic representation of this thesis, in the context of previous literature**<br>(A) A schematic summary of the existing evidence, on the relationships under study. This is largely based on adult outcomes and retrospectively measured ELS exposure (indicated by the dashed line).<br>(B) A Schematic summary of the relationships examined in this thesis.](F1_thesissumm.png){width=100% #fig-thesis-summary}
@@ -32,13 +27,13 @@ So far, we have described a triangle of relationships - i.e., between *a)* ELS a
 ![**Schematic representation of this thesis, in the context of previous literature**\newline(A) A schematic summary of the existing evidence, on the relationships under study. This is largely based on adult outcomes and retrospectively measured ELS exposure (indicated by the dashed line).\newline(B) A Schematic summary of the relationships examined in this thesis.](F1_thesissumm.pdf){width=100% #fig-thesis-summary}
 :::
 
-However, there are some considerations to note, before these findings could be effectively translated into clinical practice. 
+However, there are some key considerations to note, before these findings could be effectively translated into clinical practice. 
 
-Firstly, as briefly hinted above, the literature is very heterogenous in its definition of ELS. Most studies have focused on neglect, physical and sexual abuse, though it is much more complicated construct than that. Only a few used cumulative scores.
+Firstly, as briefly hinted above, the literature is very heterogenous in its definition of ELS. While many studies focus on specific types of adversity, particularly childhood neglect and abuse. Most studies have focused on neglect, physical and sexual abuse, though it is much more complicated construct than that. Only a few used cumulative scores.
 
 Secondly, most studies assess these relationships in isolation, or as part of much broader constructs...
 
-Lastly, the overwhelming majority of existing studies has been conducted in adult populations, which warrants two important implications. The first one is technical: the proposed relationship between ELS and adult psycho-physical health relies heavily on retrospective reports of ELS exposure, which may have introduced recall bias, unrealistically inflating these association estimates. The second one is practical: if it was indeed true that ELS wields a causal (i.e., prospective) effect on later psycho-physical health problems, when does this effect begin? How early can ELS be used to identify people at higher risk for depression and/or cardio-metabolic disease?
+Lastly, the overwhelming majority of existing studies has been conducted in adult or aging populations, which warrants two important implications. The first one is technical: the proposed relationship between ELS and adult psycho-physical health relies heavily on retrospective reports of ELS exposure, which may have introduced recall bias, unrealistically inflating these association estimates. The second one is practical: if it was indeed true that ELS wields a causal (i.e., prospective) effect on later psycho-physical health problems, when does this effect begin? How early can ELS be used to identify people at higher risk for depression and/or cardio-metabolic disease?
 Similarly, studies investigating bidirectional relationships between mental and physical health, even though longitudinal, are largely limited to adulthood though both depression and cardio-metabolic health problems find their roots very early in development.
 
 ## This thesis: one step back in time

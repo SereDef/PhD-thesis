@@ -48,7 +48,7 @@
   
 \fi
 \setlength{\emergencystretch}{3em} % prevent overfull lines
-\setcounter{secnumdepth}{3}
+\setcounter{secnumdepth}{2}
 % Make \paragraph and \subparagraph free-standing
 \ifx\paragraph\undefined\else
   \let\oldparagraph\paragraph
@@ -127,6 +127,8 @@
 \usepackage{longtable}   % For tables that span multiple pages
 \usepackage{caption}     % For table captions
 \usepackage{graphicx}    % For including images in tables
+\usepackage[backend=biber]{biblatex} % For bibliography management
+\usepackage{hyperref}    % For hyperlinks in the document
 \KOMAoption{captions}{tableheading}
 \makeatletter
 \@ifpackageloaded{tcolorbox}{}{\usepackage[skins,breakable]{tcolorbox}}
@@ -232,7 +234,7 @@ physical health problems}
 
 \markboth{PREFACE}{PREFACE}
 
-\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, breakable, arc=.35mm, rightrule=.15mm, colframe=quarto-callout-note-color-frame, opacityback=0, coltitle=black, leftrule=.75mm, left=2mm, colbacktitle=quarto-callout-note-color!10!white, colback=white, toptitle=1mm, toprule=.15mm, titlerule=0mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Note}, bottomtitle=1mm, opacitybacktitle=0.6]
+\begin{tcolorbox}[enhanced jigsaw, toptitle=1mm, rightrule=.15mm, colframe=quarto-callout-note-color-frame, colback=white, breakable, opacitybacktitle=0.6, left=2mm, coltitle=black, colbacktitle=quarto-callout-note-color!10!white, toprule=.15mm, titlerule=0mm, bottomrule=.15mm, opacityback=0, bottomtitle=1mm, arc=.35mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Note}, leftrule=.75mm]
 
 This is a work in progress. Stay tuned :)
 
@@ -295,7 +297,7 @@ TODO
 
 \bookmarksetup{startatroot}
 
-\chapter{INTRODUCTION}\label{sec-chapter1}
+\chapter{General Introduction}\label{sec-chapter1}
 
 \section{Early-life stress (ELS)}\label{early-life-stress-els}
 
@@ -320,25 +322,24 @@ experiences (sometimes also referred to as ``childhood trauma'',
 ``maltreatment'', ``early adversity'', or ``adverse childhood
 experiences'') encompass a wide range of stressors, including neglect
 and abuse, bereavement, bullying but also poverty, material deprivation
-and/or parental psychopathology (Heim, 2020).
+and/or parental psychopathology {[}@Heim2020{]}.
 
 ELS is a widely studied concept, partly because it is surprisingly
 common: more than half the population experiences at least one form of
-ELS before the age of 18 years (Madigan et al., 2024). But more
-importantly, ELS is one of strongest, most consistent predictors of
-mental health problems later in life, particularly depression (LeMoult
-et al., 2020; Li et al., 2016; Li et al., 2023).
+ELS before the age of 18 years {[}@Madigan2024{]}. But more importantly,
+ELS is one of strongest, most consistent predictors of mental health
+problems later in life, particularly depression {[}@Li2016;
+@LeMoult2020; @Li2023{]}.
 
 Systematic scientific investigations into ELS and its consequences,
 really gained momentum in the late 90s, when large-scale epidemiological
 studies, began to also highlight a relationship between ELS and an
 increased risk of chronic diseases and premature mortality (e.g.
-(Felitti et al., 1998)). This line of evidence also proved very robust
-over time, so ELS is now a well-recognised risk factor for
-cardio-metabolic health problems, including obesity (Danese \& Tan,
-2014; Wiss \& Brewerton, 2020), type 2 diabetes (Zhu et al., 2022),
-hypertension and cardio-vascular disease (Jacquet-Smailovic et al.,
-2022; Jakubowski et al., 2018).
+{[}@Felitti1998{]}). This line of evidence also proved very robust over
+time, so ELS is now a well-recognised risk factor for cardio-metabolic
+health problems, including obesity {[}@Wiss2020; @Danese2014{]}, type 2
+diabetes {[}@Zhu2022{]}, hypertension and cardio-vascular disease
+{[}@Jakubowski2018; @Jacquet-Smailovic2022{]}.
 
 \section{Mental \& physical health: a comorbidity
 paradigm}\label{mental-physical-health-a-comorbidity-paradigm}
@@ -346,13 +347,13 @@ paradigm}\label{mental-physical-health-a-comorbidity-paradigm}
 Interestingly, parallel to this growing interest in the effects of
 stress and psychosocial factors on physical health, the early 2000s also
 witnessed a surge of epidemiological studies uncovering the relationship
-between depression and cardio-metabolic health problems(Luppino et al.,
-2010; Penninx et al., 2001; Van der Kooy et al., 2007). Historically,
-these two conditions had been largely investigated as separate entities,
-each with distinct risk factors and treatment approaches. Their
-connection was not entirely overlooked (see for example early
-theoretical work by Engel (1977)), but it remained peripheral to
-mainstream medical research until relatively recently.
+between depression and cardio-metabolic health problems{[}@Penninx2001;
+@VanderKooy2007; @Luppino2010{]}. Historically, these two conditions had
+been largely investigated as separate entities, each with distinct risk
+factors and treatment approaches. Their connection was not entirely
+overlooked (see for example early theoretical work by @Engel1977), but
+it remained peripheral to mainstream medical research until relatively
+recently.
 
 As more studies reported a co-occurrence of depression with
 cardio-metabolic conditions, many potential mechanisms have been
@@ -361,8 +362,8 @@ common cause
 
 More recent meta-analytic estimates, leveraging both cross-sectional and
 longitudinal studies, further suggest a bidirectional relationship
-between depression and cardio-metabolic health problems (Mannan et al.,
-2016; Zhou et al., 2024).
+between depression and cardio-metabolic health problems {[}@Mannan2016;
+@Zhou2024{]}.
 
 \section{An integrative approach}\label{an-integrative-approach}
 
@@ -458,6 +459,8 @@ cardio-vascular health.
 \addcontentsline{toc}{section}{References}
 
 \markright{References}
+
+\printbibliography
 
 \part{PART 1: The role of ELS in the development of mental and physical
 health}
@@ -1752,412 +1755,6 @@ S., Nelson, S. M., \& Lawlor, D. A. (2013). Cohort profile: The avon
 longitudinal study of parents and children: ALSPAC mothers cohort
 {[}Journal Article{]}. \emph{Int J Epidemiol}, \emph{42}(1), 97--110.
 \url{https://doi.org/10.1093/ije/dys066}
-
-\end{CSLReferences}
-
-\chapter*{References}\label{bibliography}
-\addcontentsline{toc}{chapter}{References}
-
-\phantomsection\label{refs}
-\begin{CSLReferences}{1}{0}
-\bibitem[\citeproctext]{ref-Achenbach1999}
-Achenbach, T. M. (1999). The child behavior checklist and related
-instruments {[}Book Section{]}. In \emph{The use of psychological
-testing for treatment planning and outcomes assessment, 2nd ed.} (pp.
-429--466). Lawrence Erlbaum Associates Publishers.
-
-\bibitem[\citeproctext]{ref-Alders2001}
-Alders, M. (2001). \emph{Classification of the population with a foreign
-background in the netherlands} {[}Journal Article{]}.
-
-\bibitem[\citeproctext]{ref-Anwar2018}
-Anwar, N., Kuppili, P. P., \& Balhara, Y. P. S. (2018). Depression and
-physical noncommunicable diseases: The need for an integrated approach
-{[}Journal Article{]}. \emph{WHO South-East Asia Journal of Public
-Health}, \emph{6}(1), 12--17.
-
-\bibitem[\citeproctext]{ref-Barker1998}
-Barker, D. J. (1998). In utero programming of chronic disease {[}Journal
-Article{]}. \emph{Clinical Science (London, England: 1979)},
-\emph{95}(2), 115--128.
-
-\bibitem[\citeproctext]{ref-Barnett2012}
-Barnett, K., Mercer, S. W., Norbury, M., Watt, G., Wyke, S., \& Guthrie,
-B. (2012). Epidemiology of multimorbidity and implications for health
-care, research, and medical education: A cross-sectional study
-{[}Journal Article{]}. \emph{The Lancet}, \emph{380}(9836), 37--43.
-\url{https://doi.org/10.1016/S0140-6736(12)60240-2}
-
-\bibitem[\citeproctext]{ref-Boyd2012}
-Boyd, A., Golding, J., Macleod, J., Lawlor, D. A., Fraser, A.,
-Henderson, J., Molloy, L., Ness, A., Ring, S., \& Davey Smith, G.
-(2012). Cohort profile: The 'children of the 90s'---the index offspring
-of the avon longitudinal study of parents and children {[}Journal
-Article{]}. \emph{International Journal of Epidemiology}, \emph{42}(1),
-111--127. \url{https://doi.org/10.1093/ije/dys064}
-
-\bibitem[\citeproctext]{ref-Boyd2013}
-Boyd, A., Golding, J., Macleod, J., Lawlor, D. A., Fraser, A.,
-Henderson, J., Molloy, L., Ness, A., Ring, S., \& Davey Smith, G.
-(2013). Cohort profile: The 'children of the 90s'---the index offspring
-of the avon longitudinal study of parents and children {[}Journal
-Article{]}. \emph{International Journal of Epidemiology}, \emph{42}(1),
-111--127. \url{https://doi.org/10.1093/ije/dys064}
-
-\bibitem[\citeproctext]{ref-Burgueuxf1o2020}
-Burgueño, A. L., Juarez, Y. R., Genaro, A. M., \& Tellechea, M. L.
-(2020). Systematic review and meta-analysis on the relationship between
-prenatal stress and metabolic syndrome intermediate phenotypes
-{[}Journal Article{]}. \emph{International Journal of Obesity},
-\emph{44}(1), 1--12. \url{https://doi.org/10.1038/s41366-019-0423-z}
-
-\bibitem[\citeproctext]{ref-Cecil2014}
-Cecil, C. A., Lysenko, L. J., Jaffee, S. R., Pingault, J. B., Smith, R.
-G., Relton, C. L., Woodward, G., McArdle, W., Mill, J., \& Barker, E. D.
-(2014). Environmental risk, oxytocin receptor gene (OXTR) methylation
-and youth callous-unemotional traits: A 13-year longitudinal study
-{[}Journal Article{]}. \emph{Mol Psychiatry}, \emph{19}(10), 1071--1077.
-\url{https://doi.org/10.1038/mp.2014.95}
-
-\bibitem[\citeproctext]{ref-Cecil2017}
-Cecil, C. A., Viding, E., Fearon, P., Glaser, D., \& McCrory, E. J.
-(2017). Disentangling the mental health impact of childhood abuse and
-neglect {[}Journal Article{]}. \emph{Child Abuse \& Neglect}, \emph{63},
-106--119. \url{https://doi.org/10.1016/j.chiabu.2016.11.024}
-
-\bibitem[\citeproctext]{ref-Clayborne2021}
-Clayborne, Z. M., Nilsen, W., Torvik, F. A., Gustavson, K., Bekkhus, M.,
-Gilman, S. E., Khandaker, G. M., Fell, D. B., \& Colman, I. (2021).
-Prenatal maternal stress, child internalizing and externalizing
-symptoms, and the moderating role of parenting: Findings from the
-norwegian mother, father, and child cohort study {[}Journal Article{]}.
-\emph{Psychological Medicine}, 1--11.
-\url{https://doi.org/10.1017/S0033291721004311}
-
-\bibitem[\citeproctext]{ref-Danese2014}
-Danese, A., \& Tan, M. (2014). Childhood maltreatment and obesity:
-Systematic review and meta-analysis {[}Journal Article{]}. \emph{Mol
-Psychiatry}, \emph{19}(5), 544--554.
-\url{https://doi.org/10.1038/mp.2013.54}
-
-\bibitem[\citeproctext]{ref-vonElm2008}
-Elm, E. von, Altman, D. G., Egger, M., Pocock, S. J., Gøtzsche, P. C.,
-\& Vandenbroucke, J. P. (2008). The strengthening the reporting of
-observational studies in epidemiology (STROBE) statement: Guidelines for
-reporting observational studies {[}Journal Article{]}. \emph{J Clin
-Epidemiol}, \emph{61}(4), 344--349.
-\url{https://doi.org/10.1016/j.jclinepi.2007.11.008}
-
-\bibitem[\citeproctext]{ref-Elsenburg2017}
-Elsenburg, L. K., Wijk, K. J. E. van, Liefbroer, A. C., \& Smidt, N.
-(2017). Accumulation of adverse childhood events and overweight in
-children: A systematic review and meta-analysis {[}Journal Article{]}.
-\emph{Obesity (Silver Spring)}, \emph{25}(5), 820--832.
-\url{https://doi.org/10.1002/oby.21797}
-
-\bibitem[\citeproctext]{ref-Engel1977}
-Engel, G. L. (1977). The need for a new medical model: A challenge for
-biomedicine {[}Journal Article{]}. \emph{Science}, \emph{196}(4286),
-129--136. \url{https://doi.org/10.1126/science.847460}
-
-\bibitem[\citeproctext]{ref-Entringer2013}
-Entringer, S. (2013). Impact of stress and stress physiology during
-pregnancy on child metabolic function and obesity risk {[}Journal
-Article{]}. \emph{Current Opinion in Clinical Nutrition and Metabolic
-Care}, \emph{16}(3), 320--327.
-\url{https://doi.org/10.1097/MCO.0b013e32835e8d80}
-
-\bibitem[\citeproctext]{ref-Entringer2012}
-Entringer, S., Buss, C., Swanson, J. M., Cooper, D. M., Wing, D. A.,
-Waffarn, F., \& Wadhwa, P. D. (2012). Fetal programming of body
-composition, obesity, and metabolic function: The role of intrauterine
-stress and stress biology {[}Journal Article{]}. \emph{J Nutr Metab},
-\emph{2012}, 632548. \url{https://doi.org/10.1155/2012/632548}
-
-\bibitem[\citeproctext]{ref-Felitti1998}
-Felitti, V. J., Anda, R. F., Nordenberg, D., Williamson, D. F., Spitz,
-A. M., Edwards, V., Koss, M. P., \& Marks, J. S. (1998). Relationship of
-childhood abuse and household dysfunction to many of the leading causes
-of death in adults: The adverse childhood experiences (ACE) study.
-\emph{American Journal of Preventive Medicine}, \emph{14}(4), 245--258.
-\url{https://doi.org/10.1016/S0749-3797(98)00017-8}
-
-\bibitem[\citeproctext]{ref-Fraser2013}
-Fraser, A., Macdonald-Wallis, C., Tilling, K., Boyd, A., Golding, J.,
-Davey Smith, G., Henderson, J., Macleod, J., Molloy, L., Ness, A., Ring,
-S., Nelson, S. M., \& Lawlor, D. A. (2013). Cohort profile: The avon
-longitudinal study of parents and children: ALSPAC mothers cohort
-{[}Journal Article{]}. \emph{Int J Epidemiol}, \emph{42}(1), 97--110.
-\url{https://doi.org/10.1093/ije/dys066}
-
-\bibitem[\citeproctext]{ref-Gluckman2008}
-Gluckman, P. D., Hanson, M. A., Cooper, C., \& Thornburg, K. L. (2008).
-Effect of in utero and early-life conditions on adult health and disease
-{[}Journal Article{]}. \emph{New England Journal of Medicine},
-\emph{359}(1), 61--73.
-
-\bibitem[\citeproctext]{ref-Goodman2000}
-Goodman, R., Ford, T., Richards, H., Gatward, R., \& Meltzer, H. (2000).
-The development and well-being assessment: Description and initial
-validation of an integrated assessment of child and adolescent
-psychopathology {[}Journal Article{]}. \emph{J Child Psychol
-Psychiatry}, \emph{41}(5), 645--655.
-
-\bibitem[\citeproctext]{ref-Goodman1999}
-Goodman, R., \& Scott, S. (1999). Comparing the strengths and
-difficulties questionnaire and the child behavior checklist: Is small
-beautiful? {[}Journal Article{]}. \emph{Journal of Abnormal Child
-Psychology}, \emph{27}(1), 17--24.
-\url{https://doi.org/10.1023/A:1022658222914}
-
-\bibitem[\citeproctext]{ref-Hare2014}
-Hare, D. L., Toukhsati, S. R., Johansson, P., \& Jaarsma, T. (2014).
-Depression and cardiovascular disease: A clinical review {[}Journal
-Article{]}. \emph{Eur Heart J}, \emph{35}(21), 1365--1372.
-\url{https://doi.org/10.1093/eurheartj/eht462}
-
-\bibitem[\citeproctext]{ref-Hartman2018}
-Hartman, S., \& Belsky, J. (2018). Prenatal programming of postnatal
-plasticity revisited-and extended {[}Journal Article{]}. \emph{Dev
-Psychopathol}, \emph{30}(3), 825--842.
-\url{https://doi.org/10.1017/s0954579418000548}
-
-\bibitem[\citeproctext]{ref-Heim2020}
-Heim, C. (2020). Stress, early life {[}Book Section{]}. In M. D. Gellman
-(Ed.), \emph{Encyclopedia of behavioral medicine} (pp. 2167--2170).
-Springer International Publishing.
-\url{https://doi.org/0.1007/978-3-030-39903-0_63}
-
-\bibitem[\citeproctext]{ref-Inoue2022}
-Inoue, Y., Graff, M., Howard, A. G., Highland, H. M., Young, K. L.,
-Harris, K. M., North, K. E., Li, Y., Duan, Q., \& Gordon-Larsen, P.
-(2022). Do adverse childhood experiences and genetic obesity risk
-interact in relation to body mass index in young adulthood? Findings
-from the national longitudinal study of adolescent to adult health
-{[}Journal Article{]}. \emph{Pediatr Obes}, \emph{17}(6), e12885.
-\url{https://doi.org/10.1111/ijpo.12885}
-
-\bibitem[\citeproctext]{ref-Jacquet-Smailovic2022}
-Jacquet-Smailovic, M., Brennstuhl, M.-J., Tarquinio, C. L., \&
-Tarquinio, C. (2022). Relationship between cumulative adverse childhood
-experiences and myocardial infarction~in adulthood: A systematic review
-and meta-analysis {[}Journal Article{]}. \emph{Journal of Child \&
-Adolescent Trauma}, \emph{15}(3), 701--714.
-\url{https://doi.org/10.1007/s40653-021-00404-7}
-
-\bibitem[\citeproctext]{ref-Jakubowski2018}
-Jakubowski, K. P., Cundiff, J. M., \& Matthews, K. A. (2018). Cumulative
-childhood adversity and adult cardiometabolic disease: A meta-analysis
-{[}Journal Article{]}. \emph{Health Psychol}, \emph{37}(8), 701--715.
-\url{https://doi.org/10.1037/hea0000637}
-
-\bibitem[\citeproctext]{ref-Juster2016}
-Juster, R. P., Russell, J. J., Almeida, D., \& Picard, M. (2016).
-Allostatic load and comorbidities: A mitochondrial, epigenetic, and
-evolutionary perspective {[}Journal Article{]}. \emph{Dev Psychopathol},
-\emph{28}(4pt1), 1117--1146.
-\url{https://doi.org/10.1017/s0954579416000730}
-
-\bibitem[\citeproctext]{ref-Kooijman2016}
-Kooijman, M. N., Kruithof, C. J., Duijn, C. M. van, Duijts, L., Franco,
-O. H., Ijzendoorn, M. H. van, Jongste, J. C. de, Klaver, C. C. W., Lugt,
-A. van der, Mackenbach, J. P., Moll, H. A., Peeters, R. P., Raat, H.,
-Rings, E. H. H. M., Rivadeneira, F., Schroeff, M. P. van der, Steegers,
-E. A. P., Tiemeier, H., Uitterlinden, A. G., \ldots{} Jaddoe, V. W. V.
-(2016). The generation r study: Design and cohort update 2017 {[}Journal
-Article{]}. \emph{European Journal of Epidemiology}, \emph{31}(12),
-1243--1264. \url{https://doi.org/10.1007/s10654-016-0224-9}
-
-\bibitem[\citeproctext]{ref-LeMoult2020}
-LeMoult, J., Humphreys, K. L., Tracy, A., Hoffmeister, J. A., Ip, E., \&
-Gotlib, I. H. (2020). Meta-analysis: Exposure to early life stress and
-risk for depression in childhood and adolescence {[}Journal Article{]}.
-\emph{J Am Acad Child Adolesc Psychiatry}, \emph{59}(7), 842--855.
-\url{https://doi.org/10.1016/j.jaac.2019.10.011}
-
-\bibitem[\citeproctext]{ref-Li2016}
-Li, M., D'Arcy, C., \& Meng, X. (2016). Maltreatment in childhood
-substantially increases the risk of adult depression and anxiety in
-prospective cohort studies: Systematic review, meta-analysis, and
-proportional attributable fractions {[}Journal Article{]}. \emph{Psychol
-Med}, \emph{46}(4), 717--730.
-\url{https://doi.org/10.1017/s0033291715002743}
-
-\bibitem[\citeproctext]{ref-Li2023}
-Li, M., Gao, T., Su, Y., Zhang, Y., Yang, G., D'Arcy, C., \& Meng, X.
-(2023). The timing effect of childhood maltreatment in depression: A
-systematic review and meta-analysis {[}Journal Article{]}. \emph{Trauma,
-Violence, \& Abuse}, \emph{24}(4), 2560--2580.
-\url{https://doi.org/10.1177/15248380221102558}
-
-\bibitem[\citeproctext]{ref-Luppino2010}
-Luppino, F. S., Wit, L. M. de, Bouvy, P. F., Stijnen, T., Cuijpers, P.,
-Penninx, B. W. J. H., \& Zitman, F. G. (2010). Overweight, obesity, and
-depression: A systematic review and meta-analysis of longitudinal
-studies {[}Journal Article{]}. \emph{Archives of General Psychiatry},
-\emph{67}(3), 220--229.
-\url{https://doi.org/10.1001/archgenpsychiatry.2010.2}
-
-\bibitem[\citeproctext]{ref-Madigan2024}
-Madigan, S., Thiemann, R., Deneault, A.-A., Fearon, R. M. P., Racine,
-N., Park, J., Lunney, C. A., Dimitropoulos, G., Jenkins, S., Williamson,
-T., \& Neville, R. D. (2024). Prevalence of adverse childhood
-experiences in child population samples: A systematic review and
-meta-analysis {[}Journal Article{]}. \emph{JAMA Pediatrics},
-\emph{179}(1), 19--33.
-\url{https://doi.org/10.1001/jamapediatrics.2024.4385}
-
-\bibitem[\citeproctext]{ref-Mannan2016}
-Mannan, M., Mamun, A., Doi, S., \& Clavarino, A. (2016). Is there a
-bi-directional relationship between depression and obesity among adult
-men and women? Systematic review and bias-adjusted meta analysis
-{[}Journal Article{]}. \emph{Asian Journal of Psychiatry}, \emph{21},
-51--66. https://doi.org/\url{https://doi.org/10.1016/j.ajp.2015.12.008}
-
-\bibitem[\citeproctext]{ref-Murphy2017}
-Murphy, M. O., \& Loria, A. S. (2017). Sex-specific effects of stress on
-metabolic and cardiovascular disease: Are women at higher risk?
-{[}Journal Article{]}. \emph{American Journal of Physiology-Regulatory,
-Integrative and Comparative Physiology}, \emph{313}(1), R1--R9.
-\url{https://doi.org/10.1152/ajpregu.00185.2016}
-
-\bibitem[\citeproctext]{ref-Paternain2013}
-Paternain, L., De La Garza, A., Batlle, M., Milagro, F., Martinez, J.
-A., \& Campion, J. (2013). Prenatal stress increases the obesogenic
-effects of a high-fat-sucrose diet in adult rats in a sex-specific
-manner {[}Journal Article{]}. \emph{Stress}, \emph{16}(2), 220--232.
-
-\bibitem[\citeproctext]{ref-Penninx2001}
-Penninx, B. W. J. H., Beekman, A. T. F., Honig, A., Deeg, D. J. H.,
-Schoevers, R. A., Eijk, J. T. M. van, \& Tilburg, W. van. (2001).
-Depression and cardiac mortality: Results from a community-based
-longitudinal study {[}Journal Article{]}. \emph{Archives of General
-Psychiatry}, \emph{58}(3), 221--227.
-\url{https://doi.org/10.1001/archpsyc.58.3.221}
-
-\bibitem[\citeproctext]{ref-Pereira-Miranda2017}
-Pereira-Miranda, E., Costa, P. R. F., Queiroz, V. A. O., Pereira-Santos,
-M., Santana, M. L. P., \& Santana, M. L. P. (2017). Overweight and
-obesity associated with higher depression prevalence in adults: A
-systematic review and meta-analysis {[}Journal Article{]}. \emph{J Am
-Coll Nutr}, \emph{36}(3), 223--233.
-\url{https://doi.org/10.1080/07315724.2016.1261053}
-
-\bibitem[\citeproctext]{ref-Plant2015}
-Plant, D. T., Pariante, C. M., Sharp, D., \& Pawlby, S. (2015). Maternal
-depression during pregnancy and offspring depression in adulthood: Role
-of child maltreatment {[}Journal Article{]}. \emph{Br J Psychiatry},
-\emph{207}(3), 213--220. \url{https://doi.org/10.1192/bjp.bp.114.156620}
-
-\bibitem[\citeproctext]{ref-Pratt2014}
-Pratt, L. A., \& Brody, D. J. (2014). Depression and obesity in the u.s.
-Adult household population, 2005-2010 {[}Journal Article{]}. \emph{NCHS
-Data Brief}, \emph{167}, 1--8.
-
-\bibitem[\citeproctext]{ref-R2021}
-R Core Team. (2021). \emph{R: A language and environment for statistical
-computing} {[}Journal Article{]}. \url{https://www.R-project.org/}
-
-\bibitem[\citeproctext]{ref-Rijlaarsdam2016}
-Rijlaarsdam, J., Pappa, I., Walton, E., Bakermans-Kranenburg, M. J.,
-Mileva-Seitz, V. R., Rippe, R. C., Roza, S. J., Jaddoe, V. W., Verhulst,
-F. C., Felix, J. F., Cecil, C. A., Relton, C. L., Gaunt, T. R., McArdle,
-W., Mill, J., Barker, E. D., Tiemeier, H., \& van, Ij. M. H. (2016). An
-epigenome-wide association meta-analysis of prenatal maternal stress in
-neonates: A model approach for replication {[}Journal Article{]}.
-\emph{Epigenetics}, \emph{11}(2), 140--149.
-\url{https://doi.org/10.1080/15592294.2016.1145329}
-
-\bibitem[\citeproctext]{ref-Schuurmans2022}
-Schuurmans, I. K., Luik, A. I., Maat, D. A. de, Hillegers, M. H. J.,
-Ikram, M. A., \& Cecil, C. A. M. (2022). The association of early life
-stress with IQ-achievement discrepancy in children: A population-based
-study {[}Journal Article{]}. \emph{Child Development}, \emph{93}(6),
-1837--1847. \url{https://doi.org/10.1111/cdev.13825}
-
-\bibitem[\citeproctext]{ref-Shonkoff2012}
-Shonkoff, J. P., Garner, A. S., Siegel, B. S., Dobbins, M. I., Earls, M.
-F., Garner, A. S., McGuinn, L., Pascoe, J., \& Wood, D. L. (2012). The
-lifelong effects of early childhood adversity and toxic stress
-{[}Journal Article{]}. \emph{Pediatrics}, \emph{129}(1), e232--e246.
-\url{https://doi.org/10.1542/peds.2011-2663}
-
-\bibitem[\citeproctext]{ref-Slopen2014}
-Slopen, N., Koenen, K. C., \& Kubzansky, L. D. (2014). Cumulative
-adversity in childhood and emergent risk factors for long-term health
-{[}Journal Article{]}. \emph{J Pediatr}, \emph{164}(3), 631-8.e1-2.
-\url{https://doi.org/10.1016/j.jpeds.2013.11.003}
-
-\bibitem[\citeproctext]{ref-Sutaria2019}
-Sutaria, S., Devakumar, D., Yasuda, S. S., Das, S., \& Saxena, S.
-(2019). Is obesity associated with depression in children? Systematic
-review and meta-analysis {[}Journal Article{]}. \emph{Archives of
-Disease in Childhood}, \emph{104}(1), 64--74.
-\url{https://doi.org/10.1136/archdischild-2017-314608}
-
-\bibitem[\citeproctext]{ref-vanBuuren2018}
-Van Buuren, S. (2018). \emph{Flexible imputation of missing data} (2nd
-ed.). Chapman; Hall/CRC. \url{https://doi.org/10.1201/9780429492259}
-
-\bibitem[\citeproctext]{ref-VandenBergh2020}
-Van den Bergh, B. R. H., Heuvel, M. I. van den, Lahti, M., Braeken, M.,
-Rooij, S. R. de, Entringer, S., Hoyer, D., Roseboom, T., Räikkönen, K.,
-King, S., \& Schwab, M. (2020). Prenatal developmental origins of
-behavior and mental health: The influence of maternal stress in
-pregnancy {[}Journal Article{]}. \emph{Neurosci Biobehav Rev},
-\emph{117}, 26--64.
-\url{https://doi.org/10.1016/j.neubiorev.2017.07.003}
-
-\bibitem[\citeproctext]{ref-VanderKooy2007}
-Van der Kooy, K., Hout, H. van, Marwijk, H., Marten, H., Stehouwer, C.,
-\& Beekman, A. (2007). Depression and the risk for cardiovascular
-diseases: Systematic review and meta analysis {[}Journal Article{]}.
-\emph{International Journal of Geriatric Psychiatry}, \emph{22}(7),
-613--626. https://doi.org/\url{https://doi.org/10.1002/gps.1723}
-
-\bibitem[\citeproctext]{ref-Voortman2016}
-Voortman, T., Leermakers, E. T. M., Franco, O. H., Jaddoe, V. W. V.,
-Moll, H. A., Hofman, A., Hooven, E. H. van den, \& Kiefte-de Jong, J. C.
-(2016). A priori and a posteriori dietary patterns at the age of 1~year
-and body composition at the age of 6~years: The generation r study
-{[}Journal Article{]}. \emph{European Journal of Epidemiology},
-\emph{31}(8), 775--783. \url{https://doi.org/10.1007/s10654-016-0179-x}
-
-\bibitem[\citeproctext]{ref-Wang2015}
-Wang, A., \& Arah, O. A. (2015). G-computation demonstration in causal
-mediation analysis {[}Journal Article{]}. \emph{Eur J Epidemiol},
-\emph{30}(10), 1119--1127.
-\url{https://doi.org/10.1007/s10654-015-0100-z}
-
-\bibitem[\citeproctext]{ref-Wiss2020}
-Wiss, D. A., \& Brewerton, T. D. (2020). Adverse childhood experiences
-and adult obesity: A systematic review of plausible mechanisms and
-meta-analysis of cross-sectional studies {[}Journal Article{]}.
-\emph{Physiology \& Behavior}, \emph{223}, 112964.
-https://doi.org/\url{https://doi.org/10.1016/j.physbeh.2020.112964}
-
-\bibitem[\citeproctext]{ref-Yap2016}
-Yap, M. B. H., Morgan, A. J., Cairns, K., Jorm, A. F., Hetrick, S. E.,
-\& Merry, S. (2016). Parents in prevention: A meta-analysis of
-randomized controlled trials of parenting interventions to prevent
-internalizing problems in children from birth to age 18 {[}Journal
-Article{]}. \emph{Clinical Psychology Review}, \emph{50}, 138--158.
-\url{https://doi.org/10.1016/j.cpr.2016.10.003}
-
-\bibitem[\citeproctext]{ref-Zhou2024}
-Zhou, Y., Kivimäki, M., Lim, C. C. W., Carrillo-Larco, R. M., Qi, S.,
-Wu, X., \& Xu, X. (2024). Bidirectional associations between
-cardiometabolic multimorbidity and depression and mediation of
-lifestyles: A multicohort study {[}Journal Article{]}. \emph{JACC Asia},
-\emph{4}(9), 657--671.
-\url{https://doi.org/10.1016/j.jacasi.2024.06.004}
-
-\bibitem[\citeproctext]{ref-Zhu2022}
-Zhu, S., Shan, S., Liu, W., Li, S., Hou, L., Huang, X., Liu, Y., Yi, Q.,
-Sun, W., Tang, K., Adeloye, D., Rudan, I., \& Song, P. (2022). Adverse
-childhood experiences and risk of diabetes: A systematic review and
-meta-analysis {[}Journal Article{]}. \emph{J Glob Health}, \emph{12},
-04082. \url{https://doi.org/10.7189/jogh.12.04082}
 
 \end{CSLReferences}
 

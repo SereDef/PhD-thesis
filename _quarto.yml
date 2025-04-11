@@ -38,8 +38,8 @@ book:
       - icon: github
         href: https://github.com/SereDef
 
-# Only number sections 2 levels below the chapter level
-number-depth: 3
+# Only number sections 1 levels below the chapter level
+number-depth: 2
 
 # Bibliography
 csl: apa.csl
@@ -52,26 +52,28 @@ format:
   html:
     theme: [cosmo, style_web.scss]
     grid:
-      sidebar-width: 600px # Increase sidebar for longer chapter titles
+      sidebar-width: 600px # Widen sidebar for longer chapter titles
   
   pdf:
     documentclass: scrreport # scrbook 
     keep-tex: true
+    include-in-header: style_pdf.sty 
+    # Display references after every chapter
     filters:
       - quarto
-      - section-bibliographies  # Display refecerences after every chapter
-    reference-section-title: References # TODO: References do displayed for unnambered chapters..?
-    citeproc: true # false is recomented but does not work 
-    include-in-header: style_pdf.sty # Esure tables are rendered properly
+      - section-bibliographies  
+    reference-section-title: References
+    citeproc: false # Disable citeproc to use biblatex
+    
 
   docx:
     reference-doc: style_doc.docx
-     # Display refecerences after every chapter
+     # Display references after every chapter
     filters:
       - quarto
       - section-bibliographies
     reference-section-title: References
-    citeproc: true # false is recomented but does not work 
+    citeproc: true # false is recommended but does not work 
 
 
 
