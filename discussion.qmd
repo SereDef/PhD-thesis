@@ -1,7 +1,0 @@
-
-# DISCUSSION {.unnumbered}
-
-
-See @sec-chapter1 for whatever whatever.
-
-## References {.unnumbered}

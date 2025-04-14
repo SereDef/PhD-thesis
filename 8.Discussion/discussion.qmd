@@ -1,0 +1,67 @@
+
+# General discussion
+
+In this dissertation ...
+We focus on adolescence, a critical developmental period, when many mental health problems first emerge, and early signs of cardio-metabolic dysregulation begin to manifest. By examining these relationships prospectively, this thesis seeks to provide a clearer understanding of how ELS impacts psycho-physical health during this formative stage of life.
+
+I started this book with a confession: I hated writing this. Since you meade it this far (or anyway happened to open this doomed chapter), you won the dubious reward of knowing why. Here is a collection of thing I would have done differently, followed by a few things I wish we all did differently.  
+
+## Modelling ELS
+
+### Parental reports 
+Like most previous literatures, children’s stress exposure information was obtained via parental report and thus likely reflect a combination of parents' own stress experiences, psychological state, and personality. 
+
+### Missing piece: resilience 
+
+## Alternative modelling methods 
+A cumulative risk approach examines the number of stressors experienced rather than the intensity or the pattern of stress exposure. We define stressors dichotomously and then sum across multiple dichotomous exposures. 
+As an additive model, this technique is a straightforward, way of identifying children at increased odds for developing a range of maladaptive outcomes, including
+cognitive deficits, behavioral adjustment problems, and poor physical health.
+
+Multiple stressors exposures can sometimes overlap (e.g., harsh and unresponsive parenting) or be independent (e.g., life events), but in each case prediction is enhanced by combining multiple risks in the model.
+Multiple stressors exposures can sometimes overlap (e.g., material deprivation and overcrowding) or be independent (e.g., death of a parent and overcrowding), but in each case prediction is enhanced by combining multiple risks in the model. There are several advantages of formulating indices of multiple stress exposures into a composite score. Measurement error is reduced, validity is enhanced because no one singular measure adequately captures the full meaning of the construct of interest, avoids the issue of collinear predictors in the same general linear model, which may lead to unstable estimates and diminish statistical power.
+For example, many low-income families live in substardard housing, located in high crime neighborhoods; their children may attend schools with inadequate facilities, staffed by less experienced teachers; and many live in single parent households.
+
+it does not take into account interaction between the individual stressors
+Singling out the effects of school
+noise exposure on reading quality without taking into account
+these overlapping risk factors for reading deficits could overestimate the harmful impacts of noise on reading deficits. On the other
+hand, noise by itself may have negligible impact on reading
+deficits except when accompanied by household disadvantage or
+only if the exposure happens within the context of a school with
+inadequate facilities and staff. In the latter case, by isolating the
+singular impact of noise exposure as a risk factor for reading
+deficits, we might erroneously conclude that noise does not matter.
+It may in fact be a contributing risk factor for reading deficits but
+only when considered within the natural ecological context
+wherein high noise schools typically operate. Another way to think
+about this is that perhaps there is no main effect of noise on
+reading deficits but an interaction or moderator effect. Noise
+matters but only in the presence of certain other variables. As
+we explain below however, the use of an interactive, nonadditive
+model of multiple risk exposure is often not possible when a large
+number of risk factors are under consideration. Use of additive
+models of multiple risk factors is a common approach for dealing
+with this dilemma.
+
+## Modelling comorbidity 
+
+### old data, old insights
+
+### Alternative modelling methods 
+network 
+
+## Science is dead, and we killed it 
+potential publication bias may limit the generalizability of
+our conclusions. Studies with null findings are less likely to be
+published than those with statistically significant results. 
+
+journals should not gatekeep knowledge 
+
+code is the scientific product
+
+
+
+
+
+## References {.unnumbered}
