@@ -9,3 +9,49 @@
 \usepackage{graphicx}    % For including images in tables
 \usepackage[backend=biber]{biblatex} % For bibliography management
 \usepackage{hyperref}    % For hyperlinks in the document
+
+
+% Format Part titles ------------------------------------------------------------
+
+% \renewcommand\part[1]{} % <-- Remove part page
+
+% Only print part title
+\makeatletter
+\renewcommand\part[1]{ % <-- Specify that \part takes one argument
+
+    % Remove "Part I"
+    % {\centering\normalfont\Huge\bfseries \partname\space\thepart\par}
+
+    \def\temp{#1} % Store title in a temporary variable
+
+    % Add part title to the TOC if it is not empty 
+    \ifx\temp\empty
+    \else
+      % Clear the page 
+      \if@openright\cleardoublepage\else\clearpage\fi
+      \thispagestyle{plain}
+      \vspace*{4\baselineskip} % Adjust vertical spacing
+
+      % Add part title to the TOC
+      \addcontentsline{toc}{part}{#1} % <-- Use #1 to insert part title
+      
+      % Print the part title
+      \vspace*{2\baselineskip} % Adjust vertical spacing
+      {\centering\normalfont\Huge\bfseries #1\par}
+      \vskip 3\baselineskip
+    \fi
+}
+\makeatother
+
+% Format quotes ------------------------------------------------------------
+
+% Custom environment for .quotify divs
+\newenvironment{quotify}
+{
+  \vspace*{\fill} % Add vertical space to center the content
+  \begin{flushright} % Align the content to the right
+}
+{
+  \end{flushright}
+  \vspace*{\fill} % Add vertical space to center the content
+}

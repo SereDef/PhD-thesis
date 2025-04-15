@@ -22,11 +22,11 @@ end
 local function is_section_div (div)
   return div.t == 'Div'
     and div.classes[1] == 'section'
-    and (div.attributes.number or div.classes:includes 'unnumbered')
+    and (div.attributes.number or div.classes:includes 'unnumbered' or div.classes:includes 'chapter')
 end
 
 --- Returns the section heading when given a section div, and nil otherwise.
--- @param div   a pandoc Block element
+-- @param div a pandoc Block element
 -- @return heading element or nil
 -- @return suffix to be used with identifiers
 local function section_header (div)
@@ -145,6 +145,7 @@ local function create_section_bibliography (meta, opts)
   local process_div
   process_div = function (div)
     local header, suffix = section_header(div)
+
     if not header or not suffix or opts.level < header.level then
       -- Don't do anything for deeply-nested sections.
       return div, false
@@ -152,7 +153,8 @@ local function create_section_bibliography (meta, opts)
       -- Don't process sections above minlevel
       div.content = div.content:map(process_div)
       return div, false
-    elseif opts.level == header.level then
+    elseif opts.level == header.level or div.classes:includes 'chapter' then
+      -- Process standalone chapters or chapters marked as 'chapter'
       div.content = section_citeproc(div.content, suffix)
       return adjust_refs_components(div), false
     else

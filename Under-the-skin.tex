@@ -129,6 +129,52 @@
 \usepackage{graphicx}    % For including images in tables
 \usepackage[backend=biber]{biblatex} % For bibliography management
 \usepackage{hyperref}    % For hyperlinks in the document
+
+
+% Format Part titles ------------------------------------------------------------
+
+% \renewcommand\part[1]{} % <-- Remove part page
+
+% Only print part title
+\makeatletter
+\renewcommand\part[1]{ % <-- Specify that \part takes one argument
+
+    % Remove "Part I"
+    % {\centering\normalfont\Huge\bfseries \partname\space\thepart\par}
+
+    \def\temp{#1} % Store title in a temporary variable
+
+    % Add part title to the TOC if it is not empty 
+    \ifx\temp\empty
+    \else
+      % Clear the page 
+      \if@openright\cleardoublepage\else\clearpage\fi
+      \thispagestyle{plain}
+      \vspace*{4\baselineskip} % Adjust vertical spacing
+
+      % Add part title to the TOC
+      \addcontentsline{toc}{part}{#1} % <-- Use #1 to insert part title
+      
+      % Print the part title
+      \vspace*{2\baselineskip} % Adjust vertical spacing
+      {\centering\normalfont\Huge\bfseries #1\par}
+      \vskip 3\baselineskip
+    \fi
+}
+\makeatother
+
+% Format quotes ------------------------------------------------------------
+
+% Custom environment for .quotify divs
+\newenvironment{quotify}
+{
+  \vspace*{\fill} % Add vertical space to center the content
+  \begin{flushright} % Align the content to the right
+}
+{
+  \end{flushright}
+  \vspace*{\fill} % Add vertical space to center the content
+}
 \KOMAoption{captions}{tableheading}
 \makeatletter
 \@ifpackageloaded{tcolorbox}{}{\usepackage[skins,breakable]{tcolorbox}}
@@ -229,16 +275,41 @@ physical health problems}
 }
 \bookmarksetup{startatroot}
 
-\chapter*{PREFACE}\label{preface}
-\addcontentsline{toc}{chapter}{PREFACE}
+\chapter*{Doctoral commitee:}\label{doctoral-commitee}
+\addcontentsline{toc}{chapter}{Doctoral commitee:}
 
-\markboth{PREFACE}{PREFACE}
+\markboth{Doctoral commitee:}{Doctoral commitee:}
 
-\begin{tcolorbox}[enhanced jigsaw, titlerule=0mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Note}, breakable, coltitle=black, colback=white, bottomtitle=1mm, opacityback=0, toptitle=1mm, leftrule=.75mm, arc=.35mm, colframe=quarto-callout-note-color-frame, rightrule=.15mm, colbacktitle=quarto-callout-note-color!10!white, bottomrule=.15mm, left=2mm, toprule=.15mm, opacitybacktitle=0.6]
+\paragraph*{AUTHOR}\label{author}
+\addcontentsline{toc}{paragraph}{AUTHOR}
+
+~~~~~~Serena Defina
+
+\paragraph*{PROMOTOR}\label{promotor}
+\addcontentsline{toc}{paragraph}{PROMOTOR}
+
+~~~~~~Henning Tiemier
+
+\paragraph*{CO-PROMOTORS}\label{co-promotors}
+\addcontentsline{toc}{paragraph}{CO-PROMOTORS}
+
+~~~~~~Charlotte A.M. Cecil\\
+\strut ~~~~~~Janine F. Felix
+
+\newpage
+
+\begin{tcolorbox}[enhanced jigsaw, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Note}, arc=.35mm, colframe=quarto-callout-note-color-frame, colback=white, toprule=.15mm, bottomrule=.15mm, coltitle=black, bottomtitle=1mm, opacitybacktitle=0.6, leftrule=.75mm, colbacktitle=quarto-callout-note-color!10!white, opacityback=0, breakable, toptitle=1mm, titlerule=0mm, rightrule=.15mm, left=2mm]
 
 This is a work in progress. Stay tuned :)
 
 \end{tcolorbox}
+
+\bookmarksetup{startatroot}
+
+\chapter*{PREFACE}\label{preface}
+\addcontentsline{toc}{chapter}{PREFACE}
+
+\markboth{PREFACE}{PREFACE}
 
 Dear reader,
 
@@ -265,37 +336,12 @@ shall we?
 
 \newpage
 
-\subsubsection*{AUTHOR}\label{author}
-\addcontentsline{toc}{subsubsection}{AUTHOR}
-
-~~~~~~Serena Defina
-
-\subsubsection*{PROMOTOR}\label{promotor}
-\addcontentsline{toc}{subsubsection}{PROMOTOR}
-
-~~~~~~Henning Tiemier
-
-\subsubsection*{CO-PROMOTORS}\label{co-promotors}
-\addcontentsline{toc}{subsubsection}{CO-PROMOTORS}
-
-~~~~~~Charlotte A.M. Cecil\\
-\strut ~~~~~~Janine F. Felix
-
-\newpage
-
+\begin{quotify}
 \emph{``In the depth of winter, I found there was, within me, an
-invincible summer.''} Albert Camus -- Summer (1954)
+invincible summer.''} \newline Albert Camus -- Summer (1954)
+\end{quotify}
 
-\newpage
-
-\section*{Aknowledgements}\label{aknowledgements}
-\addcontentsline{toc}{section}{Aknowledgements}
-
-\markright{Aknowledgements}
-
-TODO
-
-\bookmarksetup{startatroot}
+\part{}
 
 \chapter{General Introduction}\label{sec-chapter1}
 
@@ -322,24 +368,25 @@ experiences (sometimes also referred to as ``childhood trauma'',
 ``maltreatment'', ``early adversity'', or ``adverse childhood
 experiences'') encompass a wide range of stressors, including neglect
 and abuse, bereavement, bullying but also poverty, material deprivation
-and/or parental psychopathology {[}@Heim2020{]}.
+and/or parental psychopathology (Heim, 2020).
 
 ELS is a widely studied concept, partly because it is surprisingly
 common: more than half the population experiences at least one form of
-ELS before the age of 18 years {[}@Madigan2024{]}. But more importantly,
-ELS is one of strongest, most consistent predictors of mental health
-problems later in life, particularly depression {[}@Li2016;
-@LeMoult2020; @Li2023{]}.
+ELS before the age of 18 years (Madigan et al., 2024). But more
+importantly, ELS is one of strongest, most consistent predictors of
+mental health problems later in life, particularly depression (LeMoult
+et al., 2020; Li et al., 2016; Li et al., 2023).
 
 Systematic scientific investigations into ELS and its consequences,
 really gained momentum in the late 90s, when large-scale epidemiological
 studies, began to also highlight a relationship between ELS and an
 increased risk of chronic diseases and premature mortality (e.g.
-{[}@Felitti1998{]}). This line of evidence also proved very robust over
-time, so ELS is now a well-recognised risk factor for cardio-metabolic
-health problems, including obesity {[}@Wiss2020; @Danese2014{]}, type 2
-diabetes {[}@Zhu2022{]}, hypertension and cardio-vascular disease
-{[}@Jakubowski2018; @Jacquet-Smailovic2022{]}.
+(Felitti et al., 1998)). This line of evidence also proved very robust
+over time, so ELS is now a well-recognised risk factor for
+cardio-metabolic health problems, including obesity (Danese \& Tan,
+2014; Wiss \& Brewerton, 2020), type 2 diabetes (Zhu et al., 2022),
+hypertension and cardio-vascular disease (Jacquet-Smailovic et al.,
+2022; Jakubowski et al., 2018).
 
 \section{Mental \& physical health: a comorbidity
 paradigm}\label{mental-physical-health-a-comorbidity-paradigm}
@@ -347,29 +394,29 @@ paradigm}\label{mental-physical-health-a-comorbidity-paradigm}
 Interestingly, parallel to this growing interest in the effects of
 stress and psychosocial factors on physical health, the early 2000s also
 witnessed a surge of epidemiological studies uncovering the relationship
-between depression and cardio-metabolic health problems{[}@Penninx2001;
-@VanderKooy2007; @Luppino2010{]}. Historically, these two conditions had
-been largely investigated as separate entities, each with distinct risk
-factors and treatment approaches. Their connection was not entirely
-overlooked (see for example early theoretical work by @Engel1977), but
-it remained peripheral to mainstream medical research until relatively
-recently.
+between depression and cardio-metabolic health problems(Luppino et al.,
+2010; Penninx et al., 2001; Van der Kooy et al., 2007). Historically,
+these two conditions had been largely investigated as separate entities,
+each with distinct risk factors and treatment approaches. Their
+connection was not entirely overlooked (see for example early
+theoretical work by Engel (1977)), but it remained peripheral to
+mainstream medical research until relatively recently.
 
 As more evidence accumulated that depression and cardio-metabolic
-conditions tend to co-occur {[}@Anwar2018; @Blasco2020;
-@Gutiérrez-Rojas2020{]}, several potential mechanisms have been proposed
-to explain this observed comorbidity {[}@Milaneschi2019{]}. One
-possibility is that these conditions share common risk factors, such as
-genetic liability for instance, but also ELS exposure, as discussed
-above and supported by a recent large scale meta-analysis
-{[}@Souama2023{]}. It is also possible that experiencing depression may
+conditions tend to co-occur (Anwar et al., 2018; Blasco et al., 2020;
+Gutiérrez-Rojas et al., 2020), several potential mechanisms have been
+proposed to explain this observed comorbidity (Milaneschi et al., 2019).
+One possibility is that these conditions share common risk factors, such
+as genetic liability for instance, but also ELS exposure, as discussed
+above and supported by a recent large scale meta-analysis (Souama et
+al., 2023). It is also possible that experiencing depression may
 directly increase the risk of developing cardio-metabolic health
 problems later in life. For example, in two meta-analyses based on
 longitudinal data, depression was found to be risk factor for obesity
-and diabetes {[}@Mannan2016; @Ditmars2022{]}. Other longitudinal
-meta-analyses however, have also shown, in turn, that poor
-cardio-metabolic health was a robust predictor of later depression
-{[}@Zhou2024{]}, supporting the hypothesis of a bi-directional
+and diabetes (Ditmars et al., 2022; Mannan et al., 2016). Other
+longitudinal meta-analyses however, have also shown, in turn, that poor
+cardio-metabolic health was a robust predictor of later depression (Zhou
+et al., 2024), supporting the hypothesis of a bi-directional
 relationship.
 
 \section{ELS and psycho-physical health: towards an integrated
@@ -382,11 +429,11 @@ health, and \emph{c)} mental and cardio-metabolic health
 attention in the medical literature. This isn't surprising. Depression
 and cardio-metabolic conditions are among the leading causes of death
 and disability worldwide, shaping an enormous public health burden which
-is largely preventable {[}@Anwar2018{]}. ELS is a promising shared risk
-factor, which can be measured years - and even decades - before clinical
-symptoms emerge, making it an ideal candidate for informing early
-detection and improving the integrated prevention of psycho-physical
-health problems.
+is largely preventable (Anwar et al., 2018). ELS is a promising shared
+risk factor, which can be measured years - and even decades - before
+clinical symptoms emerge, making it an ideal candidate for informing
+early detection and improving the integrated prevention of
+psycho-physical health problems.
 
 \begin{figure}
 
@@ -415,10 +462,11 @@ adversity (e.g., childhood neglect and abuse). However, there is
 convincing evidence that exposure to multiple stressors - i.e.,
 different sources of stress, as well as repeated or continued exposure
 over time - has much worse consequences for psycho-physical health,
-compared to individual stressors {[}@Evans2013; @Hughes2017{]}. This
-underscores the importance of identifying of children who face multiple
-forms of ELS, as they may represent a particularly vulnerable
-population, who should be prioritized in intervention programs.
+compared to individual stressors (Evans et al., 2013; Hughes et al.,
+2017). This underscores the importance of identifying of children who
+face multiple forms of ELS, as they may represent a particularly
+vulnerable population, who should be prioritized in intervention
+programs.
 
 Secondly, existing studies typically only address one ``side'' of this
 triad of relationships. For instance, while ELS has been linked to both
@@ -426,8 +474,8 @@ depression and obesity independently, its role in determining their
 co-occurrence remains heavily understudied. Consequently, it is hard to
 establish the relative importance of ELS as a risk factor for each
 disorder in isolation vs.~their comorbidity, which poses an obstacle to
-the development of integrated prevention and intervention
-{[}@Anwar2018{]}.
+the development of integrated prevention and intervention (Anwar et al.,
+2018).
 
 Lastly, the overwhelming majority of studies investigating either the
 role of ELS, or the(bidirectional) relationships between mental and
@@ -437,20 +485,20 @@ On one hand, this brings about important measurement issues. Namely, the
 proposed relationship between ELS and adult psycho-physical health
 relies heavily on retrospective reports of ELS exposure, which may have
 introduced recall bias, unrealistically inflating the association
-estimates reported by the literature {[}@Reuben2016{]}.
+estimates reported by the literature (Reuben et al., 2016).
 
 On the other hand, both depression and cardio-metabolic health problems
 very often find their onset well before adulthood. A growing number of
 adolescents, for instance, experience depressive symptoms before the age
-of 20 years {[}@Keeley2021; @Patalay2019{]}. Concurrently, while
+of 20 years (Keeley, 2021; Patalay \& Gage, 2019). Concurrently, while
 cardio-metabolic endpoints such as myocardial infarction and diabetes
 are traditionally associated with later life stages, their prodromal
 forms, including hypertension, dyslipidemia, and obesity, manifest more
-and more frequently between childhood and adolescence {[}@WHO2022;
-@NCD-RisC2017{]}. Intervening during this early developmental window
-could be crucial to mitigate the progression of such prodromal
-psycho-physical symptoms into chronic mental and physical health
-conditions later in life.
+and more frequently between childhood and adolescence (NCD-RisC, 2017;
+WHO, 2022). Intervening during this early developmental window could be
+crucial to mitigate the progression of such prodromal psycho-physical
+symptoms into chronic mental and physical health conditions later in
+life.
 
 In this context, prospective cohort studies that begin at conception and
 capture a broader spectrum of ELS exposures and psycho-physical
@@ -490,6 +538,221 @@ pressure) and the developing brain.
 \addcontentsline{toc}{section}{References}
 
 \markright{References}
+
+\phantomsection\label{refs--1}
+\begin{CSLReferences}{1}{0}
+\bibitem[\citeproctext]{ref-Anwar2018}
+Anwar, N., Kuppili, P. P., \& Balhara, Y. P. S. (2018). Depression and
+physical noncommunicable diseases: The need for an integrated approach
+{[}Journal Article{]}. \emph{WHO South-East Asia Journal of Public
+Health}, \emph{6}(1), 12--17.
+
+\bibitem[\citeproctext]{ref-Blasco2020}
+Blasco, B. V., García-Jiménez, J., Bodoano, I., \& Gutiérrez-Rojas, L.
+(2020). Obesity and depression: Its prevalence and influence as a
+prognostic factor: A systematic review {[}Journal Article{]}.
+\emph{Psychiatry Investig}, \emph{17}(8), 715--724.
+\url{https://doi.org/10.30773/pi.2020.0099}
+
+\bibitem[\citeproctext]{ref-Danese2014}
+Danese, A., \& Tan, M. (2014). Childhood maltreatment and obesity:
+Systematic review and meta-analysis {[}Journal Article{]}. \emph{Mol
+Psychiatry}, \emph{19}(5), 544--554.
+\url{https://doi.org/10.1038/mp.2013.54}
+
+\bibitem[\citeproctext]{ref-Ditmars2022}
+Ditmars, H. L., Logue, M. W., Toomey, R., McKenzie, R. E., Franz, C. E.,
+Panizzon, M. S., Reynolds, C. A., Cuthbert, K. N., Vandiver, R.,
+Gustavson, D. E., et al. (2022). Associations between depression and
+cardiometabolic health: A 27-year longitudinal study {[}Journal
+Article{]}. \emph{Psychological Medicine}, \emph{52}(14), 3007--3017.
+\url{https://doi.org/10.1017/S003329172000505X}
+
+\bibitem[\citeproctext]{ref-Engel1977}
+Engel, G. L. (1977). The need for a new medical model: A challenge for
+biomedicine {[}Journal Article{]}. \emph{Science}, \emph{196}(4286),
+129--136. \url{https://doi.org/10.1126/science.847460}
+
+\bibitem[\citeproctext]{ref-Evans2013}
+Evans, G. W., Li, D., \& Whipple, S. S. (2013). Cumulative risk and
+child development {[}Journal Article{]}. \emph{Psychological Bulletin},
+\emph{139}(6), 1342--1396. \url{https://doi.org/10.1037/a0031808}
+
+\bibitem[\citeproctext]{ref-Felitti1998}
+Felitti, V. J., Anda, R. F., Nordenberg, D., Williamson, D. F., Spitz,
+A. M., Edwards, V., Koss, M. P., \& Marks, J. S. (1998). Relationship of
+childhood abuse and household dysfunction to many of the leading causes
+of death in adults: The adverse childhood experiences (ACE) study.
+\emph{American Journal of Preventive Medicine}, \emph{14}(4), 245--258.
+\url{https://doi.org/10.1016/S0749-3797(98)00017-8}
+
+\bibitem[\citeproctext]{ref-Gutiuxe9rrez-Rojas2020}
+Gutiérrez-Rojas, L., Porras-Segovia, A., Dunne, H., Andrade-González,
+N., \& Cervilla, J. A. (2020). Prevalence and correlates of major
+depressive disorder: A systematic review {[}Journal Article{]}.
+\emph{Brazilian Journal of Psychiatry}, \emph{42}, 657--672.
+
+\bibitem[\citeproctext]{ref-Heim2020}
+Heim, C. (2020). Stress, early life {[}Book Section{]}. In M. D. Gellman
+(Ed.), \emph{Encyclopedia of behavioral medicine} (pp. 2167--2170).
+Springer International Publishing.
+\url{https://doi.org/0.1007/978-3-030-39903-0_63}
+
+\bibitem[\citeproctext]{ref-Hughes2017}
+Hughes, K., Bellis, M. A., Hardcastle, K. A., Sethi, D., Butchart, A.,
+Mikton, C., Jones, L., \& Dunne, M. P. (2017). The effect of multiple
+adverse childhood experiences on health: A systematic review and
+meta-analysis {[}Journal Article{]}. \emph{The Lancet Public Health},
+\emph{2}(8), e356--e366.
+\url{https://doi.org/10.1016/S2468-2667(17)30118-4}
+
+\bibitem[\citeproctext]{ref-Jacquet-Smailovic2022}
+Jacquet-Smailovic, M., Brennstuhl, M.-J., Tarquinio, C. L., \&
+Tarquinio, C. (2022). Relationship between cumulative adverse childhood
+experiences and myocardial infarction~in adulthood: A systematic review
+and meta-analysis {[}Journal Article{]}. \emph{Journal of Child \&
+Adolescent Trauma}, \emph{15}(3), 701--714.
+\url{https://doi.org/10.1007/s40653-021-00404-7}
+
+\bibitem[\citeproctext]{ref-Jakubowski2018}
+Jakubowski, K. P., Cundiff, J. M., \& Matthews, K. A. (2018). Cumulative
+childhood adversity and adult cardiometabolic disease: A meta-analysis
+{[}Journal Article{]}. \emph{Health Psychol}, \emph{37}(8), 701--715.
+\url{https://doi.org/10.1037/hea0000637}
+
+\bibitem[\citeproctext]{ref-Keeley2021}
+Keeley, B. (2021). The state of the world's children 2021: On my
+mind--promoting, protecting and caring for children's mental health
+{[}Journal Article{]}. \emph{UNICEF}.
+
+\bibitem[\citeproctext]{ref-LeMoult2020}
+LeMoult, J., Humphreys, K. L., Tracy, A., Hoffmeister, J. A., Ip, E., \&
+Gotlib, I. H. (2020). Meta-analysis: Exposure to early life stress and
+risk for depression in childhood and adolescence {[}Journal Article{]}.
+\emph{J Am Acad Child Adolesc Psychiatry}, \emph{59}(7), 842--855.
+\url{https://doi.org/10.1016/j.jaac.2019.10.011}
+
+\bibitem[\citeproctext]{ref-Li2016}
+Li, M., D'Arcy, C., \& Meng, X. (2016). Maltreatment in childhood
+substantially increases the risk of adult depression and anxiety in
+prospective cohort studies: Systematic review, meta-analysis, and
+proportional attributable fractions {[}Journal Article{]}. \emph{Psychol
+Med}, \emph{46}(4), 717--730.
+\url{https://doi.org/10.1017/s0033291715002743}
+
+\bibitem[\citeproctext]{ref-Li2023}
+Li, M., Gao, T., Su, Y., Zhang, Y., Yang, G., D'Arcy, C., \& Meng, X.
+(2023). The timing effect of childhood maltreatment in depression: A
+systematic review and meta-analysis {[}Journal Article{]}. \emph{Trauma,
+Violence, \& Abuse}, \emph{24}(4), 2560--2580.
+\url{https://doi.org/10.1177/15248380221102558}
+
+\bibitem[\citeproctext]{ref-Luppino2010}
+Luppino, F. S., Wit, L. M. de, Bouvy, P. F., Stijnen, T., Cuijpers, P.,
+Penninx, B. W. J. H., \& Zitman, F. G. (2010). Overweight, obesity, and
+depression: A systematic review and meta-analysis of longitudinal
+studies {[}Journal Article{]}. \emph{Archives of General Psychiatry},
+\emph{67}(3), 220--229.
+\url{https://doi.org/10.1001/archgenpsychiatry.2010.2}
+
+\bibitem[\citeproctext]{ref-Madigan2024}
+Madigan, S., Thiemann, R., Deneault, A.-A., Fearon, R. M. P., Racine,
+N., Park, J., Lunney, C. A., Dimitropoulos, G., Jenkins, S., Williamson,
+T., \& Neville, R. D. (2024). Prevalence of adverse childhood
+experiences in child population samples: A systematic review and
+meta-analysis {[}Journal Article{]}. \emph{JAMA Pediatrics},
+\emph{179}(1), 19--33.
+\url{https://doi.org/10.1001/jamapediatrics.2024.4385}
+
+\bibitem[\citeproctext]{ref-Mannan2016}
+Mannan, M., Mamun, A., Doi, S., \& Clavarino, A. (2016). Is there a
+bi-directional relationship between depression and obesity among adult
+men and women? Systematic review and bias-adjusted meta analysis
+{[}Journal Article{]}. \emph{Asian Journal of Psychiatry}, \emph{21},
+51--66. https://doi.org/\url{https://doi.org/10.1016/j.ajp.2015.12.008}
+
+\bibitem[\citeproctext]{ref-Milaneschi2019}
+Milaneschi, Y., Simmons, W. K., Rossum, E. F. C. van, \& Penninx, B. W.
+J. H. (2019). Depression and obesity: Evidence of shared biological
+mechanisms {[}Journal Article{]}. \emph{Molecular Psychiatry},
+\emph{24}(1), 18--33. \url{https://doi.org/10.1038/s41380-018-0017-5}
+
+\bibitem[\citeproctext]{ref-NCD-RisC2017}
+NCD-RisC, N. R. F. C. (2017). Worldwide trends in body-mass index,
+underweight, overweight, and obesity from 1975 to 2016: A pooled
+analysis of 2416 population-based measurement studies in 128·9 million
+children, adolescents, and adults {[}Journal Article{]}. \emph{Lancet},
+\emph{390}(10113), 2627--2642.
+\url{https://doi.org/10.1016/s0140-6736(17)32129-3}
+
+\bibitem[\citeproctext]{ref-Patalay2019}
+Patalay, P., \& Gage, S. H. (2019). Changes in millennial adolescent
+mental health and health-related behaviours over 10 years: A population
+cohort comparison study {[}Journal Article{]}. \emph{Int J Epidemiol},
+\emph{48}(5), 1650--1664. \url{https://doi.org/10.1093/ije/dyz006}
+
+\bibitem[\citeproctext]{ref-Penninx2001}
+Penninx, B. W. J. H., Beekman, A. T. F., Honig, A., Deeg, D. J. H.,
+Schoevers, R. A., Eijk, J. T. M. van, \& Tilburg, W. van. (2001).
+Depression and cardiac mortality: Results from a community-based
+longitudinal study {[}Journal Article{]}. \emph{Archives of General
+Psychiatry}, \emph{58}(3), 221--227.
+\url{https://doi.org/10.1001/archpsyc.58.3.221}
+
+\bibitem[\citeproctext]{ref-Reuben2016}
+Reuben, A., Moffitt, T. E., Caspi, A., Belsky, D. W., Harrington, H.,
+Schroeder, F., Hogan, S., Ramrakha, S., Poulton, R., \& Danese, A.
+(2016). Lest we forget: Comparing retrospective and prospective
+assessments of adverse childhood experiences in the prediction of adult
+health {[}Journal Article{]}. \emph{Journal of Child Psychology and
+Psychiatry}, \emph{57}(10), 1103--1112.
+\url{https://doi.org/10.1111/jcpp.12621}
+
+\bibitem[\citeproctext]{ref-Souama2023}
+Souama, C., Lamers, F., Milaneschi, Y., Vinkers, C. H., Defina, S.,
+Garvert, L., Stein, F., Woofenden, T., Brosch, K., Dannlowski, U.,
+Galenkamp, H., Graaf, R. de, Jaddoe, V. W. V., Lok, A., Rijn, B. B. van,
+Völzke, H., Cecil, C. A. M., Felix, J. F., Grabe, H. J., \ldots{}
+EarlyCause, consortium on behalf of the. (2023). Depression,
+cardiometabolic disease, and their co-occurrence after childhood
+maltreatment: An individual participant data meta-analysis including
+over 200,000 participants {[}Journal Article{]}. \emph{BMC Medicine},
+\emph{21}(1), 93. \url{https://doi.org/10.1186/s12916-023-02769-y}
+
+\bibitem[\citeproctext]{ref-VanderKooy2007}
+Van der Kooy, K., Hout, H. van, Marwijk, H., Marten, H., Stehouwer, C.,
+\& Beekman, A. (2007). Depression and the risk for cardiovascular
+diseases: Systematic review and meta analysis {[}Journal Article{]}.
+\emph{International Journal of Geriatric Psychiatry}, \emph{22}(7),
+613--626. https://doi.org/\url{https://doi.org/10.1002/gps.1723}
+
+\bibitem[\citeproctext]{ref-WHO2022}
+WHO, W. H. O. (2022). \emph{WHO european regional obesity report 2022}
+{[}Book{]}. World Health Organization. Regional Office for Europe.
+
+\bibitem[\citeproctext]{ref-Wiss2020}
+Wiss, D. A., \& Brewerton, T. D. (2020). Adverse childhood experiences
+and adult obesity: A systematic review of plausible mechanisms and
+meta-analysis of cross-sectional studies {[}Journal Article{]}.
+\emph{Physiology \& Behavior}, \emph{223}, 112964.
+https://doi.org/\url{https://doi.org/10.1016/j.physbeh.2020.112964}
+
+\bibitem[\citeproctext]{ref-Zhou2024}
+Zhou, Y., Kivimäki, M., Lim, C. C. W., Carrillo-Larco, R. M., Qi, S.,
+Wu, X., \& Xu, X. (2024). Bidirectional associations between
+cardiometabolic multimorbidity and depression and mediation of
+lifestyles: A multicohort study {[}Journal Article{]}. \emph{JACC Asia},
+\emph{4}(9), 657--671.
+\url{https://doi.org/10.1016/j.jacasi.2024.06.004}
+
+\bibitem[\citeproctext]{ref-Zhu2022}
+Zhu, S., Shan, S., Liu, W., Li, S., Hou, L., Huang, X., Liu, Y., Yi, Q.,
+Sun, W., Tang, K., Adeloye, D., Rudan, I., \& Song, P. (2022). Adverse
+childhood experiences and risk of diabetes: A systematic review and
+meta-analysis {[}Journal Article{]}. \emph{J Glob Health}, \emph{12},
+04082. \url{https://doi.org/10.7189/jogh.12.04082}
+
+\end{CSLReferences}
 
 \part{PART 1: The role of ELS in the development of mental and physical
 health}
@@ -1804,7 +2067,7 @@ do have no choice so, checking justification works
 
 \bookmarksetup{startatroot}
 
-\chapter{DISCUSSION}\label{discussion-6}
+\chapter{General discussion}\label{general-discussion}
 
 In this dissertation \ldots{} We focus on adolescence, a critical
 developmental period, when many mental health problems first emerge, and
@@ -1830,9 +2093,7 @@ personality.
 
 \subsection{Missing piece: resilience}\label{missing-piece-resilience}
 
-\bookmarksetup{startatroot}
-
-\chapter{Alternative modelling
+\section{Alternative modelling
 methods}\label{alternative-modelling-methods}
 
 A cumulative risk approach examines the number of stressors experienced

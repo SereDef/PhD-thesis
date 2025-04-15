@@ -10,7 +10,10 @@ book:
   cover-image: cover.png  
   chapters:
     - index.qmd
-    - 1.Introduction/introduction.qmd
+    - 0.preface.qmd
+    - part: " "
+      chapters:
+      - 1.Introduction/introduction.qmd
     - part: "PART 1: The role of ELS in the development of mental and physical health"
       chapters:
       - 2.Chapter/ELS-comorbidity.qmd
@@ -54,6 +57,8 @@ format:
     theme: [cosmo, style_web.scss]
     grid:
       sidebar-width: 600px # Widen sidebar for longer chapter titles
+    include-after-body: 
+      text: <script type="application/javascript" src="/sidebar-tweak.js"></script>
   
   pdf:
     documentclass: scrreport # scrbook 
@@ -62,7 +67,8 @@ format:
     # Display references after every chapter
     filters:
       - quarto
-      - section-bibliographies  
+      - section-bibliographies
+      - _extensions/quotify.lua
     reference-section-title: References
     citeproc: false # Disable citeproc to use biblatex
     

@@ -11,6 +11,20 @@ $theme-darksand: #e4c590;
 
 $link-color: lighten($theme-blue, 10%);
 
+// Hide empty part titles in the sidebar
+
+.quarto-sidebar-section-1 > .sidebar-item {
+  // Remove indentation or padding that makes it look nested
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+  font-size: larger !important;
+  // Optionally, override any background or border styles that indicate nesting 
+  background: none !important;
+  border: none !important;
+  // If there are list styles or bullets, remove them
+  content: none !important;
+}
+
 // Chapter numbers
 .chapter-number::before {
   content: "Chapter ";
@@ -27,7 +41,7 @@ $link-color: lighten($theme-blue, 10%);
 .title, .sidebar-title {
   color: $theme-blue;
   font-weight: 600;
-  text-align: center;
+  text-align: center; 
 }
 
 .subtitle.lead {
