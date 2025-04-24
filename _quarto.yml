@@ -5,7 +5,7 @@ project:
 book:
   title: "under the skin"
   subtitle: "Early-life stress exposure and the co-occurrence of mental and physical health problems"
-  # author: "Serena Defina"
+  author: "Serena Defina"
   # date: "4/25/2025"
   cover-image: cover.png  
   chapters:
@@ -14,13 +14,13 @@ book:
     - part: " "
       chapters:
       - 1.Introduction/introduction.qmd
-    - part: "PART 1: The role of ELS in the development of mental and physical health"
+    - part: "**PART 1**: The role of ELS in the development of mental and physical health"
       chapters:
       - 2.Chapter/ELS-comorbidity.qmd
       - 3.Chapter/ELS-lifestyle-moderators.qmd
       - 4.Chapter/ELS-brain.qmd
       - 5.Chapter/ELS-heart.qmd
-    - part: "PART 2: Reciprocal relationships between mental and physical health problems"
+    - part: "**PART 2**: Reciprocal relationships between mental and physical health problems"
       chapters:
       - 6.Chapter/longitudinal-codevelopment.qmd
       - 7.Chapter/arterial-brain.qmd
@@ -61,9 +61,11 @@ format:
       text: <script type="application/javascript" src="/sidebar-tweak.js"></script>
   
   pdf:
-    documentclass: scrreport # scrbook 
+    documentclass: scrreport
     keep-tex: true
     include-in-header: style_pdf.sty 
+    include-before-body: thesis_info.tex
+    fig-pos: "H"  # Non-floating figures
     # Display references after every chapter
     filters:
       - quarto

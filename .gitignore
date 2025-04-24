@@ -1,6 +1,9 @@
 .DS_Store
+.Rhistory
+
+site_libs/
+docs/site_libs/*
 
 /.quarto/
-
 
 /.luarc.json

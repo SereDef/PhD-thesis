@@ -1,17 +1,22 @@
-#### Doctoral commitee: {.unnumbered}
+---
+toc: false
+---
 
-##### AUTHOR
-|       Serena Defina
+#  {.unnumbered}
 
-##### PROMOTOR
+<!-- I want this on the landing page, but should be before the TOC on PDF -->
+::: {.content-visible when-format="html"}
+*<ins>Doctoral committee</ins>:*
+
+
+**PROMOTOR**
+
 |       Henning Tiemier
 
-##### CO-PROMOTORS
+
+**CO-PROMOTORS**
+
 |       Charlotte A.M. Cecil
 |       Janine F. Felix
 
-\newpage
-
-:::{.callout-note}
-This is a work in progress. Stay tuned :)
 :::

@@ -1,5 +1,9 @@
 ## PREFACE {.unnumbered}
 
+:::{.callout-note}
+This is a work in progress. Stay tuned :)
+:::
+
 Dear reader,
 
 Let me begin this book the only way that feels right: with a little note of honesty. Writing this was hard, much harder than I anticipated. Perhaps out of pride, or because of this irresistible greed I feel to dissect and point out limitations - that, I am told, makes for a good scientist as much as a horrible friend - I kept wondering whether any of this would be worth your time.

@@ -5,11 +5,34 @@
 \usepackage{array}       % For advanced table formatting
 \usepackage{booktabs}    % For professional-looking tables
 \usepackage{longtable}   % For tables that span multiple pages
-\usepackage{caption}     % For table captions
 \usepackage{graphicx}    % For including images in tables
 \usepackage[backend=biber]{biblatex} % For bibliography management
 \usepackage{hyperref}    % For hyperlinks in the document
+\usepackage{caption}     % For custom table / figure captions
 
+% Format figure captions  -------------------------------------------------------
+
+\captionsetup[figure]{
+  font={small, it},
+  labelfont={bf,small,color=gray},
+  justification=justified,
+  textfont={color=gray},
+  aboveskip=10pt,
+  belowskip=0pt,
+}
+
+\newenvironment{fakecaption}
+{
+  \begingroup
+  \small\itshape\color{gray}
+  \setlength{\parskip}{5pt} % Add spacing between paragraphs
+  \setlength{\leftskip}{60pt} % Left indented
+  \setlength{\rightskip}{0pt} % justified
+}
+{
+  \par
+  \endgroup
+}
 
 % Format Part titles ------------------------------------------------------------
 
@@ -55,3 +78,12 @@
   \end{flushright}
   \vspace*{\fill} % Add vertical space to center the content
 }
+
+% Format headings ------------------------------------------------------------
+
+% Make #### headings italic and reduce space after
+\addtokomafont{paragraph}{\itshape} % Make paragraph headings italics
+
+% Format text ------------------------------------------------------------
+
+% \setlength{\parindent}{20pt} % Indentation for paragraphs

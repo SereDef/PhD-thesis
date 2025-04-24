@@ -11,8 +11,14 @@ $theme-darksand: #e4c590;
 
 $link-color: lighten($theme-blue, 10%);
 
-// Hide empty part titles in the sidebar
+// Sidebar
 
+// Hide "index.html" from the sidebar
+#quarto-sidebar > div.sidebar-menu-container > ul > li:nth-child(1) > div > a > span {
+  display: none !important;
+}
+
+// Chapter 1
 .quarto-sidebar-section-1 > .sidebar-item {
   // Remove indentation or padding that makes it look nested
   padding-left: 0 !important;
@@ -44,11 +50,24 @@ $link-color: lighten($theme-blue, 10%);
   text-align: center; 
 }
 
+// Style PART titles in sidebar
+.sidebar-item-section .sidebar-item-container {
+  &:has(.text-start:not(:empty)) {  // Target only non-empty PART titles
+    background-color: $theme-sand;
+    padding: 8px;
+    margin-top: 12px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+  }
+}
+
+// Main page
+
 .subtitle.lead {
   color: $theme-grey;
   font-weight: 550;
   font-size: 25px;
-  // text-align: center;
+  text-align: center;
 }
 
 h1 {
@@ -110,4 +129,9 @@ p {
 // Figures
 .quarto-figure {
   margin-top: 25px;  // Space above the figure
+}
+
+// Hide previous chapter title from bottom navigation
+#quarto-content > nav.page-navigation > div.nav-page.nav-page-previous > a > span {
+  display: none !important;
 }
