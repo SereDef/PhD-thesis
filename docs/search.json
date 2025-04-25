@@ -14,7 +14,7 @@
     "href": "0.preface.html",
     "title": "PREFACE",
     "section": "",
-    "text": "Note\n\n\n\nThis is a work in progress. Stay tuned :)\n\n\nDear reader,\nLet me begin this book the only way that feels right: with a little note of honesty. Writing this was hard, much harder than I anticipated. Perhaps out of pride, or because of this irresistible greed I feel to dissect and point out limitations - that, I am told, makes for a good scientist as much as a horrible friend - I kept wondering whether any of this would be worth your time.\nI guess 5-years-ago me hoped, at this point, they could promise you sensational scientific breakthroughs and game-changing statistical tricks ahead. Well, it looks like we may both have to settle for a somewhat less glamourous, but perhaps more truthful, process of scientific discovery.\nSo here is a collection of small steps toward understanding, many little increments of knowledge, a couple of false starts, a few frustratingly inconclusive results, and a handful of insights (some grim, some hopeful).\nStill here? Didn’t think so… let’s talk about early-life stress, shall we?\n\n“In the depth of winter, I found there was, within me, an invincible summer.” Albert Camus – Summer (1954)",
+    "text": "Note\n\n\n\nThis is a work in progress. Stay tuned :)\n\n\nDear reader,\nLet me begin this book the only way that feels right: with a little note of honesty. Writing this was hard, much harder than I anticipated. Perhaps out of pride, or because of this irresistible greed I feel to dissect and point out limitations - that, I am told, makes for a good scientist as much as a horrible friend - I kept wondering whether any of this would be worth your time.\nI guess 5-years-ago me hoped, at this point, they could promise you sensational scientific breakthroughs and game-changing statistical tricks ahead. Well, it looks like we may both have to settle for a somewhat less glamourous, but perhaps more truthful, process of scientific discovery.\nSo here is a collection of small steps toward understanding, many little increments of knowledge, a couple of false starts, a few frustratingly inconclusive results, and a handful of insights (some grim, some hopeful).\nStill here? Didn’t think so… let’s talk about early-life stress, shall we?",
     "crumbs": [
       "PREFACE"
     ]
@@ -79,7 +79,7 @@
     "href": "2.Chapter/ELS-comorbidity.html",
     "title": "2  ELS and adolescent psycho-physical health",
     "section": "",
-    "text": "Links",
+    "text": "Abstract\nObjective: Depression and obesity are two highly prevalent and often comorbid conditions. Exposure to early-life stress (ELS) has been associated with both depression and obesity in adulthood, as well as their preclinical manifestations during development. However, it remains unclear whether: (i) associations differ depending on the timing of stress exposure (prenatal vs postnatal) and (ii) ELS is a shared risk factor underlying the comorbidity between the two conditions.\nMethod: Leveraging data from two large population-based birth cohorts (ALSPAC: n=8428 (52% male participants); Generation R: n=4268 (48% male participants)), we constructed comprehensive cumulative measures of prenatal (in utero) and postnatal (from birth to 10 years) ELS. At age 13.5 years we assessed: a) internalizing symptoms (using maternal reports); b) fat mass percentage (using dual-energy X-ray absorptiometry); c) their comorbidity, defined as the co-occurrence of high internalizing and high adiposity.\nResults: Both prenatal (total effect [95%CI] = 0.20 [0.16; 0.22]) and postnatal stress (\\(\\beta\\) [95%CI] = 0.22 [0.17; 0.25]) were associated with higher internalizing symptoms, with evidence of a more prominent role of postnatal stress. A weaker association (primarily driven by prenatal stress) was observed between stress and adiposity (prenatal: 0.07 [0.05; 0.09]; postnatal: 0.04 [0.01; 0.07]). Both pre- (OR [95%CI] = 1.70 [1.47; 1.97]) and postnatal stress (1.87 [1.61; 2.17]) were associated with an increased risk of developing comorbidity.\nConclusion: We found evidence of (i) timing and (ii) shared causal effects of ELS on psycho-cardiometabolic health in adolescence, but future research is warranted to clarify how these associations may unfold over time.",
     "crumbs": [
       "**PART 1**: The role of ELS in the development of mental and physical health",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>ELS and adolescent psycho-physical health</span>"
@@ -89,19 +89,8 @@
     "objectID": "2.Chapter/ELS-comorbidity.html#links",
     "href": "2.Chapter/ELS-comorbidity.html#links",
     "title": "2  ELS and adolescent psycho-physical health",
-    "section": "",
-    "text": "Project’s code\nSupplementary materials\nELS score GitHub repository",
-    "crumbs": [
-      "**PART 1**: The role of ELS in the development of mental and physical health",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>ELS and adolescent psycho-physical health</span>"
-    ]
-  },
-  {
-    "objectID": "2.Chapter/ELS-comorbidity.html#abstract",
-    "href": "2.Chapter/ELS-comorbidity.html#abstract",
-    "title": "2  ELS and adolescent psycho-physical health",
-    "section": "Abstract",
-    "text": "Abstract\nObjective: Depression and obesity are two highly prevalent and often comorbid conditions. Exposure to early-life stress (ELS) has been associated with both depression and obesity in adulthood, as well as their preclinical manifestations during development. However, it remains unclear whether: (i) associations differ depending on the timing of stress exposure (prenatal vs postnatal) and (ii) ELS is a shared risk factor underlying the comorbidity between the two conditions.\nMethod: Leveraging data from two large population-based birth cohorts (ALSPAC: n=8428 (52% male participants); Generation R: n=4268 (48% male participants)), we constructed comprehensive cumulative measures of prenatal (in utero) and postnatal (from birth to 10 years) ELS. At age 13.5 years we assessed: a) internalizing symptoms (using maternal reports); b) fat mass percentage (using dual-energy X-ray absorptiometry); c) their comorbidity, defined as the co-occurrence of high internalizing and high adiposity.\nResults: Both prenatal (total effect [95%CI] = 0.20 [0.16; 0.22]) and postnatal stress (\\(\\beta\\) [95%CI] = 0.22 [0.17; 0.25]) were associated with higher internalizing symptoms, with evidence of a more prominent role of postnatal stress. A weaker association (primarily driven by prenatal stress) was observed between stress and adiposity (prenatal: 0.07 [0.05; 0.09]; postnatal: 0.04 [0.01; 0.07]). Both pre- (OR [95%CI] = 1.70 [1.47; 1.97]) and postnatal stress (1.87 [1.61; 2.17]) were associated with an increased risk of developing comorbidity.\nConclusion: We found evidence of (i) timing and (ii) shared causal effects of ELS on psycho-cardiometabolic health in adolescence, but future research is warranted to clarify how these associations may unfold over time.",
+    "section": "Links",
+    "text": "Links\n\nSupplementary materials\nELS score GitHub repository\nProject’s code",
     "crumbs": [
       "**PART 1**: The role of ELS in the development of mental and physical health",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>ELS and adolescent psycho-physical health</span>"
@@ -167,7 +156,18 @@
     "href": "3.Chapter/ELS-lifestyle-moderators.html",
     "title": "3  Lifestyle factors, ELS and adolescent psycho-physical health",
     "section": "",
-    "text": "Abstact",
+    "text": "Abstract\nObjective:\nMethod:\nResults:\nConclusion:",
+    "crumbs": [
+      "**PART 1**: The role of ELS in the development of mental and physical health",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Lifestyle factors, ELS and adolescent psycho-physical health</span>"
+    ]
+  },
+  {
+    "objectID": "3.Chapter/ELS-lifestyle-moderators.html#links",
+    "href": "3.Chapter/ELS-lifestyle-moderators.html#links",
+    "title": "3  Lifestyle factors, ELS and adolescent psycho-physical health",
+    "section": "Links",
+    "text": "Links\n\n\nELS score GitHub repository\nProject’s code",
     "crumbs": [
       "**PART 1**: The role of ELS in the development of mental and physical health",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Lifestyle factors, ELS and adolescent psycho-physical health</span>"
@@ -222,7 +222,7 @@
     "href": "4.Chapter/ELS-brain.html",
     "title": "4  ELS and intracortical myelination",
     "section": "",
-    "text": "Abstact",
+    "text": "Abstract\nObjective:\nMethod:\nResults:\nConclusion:",
     "crumbs": [
       "**PART 1**: The role of ELS in the development of mental and physical health",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>ELS and intracortical myelination</span>"
@@ -233,7 +233,7 @@
     "href": "4.Chapter/ELS-brain.html#introduction",
     "title": "4  ELS and intracortical myelination",
     "section": "4.1 Introduction",
-    "text": "4.1 Introduction\nIn summary, this book has no content whatsoever (Boyd et al., 2012; Fraser et al., 2013). But I shall write it anyway cause. Cause I kind of do have no choice so, checking justification works",
+    "text": "4.1 Introduction",
     "crumbs": [
       "**PART 1**: The role of ELS in the development of mental and physical health",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>ELS and intracortical myelination</span>"
@@ -266,7 +266,7 @@
     "href": "4.Chapter/ELS-brain.html#references",
     "title": "4  ELS and intracortical myelination",
     "section": "References",
-    "text": "References\n\n\n\n\nBoyd, A., Golding, J., Macleod, J., Lawlor, D. A., Fraser, A., Henderson, J., Molloy, L., Ness, A., Ring, S., & Davey Smith, G. (2012). Cohort profile: The ’children of the 90s’—the index offspring of the avon longitudinal study of parents and children [Journal Article]. International Journal of Epidemiology, 42(1), 111–127. https://doi.org/10.1093/ije/dys064\n\n\nFraser, A., Macdonald-Wallis, C., Tilling, K., Boyd, A., Golding, J., Davey Smith, G., Henderson, J., Macleod, J., Molloy, L., Ness, A., Ring, S., Nelson, S. M., & Lawlor, D. A. (2013). Cohort profile: The avon longitudinal study of parents and children: ALSPAC mothers cohort [Journal Article]. Int J Epidemiol, 42(1), 97–110. https://doi.org/10.1093/ije/dys066",
+    "text": "References",
     "crumbs": [
       "**PART 1**: The role of ELS in the development of mental and physical health",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>ELS and intracortical myelination</span>"
@@ -277,7 +277,7 @@
     "href": "5.Chapter/ELS-heart.html",
     "title": "5  ELS and cardiac morphology",
     "section": "",
-    "text": "Abstact",
+    "text": "Abstract\nObjective:\nMethod:\nResults:\nConclusion:",
     "crumbs": [
       "**PART 1**: The role of ELS in the development of mental and physical health",
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>ELS and cardiac morphology</span>"
@@ -332,7 +332,7 @@
     "href": "6.Chapter/longitudinal-codevelopment.html",
     "title": "6  Longitudinal psycho-physical co-development",
     "section": "",
-    "text": "Abstact",
+    "text": "Abstract\nObjective:\nMethod:\nResults:\nConclusion:",
     "crumbs": [
       "**PART 2**: Reciprocal relationships between mental and physical health problems",
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>Longitudinal psycho-physical co-development</span>"
@@ -387,7 +387,7 @@
     "href": "7.Chapter/arterial-brain.html",
     "title": "7  Arterial health and brain development",
     "section": "",
-    "text": "Abstact",
+    "text": "Abstract\nObjective:\nMethod:\nResults:\nConclusion:",
     "crumbs": [
       "**PART 2**: Reciprocal relationships between mental and physical health problems",
       "<span class='chapter-number'>7</span>  <span class='chapter-title'>Arterial health and brain development</span>"
@@ -398,7 +398,7 @@
     "href": "7.Chapter/arterial-brain.html#introduction",
     "title": "7  Arterial health and brain development",
     "section": "7.1 Introduction",
-    "text": "7.1 Introduction\nIn summary, this book has no content whatsoever (Boyd et al., 2012; Fraser et al., 2013). But I shall write it anyway cause. Cause I kind of do have no choice so, checking justification works",
+    "text": "7.1 Introduction",
     "crumbs": [
       "**PART 2**: Reciprocal relationships between mental and physical health problems",
       "<span class='chapter-number'>7</span>  <span class='chapter-title'>Arterial health and brain development</span>"
@@ -431,7 +431,7 @@
     "href": "7.Chapter/arterial-brain.html#references",
     "title": "7  Arterial health and brain development",
     "section": "References",
-    "text": "References\n\n\n\n\nBoyd, A., Golding, J., Macleod, J., Lawlor, D. A., Fraser, A., Henderson, J., Molloy, L., Ness, A., Ring, S., & Davey Smith, G. (2012). Cohort profile: The ’children of the 90s’—the index offspring of the avon longitudinal study of parents and children [Journal Article]. International Journal of Epidemiology, 42(1), 111–127. https://doi.org/10.1093/ije/dys064\n\n\nFraser, A., Macdonald-Wallis, C., Tilling, K., Boyd, A., Golding, J., Davey Smith, G., Henderson, J., Macleod, J., Molloy, L., Ness, A., Ring, S., Nelson, S. M., & Lawlor, D. A. (2013). Cohort profile: The avon longitudinal study of parents and children: ALSPAC mothers cohort [Journal Article]. Int J Epidemiol, 42(1), 97–110. https://doi.org/10.1093/ije/dys066",
+    "text": "References",
     "crumbs": [
       "**PART 2**: Reciprocal relationships between mental and physical health problems",
       "<span class='chapter-number'>7</span>  <span class='chapter-title'>Arterial health and brain development</span>"

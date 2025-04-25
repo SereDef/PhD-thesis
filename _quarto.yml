@@ -51,6 +51,9 @@ bibliography: [references.bib,
                1.Introduction/introduction_bibliography.bib, 
                2.Chapter/ELS-comorbidity_bibliography.bib]
 
+filters:
+- _extensions/link-handler.lua
+
 # Outputs
 format:
   html:

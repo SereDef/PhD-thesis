@@ -4,14 +4,23 @@
 Adapted from:
 
 ::: {.manuscript-title}
-Longitudinal co-development of depressive symptoms and cardio-metabolic risk factors from childhood to young adulthood
+**Longitudinal co-development of depressive symptoms and cardio-metabolic risk factors from childhood to young adulthood**
 :::
 
 ::: {.manuscript-authors} 
 Defina, S., Cecil, C.A.M., Felix, J.F., Walton, E., & Tiemeier, H. (*under revision*)
 :::
 
-## Abstact {.unnumbered}
+## Abstract {.unnumbered}
+ [Objective]{.underline}: 
+
+ [Method]{.underline}: 
+
+ [Results]{.underline}: 
+
+ [Conclusion]{.underline}: 
+
+\newpage
 
 ## Introduction
 

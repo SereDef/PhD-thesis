@@ -1,0 +1,8 @@
+title: Link-handler
+author: SereDef
+version: 1.0.0
+quarto-required: ">=1.4.0"
+contributes:
+  shortcodes:
+    - link-handler.lua
+

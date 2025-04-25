@@ -1,0 +1,9 @@
+title: "Link Handler"
+author: Serena Defina
+version: 0.1.0
+shortcodes:
+  - name: "extlink"
+    description: A custom link handler for Quarto"
+contributes:
+  shortcodes:
+    - link-handler.lua

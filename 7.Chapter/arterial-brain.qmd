@@ -4,18 +4,25 @@
 Adapted from:
 
 ::: {.manuscript-title}
-Lkjbdsjcdajkh
+**Lkjbdsjcdajkh**
 :::
 
 ::: {.manuscript-authors} 
 Defina, S., Cecil, C.A.M., Felix, J.F., Walton, E., & Tiemeier, H. (*under revision*)
 :::
 
-## Abstact {.unnumbered}
+## Abstract {.unnumbered}
+ [Objective]{.underline}: 
+
+ [Method]{.underline}: 
+
+ [Results]{.underline}: 
+
+ [Conclusion]{.underline}: 
+
+\newpage
 
 ## Introduction
-
-In summary, this book has no content whatsoever [@Fraser2013; @Boyd2012]. But I shall write it anyway cause. Cause I kind of do have no choice so, checking justification works
 
 ## Methods
 

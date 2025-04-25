@@ -1,17 +1,41 @@
 
+---
+project_repo: https://github.com/SereDef/lifestyle-moderators-project
+els_repo: https://github.com/SereDef/cumulative-ELS-score
+<!-- suppl_general: https://osf.io/s7f9h/files/osfstorage
+suppl_text: https://osf.io/xs29c
+suppl_tables: https://osf.io/7e4x8 -->
+---
+
 # Lifestyle factors, ELS and adolescent psycho-physical health {#sec-chapter3}
 
 Adapted from:
 
 ::: {.manuscript-title}
-The role of lifestyle factors in the association between early-life stress and adolescent psycho-physical health: Moderation analysis in two European birth cohorts
+**The role of lifestyle factors in the association between early-life stress and adolescent psycho-physical health: Moderation analysis in two European birth cohorts**
 :::
 
 ::: {.manuscript-authors} 
 **Defina, S.**, Woofenden, T., Baltramonaityte, V., Tiemeier, H., Fairchild, G., Felix, J. F., Cecil, C.A.M., & Walton, E. (2024). *Preventive Medicine*. [DOI](https://doi.org/10.1016/j.ypmed.2024.107926)
 :::
 
-## Abstact {.unnumbered}
+## Abstract {.unnumbered}
+ [Objective]{.underline}: 
+
+ [Method]{.underline}: 
+
+ [Results]{.underline}: 
+
+ [Conclusion]{.underline}: 
+
+\newpage
+
+## Links {.unnumbered}
+<!-- * [Supplementary materials](__suppl_general__) -->
+* [ELS score GitHub repository](__els_repo__)
+* [Project's code](__project_repo__)
+
+\newpage
 
 ## Introduction
 

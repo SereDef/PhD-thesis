@@ -4,14 +4,23 @@
 Adapted from:
 
 ::: {.manuscript-title}
-Early-life stress exposure and heart morphology in childhood: a prospective population-based study
+**Early-life stress exposure and heart morphology in childhood: a prospective population-based study**
 :::
 
 ::: {.manuscript-authors} 
 **Defina, S.**, Kamphuis, A., Gaillard, R., & Felix, J. F. (*in preparation*)
 :::
 
-## Abstact {.unnumbered}
+## Abstract {.unnumbered}
+ [Objective]{.underline}: 
+
+ [Method]{.underline}: 
+
+ [Results]{.underline}: 
+
+ [Conclusion]{.underline}: 
+
+\newpage
 
 ## Introduction
 

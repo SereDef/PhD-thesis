@@ -14,9 +14,11 @@ So here is a collection of small steps toward understanding, many little increme
 
 Still here? Didn’t think so... let’s talk about early-life stress, shall we?
 
+::: {.content-visible when-format="pdf"}
 \newpage
 
 ::: {.quotify}
 *"In the depth of winter, I found there was, within me, an invincible summer."*<br>
 \newline Albert Camus – Summer (1954)
+:::
 :::
