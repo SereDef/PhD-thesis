@@ -1,4 +1,5 @@
 % Options for packages loaded elsewhere
+% Options for packages loaded elsewhere
 \PassOptionsToPackage{unicode}{hyperref}
 \PassOptionsToPackage{hyphens}{url}
 \PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
@@ -7,21 +8,22 @@
   letterpaper,
   DIV=11,
   numbers=noendperiod]{scrreport}
-
+\usepackage{xcolor}
 \usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{2}
 \usepackage{iftex}
 \ifPDFTeX
   \usepackage[T1]{fontenc}
   \usepackage[utf8]{inputenc}
   \usepackage{textcomp} % provide euro and other symbols
 \else % if luatex or xetex
-  \usepackage{unicode-math}
+  \usepackage{unicode-math} % this also loads fontspec
   \defaultfontfeatures{Scale=MatchLowercase}
   \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
 \fi
 \usepackage{lmodern}
-\ifPDFTeX\else  
-    % xetex/luatex font selection
+\ifPDFTeX\else
+  % xetex/luatex font selection
 \fi
 % Use upquote if available, for straight quotes in verbatim environments
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
@@ -39,29 +41,32 @@
 }{% if KOMA class
   \KOMAoptions{parskip=half}}
 \makeatother
-\usepackage{xcolor}
-\ifLuaTeX
-  \usepackage{luacolor}
-  \usepackage[soul]{lua-ul}
-\else
-  \usepackage{soul}
-  
-\fi
-\setlength{\emergencystretch}{3em} % prevent overfull lines
-\setcounter{secnumdepth}{2}
 % Make \paragraph and \subparagraph free-standing
+\makeatletter
 \ifx\paragraph\undefined\else
   \let\oldparagraph\paragraph
-  \renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+  \renewcommand{\paragraph}{
+    \@ifstar
+      \xxxParagraphStar
+      \xxxParagraphNoStar
+  }
+  \newcommand{\xxxParagraphStar}[1]{\oldparagraph*{#1}\mbox{}}
+  \newcommand{\xxxParagraphNoStar}[1]{\oldparagraph{#1}\mbox{}}
 \fi
 \ifx\subparagraph\undefined\else
   \let\oldsubparagraph\subparagraph
-  \renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+  \renewcommand{\subparagraph}{
+    \@ifstar
+      \xxxSubParagraphStar
+      \xxxSubParagraphNoStar
+  }
+  \newcommand{\xxxSubParagraphStar}[1]{\oldsubparagraph*{#1}\mbox{}}
+  \newcommand{\xxxSubParagraphNoStar}[1]{\oldsubparagraph{#1}\mbox{}}
 \fi
+\makeatother
 
 
-\providecommand{\tightlist}{%
-  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}\usepackage{longtable,booktabs,array}
+\usepackage{longtable,booktabs,array}
 \usepackage{calc} % for calculating minipage widths
 % Correct order of tables after \paragraph or \subparagraph
 \usepackage{etoolbox}
@@ -73,17 +78,27 @@
 \makesavenoteenv{longtable}
 \usepackage{graphicx}
 \makeatletter
-\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
-\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
-\makeatother
-% Scale images if necessary, so that they will not overflow the page
-% margins by default, and it is still possible to overwrite the defaults
-% using explicit options in \includegraphics[width, height, ...]{}
-\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\newsavebox\pandoc@box
+\newcommand*\pandocbounded[1]{% scales image to fit in text height/width
+  \sbox\pandoc@box{#1}%
+  \Gscale@div\@tempa{\textheight}{\dimexpr\ht\pandoc@box+\dp\pandoc@box\relax}%
+  \Gscale@div\@tempb{\linewidth}{\wd\pandoc@box}%
+  \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi% select the smaller of both
+  \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\pandoc@box}%
+  \else\usebox{\pandoc@box}%
+  \fi%
+}
 % Set default figure placement to htbp
-\makeatletter
 \def\fps@figure{htbp}
 \makeatother
+
+\ifLuaTeX
+  \usepackage{luacolor}
+  \usepackage[soul]{lua-ul}
+\else
+  \usepackage{soul}
+\fi
+
 % definitions for citeproc citations
 \NewDocumentCommand\citeproctext{}{}
 \NewDocumentCommand\citeproc{mm}{%
@@ -117,6 +132,18 @@
 \newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{\strut#1\strut}}
 \newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{\strut#1\strut}}
 \newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+
+
+
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+
+
+ 
+
 
 % gt_packages.sty
 \usepackage{multirow}    % For multirow cells
@@ -268,13 +295,9 @@
 \@ifpackageloaded{caption}{}{\usepackage{caption}}
 \@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
 \makeatother
-\ifLuaTeX
-  \usepackage{selnolig}  % disable illegal ligatures
-\fi
 \usepackage{bookmark}
-
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
-\urlstyle{same} % disable monospaced font for URLs
+\urlstyle{same}
 \hypersetup{
   pdftitle={under the skin},
   pdfauthor={Serena Defina},
@@ -284,6 +307,7 @@
   citecolor={Blue},
   urlcolor={Blue},
   pdfcreator={LaTeX via pandoc}}
+
 
 \title{under the skin}
 \usepackage{etoolbox}
@@ -296,7 +320,6 @@
 physical health problems}
 \author{Serena Defina}
 \date{}
-
 \begin{document}
 \maketitle
 
@@ -319,6 +342,7 @@ physical health problems}
 \hspace*{1cm}Janine F. Felix
 \clearpage
 
+
 \bookmarksetup{startatroot}
 
 \chapter*{}\label{section}
@@ -333,7 +357,7 @@ physical health problems}
 
 \markboth{PREFACE}{PREFACE}
 
-\begin{tcolorbox}[enhanced jigsaw, toprule=.15mm, bottomrule=.15mm, breakable, leftrule=.75mm, coltitle=black, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Note}, colback=white, rightrule=.15mm, toptitle=1mm, opacitybacktitle=0.6, opacityback=0, bottomtitle=1mm, colbacktitle=quarto-callout-note-color!10!white, titlerule=0mm, arc=.35mm, colframe=quarto-callout-note-color-frame, left=2mm]
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, left=2mm, breakable, colback=white, toprule=.15mm, coltitle=black, colframe=quarto-callout-note-color-frame, rightrule=.15mm, colbacktitle=quarto-callout-note-color!10!white, bottomtitle=1mm, toptitle=1mm, titlerule=0mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Note}, arc=.35mm, opacitybacktitle=0.6, leftrule=.75mm, opacityback=0]
 
 This is a work in progress. Stay tuned :)
 
@@ -467,7 +491,7 @@ psycho-physical health problems.
 
 \centering{
 
-\includegraphics[width=1\textwidth,height=\textheight]{1.Introduction/F1_thesissumm.pdf}
+\includegraphics[width=1\linewidth,height=\textheight,keepaspectratio]{1.Introduction/F1_thesissumm.pdf}
 
 }
 
@@ -812,7 +836,7 @@ of stress exposure (prenatal vs postnatal) and \emph{(ii)} ELS is a
 shared risk factor underlying the comorbidity between the two
 conditions.
 
-\ul{Method}: Leveraging data from two large population-based birth
+\ul{Methods}: Leveraging data from two large population-based birth
 cohorts (ALSPAC: n=8428 (52\% male participants); Generation R: n=4268
 (48\% male participants)), we constructed comprehensive cumulative
 measures of prenatal (in utero) and postnatal (from birth to 10 years)
@@ -831,7 +855,7 @@ stress and adiposity (prenatal: 0.07 {[}0.05; 0.09{]}; postnatal: 0.04
 and postnatal stress (1.87 {[}1.61; 2.17{]}) were associated with an
 increased risk of developing comorbidity.
 
-\ul{Conclusion}: We found evidence of \emph{(i)} timing and \emph{(ii)}
+\ul{Conclusions}: We found evidence of \emph{(i)} timing and \emph{(ii)}
 shared causal effects of ELS on psycho-cardiometabolic health in
 adolescence, but future research is warranted to clarify how these
 associations may unfold over time.
@@ -843,15 +867,30 @@ associations may unfold over time.
 
 \markright{Links}
 
-\begin{itemize}
-\tightlist
-\item
-  \href{__suppl_general__}{Supplementary materials}
-\item
-  \href{__els_repo__}{ELS score GitHub repository}
-\item
-  \href{__project_repo__}{Project's code}
-\end{itemize}
+\begin{figure}
+
+\begin{minipage}{0.50\linewidth}
+!{[}\textbf{ELS score GitHub
+repository}{]}((../img/qrcode\_els\_repo.png)
+https://github.com/SereDef/cumulative-ELS-score\end{minipage}%
+%
+\begin{minipage}{0.50\linewidth}
+\pandocbounded{\includegraphics[keepaspectratio]{2.Chapter/../img/qrcode_supp2.png}}
+https://osf.io/s7f9h/files/osfstorage\end{minipage}%
+\newline
+\begin{minipage}{0.50\linewidth}
+!{[}\textbf{Project's code}{]}((../img/qrcode\_chap2\_repo.png)
+https://github.com/SereDef/association-ELS-PCM-project\end{minipage}%
+
+\end{figure}%
+
+\section*{Keywords}\label{keywords}
+\addcontentsline{toc}{section}{Keywords}
+
+\markright{Keywords}
+
+Early-life stress; Internalizing symptoms; Adiposity; Comorbidity;
+Generation R; ALSPAC;
 
 \newpage
 
@@ -978,7 +1017,7 @@ scores.
 
 \centering{
 
-\includegraphics[width=1\textwidth,height=\textheight]{2.Chapter/Figures/F1_ELStime.pdf}
+\includegraphics[width=1\linewidth,height=\textheight,keepaspectratio]{2.Chapter/Figures/F1_ELStime.pdf}
 
 }
 
@@ -1129,16 +1168,16 @@ Supplement 1), whereas the correlation between internalizing symptoms
 and adiposity was weak (r = GenR: 0.15; ALSPAC: 0.11).
 
 \begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.5400}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.2300}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.2300}}@{}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.5400}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.2300}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.2300}}@{}}
 
 \caption{\label{tbl-1.1}My interesting caption.}
 
 \tabularnewline
 
 \toprule\noalign{}
-\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{1.0000} + 4\tabcolsep}@{}}{%
+\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{1.0000} + 4\tabcolsep}@{}}{%
 \begin{minipage}[b]{\linewidth}\raggedright
 \textbf{Sample descriptives}\\
 Generation R (GenR) and ALSPAC cohorts\strut
@@ -1146,10 +1185,10 @@ Generation R (GenR) and ALSPAC cohorts\strut
 \midrule\noalign{}
 \endhead
 \midrule\noalign{}
-\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{1.0000} + 4\tabcolsep}@{}}{%
+\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{1.0000} + 4\tabcolsep}@{}}{%
 {\ul{Note}: Sample descriptives pooled across 30 imputed datasets. BMI =
 Body-mass index.}} \\
-\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{1.0000} + 4\tabcolsep}@{}}{%
+\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{1.0000} + 4\tabcolsep}@{}}{%
 \begin{minipage}[t]{\linewidth}\raggedright
 {\textsuperscript{a}} {\textbf{Ethnic backgroung grouping}:\\
 \ul{Africa and Middle East} = Iran (n=11); Iraq (10); South Africa (8);
@@ -1180,13 +1219,13 @@ Madeira Islands (1); Moldova (1); Monaco (1); Slovakia (1); Slovenia
 Paraguay (1); Trinidad and Tobago (1).\\
 \ul{North America} = United States of America (n=16); Canada (9).}\strut
 \end{minipage}} \\
-\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{1.0000} + 4\tabcolsep}@{}}{%
+\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{1.0000} + 4\tabcolsep}@{}}{%
 {\textsuperscript{b}} {\textbf{Maternal education}: low = ``secondary,
 phase 2'' or lower in GenR, ``None'', ``CSE'', ``Vocational'' or ``O
 level'' in ALSPAC; medium = ``higher, phase 1'' in GenR, ``A level'' in
 ALSPAC; high = ``higher, phase 2'' in GenR, ``(College or university)
 degree'' in ALSPAC. Categorization based on ISCED 2011.}} \\
-\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{1.0000} + 4\tabcolsep}@{}}{%
+\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{1.0000} + 4\tabcolsep}@{}}{%
 {\textsuperscript{c}} {\textbf{Household income}: low = \textless{}
 €1600 /month in GenR, \textless{} £200 /week in ALSPAC; medium = between
 €1600 and € 4000 /month in GenR, between £200 and £400 /week in ALSPAC;
@@ -1201,14 +1240,14 @@ in ALSPAC.}} \\
 \textbf{ALSPAC\\
 (\emph{n} = 8428)}\strut
 \end{minipage} \\
-\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{1.0000} + 4\tabcolsep}@{}}{%
+\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{1.0000} + 4\tabcolsep}@{}}{%
 \textbf{Prenatal stress}, median (range)} \\
 ~ Total score & 0.42 (0--2.60) & 0.48 (0--2.34) \\
 ~ Life events & 0.13 (0--0.67) & 0.07 (0--0.57) \\
 ~ Contextual risk & 0.25 (0--1.00) & 0.25 (0--0.88) \\
 ~ Parental risk & 0.00 (0--0.71) & 0.10 (0--0.83) \\
 ~ Interpersonal risk & 0.06 (0--0.95) & 0.00 (0--0.84) \\
-\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{1.0000} + 4\tabcolsep}@{}}{%
+\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{1.0000} + 4\tabcolsep}@{}}{%
 \textbf{Postnatal stress}, median (range)} \\
 ~ Total score & 0.64 (0--3.59) & 2.69 (0.17--16.43) \\
 ~ Life events & 0.23 (0--0.82) & 1.07 (0--3.50) \\
@@ -1220,17 +1259,17 @@ in ALSPAC.}} \\
 (0--10) \\
 \textbf{Fat mass percentage}, median (range) & 24.7 (8.5--54.6) & 23.9
 (4.9--56.3) \\
-\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{1.0000} + 4\tabcolsep}@{}}{%
+\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{1.0000} + 4\tabcolsep}@{}}{%
 \textbf{Outcome groups}, n (\%)} \\
 ~ Healthy & 2791 (65) & 5916 (70) \\
 ~ High internalizing & 623 (15) & 795 (9) \\
 ~ High adiposity & 631 (15) & 1476 (18) \\
 ~ Comorbid & 223 (5) & 241 (3) \\
-\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{1.0000} + 4\tabcolsep}@{}}{%
+\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{1.0000} + 4\tabcolsep}@{}}{%
 \textbf{Sex}, n (\%)} \\
 ~ Male participants & 2087 (48) & 4370 (52) \\
 ~ Female participants & 2181 (52) & 4058 (48) \\
-\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{1.0000} + 4\tabcolsep}@{}}{%
+\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{1.0000} + 4\tabcolsep}@{}}{%
 \textbf{Ethnic background}, n (\%)} \\
 ~ Africa and Middle East \textsuperscript{a} & 115 (2.7) &
 \multirow{11}{=}{~} \\
@@ -1248,24 +1287,24 @@ in ALSPAC.}} \\
 13.5 (12.8--15.0) \\
 \textbf{Pre-pregnancy} \textbf{BMI}, median (range),
 kg/m\textsuperscript{2} & 22.6 (14.4--50.2) & 22.1 (12.5--48.6) \\
-\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{1.0000} + 4\tabcolsep}@{}}{%
+\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{1.0000} + 4\tabcolsep}@{}}{%
 \textbf{Maternal smoking}, n (\%)} \\
 ~ Never & 3228 (76) & 4412 (52) \\
 ~ Until (early) pregnancy & 390 (9) & 2524 (30) \\
 ~ During pregnancy & 650 (15) & 1492 (18) \\
-\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{1.0000} + 4\tabcolsep}@{}}{%
+\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{1.0000} + 4\tabcolsep}@{}}{%
 \textbf{Maternal alcohol consumption}, GenR: n (\%); ALSPAC: median
 (range)} \\
 ~ Never & 1694 (40) & \multirow{4}{=}{0.50 (0 -- 3.5)} \\
 ~ Until early pregnancy & 596 (14) \\
 ~ Continued occasionally & 1570 (37) \\
 ~ Continued frequently & 407 (10) \\
-\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{1.0000} + 4\tabcolsep}@{}}{%
+\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{1.0000} + 4\tabcolsep}@{}}{%
 \textbf{Maternal education}, n (\%) \textsuperscript{b}} \\
 ~ Low & 1716 (40.2) & 4216 (50.0) \\
 ~ Medium & 1278 (29.9) & 3001 (35.6) \\
 ~ High & 1274 (29.9) & 1212 (14.4) \\
-\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{1.0000} + 4\tabcolsep}@{}}{%
+\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{1.0000} + 4\tabcolsep}@{}}{%
 \textbf{Household income}, n (\%) \textsuperscript{c}} \\
 ~ Low & 702 (16.4) & 1318 (15.6) \\
 ~ Medium & 2070 (48.5) & 4324 (51.3) \\
@@ -1293,7 +1332,7 @@ prenatal stress on adiposity (GenR: 0.12 {[}0.09;0.15{]}; ALSPAC: 0.04
 
 \centering{
 
-\includegraphics[width=1\textwidth,height=\textheight]{2.Chapter/Figures/F2_CMAres.pdf}
+\includegraphics[width=1\linewidth,height=\textheight,keepaspectratio]{2.Chapter/Figures/F2_CMAres.pdf}
 
 }
 
@@ -1332,7 +1371,7 @@ remained after prenatal stress adjustment in GenR (0.07
 
 \centering{
 
-\includegraphics[width=1\textwidth,height=\textheight]{2.Chapter/Figures/F3_regress.pdf}
+\includegraphics[width=1\linewidth,height=\textheight,keepaspectratio]{2.Chapter/Figures/F3_regress.pdf}
 
 }
 
@@ -1371,7 +1410,7 @@ estimates did overlap with those of high internalizing only
 
 \centering{
 
-\includegraphics[width=1\textwidth,height=\textheight]{2.Chapter/Figures/F4_comorb.pdf}
+\includegraphics[width=1\linewidth,height=\textheight,keepaspectratio]{2.Chapter/Figures/F4_comorb.pdf}
 
 }
 
@@ -1871,13 +1910,36 @@ Fairchild, G., Felix, J. F., Cecil, C.A.M., \& Walton, E. (2024).
 
 \markright{Abstract}
 
-\ul{Objective}:
+\ul{Objective}: Early-life stress (ELS) is an established risk factor
+for a host of adult mental and physical health problems, including both
+depression and obesity. Recent studies additionally showed that ELS was
+associated with an increased risk of comorbidity between mental and
+physical health problems, already in adolescence. Healthy lifestyle
+factors, including physical activity, sleep and diet have also been
+robustly linked to both emotional and physical wellbeing. However, it is
+yet unclear whether these lifestyle factors may moderate the association
+between ELS and psycho-physical comorbidity.
 
-\ul{Method}:
+\ul{Methods}: We investigated whether \emph{(a)} participation in
+physical activity, \emph{(b)} sleep duration, and \emph{(c)} adherence
+to a Mediterranean diet, moderated the relationship between cumulative
+ELS exposure over the first 10 years of life and psycho-physical
+comorbidity at the age of 13.5 years. Analyses were conducted in
+2022-2023, using data from two large adolescent samples based in the UK
+(ALSPAC; n=8428) and The Netherlands (Generation R; n=4268).
 
-\ul{Results}:
+\ul{Results}: Exposure to ELS was significantly associated with a higher
+risk of developing comorbidity, however this association was not
+modified by any of the three lifestyle factors investigated. Only
+physical activity was significantly associated with a reduced risk of
+comorbidity in one cohort (OR\emph{\(_{ALSPAC}\)} {[}95\%CI{]} = 0.73
+{[}0.59; 0.89{]}).
 
-\ul{Conclusion}:
+\ul{Conclusions}: In conclusion, while we found some evidence that more
+frequent physical activity may be associated with a reduction in
+psycho-physical comorbidity, we did not find evidence in support of the
+hypothesised moderation effects. However, more research is warranted to
+examine how these associations may evolve over time.
 
 \newpage
 
@@ -1889,10 +1951,29 @@ Fairchild, G., Felix, J. F., Cecil, C.A.M., \& Walton, E. (2024).
 \begin{itemize}
 \tightlist
 \item
-  \href{__els_repo__}{ELS score GitHub repository}
-\item
-  \href{__project_repo__}{Project's code}
+  \href{https://github.com/SereDef/lifestyle-moderators-project}{Project's
+  code}
 \end{itemize}
+
+\section*{Keywords}\label{keywords-1}
+\addcontentsline{toc}{section}{Keywords}
+
+\markright{Keywords}
+
+Adverse Childhood Experiences; Comorbidity; Physical Activity; Sleep;
+Diet, Mediterranean; Depression; Adiposity; moderation analysis.
+
+\section*{Abbreviations}\label{abbreviations}
+\addcontentsline{toc}{section}{Abbreviations}
+
+\markright{Abbreviations}
+
+Avon Longitudinal Study of Parents and Children (ALSPAC), Body Mass
+Index (BMI), Confidence Interval (CI), Child Behavior Checklist (CBCL),
+Dual-energy X-ray absorptiometry (DXA), Early Life Stress (ELS), Food
+Frequency Questionnaire (FFQ), Generation R (GenR), Odds Ratio (OR),
+Strengths and Difficulties Questionnaire (SDQ), Variance Inflation
+Factor (VIF), United Kingdom (UK).
 
 \newpage
 
@@ -2236,6 +2317,7 @@ code is the scientific product
 \addcontentsline{toc}{section}{References}
 
 \markright{References}
+
 
 
 

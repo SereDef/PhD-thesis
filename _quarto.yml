@@ -6,8 +6,7 @@ book:
   title: "under the skin"
   subtitle: "Early-life stress exposure and the co-occurrence of mental and physical health problems"
   author: "Serena Defina"
-  # date: "4/25/2025"
-  cover-image: cover.png  
+  cover-image: img/cover.png  
   chapters:
     - index.qmd
     - 0.preface.qmd
@@ -42,48 +41,44 @@ book:
       - icon: github
         href: https://github.com/SereDef
 
-# Only number sections 1 levels below the chapter level
+# Only number sections 2 levels below the chapter level
 number-depth: 2
 
 # Bibliography
 csl: apa.csl
-bibliography: [references.bib, 
+bibliography: [references.bib, # TMP
                1.Introduction/introduction_bibliography.bib, 
                2.Chapter/ELS-comorbidity_bibliography.bib]
 
-filters:
-- _extensions/link-handler.lua
-
 # Outputs
 format:
+
   html:
     theme: [cosmo, style_web.scss]
     grid:
       sidebar-width: 600px # Widen sidebar for longer chapter titles
     include-after-body: 
-      text: <script type="application/javascript" src="/sidebar-tweak.js"></script>
+      text: <script type="application/javascript" src="/sidebar-tweak.js"></script> # Adjust sidebar chapter structure
   
   pdf:
-    documentclass: scrreport
+    documentclass: scrreport # srcbook
     keep-tex: true
     include-in-header: style_pdf.sty 
     include-before-body: thesis_info.tex
     fig-pos: "H"  # Non-floating figures
-    # Display references after every chapter
     filters:
       - quarto
-      - section-bibliographies
-      - _extensions/quotify.lua
+      - section-bibliographies # Display references after every chapter
+      - _extensions/quotify.lua # Quotes 
     reference-section-title: References
     citeproc: false # Disable citeproc to use biblatex
     
 
   docx:
     reference-doc: style_doc.docx
-     # Display references after every chapter
     filters:
       - quarto
-      - section-bibliographies
+      - section-bibliographies  # Display references after every chapter
     reference-section-title: References
     citeproc: true # false is recommended but does not work 
 

@@ -1,12 +1,4 @@
 
----
-project_repo: https://github.com/SereDef/lifestyle-moderators-project
-els_repo: https://github.com/SereDef/cumulative-ELS-score
-<!-- suppl_general: https://osf.io/s7f9h/files/osfstorage
-suppl_text: https://osf.io/xs29c
-suppl_tables: https://osf.io/7e4x8 -->
----
-
 # Lifestyle factors, ELS and adolescent psycho-physical health {#sec-chapter3}
 
 Adapted from:
@@ -20,20 +12,24 @@ Adapted from:
 :::
 
 ## Abstract {.unnumbered}
- [Objective]{.underline}: 
+ [Objective]{.underline}: Early-life stress (ELS) is an established risk factor for a host of adult mental and physical health problems, including both depression and obesity. Recent studies additionally showed that ELS was associated with an increased risk of comorbidity between mental and physical health problems, already in adolescence. Healthy lifestyle factors, including physical activity, sleep and diet have also been robustly linked to both emotional and physical wellbeing. However, it is yet unclear whether these lifestyle factors may moderate the association between ELS and psycho-physical comorbidity.
 
- [Method]{.underline}: 
+ [Methods]{.underline}: We investigated whether *(a)* participation in physical activity, *(b)* sleep duration, and *(c)* adherence to a Mediterranean diet, moderated the relationship between cumulative ELS exposure over the first 10 years of life and psycho-physical comorbidity at the age of 13.5 years. Analyses were conducted in 2022-2023, using data from two large adolescent samples based in the UK (ALSPAC; n=8428) and The Netherlands (Generation R; n=4268).
 
- [Results]{.underline}: 
+ [Results]{.underline}: Exposure to ELS was significantly associated with a higher risk of developing comorbidity, however this association was not modified by any of the three lifestyle factors investigated. Only physical activity was significantly associated with a reduced risk of comorbidity in one cohort (OR*$_{ALSPAC}$* [95%CI] = 0.73 [0.59; 0.89]).
 
- [Conclusion]{.underline}: 
+ [Conclusions]{.underline}: In conclusion, while we found some evidence that more frequent physical activity may be associated with a reduction in psycho-physical comorbidity, we did not find evidence in support of the hypothesised moderation effects. However, more research is warranted to examine how these associations may evolve over time.
 
 \newpage
 
 ## Links {.unnumbered}
-<!-- * [Supplementary materials](__suppl_general__) -->
-* [ELS score GitHub repository](__els_repo__)
-* [Project's code](__project_repo__)
+* [Project's code]({{< var chap3_repo >}})
+
+## Keywords {.unnumbered}
+Adverse Childhood Experiences; Comorbidity; Physical Activity; Sleep; Diet, Mediterranean; Depression; Adiposity; moderation analysis.
+
+## Abbreviations {.unnumbered}
+Avon Longitudinal Study of Parents and Children (ALSPAC), Body Mass Index (BMI), Confidence Interval (CI), Child Behavior Checklist (CBCL), Dual-energy X-ray absorptiometry (DXA), Early Life Stress (ELS), Food Frequency Questionnaire (FFQ), Generation R (GenR), Odds Ratio (OR), Strengths and Difficulties Questionnaire (SDQ), Variance Inflation Factor (VIF), United Kingdom (UK).
 
 \newpage
 

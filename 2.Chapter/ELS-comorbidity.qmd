@@ -1,11 +1,3 @@
----
-project_repo: https://github.com/SereDef/association-ELS-PCM-project
-els_repo: https://github.com/SereDef/cumulative-ELS-score
-suppl_general: https://osf.io/s7f9h/files/osfstorage
-suppl_text: https://osf.io/xs29c
-suppl_tables: https://osf.io/7e4x8
----
-
 # ELS and adolescent psycho-physical health {#sec-chapter2}
 
 Adapted from:
@@ -21,18 +13,38 @@ Adapted from:
 ## Abstract {.unnumbered}
  [Objective]{.underline}: Depression and obesity are two highly prevalent and often comorbid conditions. Exposure to early-life stress (ELS) has been associated with both depression and obesity in adulthood, as well as their preclinical manifestations during development. However, it remains unclear whether: *(i)* associations differ depending on the timing of stress exposure (prenatal vs postnatal) and *(ii)* ELS is a shared risk factor underlying the comorbidity between the two conditions.
 
- [Method]{.underline}: Leveraging data from two large population-based birth cohorts (ALSPAC: n=8428 (52% male participants); Generation R: n=4268 (48% male participants)), we constructed comprehensive cumulative measures of prenatal (in utero) and postnatal (from birth to 10 years) ELS. At age 13.5 years we assessed: a) internalizing symptoms (using maternal reports); b) fat mass percentage (using dual-energy X-ray absorptiometry); c) their comorbidity, defined as the co-occurrence of high internalizing and high adiposity.
+ [Methods]{.underline}: Leveraging data from two large population-based birth cohorts (ALSPAC: n=8428 (52% male participants); Generation R: n=4268 (48% male participants)), we constructed comprehensive cumulative measures of prenatal (in utero) and postnatal (from birth to 10 years) ELS. At age 13.5 years we assessed: a) internalizing symptoms (using maternal reports); b) fat mass percentage (using dual-energy X-ray absorptiometry); c) their comorbidity, defined as the co-occurrence of high internalizing and high adiposity.
 
  [Results]{.underline}: Both prenatal (*total effect* [95%CI] = 0.20 [0.16; 0.22]) and postnatal stress ($\beta$ [95%CI] = 0.22 [0.17; 0.25]) were associated with higher internalizing symptoms, with evidence of a more prominent role of postnatal stress. A weaker association (primarily driven by prenatal stress) was observed between stress and adiposity (prenatal: 0.07 [0.05; 0.09]; postnatal: 0.04 [0.01; 0.07]). Both pre- (OR [95%CI] = 1.70 [1.47; 1.97]) and postnatal stress (1.87 [1.61; 2.17]) were associated with an increased risk of developing comorbidity.
 
- [Conclusion]{.underline}: We found evidence of *(i)* timing and *(ii)* shared causal effects of ELS on psycho-cardiometabolic health in adolescence, but future research is warranted to clarify how these associations may unfold over time.
+ [Conclusions]{.underline}: We found evidence of *(i)* timing and *(ii)* shared causal effects of ELS on psycho-cardiometabolic health in adolescence, but future research is warranted to clarify how these associations may unfold over time.
 
 \newpage
 
 ## Links {.unnumbered}
-* [Supplementary materials](__suppl_general__)
-* [ELS score GitHub repository](__els_repo__)
-* [Project's code](__project_repo__)
+
+::: {.content-visible when-format="html"}
+* [Supplementary materials]({{< var supp2_general >}})
+* [ELS score GitHub repository]({{< var els_repo >}})
+* [Project's code]({{< var chap2_repo >}})
+:::
+
+::: {.content-visible unless-format="html"}
+::: {layout-nrow=2}
+![**ELS score GitHub repository**]((../img/qrcode_els_repo.png)
+{{< var els_repo >}}
+
+![**Supplementary materials**](../img/qrcode_supp2.png)
+{{< var supp2_general >}}
+
+![**Project's code**]((../img/qrcode_chap2_repo.png)
+{{< var chap2_repo >}}
+
+:::
+:::
+
+## Keywords {.unnumbered}
+Early-life stress; Internalizing symptoms; Adiposity; Comorbidity; Generation R; ALSPAC;
 
 \newpage
 
