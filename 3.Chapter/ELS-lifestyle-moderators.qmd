@@ -136,7 +136,13 @@ We additionally explored potential non-linear associations between each lifestyl
 ## Results
 
 ### Sample characteristics
-Sample characteristics were pooled across imputed datasets and summarized in Table 1. Briefly, the ALSPAC sample included 8,428 (48% male) children, whose mothers were 96% White and 30% highly educated (i.e., held a college or university degree). The GenR sample included 4,268 (52% male) participants, 71% of which were encoded as “White” (i.e., European, North American, Japanese or Indonesian) and 14% had highly educated (i.e., “higher, phase 2”) mothers. The distribution of each lifestyle factor and their correlations are displayed in Figure 1. The proportion of children categorized as comorbid was small (2.9% in ALSPAC and 5.1% in GenR), as also reflected by the weak correlations between internalizing scores and adiposity (r = ALSPAC: 0.10; GenR: 0.12; see Supplementary Table S2).
+Sample characteristics were pooled across imputed datasets and summarized in @tbl-3.1. Briefly, the ALSPAC sample included 8,428 (48% male) children, whose mothers were 96% White and 30% highly educated (i.e., held a college or university degree). The GenR sample included 4,268 (52% male) participants, 71% of which were encoded as "White" (i.e., European, North American, Japanese or Indonesian) and 14% had highly educated (i.e., "higher, phase 2") mothers. The distribution of each lifestyle factor and their correlations are displayed in @fig-3.1. The proportion of children categorized as comorbid was small (2.9% in ALSPAC and 5.1% in GenR), as also reflected by the weak correlations between internalizing scores and adiposity (r = ALSPAC: 0.10; GenR: 0.12; see [*Supplementary Table S2*]({{< var supp3_tables >}})).
+
+:::{#tbl-3.1}
+```{=html}
+{{< include "Tables/Table1.html" >}}
+```
+:::
 
 ### Main analyses
 We did not find evidence in support of any of the hypothesised moderation effects (Supplementary Table S3). Increased ELS was significantly associated with higher risk of developing comorbidity (vs. being healthy; Figure 2A; ORs: 1.65-1.67 in ALSPAC and 2.70-2.75 in GenR), but this association was not modified by any of the three lifestyle factors we investigated (Figure 2B-D).

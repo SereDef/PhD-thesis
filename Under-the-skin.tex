@@ -358,7 +358,7 @@ physical health problems}
 
 \markboth{PREFACE}{PREFACE}
 
-\begin{tcolorbox}[enhanced jigsaw, titlerule=0mm, colframe=quarto-callout-note-color-frame, rightrule=.15mm, opacitybacktitle=0.6, left=2mm, arc=.35mm, leftrule=.75mm, colbacktitle=quarto-callout-note-color!10!white, toptitle=1mm, breakable, colback=white, coltitle=black, bottomtitle=1mm, bottomrule=.15mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Note}, toprule=.15mm, opacityback=0]
+\begin{tcolorbox}[enhanced jigsaw, left=2mm, coltitle=black, opacityback=0, colframe=quarto-callout-note-color-frame, breakable, colbacktitle=quarto-callout-note-color!10!white, bottomrule=.15mm, toptitle=1mm, toprule=.15mm, leftrule=.75mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Note}, titlerule=0mm, arc=.35mm, bottomtitle=1mm, colback=white, rightrule=.15mm, opacitybacktitle=0.6]
 
 This is a work in progress. Stay tuned :)
 
@@ -2292,17 +2292,131 @@ subsample with complete moderator and outcome data.
 \subsection{Sample characteristics}\label{sample-characteristics}
 
 Sample characteristics were pooled across imputed datasets and
-summarized in Table 1. Briefly, the ALSPAC sample included 8,428 (48\%
-male) children, whose mothers were 96\% White and 30\% highly educated
-(i.e., held a college or university degree). The GenR sample included
-4,268 (52\% male) participants, 71\% of which were encoded as ``White''
-(i.e., European, North American, Japanese or Indonesian) and 14\% had
-highly educated (i.e., ``higher, phase 2'') mothers. The distribution of
-each lifestyle factor and their correlations are displayed in Figure 1.
-The proportion of children categorized as comorbid was small (2.9\% in
-ALSPAC and 5.1\% in GenR), as also reflected by the weak correlations
-between internalizing scores and adiposity (r = ALSPAC: 0.10; GenR:
-0.12; see Supplementary Table S2).
+summarized in Table~\ref{tbl-3.1}. Briefly, the ALSPAC sample included
+8,428 (48\% male) children, whose mothers were 96\% White and 30\%
+highly educated (i.e., held a college or university degree). The GenR
+sample included 4,268 (52\% male) participants, 71\% of which were
+encoded as ``White'' (i.e., European, North American, Japanese or
+Indonesian) and 14\% had highly educated (i.e., ``higher, phase 2'')
+mothers. The distribution of each lifestyle factor and their
+correlations are displayed in \textbf{Figure 1}. The proportion of
+children categorized as comorbid was small (2.9\% in ALSPAC and 5.1\% in
+GenR), as also reflected by the weak correlations between internalizing
+scores and adiposity (r = ALSPAC: 0.10; GenR: 0.12; see
+\textbf{Supplementary Table S2}).
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}@{}}
+
+\caption{\label{tbl-3.1}}
+
+\tabularnewline
+
+\toprule\noalign{}
+\multicolumn{5}{@{}>{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.8333} + 8\tabcolsep}}{%
+\begin{minipage}[b]{\linewidth}\raggedright
+\textbf{Sample descriptives}\\
+Generation R (GenR) and ALSPAC cohorts\strut
+\end{minipage}} & \begin{minipage}[b]{\linewidth}\raggedright
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\multicolumn{2}{@{}>{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.3333} + 2\tabcolsep}}{%
+\textbf{~}} &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.3333} + 2\tabcolsep}}{%
+\textbf{ALSPAC (n=8428)}
+
+\textbf{mean (range) / n (\%)}} &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.3333} + 2\tabcolsep}@{}}{%
+\textbf{Generation R (n=4268)}
+
+\textbf{mean (range) / n (\%)}} \\
+\multicolumn{2}{@{}>{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.3333} + 2\tabcolsep}}{%
+\textbf{Age at outcome}} & ~ & 13.49 (12.79-14.96) &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.3333} + 2\tabcolsep}@{}}{%
+13.56 (12.59-16.63)} \\
+\multicolumn{2}{@{}>{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.3333} + 2\tabcolsep}}{%
+\textbf{Sex}} & Male & 4370 (51.9) & Male & 2091 (49.0) \\
+\multicolumn{2}{@{}>{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.3333} + 2\tabcolsep}}{%
+\textbf{Ethnic background}} & White & 8103 (96.1) & White & 3061
+(71.7) \\
+\multicolumn{2}{@{}>{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.3333} + 2\tabcolsep}}{%
+\textbf{Early life stress}} & ~ & 3.57 (0.43-18.50) & ~ & 1.28
+(0.00-6.00) \\
+\multicolumn{2}{@{}>{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.3333} + 2\tabcolsep}}{%
+\multirow{6}{=}{\textbf{~Frequency of participation in physical
+activity}}} & None & 128 (1.5) & None & 568 (13.3) \\
+& & \textless1 week & 377 (4.5) & Once a week & 626 (14.7) \\
+& & 1-3 week & 3946 (46.8) & Twice a week & 728 (17.1) \\
+& & 4-6 week & 2408 (28.6) & Three times a week & 1138 (26.7) \\
+& & Daily & 1566 (18.6) & Four times a week & 643 (15.1) \\
+& & ~ & ~ & 5 or more times a week & 563 (13.2) \\
+\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.5000} + 4\tabcolsep}}{%
+\textbf{Sleep duration (hours)}} & 9.81 (6.00-13.00) &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.3333} + 2\tabcolsep}@{}}{%
+8.99 (6.00-12.00)} \\
+\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.5000} + 4\tabcolsep}}{%
+\textbf{Mediterranean diet score}} & 3.24 (0.00-7.00) &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.3333} + 2\tabcolsep}@{}}{%
+3.83 (0.00-7.00)} \\
+\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.5000} + 4\tabcolsep}}{%
+\textbf{Internalizing symptoms}} & 1.43 (0.00-10.00) &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.3333} + 2\tabcolsep}@{}}{%
+5.75 (0.00-41.00)} \\
+\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.5000} + 4\tabcolsep}}{%
+\textbf{Fat mass percentage}} & 24.36 (4.92-56.25) &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.3333} + 2\tabcolsep}@{}}{%
+25.53 (8.49-54.62)} \\
+\multirow{4}{=}{\textbf{Comorbidity risk group}} &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.3333} + 2\tabcolsep}}{%
+Healthy} & 5916 (70.2) & Healthy & 2789 (65.4) \\
+&
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.3333} + 2\tabcolsep}}{%
+High internalizing} & 795 (9.4) & High internalizing & 622 (14.6) \\
+&
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.3333} + 2\tabcolsep}}{%
+High adiposity} & 1476 (17.5) & High adiposity & 637 (14.9) \\
+&
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.3333} + 2\tabcolsep}}{%
+Comorbidity} & 241 (2.9) & Comorbidity & 219 (5.1) \\
+\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.5000} + 4\tabcolsep}}{%
+\textbf{Maternal BMI (kg/m\textsuperscript{2})}} & 22.79 (12.49-48.62) &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.3333} + 2\tabcolsep}@{}}{%
+23.46 (14.38-50.21)} \\
+\multirow{3}{=}{\textbf{Maternal smoking}} &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.3333} + 2\tabcolsep}}{%
+Never} & 4412 (52.3) & Never & 3234 (75.8) \\
+&
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.3333} + 2\tabcolsep}}{%
+Until pregnancy} & 2524 (30.0) & Until pregnancy & 386 (9.0) \\
+&
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.3333} + 2\tabcolsep}}{%
+During pregnancy} & 1492 (17.7) & During pregnancy & 648 (15.2) \\
+\multirow{4}{=}{\textbf{Maternal alcohol consumption}} &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.3333} + 2\tabcolsep}}{%
+\multirow{4}{=}{continuous score\textsuperscript{1}}} & 0.73 (0.00-3.50)
+& Never & 1694 (39.7) \\
+& & & ~ & Until pregnancy & 599 (14.0) \\
+& & & ~ & Continued occasionally & 1567 (36.7) \\
+& & & ~ & Continued frequently & 405 (9.5) \\
+\multirow{3}{=}{\textbf{Maternal education}\textsuperscript{2}} &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.3333} + 2\tabcolsep}}{%
+Low} & 4216 (50.0) & Low & 1716 (40.2) \\
+&
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.3333} + 2\tabcolsep}}{%
+Medium} & 3001 (35.6) & Medium & 1278 (29.9) \\
+&
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.3333} + 2\tabcolsep}}{%
+High} & 1212 (14.4) & High & 1274 (29.9) \\
+
+\end{longtable}
 
 \subsection{Main analyses}\label{main-analyses-1}
 
