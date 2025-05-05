@@ -339,6 +339,7 @@ physical health problems}
 \textbf{CO-PROMOTORS}\\
 \vspace{0.5em}
 \hspace*{1cm}Charlotte A.M. Cecil\\
+\vspace{0.5em}
 \hspace*{1cm}Janine F. Felix
 \clearpage
 
@@ -357,7 +358,7 @@ physical health problems}
 
 \markboth{PREFACE}{PREFACE}
 
-\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, left=2mm, breakable, colback=white, toprule=.15mm, coltitle=black, colframe=quarto-callout-note-color-frame, rightrule=.15mm, colbacktitle=quarto-callout-note-color!10!white, bottomtitle=1mm, toptitle=1mm, titlerule=0mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Note}, arc=.35mm, opacitybacktitle=0.6, leftrule=.75mm, opacityback=0]
+\begin{tcolorbox}[enhanced jigsaw, titlerule=0mm, colframe=quarto-callout-note-color-frame, rightrule=.15mm, opacitybacktitle=0.6, left=2mm, arc=.35mm, leftrule=.75mm, colbacktitle=quarto-callout-note-color!10!white, toptitle=1mm, breakable, colback=white, coltitle=black, bottomtitle=1mm, bottomrule=.15mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Note}, toprule=.15mm, opacityback=0]
 
 This is a work in progress. Stay tuned :)
 
@@ -765,11 +766,11 @@ Souama, C., Lamers, F., Milaneschi, Y., Vinkers, C. H., Defina, S.,
 Garvert, L., Stein, F., Woofenden, T., Brosch, K., Dannlowski, U.,
 Galenkamp, H., Graaf, R. de, Jaddoe, V. W. V., Lok, A., Rijn, B. B. van,
 Völzke, H., Cecil, C. A. M., Felix, J. F., Grabe, H. J., \ldots{}
-EarlyCause, consortium on behalf of the. (2023). Depression,
-cardiometabolic disease, and their co-occurrence after childhood
-maltreatment: An individual participant data meta-analysis including
-over 200,000 participants {[}Journal Article{]}. \emph{BMC Medicine},
-\emph{21}(1), 93. \url{https://doi.org/10.1186/s12916-023-02769-y}
+EarlyCause, consortium. (2023). Depression, cardiometabolic disease, and
+their co-occurrence after childhood maltreatment: An individual
+participant data meta-analysis including over 200,000 participants
+{[}Journal Article{]}. \emph{BMC Medicine}, \emph{21}(1), 93.
+\url{https://doi.org/10.1186/s12916-023-02769-y}
 
 \bibitem[\citeproctext]{ref-VanderKooy2007}
 Van der Kooy, K., Hout, H. van, Marwijk, H., Marten, H., Stehouwer, C.,
@@ -867,22 +868,17 @@ associations may unfold over time.
 
 \markright{Links}
 
-\begin{figure}
+\textbf{Supplementary materials}:
+https://osf.io/s7f9h/files/osfstorage\newline
+\includegraphics[width=0.2\linewidth,height=\textheight,keepaspectratio]{2.Chapter/../img/qrcode_supp2.png}
 
-\begin{minipage}{0.50\linewidth}
-!{[}\textbf{ELS score GitHub
-repository}{]}((../img/qrcode\_els\_repo.png)
-https://github.com/SereDef/cumulative-ELS-score\end{minipage}%
-%
-\begin{minipage}{0.50\linewidth}
-\pandocbounded{\includegraphics[keepaspectratio]{2.Chapter/../img/qrcode_supp2.png}}
-https://osf.io/s7f9h/files/osfstorage\end{minipage}%
-\newline
-\begin{minipage}{0.50\linewidth}
-!{[}\textbf{Project's code}{]}((../img/qrcode\_chap2\_repo.png)
-https://github.com/SereDef/association-ELS-PCM-project\end{minipage}%
+\textbf{Project's code}:
+https://github.com/SereDef/association-ELS-PCM-project\newline
+\includegraphics[width=0.2\linewidth,height=\textheight,keepaspectratio]{2.Chapter/../img/qrcode_chap2_repo.png}
 
-\end{figure}%
+\textbf{ELS score}:
+https://github.com/SereDef/cumulative-ELS-score\newline
+\includegraphics[width=0.2\linewidth,height=\textheight,keepaspectratio]{2.Chapter/../img/qrcode_els_repo.png}
 
 \section*{Keywords}\label{keywords}
 \addcontentsline{toc}{section}{Keywords}
@@ -890,7 +886,19 @@ https://github.com/SereDef/association-ELS-PCM-project\end{minipage}%
 \markright{Keywords}
 
 Early-life stress; Internalizing symptoms; Adiposity; Comorbidity;
-Generation R; ALSPAC;
+Generation R; ALSPAC.
+
+\section*{Abbreviations}\label{abbreviations}
+\addcontentsline{toc}{section}{Abbreviations}
+
+\markright{Abbreviations}
+
+Avon Longitudinal Study of Parents and Children (ALSPAC), Body Mass
+Index (BMI), Child Behavior Checklist (CBCL),Confidence Interval (CI),
+Dual-Energy X-ray Absorptiometry (DXA), Early-Life Stress (ELS), False
+Discovery Rate (FDR), Generation R Study (GenR), Natural Direct Effect
+(NDE), Natural Indirect Effect (NIE), Odds Ratio (OR), Strengths and
+Difficulties Questionnaire (SDQ), Total Effect (TE).
 
 \newpage
 
@@ -1002,33 +1010,16 @@ or bullying). Note that, consistent with other work using this measure
 ``prenatal'') to encompass stressors experienced across childhood (i.e.,
 until the age of 10 years), rather than immediately following birth. A
 detailed description of the ELS scores is provided in online
-\textbf{Supplement 1} (see also the score's
+\href{https://osf.io/xs29c}{\emph{Supplement 1}} (see also the score's
 \href{https://github.com/SereDef/cumulative-ELS-score}{GitHub
 repository} for further details and scripts). Briefly,
 \textasciitilde100 stress items were selected from each cohort,
 dichotomized into no risk (=0) or risk (=1), and assigned to a domain
-based on expert knowledge (see Figure~\ref{fig-1.1} for an overview of
+based on expert knowledge (see Figure~\ref{fig-2.1} for an overview of
 included items). Within each domain, dichotomized risks were summed and
 divided by the number of items in the domain. Finally, domain scores
 were summed within periods to obtain prenatal and postnatal stress
 scores.
-
-\begin{figure}[H]
-
-\centering{
-
-\includegraphics[width=1\linewidth,height=\textheight,keepaspectratio]{2.Chapter/Figures/F1_ELStime.pdf}
-
-}
-
-\caption{\label{fig-1.1}\textbf{Temporal structure of the prenatal and
-postnatal early-life stress (ELS) score}}
-
-\end{figure}%
-
-\begin{fakecaption}
-The two graphs summarize the complex temporal structure of the prenatal (on the left) and postnatal (on the right) ELS scores. Time is depicted on the x-axis on the scale of weeks (gestation) for prenatal and years for postnatal items. For each question/item on the y-axis, a coloured dot represents the timepoint(s) at which the item was measured, and a grey shadow indicates the time period the question refers to (e.g., "since pregnancy" or "in the last year"). Red dots and labels refer to ALSPAC items and blue dots/labels refer to Generation R items. Items are grouped by domain, as indicated by the background color (yellow for life events, red for contextual risk, blue for parental risk, green for interpersonal risk and purple for direct victimization). The solid black vertical line indicates the beginning of the exposure period of interest, i.e., conception (or start of pregnancy) for prenatal items and birth for postnatal items. The dashed grey lines additionally provide temporal markers, i.e., trimesters in the prenatal period and a span of 1 year in the postnatal period.
-\end{fakecaption}
 
 \subsubsection{Internalizing symptoms}\label{internalizing-symptoms}
 
@@ -1064,8 +1055,25 @@ groups: ``healthy'' (both outcomes \textless80th percentile); ``high
 internalizing'' (internalizing \textgreater80th \& fat mass percentage
 ≤80th); ``high adiposity'' (internalizing ≤80th \& fat mass percentage
 \textgreater80th); and ``comorbid'' (both outcomes \textgreater80th
-percentile). For additional information see Table~\ref{tbl-1.1} and
-online \textbf{Supplement 2}.
+percentile). For additional information see Table~\ref{tbl-2.1} and
+online \href{https://osf.io/xs29c}{\emph{Supplement 2}}.
+
+\begin{figure}[H]
+
+\centering{
+
+\includegraphics[width=1\linewidth,height=\textheight,keepaspectratio]{2.Chapter/Figures/F1_ELStime.pdf}
+
+}
+
+\caption{\label{fig-2.1}\textbf{Temporal structure of the prenatal and
+postnatal early-life stress (ELS) score}}
+
+\end{figure}%
+
+\begin{fakecaption}
+The two graphs summarize the complex temporal structure of the prenatal (on the left) and postnatal (on the right) ELS scores. Time is depicted on the x-axis on the scale of weeks (gestation) for prenatal and years for postnatal items. For each question/item on the y-axis, a coloured dot represents the timepoint(s) at which the item was measured, and a grey shadow indicates the time period the question refers to (e.g., "since pregnancy" or "in the last year"). Red dots and labels refer to ALSPAC items and blue dots/labels refer to Generation R items. Items are grouped by domain, as indicated by the background color (yellow for life events, red for contextual risk, blue for parental risk, green for interpersonal risk and purple for direct victimization). The solid black vertical line indicates the beginning of the exposure period of interest, i.e., conception (or start of pregnancy) for prenatal items and birth for postnatal items. The dashed grey lines additionally provide temporal markers, i.e., trimesters in the prenatal period and a span of 1 year in the postnatal period.
+\end{fakecaption}
 
 \subsubsection{Covariates}\label{covariates}
 
@@ -1082,9 +1090,10 @@ groups were identified (i.e., Cape Verdean, Dutch, Dutch Antillean,
 Moroccan, Surinamese, and Turkish). Smaller national groups were
 aggregated into five additional categories: ``Africa and Middle East'',
 ``Asia and Oceania'', ``Europe'', ``Latin America'', and ``North
-America'' (\textbf{Figure S5}). See Table~\ref{tbl-1.1} and online
-\textbf{Supplement 3} for additional information on covariates
-measurement and distribution.
+America'' (\href{https://osf.io/xs29c}{\emph{Figure S5}}). See
+Table~\ref{tbl-2.1} and online
+\href{https://osf.io/xs29c}{\emph{Supplement 3}} for additional
+information on covariates measurement and distribution.
 
 \subsection{Statistical analysis}\label{statistical-analysis}
 
@@ -1095,7 +1104,8 @@ repository}. Missing values in the exposure, covariate and outcome
 variables were imputed by conditional multiple imputation (Van Buuren,
 2018) using 60 iterations and 30 imputed datasets (for a complete
 assessment of missing values and detailed imputation strategy see
-\textbf{Supplement 4} and \textbf{Table S1}, available online). Model
+\href{https://osf.io/xs29c}{\emph{Supplement 4}} and
+\href{https://osf.io/7e4x8}{\emph{Table S1}}, available online). Model
 parameters were fit in each imputed dataset and then pooled according to
 Rubin's rules. Pre- and postnatal stress, internalizing and adiposity
 were standardized using a z transformation. All statistical tests were
@@ -1110,11 +1120,12 @@ adiposity}\label{association-of-prenatal-els-with-internalizing-symptoms-and-adi
 For each continuous outcome (i.e., internalizing and adiposity), we
 performed a causal mediation analysis featuring prenatal stress as the
 exposure and postnatal stress as mediator (Wang \& Arah, 2015). The
-method is described in detail in online \textbf{Supplement 5}. In
-summary, the ``total'' effect of prenatal ELS on each outcome was
-decomposed into a direct (i.e., not due to postnatal ELS) and indirect
-pathway (i.e., acting through postnatal ELS), allowing us to quantify
-the direct and mediated contribution of prenatal stress.
+method is described in detail in online
+\href{https://osf.io/xs29c}{\emph{Supplement 5}}. In summary, the
+``total'' effect of prenatal ELS on each outcome was decomposed into a
+direct (i.e., not due to postnatal ELS) and indirect pathway (i.e.,
+acting through postnatal ELS), allowing us to quantify the direct and
+mediated contribution of prenatal stress.
 
 \subsubsection{Association of postnatal ELS with internalizing symptoms
 and
@@ -1158,7 +1169,7 @@ results using android fat mass as an alternative measure of adiposity.
 \subsection{Sample descriptives}\label{sample-descriptives}
 
 Sample characteristics were pooled across imputed datasets and
-summarized in Table~\ref{tbl-1.1}. Briefly, the ALSPAC sample included
+summarized in Table~\ref{tbl-2.1}. Briefly, the ALSPAC sample included
 8428 (48\% male) children, whose mothers were 30\% highly educated
 (i.e., held a college or university degree). The GenR sample included
 4268 (52\% male) participants, 62\% of which were ``Dutch'' and 14\% had
@@ -1172,7 +1183,7 @@ and adiposity was weak (r = GenR: 0.15; ALSPAC: 0.11).
   >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.2300}}
   >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.2300}}@{}}
 
-\caption{\label{tbl-1.1}My interesting caption.}
+\caption{\label{tbl-2.1}}
 
 \tabularnewline
 
@@ -1317,7 +1328,8 @@ adiposity}\label{associations-of-prenatal-els-with-internalizing-symptoms-and-ad
 
 Results of the mediation analysis linking prenatal stress to
 internalizing and adiposity were highly consistent across cohorts (see
-Figure~\ref{fig-1.2} and online \textbf{Table S2}).
+Figure~\ref{fig-2.2} and online \href{https://osf.io/7e4x8}{\emph{Table
+S2}}).
 
 About \textasciitilde60\% of the total effect (TE) of prenatal stress on
 internalizing symptoms (TE {[}95\%CI{]} = GenR: 0.27 {[}0.23;0.30{]};
@@ -1336,7 +1348,7 @@ prenatal stress on adiposity (GenR: 0.12 {[}0.09;0.15{]}; ALSPAC: 0.04
 
 }
 
-\caption{\label{fig-1.2}\textbf{Prenatal early-life stress (ELS)
+\caption{\label{fig-2.2}\textbf{Prenatal early-life stress (ELS)
 contribution (causal mediation analysis results)}\newline(A-D) The
 causal estimates for the total effect (TE), natural direct (NDE) and
 natural indirect effect (NIE) of prenatal stress on internalizing
@@ -1354,8 +1366,8 @@ adiposity}\label{association-of-postnatal-els-with-internalizing-symptoms-and-ad
 
 Results of the hierarchical regressions examining the association of
 postnatal stress with internalizing and adiposity were also largely
-similar across cohorts (see Figure~\ref{fig-1.3}; online \textbf{Tables
-S3 and S4}).
+similar across cohorts (see Figure~\ref{fig-2.3}; online
+\href{https://osf.io/7e4x8}{\emph{Tables S3 and S4}}).
 
 Higher postnatal stress associated with increased internalizing symptoms
 both before (\(\beta\) {[}95\%CI{]} = GenR: 0.33 {[}0.29;0.37{]};
@@ -1375,7 +1387,7 @@ remained after prenatal stress adjustment in GenR (0.07
 
 }
 
-\caption{\label{fig-1.3}\textbf{Postnatal early-life stress (ELS)
+\caption{\label{fig-2.3}\textbf{Postnatal early-life stress (ELS)
 contribution (hierarchical regression results)}\newline(A, B) In each
 cohort (A. Generation R and B. ALSPAC), the standardized beta estimates
 of pre- and postnatal ELS (and their 95\% confidence intervals) are
@@ -1400,11 +1412,11 @@ Higher stress in the prenatal (OR {[}95\%CI{]} = GenR: 2.13
 {[}1.84;2.47{]}; ALSPAC: 1.48 {[}1.28;1.71{]}) and postnatal periods
 (GenR: 2.37 {[}2.05;2.75{]}; ALSPAC: 1.61 {[}1.39;1.87{]}) was
 associated with higher odds of belonging to the comorbidity group
-compared to the healthy group (see Figure~\ref{fig-1.4} and online
-\textbf{Table S5}). This association was the strongest compared to all
-other (single-outcome) groups. However, the CIs of the comorbidity
-estimates did overlap with those of high internalizing only
-(Figure~\ref{fig-1.4} C and D).
+compared to the healthy group (see Figure~\ref{fig-2.4} and online
+\href{https://osf.io/7e4x8}{\emph{Table S5}}). This association was the
+strongest compared to all other (single-outcome) groups. However, the
+CIs of the comorbidity estimates did overlap with those of high
+internalizing only (Figure~\ref{fig-2.4} C and D).
 
 \begin{figure}[H]
 
@@ -1414,7 +1426,7 @@ estimates did overlap with those of high internalizing only
 
 }
 
-\caption{\label{fig-1.4}\textbf{Pre- and postnatal early-life stress
+\caption{\label{fig-2.4}\textbf{Pre- and postnatal early-life stress
 (ELS) and psycho-cardiometabolic comorbidity}\newline(A, B) Scatterplots
 of internalizing symptoms (on the x axis) and fat mass percentage (on
 the y-axis), for the Generation R (A) and ALSPAC (B) cohorts. The
@@ -1443,19 +1455,22 @@ After stratifying by sex, in GenR, the association between prenatal ELS
 and adiposity was larger in girls than in boys (\emph{Z}=1.89,
 \emph{p}=.029), whereas that of postnatal ELS was slightly larger in
 boys (\emph{Z}=-1.38, \emph{p}=.083). A similar pattern of associations
-was found in ALSPAC but with smaller magnitudes (see \textbf{Figures
-S2-S4} and \textbf{Tables S6-S9}, available online).
+was found in ALSPAC but with smaller magnitudes (see
+\href{https://osf.io/xs29c}{\emph{Figures S2-S4}} and
+\href{https://osf.io/7e4x8}{\emph{Tables S6-S9}}, available online).
 
 In GenR, Cape Verdian and Dutch Antillean children experienced the
 highest cumulative prenatal and postnatal stress followed by Turkish,
-Surinamese and Moroccan children (\textbf{Figure S5-B}). We did not find
+Surinamese and Moroccan children
+(\href{https://osf.io/xs29c}{\emph{Figure S5-B}}). We did not find
 evidence for a significant interaction between pre- or postnatal ELS and
 the examined ethnic background groups on any outcome of interest (i.e.,
-internalizing symptoms, adiposity or comorbidity; see \textbf{Table S10}
-and \textbf{Figure S5-C}, available online). Note however that the
-association between pre-/postnatal ELS and comorbidity in the ``North
-American'' group could not be estimated due to insufficient number of
-observations (i.e., comorbidity group size ≤ 5).
+internalizing symptoms, adiposity or comorbidity; see
+\href{https://osf.io/7e4x8}{\emph{Table S10}} and
+\href{https://osf.io/xs29c}{\emph{Figure S5-C}}, available online). Note
+however that the association between pre-/postnatal ELS and comorbidity
+in the ``North American'' group could not be estimated due to
+insufficient number of observations (i.e., comorbidity group size ≤ 5).
 
 \subsubsection{Contribution of specific stress
 domains}\label{contribution-of-specific-stress-domains}
@@ -1463,21 +1478,23 @@ domains}\label{contribution-of-specific-stress-domains}
 Across cohorts, internalizing symptoms were consistently associated with
 higher prenatal and postnatal parental risk (e.g., parental
 psychopathology), postnatal life events and direct victimization (see
-\textbf{Figure S6} and \textbf{Table S11}, available online). We found
-no consistent associations for adiposity. Only postnatal parental risk
-was consistently associated comorbidity status (vs.~healthy) across
-cohorts (see \textbf{Figure S7} and \textbf{Table S12}, available
-online).
+\href{https://osf.io/xs29c}{\emph{Figure S6}} and
+\href{https://osf.io/7e4x8}{\emph{Table S11}}, available online). We
+found no consistent associations for adiposity. Only postnatal parental
+risk was consistently associated comorbidity status (vs.~healthy) across
+cohorts (see \href{https://osf.io/xs29c}{\emph{Figure S7}} and
+\href{https://osf.io/7e4x8}{\emph{Table S12}}, available online).
 
 \subsubsection{Sensitivity analyses}\label{sensitivity-analyses}
 
 Restricting the analyses to participants with complete outcome data (n =
 GenR: 2749; ALSPAC: 4096) did not substantively change the reported
-findings (see \textbf{Figure S8} and \textbf{Tables S13-S15}, available
-online), nor did the use of android fat mass rather than fat mass
-percentage as a proxy of adiposity (see \textbf{Figure S9} and
-\textbf{Table S16}, available online). None of the main conclusions was
-impacted by FDR correction.
+findings (see \href{https://osf.io/xs29c}{\emph{Figure S8}} and
+\href{https://osf.io/7e4x8}{\emph{Tables S13-S15}}, available online),
+nor did the use of android fat mass rather than fat mass percentage as a
+proxy of adiposity (see \href{https://osf.io/xs29c}{\emph{Figure S9}}
+and \href{https://osf.io/7e4x8}{\emph{Table S16}}, available online).
+None of the main conclusions was impacted by FDR correction.
 
 \section{Discussion}\label{discussion}
 
@@ -1948,12 +1965,17 @@ examine how these associations may evolve over time.
 
 \markright{Links}
 
-\begin{itemize}
-\tightlist
-\item
-  \href{https://github.com/SereDef/lifestyle-moderators-project}{Project's
-  code}
-\end{itemize}
+\textbf{Supplementary materials}:
+https://osf.io/2wz4u/files/osfstorage\newline
+\includegraphics[width=0.2\linewidth,height=\textheight,keepaspectratio]{3.Chapter/../img/qrcode_supp3.png}
+
+\textbf{Project's code}:
+https://github.com/SereDef/lifestyle-moderators-project\newline
+\includegraphics[width=0.2\linewidth,height=\textheight,keepaspectratio]{3.Chapter/../img/qrcode_chap3_repo.png}
+
+\textbf{ELS score}:
+https://github.com/SereDef/cumulative-ELS-score\newline
+\includegraphics[width=0.2\linewidth,height=\textheight,keepaspectratio]{3.Chapter/../img/qrcode_els_repo.png}
 
 \section*{Keywords}\label{keywords-1}
 \addcontentsline{toc}{section}{Keywords}
@@ -1963,7 +1985,7 @@ examine how these associations may evolve over time.
 Adverse Childhood Experiences; Comorbidity; Physical Activity; Sleep;
 Diet, Mediterranean; Depression; Adiposity; moderation analysis.
 
-\section*{Abbreviations}\label{abbreviations}
+\section*{Abbreviations}\label{abbreviations-1}
 \addcontentsline{toc}{section}{Abbreviations}
 
 \markright{Abbreviations}
@@ -1979,11 +2001,350 @@ Factor (VIF), United Kingdom (UK).
 
 \section{Introduction}\label{introduction-1}
 
-In summary, this book has no content whatsoever (Boyd et al., 2012;
-Fraser et al., 2013). But I shall write it anyway cause. Cause I kind of
-do have no choice so, checking justification works
+Over the past few decades, the prevalence of comorbid mental and
+physical diseases has risen dramatically, posing a major challenge for
+health services across the world (Launders et al., 2022; Ronaldson et
+al., 2021). In particular, multiple large studies have shown a
+substantial degree of comorbidity between common mood disorders, such as
+depression and anxiety, and cardio-metabolic conditions, including
+diabetes, obesity and cardiovascular disease (Fisher et al., 2014; Gold
+et al., 2020; Souama et al., 2023). Mounting evidence is further
+suggesting an early origin of these psycho-physical comorbidity
+patterns, involving shared risk factors and pathophysiological pathways
+that begin already in utero (Milaneschi et al., 2019). One of such risk
+factors is psychosocial stress -- including for instance family
+conflict, financial difficulties or victimization, experienced in the
+first years of life -- here collectively defined as early-life stress
+(ELS). For example, a recent study conducted in two independent
+population-based samples reported that exposure to ELS during gestation
+and throughout the first 10 years of life prospectively associated with
+increased internalizing symptoms\footnote{Internalizing symptoms
+  (Achenbach, 1966) refer to a host of problems, including feelings of
+  sadness, withdrawal, anxiety, loneliness or somatic complaints that
+  are typical of early manifestations of depression and anxiety during
+  childhood and adolescence.}, adiposity, as well as their co-occurrence
+in adolescence (Defina et al., 2023). The study focused on broad,
+pre-clinical measures of depression/anxiety (i.e.~internalizing
+symptoms) and cardio-metabolic risk (i.e.~adiposity) respectively.
+However, these associations were also shown to persist into mid- and
+late adulthood and manifest into clinical diagnoses (Bright et al.,
+2016; Milaneschi et al., 2019; Souama et al., 2023), highlighting the
+early developmental origins of these risk pathways.
+
+While these findings certainly support the importance of primary
+prevention programmes aimed at reducing the incidence of ELS, preventing
+ELS may not always be possible. As such, there is a need to identify
+alternative modifiable factors that could mitigate the negative impact
+of ELS on later health, and inform the development of complementary
+intervention strategies.
+
+Healthy lifestyle factors, including physical activity, sleep and diet
+have been robustly linked to both emotional and physical wellbeing
+(Briguglio et al., 2020; Firth et al., 2020). For example, regular
+physical activity was associated with reduced internalizing (Wheatley et
+al., 2020) and depressive symptoms (Oberste et al., 2020), as well as
+with lower body mass index (BMI) (Schwarzfischer et al., 2017) in
+children and adolescents. Adolescents reporting longer sleep durations
+have also been shown to be at lower odds of developing depression and
+obesity (Owens et al., 2014). Moreover, diet quality, particularly
+adherence to a Mediterranean diet, was associated with reduced
+internalizing symptoms (Orlando et al., 2022) and risk of depression
+(Shafiei et al., 2023), as well as with lower adiposity (Tognon et al.,
+2014) in childhood.
+
+However, it remains unclear whether any of these lifestyle factors could
+effectively attenuate the association between ELS exposure and the risk
+of comorbidity between mental and physical health problems, in early
+adolescence.
+
+To address this gap, we replicated and extended Defina et al.'s (2023)
+approach, by investigating the interaction between cumulative ELS
+exposure and \emph{(a)} participation in physical activity, \emph{(b)}
+sleep duration, and \emph{(c)} adherence to a Mediterranean diet, on
+adolescent psycho-physical comorbidity, defined as the co-occurrence of
+high internalizing symptoms and high adiposity.
 
 \section{Methods}\label{methods-1}
+
+This study follows STROBE guidelines (Elm et al., 2008).
+
+\subsection{Participants}\label{participants-1}
+
+Our sample was drawn from two ongoing population-based longitudinal
+birth cohorts: the Avon Longitudinal Study of Parents and Children
+(ALSPAC) involving a total of total of 14,833 pregnant women whose
+children were born in Avon (UK) between 1991 and 1992 (Boyd et al.,
+2012; Fraser et al., 2013); and the Generation R (GenR) Study, involving
+9,778 pregnant women, with children born in Rotterdam (the Netherlands)
+between 2002 and 2006 (Kooijman et al., 2016). Please note that the
+\href{http://www.bristol.ac.uk/alspac/researchers/our-data/}{ALSPAC
+website} contains details of all the data that is available through a
+fully searchable data dictionary and variable search tool. More detailed
+information about ALSPAC study numbers can be found in
+\href{https://osf.io/9vky4}{\emph{Supplementary Text S1}}, available
+online.
+
+Response rates at the 13 years follow-up were 61\% in ALSPAC and 64\% in
+GenR. Participant selection criteria have been previously described
+(Defina et al., 2023). In summary, children with more than 50\% missing
+ELS items in either the pre- or postnatal period were excluded. All
+twins were further excluded and, in the case of non-twin siblings, only
+one was retained in the sample. The final sample included 8,428 and
+4,268 children in ALSPAC and GenR respectively.
+
+Ethical approval for the study was obtained from the ALSPAC Ethics and
+Law Committee, the University of Bath Psychology Research Ethics
+Committee (reference number: 20-195), and from the Medical Ethical
+Committee of Erasmus MC, University Medical Center Rotterdam
+(MEC-198.782.2001.31).
+
+\subsection{Measures}\label{measures-1}
+
+\subsubsection{Early Life Stress (ELS)
+exposure}\label{early-life-stress-els-exposure}
+
+A detailed description of the ELS exposure score can be found elsewhere
+{[}Defina et al. (2023);
+\href{https://github.com/SereDef/cumulative-ELS-score}{ELS score
+repository}{]}. Briefly, a prenatal (i.e., maternal exposure during
+pregnancy) and postnatal (i.e.~from birth to 10 years) cumulative ELS
+score was constructed in each cohort by combining \textasciitilde100
+stress-related items (e.g., death of a relative; financial difficulties;
+parental psychopathology; maltreatment or bullying). Prenatal and
+postnatal stress scores were then summed to obtain a total ELS exposure
+score, spanning from pregnancy to age 10 years.
+
+\subsubsection{Physical and mental health
+outcomes}\label{physical-and-mental-health-outcomes}
+
+Following the same approach as Defina et al. (2023), we defined
+psycho-physical comorbidity as the co-occurrence of high internalizing
+symptoms and high adiposity.
+
+Internalizing symptoms were assessed by parental reports when children
+were on average 13.5 years old (range: 12.5-16.8 years) using the
+Strengths and Difficulties Questionnaire (SDQ) (Goodman, 1997) in ALSPAC
+and the Child Behavior Checklist (CBCL 6-18) (Achenbach, 1999) in GenR.
+Both instruments are well-validated reports of emotional and behavioural
+functioning referring to the past 6 months, and have been shown to be
+comparable (r=0.74) (Goodman \& Scott, 1999).
+
+Adiposity was measured using total body fat mass percentage estimated
+via dual-energy X-ray absorptiometry (DXA) scanner (ALSPAC: Lunar
+Prodigy DXA scanner, GE Healthcare; GenR: iDXA scanner, GE Healthcare,
+Madison, WI) at the average age of 13.5 years (range: 12.5-16.6 years).
+
+Finally, to obtain psycho-physical comorbidity, internalizing symptoms
+and fat mass percentage were first dichotomized into high versus
+low-moderate, based on a cohort-specific 80th percentile cut-off value.
+The dichotomized values were then used to assign children to 4 groups:
+``Healthy'' (both outcomes \textless80th percentile); ``High
+internalizing'' (internalizing \textgreater80th \& fat mass percentage
+≤80th); ``High adiposity'' (internalizing ≤80th \& fat mass percentage
+\textgreater80th); and ``Comorbid'' (both outcomes \textgreater80th
+percentile). Note that the 80th percentile cut-off was based on previous
+validation studies (Achenbach \& Rescorla, 2001; Bourdon et al., 2005;
+Flegal et al., 2010; Weber et al., 2014) and the resulting size of the
+comorbidity group was larger than expected by chance (permutation test p
+\textless{} 0.01; see \href{https://osf.io/xs29c}{\emph{Supplement 2}}
+in Defina et al. (2023)).
+
+\subsubsection{Lifestyle factors}\label{lifestyle-factors}
+
+\textbf{\emph{Physical activity}}. Frequency of physical activity was
+measured via questionnaires when children were on average 10.7 years old
+(range: 10.6-14.7) in ALSPAC and 9.7 years (range: 8.9-12.4) in GenR.
+ALSPAC mothers were asked about the ``\emph{Average number of times
+their child participated in vigorous physical activity in past month}''
+(``\emph{none}'', ``\emph{less than once a week}'', ``\emph{1-3 times a
+week}'', ``\emph{4-6 times a week}'' and ``\emph{daily}''), while GenR
+children reported ``\emph{How often did they play sports at a sports
+club or team}''\,'' (``\emph{once a week}'', ``\emph{2 times a week}'',
+``\emph{3 times a week}'', ``\emph{4 times a week}'', or ``\emph{5 or
+more times a week}'').
+
+\textbf{\emph{Sleep}}. In the ALSPAC sample, sleep duration (hours) was
+calculated using maternal reports of the ``\emph{Time their child
+usually goes to sleep and wakes up on normal school days}''\,``,
+collected at the mean age of 11.7 years (range: 11.4-13.8).
+
+In GenR, a selected subsample of children {[}N=1,483; Koopman-Verhoeff
+et al. (2019){]} completed a sleep diary including questions about the
+time they went to bed and woke up, on nine consecutive days (i.e., 5
+weekdays and 4 weekend days). These self-reports were used to calculate
+average sleep duration across the nine days. Mean age of measurement was
+12.7 years (range: 10.4-15.6), however, due to logistical reasons, data
+collection was split into two waves, resulting in a 3-years age
+difference between the first and second group (i.e., 11 and 14 years;
+see Figure~\ref{fig-3.1} B). Sleep duration values measured after either
+outcome of interest were set to missing (N=519).
+
+\textbf{\emph{Diet}}. Nutritional intake was assessed at 10.6 years
+(range: 9.8-12.2) in ALSPAC and at 8.2 years (range: 7.5-10.8) in GenR,
+using a 3-day child-reported food diary (Cribb et al., 2011), and the
+4-week parent-reported food frequency questionnaire {[}FFQ; Dutman et
+al. (2011){]}, respectively.
+
+ALSPAC participants were asked to record all foods and drinks consumed
+over three individual days (preferably one weekend and two weekdays, not
+necessarily consecutive), using household measures. The structured diary
+was designed for the child to complete with the help of their parents.
+They would then bring the diary to the clinic visit where, if possible,
+any uncertainties were clarified by a member of the nutrition team. Food
+records were transformed into food codes and associated weights using
+the DIDO software (Price et al., 1995).
+
+The FFQ consists of 71 food items relevant for the energy intake of
+Dutch children (Netherlands Nutrition Centre, 1998). Information on
+frequencies, types, and portion sizes was converted into grams of
+individual food items per day based on standard Dutch portion sizes
+(Velde et al., 2019).
+
+A Mediterranean diet adherence score (ranging from 0 to 7) (Trichopoulou
+et al., 2003) was constructed by assigning 1 point for the elevated
+(i.e., ≥ median) consumption of five beneficial food groups (i.e.,
+vegetables, legumes, fruits and nuts, cereal, and fish), and 1 point for
+the restricted (i.e., \textless{} median) consumption of two detrimental
+food groups (i.e., meat and dairy products). Details of specific items
+included in the food groups in each cohort can be found in
+\href{https://osf.io/9vky4}{\emph{Supplementary Text S2}}.
+
+\begin{figure}[H]
+
+\centering{
+
+\includegraphics[width=1\linewidth,height=\textheight,keepaspectratio]{3.Chapter/Figures/F1_moddesc.png}
+
+}
+
+\caption{\label{fig-3.1}\textbf{Lifestyle factors characteristics in
+ALSPAC and Generation R children (UK, 2002-2005; The Netherlands,
+2010-2016)}\newline(A-F) Characteristics of physical activity, sleep and
+diet measurements in the ALSPAC (A-C; in pink) and GenR cohorts (D-F; in
+blue). In the top panel, the distributions of child age at moderator
+measurement are depicted for both cohorts. A grey line and shadow also
+indicate the average and range of child age at outcome measurement. The
+central and bottom panel depict the distribution and correlation between
+the three lifestyle factors in ALSPAC and GenR respectively.}
+
+\end{figure}%
+
+\subsection{Statistical analysis}\label{statistical-analysis-1}
+
+Analyses were run separately in the two cohorts, using R version 4.1.0
+(R Core Team, 2021) (scripts publicly available
+\href{https://github.com/SereDef/lifestyle-moderators-project}{here}).
+
+Missing values in all variables of interest (i.e., exposures, outcomes,
+moderators and covariates) were imputed by conditional multiple
+imputation (Buuren \& Groothuis-Oudshoorn, 2011) using 60 iterations and
+30 imputed datasets (for a complete assessment of missing values and
+detailed imputation strategy see
+\href{https://osf.io/9vky4}{\emph{Supplementary Text S3}} and
+\href{https://osf.io/x9g6b}{\emph{Supplementary Table S1}}, available
+online). Model parameters were fit in each imputed dataset and then
+pooled according to Rubin's Rules. To account for multiple comparisons,
+false discovery rate correction was applied.
+
+\subsubsection{Main analyses}\label{main-analyses}
+
+To address our primary hypotheses, three multinomial logistic
+regressions (i.e., one for each lifestyle factor) were performed, with
+psycho-physical risk group as a dependent variable. The reference level
+was set to ``healthy''. These models included: \emph{a)} the main effect
+of total ELS, \emph{b)} that of each lifestyle factor (separately; i.e.,
+physical activity, sleep and diet) and \emph{c)} their interaction, as
+well as the full set of covariates. In order to generate meaningful and
+comparable estimates for the main effects of interest, both ELS scores
+and lifestyle factor variables were standardized using a z
+transformation before entering the models. The covariate set included
+child sex, age at outcome measure, ethnicity (dichotomized into
+``White'' and ``non-White''), maternal smoking and alcohol consumption
+during pregnancy and maternal pre-pregnancy BMI. To diagnose
+multicollinearity between independent variables we computed generalized
+variance inflation factors (VIF) for each predictor (James et al.,
+2013).
+
+\subsubsection{Follow-up analyses}\label{follow-up-analyses-1}
+
+Several follow-up analyses were conducted, whereby the three main models
+(i.e., for physical activity, sleep and diet) were modified to:
+
+\begin{verbatim}
+a)  Feature *(i)* internalizing symptoms and *(ii)* adiposity (rather than their comorbidity) as dependent variables (i.e., in two separate linear regression models);
+b)  Examine pre-/postnatal ELS (rather than the total ELS score) as main stress exposure;
+c)  Assess the effect of adhering to international guidelines regarding weekly physical activity, sleep duration and diet, by using a dichotomized version of each moderator. 
+We dichotomised the physical activity variable according to the WHO recommended guideline for vigorous physical activity of "at least 3 times a week" for children aged 5-17 [@Bull2020]. Applied to available response options in both cohorts, participation in physical activity was deemed "infrequent" (0-3 times a week) or "frequent" (4+ times a week). The sleep variable was dichotomized based on the recommendations of the 'American Academy of Sleep Medicine' for children aged 6-12 years [@Paruthi2016]. Children who slept between 9-12 hours were categorised as sleeping a "recommended" duration, in comparison to "insufficient/excessive" sleep. Finally, we used a median-split approach to dichotomise the diet variable. Children were categorised as having lower (≤ median), or higher adherence (> median) in each sample.
+\end{verbatim}
+
+We additionally explored potential non-linear associations between each
+lifestyle factor and the main outcomes of interest by including second-
+and third-degree polynomial terms in the models. To assess the extent to
+which maternal health and lifestyle behaviour may have moderated the
+relationships of interest (Epstein et al., 2023; Heslehurst et al.,
+2019), we further investigated the interaction between ELS and maternal
+BMI on child comorbidity. Finally, to assess the impact of the
+imputation procedure on our results, we ran the analyses in the
+subsample with complete moderator and outcome data.
+
+\section{Results}\label{results-1}
+
+\subsection{Sample characteristics}\label{sample-characteristics}
+
+Sample characteristics were pooled across imputed datasets and
+summarized in Table 1. Briefly, the ALSPAC sample included 8,428 (48\%
+male) children, whose mothers were 96\% White and 30\% highly educated
+(i.e., held a college or university degree). The GenR sample included
+4,268 (52\% male) participants, 71\% of which were encoded as ``White''
+(i.e., European, North American, Japanese or Indonesian) and 14\% had
+highly educated (i.e., ``higher, phase 2'') mothers. The distribution of
+each lifestyle factor and their correlations are displayed in Figure 1.
+The proportion of children categorized as comorbid was small (2.9\% in
+ALSPAC and 5.1\% in GenR), as also reflected by the weak correlations
+between internalizing scores and adiposity (r = ALSPAC: 0.10; GenR:
+0.12; see Supplementary Table S2).
+
+\subsection{Main analyses}\label{main-analyses-1}
+
+We did not find evidence in support of any of the hypothesised
+moderation effects (Supplementary Table S3). Increased ELS was
+significantly associated with higher risk of developing comorbidity
+(vs.~being healthy; Figure 2A; ORs: 1.65-1.67 in ALSPAC and 2.70-2.75 in
+GenR), but this association was not modified by any of the three
+lifestyle factors we investigated (Figure 2B-D). Conversely, while
+comorbidity risk was generally lower in children who engaged in
+favourable lifestyle behaviours (Figure 2A), this effect was only
+significant for physical activity and only in one of the two cohorts
+(ORALSPAC {[}95\%CI{]} = 0.73 {[}0.59;0.89{]}). The magnitude of
+multicollinearity was low in all the models (VIF ≤ 1.17; see
+Supplementary Table S3).
+
+\subsection{Follow-up analyses}\label{follow-up-analyses-2}
+
+When internalizing symptoms and adiposity were examined as two separate
+outcomes, a similar pattern of results emerged (Supplementary Tables S4;
+Figure 3). ELS was significantly associated with increased internalizing
+symptoms and adiposity, but neither association was modified by physical
+activity, sleep or diet. Only the main effect of physical activity on
+internalizing symptoms was statistically significant in both cohorts
+(βALSPAC {[}95\%CI{]} = -0.05 {[}-0.08;-0.03{]}; βGenR {[}95\%CI{]} =
+-0.05 {[}-0.09;-0.02{]}). Engagement in two of the three favourable
+lifestyle behaviours was linked to lower adiposity levels, but only in
+one of the two cohorts (βALSPAC {[}95\%CI{]}: physical activity = -0.08
+{[}-0.10;-0.06{]}; sleep = -0.02 {[}-0.05;0.01{]}). Findings did not
+change substantially when ELS exposure was restricted to the prenatal or
+postnatal periods only (Supplementary Table S5), nor when lifestyle
+factors were dichotomized into adherence and non-adherence to
+international guidelines (Supplementary Table S6). The non-linear
+relationships between each lifestyle factor and the main outcomes of
+interest are represented in Supplementary Figure S1. Only for the
+relationship between sleep and internalizing symptoms did we find any
+evidence for a non-linear (inverse logarithmic) trend. We did not find a
+statistically significant interaction between ELS exposure and maternal
+BMI on child comorbidity (Supplementary Table S7). The sensitivity
+analysis conducted in the subsample with complete outcome and moderator
+data (sample size = ALSPAC: 3680-4237; GenR: 961-2369) also did not
+impact our main conclusions (Supplementary Table S8).
 
 \section{Discussion}\label{discussion-1}
 
@@ -1992,11 +2353,32 @@ do have no choice so, checking justification works
 
 \markright{References}
 
-\section*{References}\label{bibliography--3}
-\addcontentsline{toc}{section}{References}
-
 \phantomsection\label{refs--3}
 \begin{CSLReferences}{1}{0}
+\bibitem[\citeproctext]{ref-Achenbach1966}
+Achenbach, T. M. (1966). The classification of children's psychiatric
+symptoms: A factor-analytic study {[}Journal Article{]}.
+\emph{Psychological Monographs: General and Applied}, \emph{80}(7),
+1--37. \url{https://doi.org/10.1037/h0093906}
+
+\bibitem[\citeproctext]{ref-Achenbach1999}
+Achenbach, T. M. (1999). The child behavior checklist and related
+instruments {[}Book Section{]}. In \emph{The use of psychological
+testing for treatment planning and outcomes assessment, 2nd ed.} (pp.
+429--466). Lawrence Erlbaum Associates Publishers.
+
+\bibitem[\citeproctext]{ref-Achenbach2001}
+Achenbach, T. M., \& Rescorla, L. (2001). \emph{Manual for the ASEBA
+school-age forms \& profiles : An integrated system of multi-informant
+assessment} {[}Book{]}. ASEBA Burlington, VT.
+
+\bibitem[\citeproctext]{ref-Bourdon2005}
+Bourdon, K. H., Goodman, R., Rae, D. S., Simpson, G., \& Koretz, D. S.
+(2005). The strengths and difficulties questionnaire: U.s. Normative
+data and psychometric properties {[}Journal Article{]}. \emph{J Am Acad
+Child Adolesc Psychiatry}, \emph{44}(6), 557--564.
+\url{https://doi.org/10.1097/01.chi.0000159157.57075.c8}
+
 \bibitem[\citeproctext]{ref-Boyd2012}
 Boyd, A., Golding, J., Macleod, J., Lawlor, D. A., Fraser, A.,
 Henderson, J., Molloy, L., Ness, A., Ring, S., \& Davey Smith, G.
@@ -2005,6 +2387,92 @@ of the avon longitudinal study of parents and children {[}Journal
 Article{]}. \emph{International Journal of Epidemiology}, \emph{42}(1),
 111--127. \url{https://doi.org/10.1093/ije/dys064}
 
+\bibitem[\citeproctext]{ref-Bright2016}
+Bright, M. A., Knapp, C., Hinojosa, M. S., Alford, S., \& Bonner, B.
+(2016). The comorbidity of physical, mental, and developmental
+conditions associated with childhood adversity: A population based study
+{[}Journal Article{]}. \emph{Maternal and Child Health Journal},
+\emph{20}(4), 843--853. \url{https://doi.org/10.1007/s10995-015-1915-7}
+
+\bibitem[\citeproctext]{ref-Briguglio2020}
+Briguglio, M., Vitale, J. A., Galentino, R., Banfi, G., Zanaboni Dina,
+C., Bona, A., Panzica, G., Porta, M., Dell'Osso, B., \& Glick, I. D.
+(2020). Healthy eating, physical activity, and sleep hygiene (HEPAS) as
+the winning triad for sustaining physical and mental health in patients
+at risk for or with neuropsychiatric disorders: Considerations for
+clinical practice {[}Journal Article{]}. \emph{Neuropsychiatr Dis
+Treat}, \emph{16}, 55--70. \url{https://doi.org/10.2147/ndt.S229206}
+
+\bibitem[\citeproctext]{ref-Buuren2011}
+Buuren, S., \& Groothuis-Oudshoorn, C. (2011). MICE: Multivariate
+imputation by chained equations in r {[}Journal Article{]}.
+\emph{Journal of Statistical Software}, \emph{45}.
+\url{https://doi.org/10.18637/jss.v045.i03}
+
+\bibitem[\citeproctext]{ref-Cribb2011}
+Cribb, V. L., Jones, L. R., Rogers, I. S., Ness, A. R., \& Emmett, P. M.
+(2011). Is maternal education level associated with diet in 10-year-old
+children? {[}Journal Article{]}. \emph{Public Health Nutrition},
+\emph{14}(11), 2037--2048.
+\url{https://doi.org/10.1017/S136898001100036X}
+
+\bibitem[\citeproctext]{ref-Defina2023}
+Defina, S., Woofenden, T., Baltramonaityte, V., Pariante, C. M.,
+Lekadir, K., Jaddoe, V., Serdarevic, F., Tiemeier, H., Walton, E.,
+Felix, J. F., \& Cecil, C. A. M. (2023). Effects of pre- and postnatal
+early-life stress on internalizing, adiposity and their comorbidity
+{[}Journal Article{]}. \emph{Journal of the American Academy of Child \&
+Adolescent Psychiatry}, \emph{63}, 255--265.
+\url{https://doi.org/10.1016/j.jaac.2023.05.034}
+
+\bibitem[\citeproctext]{ref-Dutman2011}
+Dutman, A. E., Stafleu, A., Kruizinga, A., Brants, H. A., Westerterp, K.
+R., Kistemaker, C., Meuling, W. J., \& Goldbohm, R. A. (2011).
+Validation of an FFQ and options for data processing using the doubly
+labelled water method in children {[}Journal Article{]}. \emph{Public
+Health Nutrition}, \emph{14}(3), 410--417.
+
+\bibitem[\citeproctext]{ref-vonElm2008}
+Elm, E. von, Altman, D. G., Egger, M., Pocock, S. J., Gøtzsche, P. C.,
+\& Vandenbroucke, J. P. (2008). The strengthening the reporting of
+observational studies in epidemiology (STROBE) statement: Guidelines for
+reporting observational studies {[}Journal Article{]}. \emph{J Clin
+Epidemiol}, \emph{61}(4), 344--349.
+\url{https://doi.org/10.1016/j.jclinepi.2007.11.008}
+
+\bibitem[\citeproctext]{ref-Epstein2023}
+Epstein, L. H., Wilfley, D. E., Kilanowski, C., Quattrin, T., Cook, S.
+R., Eneli, I. U., Geller, N., Lew, D., Wallendorf, M., Dore, P., Paluch,
+R. A., \& Schechtman, K. B. (2023). Family-based behavioral treatment
+for childhood obesity implemented in pediatric primary care: A
+randomized clinical trial {[}Journal Article{]}. \emph{Jama},
+\emph{329}(22), 1947--1956. \url{https://doi.org/10.1001/jama.2023.8061}
+
+\bibitem[\citeproctext]{ref-Firth2020}
+Firth, J., Solmi, M., Wootton, R. E., Vancampfort, D., Schuch, F. B.,
+Hoare, E., Gilbody, S., Torous, J., Teasdale, S. B., Jackson, S. E.,
+Smith, L., Eaton, M., Jacka, F. N., Veronese, N., Marx, W.,
+Ashdown-Franks, G., Siskind, D., Sarris, J., Rosenbaum, S., \ldots{}
+Stubbs, B. (2020). A meta-review of "lifestyle psychiatry": The role of
+exercise, smoking, diet and sleep in the prevention and treatment of
+mental disorders {[}Journal Article{]}. \emph{World Psychiatry},
+\emph{19}(3), 360--380. \url{https://doi.org/10.1002/wps.20773}
+
+\bibitem[\citeproctext]{ref-Fisher2014}
+Fisher, E. B., Chan, J. C. N., Kowitt, S., Nan, H., Sartorius, N., \&
+Oldenburg, B. (2014). Conceptual perspectives on the co-occurrence of
+mental and physical disease: Diabetes and depression as a model {[}Book
+Section{]}. In N. Sartorius, R. I. G. Holt, \& M. Maj (Eds.),
+\emph{Comorbidity of mental and physical disorders} (Vol. 179, p. 0).
+S.Karger AG. \url{https://doi.org/10.1159/000365522}
+
+\bibitem[\citeproctext]{ref-Flegal2010}
+Flegal, K. M., Ogden, C. L., Yanovski, J. A., Freedman, D. S., Shepherd,
+J. A., Graubard, B. I., \& Borrud, L. G. (2010). High adiposity and high
+body mass index-for-age in US children and adolescents overall and by
+race-ethnic group {[}Journal Article{]}. \emph{Am J Clin Nutr},
+\emph{91}(4), 1020--1026. \url{https://doi.org/10.3945/ajcn.2009.28589}
+
 \bibitem[\citeproctext]{ref-Fraser2013}
 Fraser, A., Macdonald-Wallis, C., Tilling, K., Boyd, A., Golding, J.,
 Davey Smith, G., Henderson, J., Macleod, J., Molloy, L., Ness, A., Ring,
@@ -2012,6 +2480,177 @@ S., Nelson, S. M., \& Lawlor, D. A. (2013). Cohort profile: The avon
 longitudinal study of parents and children: ALSPAC mothers cohort
 {[}Journal Article{]}. \emph{Int J Epidemiol}, \emph{42}(1), 97--110.
 \url{https://doi.org/10.1093/ije/dys066}
+
+\bibitem[\citeproctext]{ref-Gold2020}
+Gold, S. M., Köhler-Forsberg, O., Moss-Morris, R., Mehnert, A., Miranda,
+J. J., Bullinger, M., Steptoe, A., Whooley, M. A., \& Otte, C. (2020).
+Comorbid depression in medical diseases {[}Journal Article{]}.
+\emph{Nature Reviews Disease Primers}, \emph{6}(1), 69.
+\url{https://doi.org/10.1038/s41572-020-0200-2}
+
+\bibitem[\citeproctext]{ref-Goodman1997}
+Goodman, R. (1997). The strengths and difficulties questionnaire: A
+research note {[}Journal Article{]}. \emph{Journal of Child Psychology
+and Psychiatry}, \emph{38}(5), 581--586.
+
+\bibitem[\citeproctext]{ref-Goodman1999}
+Goodman, R., \& Scott, S. (1999). Comparing the strengths and
+difficulties questionnaire and the child behavior checklist: Is small
+beautiful? {[}Journal Article{]}. \emph{Journal of Abnormal Child
+Psychology}, \emph{27}(1), 17--24.
+\url{https://doi.org/10.1023/A:1022658222914}
+
+\bibitem[\citeproctext]{ref-Heslehurst2019}
+Heslehurst, N., Vieira, R., Akhter, Z., Bailey, H., Slack, E.,
+Ngongalah, L., Pemu, A., \& Rankin, J. (2019). The association between
+maternal body mass index and child obesity: A systematic review and
+meta-analysis {[}Journal Article{]}. \emph{PLoS Med}, \emph{16}(6),
+e1002817. \url{https://doi.org/10.1371/journal.pmed.1002817}
+
+\bibitem[\citeproctext]{ref-James2013}
+James, G., Witten, D., Hastie, T., \& Tibshirani, R. (2013). \emph{An
+introduction to statistical learning} (Vol. 112) {[}Book{]}. Springer.
+
+\bibitem[\citeproctext]{ref-Kooijman2016}
+Kooijman, M. N., Kruithof, C. J., Duijn, C. M. van, Duijts, L., Franco,
+O. H., Ijzendoorn, M. H. van, Jongste, J. C. de, Klaver, C. C. W., Lugt,
+A. van der, Mackenbach, J. P., Moll, H. A., Peeters, R. P., Raat, H.,
+Rings, E. H. H. M., Rivadeneira, F., Schroeff, M. P. van der, Steegers,
+E. A. P., Tiemeier, H., Uitterlinden, A. G., \ldots{} Jaddoe, V. W. V.
+(2016). The generation r study: Design and cohort update 2017 {[}Journal
+Article{]}. \emph{European Journal of Epidemiology}, \emph{31}(12),
+1243--1264. \url{https://doi.org/10.1007/s10654-016-0224-9}
+
+\bibitem[\citeproctext]{ref-Koopman-Verhoeff2019}
+Koopman-Verhoeff, M. E., Dries, M. A. van den, Seters, J. J. van, Luijk,
+M., Tiemeier, H., \& Luik, A. I. (2019). Association of sleep problems
+and melatonin use in school-aged children {[}Journal Article{]}.
+\emph{JAMA Pediatr}, \emph{173}(9), 883--885.
+\url{https://doi.org/10.1001/jamapediatrics.2019.2084}
+
+\bibitem[\citeproctext]{ref-Launders2022}
+Launders, N., Hayes, J. F., Price, G., \& Osborn, D. P. J. (2022).
+Clustering of physical health multimorbidity in people with severe
+mental illness: An accumulated prevalence analysis of united kingdom
+primary care data {[}Journal Article{]}. \emph{PLOS Medicine},
+\emph{19}(4), e1003976.
+\url{https://doi.org/10.1371/journal.pmed.1003976}
+
+\bibitem[\citeproctext]{ref-Milaneschi2019}
+Milaneschi, Y., Simmons, W. K., Rossum, E. F. C. van, \& Penninx, B. W.
+J. H. (2019). Depression and obesity: Evidence of shared biological
+mechanisms {[}Journal Article{]}. \emph{Molecular Psychiatry},
+\emph{24}(1), 18--33. \url{https://doi.org/10.1038/s41380-018-0017-5}
+
+\bibitem[\citeproctext]{ref-NetherlandsNutritionCentre1998}
+Netherlands Nutrition Centre. (1998). \emph{Results of the dutch food
+consumption survey 1997-1998 {[}dutch: Zo eet nederland: Resultaten van
+de voedselconsumptiepeiling 1997-1998{]}} {[}Generic{]}. Netherlands
+Nutrition Centre {[}Dutch: Voedingscentrum{]} The Hague (Netherlands).
+
+\bibitem[\citeproctext]{ref-Oberste2020}
+Oberste, M., Medele, M., Javelle, F., Lioba Wunram, H., Walter, D.,
+Bloch, W., Bender, S., Fricke, O., Joisten, N., Walzik, D.,
+Großheinrich, N., \& Zimmer, P. (2020). Physical activity for the
+treatment of adolescent depression: A systematic review and
+meta-analysis {[}Journal Article{]}. \emph{Front Physiol}, \emph{11},
+185. \url{https://doi.org/10.3389/fphys.2020.00185}
+
+\bibitem[\citeproctext]{ref-Orlando2022}
+Orlando, L., Savel, K. A., Madigan, S., Colasanto, M., \& Korczak, D. J.
+(2022). Dietary patterns and internalizing symptoms in children and
+adolescents: A meta-analysis {[}Journal Article{]}. \emph{Australian \&
+New Zealand Journal of Psychiatry}, \emph{56}(6), 617--641.
+\url{https://doi.org/10.1177/00048674211031486}
+
+\bibitem[\citeproctext]{ref-Owens2014}
+Owens, J., GROUP, A. S. W., ADOLESCENCE, C. O., Au, R., Carskadon, M.,
+Millman, R., Wolfson, A., Braverman, P. K., Adelman, W. P., Breuner, C.
+C., Levine, D. A., Marcell, A. V., Murray, P. J., \& O'Brien, R. F.
+(2014). Insufficient sleep in adolescents and young adults: An update on
+causes and consequences {[}Journal Article{]}. \emph{Pediatrics},
+\emph{134}(3), e921--e932. \url{https://doi.org/10.1542/peds.2014-1696}
+
+\bibitem[\citeproctext]{ref-Price1995}
+Price, G., Paul, A., Key, F., Harter, A., Cole, T., Day, K., \&
+Wadsworth, M. (1995). Measurement of diet in a large national survey:
+Comparison of computerized and manual coding of records in household
+measures {[}Journal Article{]}. \emph{Journal of Human Nutrition and
+Dietetics}, \emph{8}(6), 417--428.
+
+\bibitem[\citeproctext]{ref-R2021}
+R Core Team. (2021). \emph{R: A language and environment for statistical
+computing} {[}Journal Article{]}. \url{https://www.R-project.org/}
+
+\bibitem[\citeproctext]{ref-Ronaldson2021}
+Ronaldson, A., Arias de la Torre, J., Prina, M., Armstrong, D.,
+Das-Munshi, J., Hatch, S., Stewart, R., Hotopf, M., \& Dregan, A.
+(2021). Associations between physical multimorbidity patterns and common
+mental health disorders in middle-aged adults: A prospective analysis
+using data from the UK biobank {[}Journal Article{]}. \emph{Lancet Reg
+Health Eur}, \emph{8}, 100149.
+\url{https://doi.org/10.1016/j.lanepe.2021.100149}
+
+\bibitem[\citeproctext]{ref-Schwarzfischer2017}
+Schwarzfischer, P., Weber, M., Gruszfeld, D., Socha, P., Luque, V.,
+Escribano, J., Xhonneux, A., Verduci, E., Mariani, B., Koletzko, B., \&
+Grote, V. (2017). BMI and recommended levels of physical activity in
+school children {[}Journal Article{]}. \emph{BMC Public Health},
+\emph{17}(1), 595. \url{https://doi.org/10.1186/s12889-017-4492-4}
+
+\bibitem[\citeproctext]{ref-Shafiei2023}
+Shafiei, F., Salari-Moghaddam, A., Larijani, B., \& Esmaillzadeh, A.
+(2023). Mediterranean diet and depression: Reanalysis of a meta-analysis
+{[}Journal Article{]}. \emph{Nutr Rev}, \emph{81}(7), 889--890.
+\url{https://doi.org/10.1093/nutrit/nuad023}
+
+\bibitem[\citeproctext]{ref-Souama2023}
+Souama, C., Lamers, F., Milaneschi, Y., Vinkers, C. H., Defina, S.,
+Garvert, L., Stein, F., Woofenden, T., Brosch, K., Dannlowski, U.,
+Galenkamp, H., Graaf, R. de, Jaddoe, V. W. V., Lok, A., Rijn, B. B. van,
+Völzke, H., Cecil, C. A. M., Felix, J. F., Grabe, H. J., \ldots{}
+EarlyCause, consortium. (2023). Depression, cardiometabolic disease, and
+their co-occurrence after childhood maltreatment: An individual
+participant data meta-analysis including over 200,000 participants
+{[}Journal Article{]}. \emph{BMC Medicine}, \emph{21}(1), 93.
+\url{https://doi.org/10.1186/s12916-023-02769-y}
+
+\bibitem[\citeproctext]{ref-Tognon2014}
+Tognon, G., Hebestreit, A., Lanfer, A., Moreno, L. A., Pala, V., Siani,
+A., Tornaritis, M., De Henauw, S., Veidebaum, T., Molnár, D., Ahrens,
+W., \& Lissner, L. (2014). Mediterranean diet, overweight and body
+composition in children from eight european countries: Cross-sectional
+and prospective results from the IDEFICS study {[}Journal Article{]}.
+\emph{Nutr Metab Cardiovasc Dis}, \emph{24}(2), 205--213.
+\url{https://doi.org/10.1016/j.numecd.2013.04.013}
+
+\bibitem[\citeproctext]{ref-Trichopoulou2003}
+Trichopoulou, A., Costacou, T., Bamia, C., \& Trichopoulos, D. (2003).
+Adherence to a mediterranean diet and survival in a greek population
+{[}Journal Article{]}. \emph{N Engl J Med}, \emph{348}(26), 2599--2608.
+\url{https://doi.org/10.1056/NEJMoa025039}
+
+\bibitem[\citeproctext]{ref-vanderVelde2019}
+Velde, L. A. van der, Nguyen, A. N., Schoufour, J. D., Geelen, A.,
+Jaddoe, V. W. V., Franco, O. H., \& Voortman, T. (2019). Diet quality in
+childhood: The generation r study {[}Journal Article{]}. \emph{Eur J
+Nutr}, \emph{58}(3), 1259--1269.
+\url{https://doi.org/10.1007/s00394-018-1651-z}
+
+\bibitem[\citeproctext]{ref-Weber2014}
+Weber, D. R., Leonard, M. B., Shults, J., \& Zemel, B. S. (2014). A
+comparison of fat and lean body mass index to BMI for the identification
+of metabolic syndrome in children and adolescents {[}Journal Article{]}.
+\emph{The Journal of Clinical Endocrinology \& Metabolism},
+\emph{99}(9), 3208--3216. \url{https://doi.org/10.1210/jc.2014-1684}
+
+\bibitem[\citeproctext]{ref-Wheatley2020}
+Wheatley, C., Wassenaar, T., Salvan, P., Beale, N., Nichols, T., Dawes,
+H., \& Johansen-Berg, H. (2020). Associations between fitness, physical
+activity and mental health in a community sample of young british
+adolescents: Baseline data from the fit to study trial {[}Journal
+Article{]}. \emph{BMJ Open Sport Exerc Med}, \emph{6}(1), e000819.
+\url{https://doi.org/10.1136/bmjsem-2020-000819}
 
 \end{CSLReferences}
 
@@ -2295,19 +2934,106 @@ common approach for dealing with this dilemma.
 
 \section{Modelling comorbidity}\label{modelling-comorbidity}
 
-\subsection{old data, old insights}\label{old-data-old-insights}
+\subsection{old data, old insights: mental
+health}\label{old-data-old-insights-mental-health}
+
+How do we measure mental health? Badly In this thesis, we relied on
+standardized questionnaires, such as the Strengths and Difficulties
+Questionnaire (SDQ), which provide a composite score of emotional and
+behavioral difficulties. While these tools are widely used and
+validated, they are not without limitations. Self-reports and
+parent-reports are subject to biases, including social desirability and
+recall bias. Furthermore, these measures often fail to capture the
+dynamic and context-dependent nature of mental health, which can
+fluctuate over time and across environments.
+
+Future research should aim to integrate multi-method approaches,
+combining self-reports, observational data, and physiological markers,
+to provide a more comprehensive assessment of mental health.
+
+\subsection{old data, old insights:
+BMI}\label{old-data-old-insights-bmi}
+
+Measuring mental health is an inherently hard task: it requires coming
+up with a tangible (or better, measurable) quantity to stand in for an
+abstract, multifaceted and frustratingly complex construct. You would
+think the job is considerably easier when the object of study is
+something like adiposity, which enjoys a much longer, solid tradition of
+objective measurement and clinical usefulness. Well, let's talk about
+BMI.
+
+In this thesis, we made out best effort to stir away from BMI when we
+measured adiposity and here is a few thoughts on why i'd defend this
+choice.
+
+The concept of BMI was introduced in 1835 by Adolphe Quetelet, a Belgian
+astronomer. Quetelet became increasing interested in defining the
+characteristics of the ``average man'' (l'\emph{homme moyen}, to use his
+words)\ldots{} among French and Scottish conscripts. (a concept than was
+about to become very popular among Eugenics enthusiasts)
+
+BMI has since become a widely used tool in public health and clinical
+settings, although it was never intended to be a diagnostic measure of
+individual health or adiposity. Its simplicity and ease of use have
+contributed to its popularity, so much so that, today, virtually
+everyone has heard of BMI.
+
+but it has significant limitations, particularly in distinguishing
+between muscle and fat mass, and in accounting for variations in body
+composition across different populations.
 
 \subsection{Alternative modelling
 methods}\label{alternative-modelling-methods-1}
 
 network
 
+\section{So what was this all for?}\label{so-what-was-this-all-for}
+
+So what was this all for? Excellent question. Kept me up a few nights I
+argued prevention of comorbidity was key, but am I actually any closer,
+even purely theoretically to a useful insight?
+
+\subsection{Preventing ELS}\label{preventing-els}
+
+In Chapter~\ref{sec-chapter3} you can find me saying: \emph{``While
+these findings certainly support the importance of primary prevention
+programmes aimed at reducing the incidence of ELS, preventing ELS may
+not always be possible. As such, there is a need to identify alternative
+modifiable factors that could mitigate the negative impact of ELS on
+later health, and inform the development of complementary intervention
+strategies.''}
+
+\subsubsection{Lifestyle}\label{lifestyle}
+
+In the same chapter I did not find evidence of such promising
+``modifiable factors''. That was surprising to me, but also, as I later
+came to find out not so rare in the research on lifestyle factors.
+
+\subsubsection{SES}\label{ses}
+
+What seems to emerge from the studies is that the key factor across
+physical and mental health was the contextual risk component of the ELS
+score. Let's unpack that. The key stress indicators within contextual
+risk are low parental education, financial and neighborhood problems.
+These are constructs commonly referred to as low socio-economic status
+(SES).
+
+\section{Ethnicity}\label{ethnicity}
+
+In some chapters, ethnicity was reduces to ``White'' vs.~``non-White''
+(most often becasue of limitaiton of the data), however this is a major
+limitation.
+
 \section{Science is dead, and we killed
 it}\label{science-is-dead-and-we-killed-it}
 
-potential publication bias may limit the generalizability of our
-conclusions. Studies with null findings are less likely to be published
-than those with statistically significant results.
+Before I let you go, dear reader, there is one more thing I need to get
+off my chest, if you'll let me. I began this book with a confession:
+writing this was so much harder then I expected, and in all honesty this
+is a big part of why. potential publication bias may limit the
+generalizability of our conclusions. Studies with null findings are less
+likely to be published than those with statistically significant
+results.
 
 journals should not gatekeep knowledge
 

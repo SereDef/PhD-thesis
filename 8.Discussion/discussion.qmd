@@ -46,12 +46,44 @@ with this dilemma.
 
 ## Modelling comorbidity 
 
-### old data, old insights
+### old data, old insights: mental health
+How do we measure mental health? Badly
+In this thesis, we relied on standardized questionnaires, such as the Strengths and Difficulties Questionnaire (SDQ), which provide a composite score of emotional and behavioral difficulties. While these tools are widely used and validated, they are not without limitations. Self-reports and parent-reports are subject to biases, including social desirability and recall bias. Furthermore, these measures often fail to capture the dynamic and context-dependent nature of mental health, which can fluctuate over time and across environments. 
+
+Future research should aim to integrate multi-method approaches, combining self-reports, observational data, and physiological markers, to provide a more comprehensive assessment of mental health.
+
+### old data, old insights: BMI
+Measuring mental health is an inherently hard task: it requires coming up with a tangible (or better, measurable) quantity to stand in for an abstract, multifaceted and frustratingly complex construct. You would  think the job is considerably easier when the object of study is something like adiposity, which enjoys a much longer, solid tradition of objective measurement and clinical usefulness. Well, let's talk about BMI. 
+
+In this thesis, we made out best effort to stir away from BMI when we measured adiposity and here is a few thoughts on why i'd defend this choice.
+
+The concept of BMI was introduced in 1835 by Adolphe Quetelet, a Belgian astronomer. Quetelet became increasing interested in defining the characteristics of the "average man" (l'*homme moyen*, to use his words)... among French and Scottish conscripts. (a concept than was about to become very popular among Eugenics enthusiasts)
+
+BMI has since become a widely used tool in public health and clinical settings, although it was never intended to be a diagnostic measure of individual health or adiposity. Its simplicity and ease of use have contributed to its popularity, so much so that, today, virtually everyone has heard of BMI. 
+
+but it has significant limitations, particularly in distinguishing between muscle and fat mass, and in accounting for variations in body composition across different populations.
 
 ### Alternative modelling methods 
 network 
 
+## So what was this all for? 
+So what was this all for? Excellent question. Kept me up a few nights
+I argued prevention of comorbidity was key, but am I actually any closer, even purely theoretically to a useful insight? 
+
+### Preventing ELS
+In @sec-chapter3 you can find me saying: *"While these findings certainly support the importance of primary prevention programmes aimed at reducing the incidence of ELS, preventing ELS may not always be possible. As such, there is a need to identify alternative modifiable factors that could mitigate the negative impact of ELS on later health, and inform the development of complementary intervention strategies."* 
+
+#### Lifestyle
+In the same chapter I did not find evidence of such promising "modifiable factors". That was surprising to me, but also, as I later came to find out not so rare in the research on lifestyle factors. 
+
+#### SES 
+What seems to emerge from the studies is that the key factor across physical and mental health was the contextual risk component of the ELS score. Let's unpack that. The key stress indicators within contextual risk are low parental education, financial and neighborhood problems. These are constructs commonly referred to as low socio-economic status (SES). 
+
+## Ethnicity 
+In some chapters, ethnicity was reduces to "White" vs. "non-White" (most often becasue of limitaiton of the data), however this is a major limitation. 
+
 ## Science is dead, and we killed it 
+Before I let you go, dear reader, there is one more thing I need to get off my chest, if you'll let me. I began this book with a confession: writing this was so much harder then I expected, and in all honesty this is a big part of why. 
 potential publication bias may limit the generalizability of
 our conclusions. Studies with null findings are less likely to be
 published than those with statistically significant results. 
@@ -59,9 +91,6 @@ published than those with statistically significant results.
 journals should not gatekeep knowledge 
 
 code is the scientific product
-
-
-
 
 
 ## References {.unnumbered}

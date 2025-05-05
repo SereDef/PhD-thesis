@@ -62,6 +62,9 @@ div.csl-indent {
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../site_libs/bootstrap/bootstrap-7f97be335b70352953bdd8c835addf2e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -282,7 +285,7 @@ div.csl-indent {
 <div id="fig-thesis-summary" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-thesis-summary-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="F1_thesissumm.png" class="img-fluid figure-img" style="width:100.0%">
+<a href="F1_thesissumm.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Figure&nbsp;1.1: Schematic representation of this thesis, in the context of previous literature (A) A schematic summary of the existing evidence, on the relationships under study. This is largely based on adult outcomes and retrospectively measured ELS exposure (indicated by the dashed line). (B) A Schematic summary of the relationships examined in this thesis."><img src="F1_thesissumm.png" class="img-fluid figure-img" style="width:100.0%"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-thesis-summary-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;1.1: <strong>Schematic representation of this thesis, in the context of previous literature</strong><br>(A) A schematic summary of the existing evidence, on the relationships under study. This is largely based on adult outcomes and retrospectively measured ELS exposure (indicated by the dashed line).<br>(B) A Schematic summary of the relationships examined in this thesis.
@@ -384,7 +387,7 @@ Penninx, B. W. J. H., Beekman, A. T. F., Honig, A., Deeg, D. J. H., Schoevers, R
 Reuben, A., Moffitt, T. E., Caspi, A., Belsky, D. W., Harrington, H., Schroeder, F., Hogan, S., Ramrakha, S., Poulton, R., &amp; Danese, A. (2016). Lest we forget: Comparing retrospective and prospective assessments of adverse childhood experiences in the prediction of adult health [Journal Article]. <em>Journal of Child Psychology and Psychiatry</em>, <em>57</em>(10), 1103–1112. <a href="https://doi.org/10.1111/jcpp.12621">https://doi.org/10.1111/jcpp.12621</a>
 </div>
 <div id="ref-Souama2023" class="csl-entry" role="listitem">
-Souama, C., Lamers, F., Milaneschi, Y., Vinkers, C. H., Defina, S., Garvert, L., Stein, F., Woofenden, T., Brosch, K., Dannlowski, U., Galenkamp, H., Graaf, R. de, Jaddoe, V. W. V., Lok, A., Rijn, B. B. van, Völzke, H., Cecil, C. A. M., Felix, J. F., Grabe, H. J., … EarlyCause, consortium on behalf of the. (2023). Depression, cardiometabolic disease, and their co-occurrence after childhood maltreatment: An individual participant data meta-analysis including over 200,000 participants [Journal Article]. <em>BMC Medicine</em>, <em>21</em>(1), 93. <a href="https://doi.org/10.1186/s12916-023-02769-y">https://doi.org/10.1186/s12916-023-02769-y</a>
+Souama, C., Lamers, F., Milaneschi, Y., Vinkers, C. H., Defina, S., Garvert, L., Stein, F., Woofenden, T., Brosch, K., Dannlowski, U., Galenkamp, H., Graaf, R. de, Jaddoe, V. W. V., Lok, A., Rijn, B. B. van, Völzke, H., Cecil, C. A. M., Felix, J. F., Grabe, H. J., … EarlyCause, consortium. (2023). Depression, cardiometabolic disease, and their co-occurrence after childhood maltreatment: An individual participant data meta-analysis including over 200,000 participants [Journal Article]. <em>BMC Medicine</em>, <em>21</em>(1), 93. <a href="https://doi.org/10.1186/s12916-023-02769-y">https://doi.org/10.1186/s12916-023-02769-y</a>
 </div>
 <div id="ref-VanderKooy2007" class="csl-entry" role="listitem">
 Van der Kooy, K., Hout, H. van, Marwijk, H., Marten, H., Stehouwer, C., &amp; Beekman, A. (2007). Depression and the risk for cardiovascular diseases: Systematic review and meta analysis [Journal Article]. <em>International Journal of Geriatric Psychiatry</em>, <em>22</em>(7), 613–626. https://doi.org/<a href="https://doi.org/10.1002/gps.1723">https://doi.org/10.1002/gps.1723</a>
@@ -838,6 +841,38 @@ Zhu, S., Shan, S., Liu, W., Li, S., Hou, L., Huang, X., Liu, Y., Yi, Q., Sun, W.
   </div>
 </footer>
 <script type="application/javascript" src="../sidebar-tweak.js"></script>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 

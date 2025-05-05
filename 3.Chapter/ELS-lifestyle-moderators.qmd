@@ -23,7 +23,25 @@ Adapted from:
 \newpage
 
 ## Links {.unnumbered}
+
+::: {.content-visible when-format="html"}
+* [Supplementary materials]({{< var supp3_general >}})
 * [Project's code]({{< var chap3_repo >}})
+* [ELS score]({{< var els_repo >}})
+:::
+
+::: {.content-visible unless-format="html"}
+
+**Supplementary materials**: {{< var supp3_general >}}\newline
+![](../img/qrcode_supp3.png){width=20%}
+
+**Project's code**: {{< var chap3_repo >}}\newline
+![](../img/qrcode_chap3_repo.png){width=20%}
+
+**ELS score**: {{< var els_repo >}}\newline
+![](../img/qrcode_els_repo.png){width=20%}
+
+:::
 
 ## Keywords {.unnumbered}
 Adverse Childhood Experiences; Comorbidity; Physical Activity; Sleep; Diet, Mediterranean; Depression; Adiposity; moderation analysis.
@@ -35,10 +53,103 @@ Avon Longitudinal Study of Parents and Children (ALSPAC), Body Mass Index (BMI),
 
 ## Introduction
 
-In summary, this book has no content whatsoever [@Fraser2013; @Boyd2012]. But I shall write it anyway cause. Cause I kind of do have no choice so, checking justification works
+Over the past few decades, the prevalence of comorbid mental and physical diseases has risen dramatically, posing a major challenge for health services across the world [@Launders2022; @Ronaldson2021]. In particular, multiple large studies have shown a substantial degree of comorbidity between common mood disorders, such as depression and anxiety, and cardio-metabolic conditions, including diabetes, obesity and cardiovascular disease [@Fisher2014; @Gold2020; @Souama2023]. Mounting evidence is further suggesting an early origin of these psycho-physical comorbidity patterns, involving shared risk factors and pathophysiological pathways that begin already in utero [@Milaneschi2019]. One of such risk factors is psychosocial stress – including for instance family conflict, financial difficulties or victimization, experienced in the first years of life – here collectively defined as early-life stress (ELS). For example, a recent study conducted in two independent population-based samples reported that exposure to ELS during gestation and throughout the first 10 years of life prospectively associated with increased internalizing symptoms[^1], adiposity, as well as their co-occurrence in adolescence [@Defina2023]. The study focused on broad, pre-clinical measures of depression/anxiety (i.e. internalizing symptoms) and cardio-metabolic risk (i.e. adiposity) respectively. However, these associations were also shown to persist into mid- and late adulthood and manifest into clinical diagnoses [@Bright2016; @Milaneschi2019; @Souama2023], highlighting the early developmental origins of these risk pathways.
+
+[^1]: Internalizing symptoms [@Achenbach1966] refer to a host of problems, including feelings of sadness, withdrawal, anxiety, loneliness or somatic complaints that are typical of early manifestations of depression and anxiety during childhood and adolescence.
+
+While these findings certainly support the importance of primary prevention programmes aimed at reducing the incidence of ELS, preventing ELS may not always be possible. As such, there is a need to identify alternative modifiable factors that could mitigate the negative impact of ELS on later health, and inform the development of complementary intervention strategies.
+
+Healthy lifestyle factors, including physical activity, sleep and diet have been robustly linked to both emotional and physical wellbeing [@Briguglio2020; @Firth2020]. For example, regular physical activity was associated with reduced internalizing [@Wheatley2020] and depressive symptoms [@Oberste2020], as well as with lower body mass index (BMI) [@Schwarzfischer2017] in children and adolescents. Adolescents reporting longer sleep durations have also been shown to be at lower odds of developing depression and obesity [@Owens2014]. Moreover, diet quality, particularly adherence to a Mediterranean diet, was associated with reduced internalizing symptoms [@Orlando2022] and risk of depression [@Shafiei2023], as well as with lower adiposity [@Tognon2014] in childhood.
+
+However, it remains unclear whether any of these lifestyle factors could effectively attenuate the association between ELS exposure and the risk of comorbidity between mental and physical health problems, in early adolescence.
+
+To address this gap, we replicated and extended Defina et al.’s [-@Defina2023] approach, by investigating the interaction between cumulative ELS exposure and *(a)* participation in physical activity, *(b)* sleep duration, and *(c)* adherence to a Mediterranean diet, on adolescent psycho-physical comorbidity, defined as the co-occurrence of high internalizing symptoms and high adiposity.
 
 ## Methods
+
+This study follows STROBE guidelines [@vonElm2008].
+
+### Participants
+Our sample was drawn from two ongoing population-based longitudinal birth cohorts: the Avon Longitudinal Study of Parents and Children (ALSPAC) involving a total of total of 14,833 pregnant women whose children were born in Avon (UK) between 1991 and 1992 [@Boyd2012; @Fraser2013]; and the Generation R (GenR) Study, involving 9,778 pregnant women, with children born in Rotterdam (the Netherlands) between 2002 and 2006 [@Kooijman2016]. Please note that the [ALSPAC website](http://www.bristol.ac.uk/alspac/researchers/our-data/) contains details of all the data that is available through a fully searchable data dictionary and variable search tool. More detailed information about ALSPAC study numbers can be found in [*Supplementary Text S1*]({{< var supp3_text >}}), available online.
+
+Response rates at the 13 years follow-up were 61% in ALSPAC and 64% in GenR. Participant selection criteria have been previously described [@Defina2023]. In summary, children with more than 50% missing ELS items in either the pre- or postnatal period were excluded. All twins were further excluded and, in the case of non-twin siblings, only one was retained in the sample. The final sample included 8,428 and 4,268 children in ALSPAC and GenR respectively.
+
+Ethical approval for the study was obtained from the ALSPAC Ethics and Law Committee, the University of Bath Psychology Research Ethics Committee (reference number: 20-195), and from the Medical Ethical Committee of Erasmus MC, University Medical Center Rotterdam (MEC-198.782.2001.31).
+
+### Measures
+
+#### Early Life Stress (ELS) exposure
+A detailed description of the ELS exposure score can be found elsewhere [@Defina2023; [ELS score repository]({{< var els_repo >}})]. Briefly, a prenatal (i.e., maternal exposure during pregnancy) and postnatal (i.e. from birth to 10 years) cumulative ELS score was constructed in each cohort by combining ~100 stress-related items (e.g., death of a relative; financial difficulties; parental psychopathology; maltreatment or bullying). Prenatal and postnatal stress scores were then summed to obtain a total ELS exposure score, spanning from pregnancy to age 10 years.
+
+#### Physical and mental health outcomes
+Following the same approach as @Defina2023, we defined psycho-physical comorbidity as the co-occurrence of high internalizing symptoms and high adiposity.
+
+Internalizing symptoms were assessed by parental reports when children were on average 13.5 years old (range: 12.5-16.8 years) using the Strengths and Difficulties Questionnaire (SDQ) [@Goodman1997] in ALSPAC and the Child Behavior Checklist (CBCL 6-18) [@Achenbach1999] in GenR. Both instruments are well-validated reports of emotional and behavioural functioning referring to the past 6 months, and have been shown to be comparable (r=0.74) [@Goodman1999].
+
+Adiposity was measured using total body fat mass percentage estimated via dual-energy X-ray absorptiometry (DXA) scanner (ALSPAC: Lunar Prodigy DXA scanner, GE Healthcare; GenR: iDXA scanner, GE Healthcare, Madison, WI) at the average age of 13.5 years (range: 12.5-16.6 years).
+
+Finally, to obtain psycho-physical comorbidity, internalizing symptoms and fat mass percentage were first dichotomized into high versus low-moderate, based on a cohort-specific 80th percentile cut-off value. The dichotomized values were then used to assign children to 4 groups: "Healthy" (both outcomes <80th percentile); "High internalizing" (internalizing >80th & fat mass percentage ≤80th); "High adiposity" (internalizing ≤80th & fat mass percentage >80th); and "Comorbid" (both outcomes >80th percentile). Note that the 80th percentile cut-off was based on previous validation studies [@Achenbach2001; @Bourdon2005; @Flegal2010; @Weber2014] and the resulting size of the comorbidity group was larger than expected by chance (permutation test p < 0.01; see [*Supplement 2*]({{< var supp2_text >}}) in @Defina2023).
+
+#### Lifestyle factors
+
+***Physical activity***. Frequency of physical activity was measured via questionnaires when children were on average 10.7 years old (range: 10.6-14.7) in ALSPAC and 9.7 years (range: 8.9-12.4) in GenR. ALSPAC mothers were asked about the "*Average number of times their child participated in vigorous physical activity in past month*" ("*none*", "*less than once a week*", "*1-3 times a week*", "*4-6 times a week*" and "*daily*"), while GenR children reported "*How often did they play sports at a sports club or team*"" ("*once a week*", "*2 times a week*", "*3 times a week*", "*4 times a week*", or "*5 or more times a week*").
+
+***Sleep***. In the ALSPAC sample, sleep duration (hours) was calculated using maternal reports of the "*Time their child usually goes to sleep and wakes up on normal school days*"", collected at the mean age of 11.7 years (range: 11.4-13.8).
+
+In GenR, a selected subsample of children [N=1,483; @Koopman-Verhoeff2019] completed a sleep diary including questions about the time they went to bed and woke up, on nine consecutive days (i.e., 5 weekdays and 4 weekend days). These self-reports were used to calculate average sleep duration across the nine days. Mean age of measurement was 12.7 years (range: 10.4-15.6), however, due to logistical reasons, data collection was split into two waves, resulting in a 3-years age difference between the first and second group (i.e., 11 and 14 years; see @fig-3.1 B). Sleep duration values measured after either outcome of interest were set to missing (N=519).
+
+***Diet***. Nutritional intake was assessed at 10.6 years (range: 9.8-12.2) in ALSPAC and at 8.2 years (range: 7.5-10.8) in GenR, using a 3-day child-reported food diary [@Cribb2011], and the 4-week parent-reported food frequency questionnaire [FFQ; @Dutman2011], respectively.
+
+ALSPAC participants were asked to record all foods and drinks consumed over three individual days (preferably one weekend and two weekdays, not necessarily consecutive), using household measures. The structured diary was designed for the child to complete with the help of their parents. They would then bring the diary to the clinic visit where, if possible, any uncertainties were clarified by a member of the nutrition team. Food records were transformed into food codes and associated weights using the DIDO software [@Price1995].
+
+The FFQ consists of 71 food items relevant for the energy intake of Dutch children [@NetherlandsNutritionCentre1998]. Information on frequencies, types, and portion sizes was converted into grams of individual food items per day based on standard Dutch portion sizes [@vanderVelde2019].
+
+A Mediterranean diet adherence score (ranging from 0 to 7) [@Trichopoulou2003] was constructed by assigning 1 point for the elevated (i.e., ≥ median) consumption of five beneficial food groups (i.e., vegetables, legumes, fruits and nuts, cereal, and fish), and 1 point for the restricted (i.e., < median) consumption of two detrimental food groups (i.e., meat and dairy products). Details of specific items included in the food groups in each cohort can be found in [*Supplementary Text S2*]({{< var supp3_text >}}).
+
+::: {.content-visible when-format="html"}
+![**Lifestyle factors characteristics in ALSPAC and Generation R children (UK, 2002-2005; The Netherlands, 2010-2016)**<br>Characteristics of physical activity, sleep and diet measurements in the ALSPAC (A-C; in pink) and GenR cohorts (D-F; in blue). In the top panel, the distributions of child age at moderator measurement are depicted for both cohorts. A grey line and shadow also indicate the average and range of child age at outcome measurement. The central and bottom panel depict the distribution and correlation between the three lifestyle factors in ALSPAC and GenR respectively.](Figures/F1_moddesc.png){width=100% #fig-3.1}
+:::
+
+::: {.content-visible unless-format="html"}
+![**Lifestyle factors characteristics in ALSPAC and Generation R children (UK, 2002-2005; The Netherlands, 2010-2016)**\newline(A-F) Characteristics of physical activity, sleep and diet measurements in the ALSPAC (A-C; in pink) and GenR cohorts (D-F; in blue). In the top panel, the distributions of child age at moderator measurement are depicted for both cohorts. A grey line and shadow also indicate the average and range of child age at outcome measurement. The central and bottom panel depict the distribution and correlation between the three lifestyle factors in ALSPAC and GenR respectively.](Figures/F1_moddesc.png){width=100% #fig-3.1}
+:::
+
+
+### Statistical analysis
+Analyses were run separately in the two cohorts, using R version 4.1.0 [@R2021] (scripts publicly available [here]({{< var chap3_repo >}})).
+
+Missing values in all variables of interest (i.e., exposures, outcomes, moderators and covariates) were imputed by conditional multiple imputation [@Buuren2011] using 60 iterations and 30 imputed datasets (for a complete assessment of missing values and detailed imputation strategy see [*Supplementary Text S3*]({{< var supp3_text >}}) and [*Supplementary Table S1*]({{< var supp3_tables >}}), available online). Model parameters were fit in each imputed dataset and then pooled according to Rubin’s Rules. To account for multiple comparisons, false discovery rate correction was applied.
+
+#### Main analyses
+To address our primary hypotheses, three multinomial logistic regressions (i.e., one for each lifestyle factor) were performed, with psycho-physical risk group as a dependent variable. The reference level was set to "healthy". These models included: *a)* the main effect of total ELS, *b)* that of each lifestyle factor (separately; i.e., physical activity, sleep and diet) and *c)* their interaction, as well as the full set of covariates. In order to generate meaningful and comparable estimates for the main effects of interest, both ELS scores and lifestyle factor variables were standardized using a z transformation before entering the models. The covariate set included child sex, age at outcome measure, ethnicity (dichotomized into "White" and "non-White"), maternal smoking and alcohol consumption during pregnancy and maternal pre-pregnancy BMI. To diagnose multicollinearity between independent variables we computed generalized variance inflation factors (VIF) for each predictor [@James2013].
+
+#### Follow-up analyses
+Several follow-up analyses were conducted, whereby the three main models (i.e., for physical activity, sleep and diet) were modified to:
+
+    a)	Feature *(i)* internalizing symptoms and *(ii)* adiposity (rather than their comorbidity) as dependent variables (i.e., in two separate linear regression models);
+    b)	Examine pre-/postnatal ELS (rather than the total ELS score) as main stress exposure;
+    c)	Assess the effect of adhering to international guidelines regarding weekly physical activity, sleep duration and diet, by using a dichotomized version of each moderator. 
+    We dichotomised the physical activity variable according to the WHO recommended guideline for vigorous physical activity of "at least 3 times a week" for children aged 5-17 [@Bull2020]. Applied to available response options in both cohorts, participation in physical activity was deemed "infrequent" (0-3 times a week) or "frequent" (4+ times a week). The sleep variable was dichotomized based on the recommendations of the 'American Academy of Sleep Medicine' for children aged 6-12 years [@Paruthi2016]. Children who slept between 9-12 hours were categorised as sleeping a "recommended" duration, in comparison to "insufficient/excessive" sleep. Finally, we used a median-split approach to dichotomise the diet variable. Children were categorised as having lower (≤ median), or higher adherence (> median) in each sample.
+
+We additionally explored potential non-linear associations between each lifestyle factor and the main outcomes of interest by including second- and third-degree polynomial terms in the models. To assess the extent to which maternal health and lifestyle behaviour may have moderated the relationships of interest [@Epstein2023; @Heslehurst2019], we further investigated the interaction between ELS and maternal BMI on child comorbidity. Finally, to assess the impact of the imputation procedure on our results, we ran the analyses in the subsample with complete moderator and outcome data.
+
+## Results
+
+### Sample characteristics
+Sample characteristics were pooled across imputed datasets and summarized in Table 1. Briefly, the ALSPAC sample included 8,428 (48% male) children, whose mothers were 96% White and 30% highly educated (i.e., held a college or university degree). The GenR sample included 4,268 (52% male) participants, 71% of which were encoded as “White” (i.e., European, North American, Japanese or Indonesian) and 14% had highly educated (i.e., “higher, phase 2”) mothers. The distribution of each lifestyle factor and their correlations are displayed in Figure 1. The proportion of children categorized as comorbid was small (2.9% in ALSPAC and 5.1% in GenR), as also reflected by the weak correlations between internalizing scores and adiposity (r = ALSPAC: 0.10; GenR: 0.12; see Supplementary Table S2).
+
+### Main analyses
+We did not find evidence in support of any of the hypothesised moderation effects (Supplementary Table S3). Increased ELS was significantly associated with higher risk of developing comorbidity (vs. being healthy; Figure 2A; ORs: 1.65-1.67 in ALSPAC and 2.70-2.75 in GenR), but this association was not modified by any of the three lifestyle factors we investigated (Figure 2B-D).
+Conversely, while comorbidity risk was generally lower in children who engaged in favourable lifestyle behaviours (Figure 2A), this effect was only significant for physical activity and only in one of the two cohorts (ORALSPAC [95%CI] = 0.73 [0.59;0.89]). The magnitude of multicollinearity was low in all the models (VIF ≤ 1.17; see Supplementary Table S3).
+
+### Follow-up analyses
+When internalizing symptoms and adiposity were examined as two separate outcomes, a similar pattern of results emerged (Supplementary Tables S4; Figure 3). ELS was significantly associated with increased internalizing symptoms and adiposity, but neither association was modified by physical activity, sleep or diet. 
+Only the main effect of physical activity on internalizing symptoms was statistically significant in both cohorts (βALSPAC [95%CI] = -0.05 [-0.08;-0.03]; βGenR [95%CI] = -0.05 [-0.09;-0.02]).
+Engagement in two of the three favourable lifestyle behaviours was linked to lower adiposity levels, but only in one of the two cohorts (βALSPAC [95%CI]: physical activity = -0.08 [-0.10;-0.06]; sleep = -0.02 [-0.05;0.01]). 
+Findings did not change substantially when ELS exposure was restricted to the prenatal or postnatal periods only (Supplementary Table S5), nor when lifestyle factors were dichotomized into adherence and non-adherence to international guidelines (Supplementary Table S6). The non-linear relationships between each lifestyle factor and the main outcomes of interest are represented in Supplementary Figure S1. Only for the relationship between sleep and internalizing symptoms did we find any evidence for a non-linear (inverse logarithmic) trend. We did not find a statistically significant interaction between ELS exposure and maternal BMI on child comorbidity (Supplementary Table S7). The sensitivity analysis conducted in the subsample with complete outcome and moderator data (sample size = ALSPAC: 3680-4237; GenR: 961-2369) also did not impact our main conclusions (Supplementary Table S8).
 
 ## Discussion
 
 ## References {.unnumbered}
+::: {.sectionrefs}
+:::
