@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -40,7 +60,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-0815c480559380816a4d1ea211a47e91.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-7f97be335b70352953bdd8c835addf2e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-cf713892fc77b568d8d847af04fe095f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -217,6 +237,7 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#parental-reports" id="toc-parental-reports" class="nav-link" data-scroll-target="#parental-reports">Parental reports</a></li>
   <li><a href="#missing-piece-resilience" id="toc-missing-piece-resilience" class="nav-link" data-scroll-target="#missing-piece-resilience">Missing piece: resilience</a></li>
+  <li><a href="#information-bias" id="toc-information-bias" class="nav-link" data-scroll-target="#information-bias">Information bias?</a></li>
   </ul></li>
   <li><a href="#alternative-modelling-methods" id="toc-alternative-modelling-methods" class="nav-link" data-scroll-target="#alternative-modelling-methods"><span class="header-section-number">8.2</span> Alternative modelling methods</a></li>
   <li><a href="#modelling-comorbidity" id="toc-modelling-comorbidity" class="nav-link" data-scroll-target="#modelling-comorbidity"><span class="header-section-number">8.3</span> Modelling comorbidity</a>
@@ -268,6 +289,10 @@ ul.task-list li input[type="checkbox"] {
 <section id="missing-piece-resilience" class="level3">
 <h3 class="anchored" data-anchor-id="missing-piece-resilience">Missing piece: resilience</h3>
 </section>
+<section id="information-bias" class="level3">
+<h3 class="anchored" data-anchor-id="information-bias">Information bias?</h3>
+<p>Our measurement of ELS, lifestyle behaviours and internalizing symptoms rely primarily on parent reports, which might have introduced information bias. does that generalise to self reports? Other measures of adolescent behaviour, e.g., externalizing problems, could represent interesting targets for future studies in the field.</p>
+</section>
 </section>
 <section id="alternative-modelling-methods" class="level2" data-number="8.2">
 <h2 data-number="8.2" class="anchored" data-anchor-id="alternative-modelling-methods"><span class="header-section-number">8.2</span> Alternative modelling methods</h2>
@@ -293,6 +318,10 @@ ul.task-list li input[type="checkbox"] {
 <section id="alternative-modelling-methods-1" class="level3">
 <h3 class="anchored" data-anchor-id="alternative-modelling-methods-1">Alternative modelling methods</h3>
 <p>network</p>
+<section id="the-role-of-lifestyle-and-puberty" class="level4">
+<h4 class="anchored" data-anchor-id="the-role-of-lifestyle-and-puberty">the role of lifestyle and puberty</h4>
+<p>“while we focused here on three lifestyle markers that are most relevant to the developmental period of interest and may constitute important targets for early prevention, other potentially relevant factors such as smoking, alcohol use or psychological coping strategies, are also likely to be of relevance <span class="citation" data-cites="Hanlon2020 Skou2022">(<a href="#ref-Hanlon2020" role="doc-biblioref">Hanlon et al., 2020</a>; <a href="#ref-Skou2022" role="doc-biblioref">Skou et al., 2022</a>)</span> and should be taken into account in future studies.”</p>
+</section>
 </section>
 </section>
 <section id="so-what-was-this-all-for" class="level2" data-number="8.4">
@@ -303,7 +332,7 @@ ul.task-list li input[type="checkbox"] {
 <p>In <a href="../3.Chapter/ELS-lifestyle-moderators.html" class="quarto-xref"><span>Chapter 3</span></a> you can find me saying: <em>“While these findings certainly support the importance of primary prevention programmes aimed at reducing the incidence of ELS, preventing ELS may not always be possible. As such, there is a need to identify alternative modifiable factors that could mitigate the negative impact of ELS on later health, and inform the development of complementary intervention strategies.”</em></p>
 <section id="lifestyle" class="level4">
 <h4 class="anchored" data-anchor-id="lifestyle">Lifestyle</h4>
-<p>In the same chapter I did not find evidence of such promising “modifiable factors”. That was surprising to me, but also, as I later came to find out not so rare in the research on lifestyle factors.</p>
+<p>In the same chapter I did not find evidence of such promising “modifiable factors”. Based on data from two independent population-based cohorts, either physical activity, sleep or dietary behaviour did not attenuate the association between ELS exposure and adolescent psycho-physical comorbidity. That was surprising to me, but also, as I later came to find out not so rare in the research on lifestyle factors. “Developmental timing and / or differences in outcome measurement may have played a role in explaining this discrepancy. It is possible, for example, that engaging in healthy lifestyle behaviours later in life may be more beneficial, or that the protective effects of childhood lifestyle behaviours may manifest only later in adulthood. It is also possible that the associations reported in the adult literature may be biased through reverse causation (e.g., depression being a causal risk factor for poor diet and sleep; (Choi et al., 2020).” “differential measurement error could have played a role in explaining this finding. Indeed, our ELS measure was considerably more comprehensive (i.e., comprised of many more items and covering a longer time period) compared to each of the lifestyle factors, which were only assessed at a single time point and based on fewer indicators. It is possible, for example, that the hypothesized moderation effects may emerge when a more long-term engagement in physical activity is considered.”</p>
 </section>
 <section id="ses" class="level4">
 <h4 class="anchored" data-anchor-id="ses">SES</h4>
@@ -325,6 +354,14 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="unnumbered anchored" data-anchor-id="references">References</h2>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-Hanlon2020" class="csl-entry" role="listitem">
+Hanlon, P., McCallum, M., Jani, B. D., McQueenie, R., Lee, D., &amp; Mair, F. S. (2020). Association between childhood maltreatment and the prevalence and complexity of multimorbidity: A cross-sectional analysis of 157,357 UK biobank participants [Journal Article]. <em>Journal of Comorbidity</em>, <em>10</em>, 2235042X10944344.
+</div>
+<div id="ref-Skou2022" class="csl-entry" role="listitem">
+Skou, S. T., Mair, F. S., Fortin, M., Guthrie, B., Nunes, B. P., Miranda, J. J., Boyd, C. M., Pati, S., Mtenga, S., &amp; Smith, S. M. (2022). Multimorbidity [Journal Article]. <em>Nature Reviews Disease Primers</em>, <em>8</em>(1), 1–22. <a href="https://doi.org/10.1038/s41572-022-00376-4">https://doi.org/10.1038/s41572-022-00376-4</a>
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->

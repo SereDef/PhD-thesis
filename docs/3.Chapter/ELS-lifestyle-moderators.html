@@ -61,7 +61,7 @@ div.csl-indent {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-0815c480559380816a4d1ea211a47e91.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-7f97be335b70352953bdd8c835addf2e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-cf713892fc77b568d8d847af04fe095f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script src="../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
 <link href="../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
 <link href="../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
@@ -283,7 +283,10 @@ window.Quarto = {
   <li><a href="#main-analyses-1" id="toc-main-analyses-1" class="nav-link" data-scroll-target="#main-analyses-1">Main analyses</a></li>
   <li><a href="#follow-up-analyses-1" id="toc-follow-up-analyses-1" class="nav-link" data-scroll-target="#follow-up-analyses-1">Follow-up analyses</a></li>
   </ul></li>
-  <li><a href="#discussion" id="toc-discussion" class="nav-link" data-scroll-target="#discussion"><span class="header-section-number">3.4</span> Discussion</a></li>
+  <li><a href="#discussion" id="toc-discussion" class="nav-link" data-scroll-target="#discussion"><span class="header-section-number">3.4</span> Discussion</a>
+  <ul class="collapse">
+  <li><a href="#conclusions" id="toc-conclusions" class="nav-link" data-scroll-target="#conclusions">Conclusions</a></li>
+  </ul></li>
   <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/SereDef/PhD-thesis/blob/main/3.Chapter/ELS-lifestyle-moderators.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/SereDef/PhD-thesis/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
@@ -402,10 +405,11 @@ Figure&nbsp;3.1: <strong>Lifestyle factors characteristics in ALSPAC and Generat
 <section id="follow-up-analyses" class="level4">
 <h4 class="anchored" data-anchor-id="follow-up-analyses">Follow-up analyses</h4>
 <p>Several follow-up analyses were conducted, whereby the three main models (i.e., for physical activity, sleep and diet) were modified to:</p>
-<pre><code>a)  Feature *(i)* internalizing symptoms and *(ii)* adiposity (rather than their comorbidity) as dependent variables (i.e., in two separate linear regression models);
-b)  Examine pre-/postnatal ELS (rather than the total ELS score) as main stress exposure;
-c)  Assess the effect of adhering to international guidelines regarding weekly physical activity, sleep duration and diet, by using a dichotomized version of each moderator. 
-We dichotomised the physical activity variable according to the WHO recommended guideline for vigorous physical activity of "at least 3 times a week" for children aged 5-17 [@Bull2020]. Applied to available response options in both cohorts, participation in physical activity was deemed "infrequent" (0-3 times a week) or "frequent" (4+ times a week). The sleep variable was dichotomized based on the recommendations of the 'American Academy of Sleep Medicine' for children aged 6-12 years [@Paruthi2016]. Children who slept between 9-12 hours were categorised as sleeping a "recommended" duration, in comparison to "insufficient/excessive" sleep. Finally, we used a median-split approach to dichotomise the diet variable. Children were categorised as having lower (≤ median), or higher adherence (&gt; median) in each sample.</code></pre>
+<ol type="a">
+<li>Feature <em>(i)</em> internalizing symptoms and <em>(ii)</em> adiposity (rather than their comorbidity) as dependent variables (i.e., in two separate linear regression models);</li>
+<li>Examine pre-/postnatal ELS (rather than the total ELS score) as main stress exposure;</li>
+<li>Assess the effect of adhering to international guidelines regarding weekly physical activity, sleep duration and diet, by using a dichotomized version of each moderator.<br>We dichotomised the physical activity variable according to the WHO recommended guideline for vigorous physical activity of “at least 3 times a week” for children aged 5-17 <span class="citation" data-cites="Bull2020">(<a href="#ref-Bull2020" role="doc-biblioref">Bull et al., 2020</a>)</span>. Applied to available response options in both cohorts, participation in physical activity was deemed “infrequent” (0-3 times a week) or “frequent” (4+ times a week). The sleep variable was dichotomized based on the recommendations of the ‘American Academy of Sleep Medicine’ for children aged 6-12 years <span class="citation" data-cites="Paruthi2016">(<a href="#ref-Paruthi2016" role="doc-biblioref">Paruthi et al., 2016</a>)</span>. Children who slept between 9-12 hours were categorised as sleeping a “recommended” duration, in comparison to “insufficient/excessive” sleep. Finally, we used a median-split approach to dichotomise the diet variable. Children were categorised as having lower (≤ median), or higher adherence (&gt; median) in each sample.</li>
+</ol>
 <p>We additionally explored potential non-linear associations between each lifestyle factor and the main outcomes of interest by including second- and third-degree polynomial terms in the models. To assess the extent to which maternal health and lifestyle behaviour may have moderated the relationships of interest <span class="citation" data-cites="Epstein2023 Heslehurst2019">(<a href="#ref-Epstein2023" role="doc-biblioref">Epstein et al., 2023</a>; <a href="#ref-Heslehurst2019" role="doc-biblioref">Heslehurst et al., 2019</a>)</span>, we further investigated the interaction between ELS and maternal BMI on child comorbidity. Finally, to assess the impact of the imputation procedure on our results, we ran the analyses in the subsample with complete moderator and outcome data.</p>
 </section>
 </section>
@@ -422,204 +426,199 @@ Table&nbsp;3.1
 </figcaption>
 <div aria-describedby="tbl-3.1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="thesis_tbl caption-top table" data-quarto-postprocess="true">
-<colgroup>
-<col style="width: 16%">
-<col style="width: 16%">
-<col style="width: 16%">
-<col style="width: 16%">
-<col style="width: 16%">
-<col style="width: 16%">
-</colgroup>
 <thead>
 <tr class="header">
 <th colspan="5"><strong>Sample descriptives</strong><br>
 Generation R (GenR) and ALSPAC cohorts</th>
-<th></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td colspan="2"><p><strong>&nbsp;</strong></p></td>
-<td colspan="2"><p><strong>ALSPAC (n=8428)</strong></p>
-<p><strong>mean (range) / n (%)</strong></p></td>
-<td colspan="2"><p><strong>Generation R (n=4268)</strong></p>
-<p><strong>mean (range) / n (%)</strong></p></td>
+<td>&nbsp;</td>
+<td colspan="2" style="text-align: center;"><strong>ALSPAC (n=8428)</strong><br>
+mean (range) / n (%)</td>
+<td colspan="2" style="text-align: center;"><strong>Generation R (n=4268)</strong><br>
+mean (range) / n (%)</td>
 </tr>
-<tr class="even">
-<td colspan="2"><p><strong>Age at outcome</strong></p></td>
-<td><p>&nbsp;</p></td>
-<td><p>13.49 (12.79-14.96)</p></td>
-<td colspan="2"><p>13.56 (12.59-16.63)</p></td>
-</tr>
-<tr class="odd">
-<td colspan="2"><p><strong>Sex</strong></p></td>
-<td><p>Male</p></td>
-<td><p>4370 (51.9)</p></td>
-<td><p>Male</p></td>
-<td><p>2091 (49.0)</p></td>
-</tr>
-<tr class="even">
-<td colspan="2"><p><strong>Ethnic background</strong></p></td>
-<td><p>White</p></td>
-<td><p>8103 (96.1)</p></td>
-<td><p>White</p></td>
-<td><p>3061 (71.7)</p></td>
+<tr class="accent_row even">
+<td style="text-align: left;"><strong>Age at outcome</strong></td>
+<td colspan="2" style="text-align: right;">13.49 (12.79-14.96)</td>
+<td colspan="2" style="text-align: right;">13.56 (12.59-16.63)</td>
 </tr>
 <tr class="odd">
-<td colspan="2"><p><strong>Early life stress</strong></p></td>
-<td><p>&nbsp;</p></td>
-<td><p>3.57 (0.43-18.50)</p></td>
-<td><p>&nbsp;</p></td>
-<td><p>1.28 (0.00-6.00)</p></td>
+<td style="text-align: left;"><strong>Sex</strong></td>
+<td style="text-align: center;">Male</td>
+<td style="text-align: right;">4370 (51.9)</td>
+<td style="text-align: center;">Male</td>
+<td style="text-align: right;">2091 (49.0)</td>
 </tr>
-<tr class="even">
-<td colspan="2" rowspan="6"><p><strong>&nbsp;Frequency of participation in physical activity</strong></p></td>
-<td><p>None</p></td>
-<td><p>128 (1.5)</p></td>
-<td><p>None</p></td>
-<td><p>568 (13.3)</p></td>
-</tr>
-<tr class="odd">
-<td><p>&lt;1 week</p></td>
-<td><p>377 (4.5)</p></td>
-<td><p>Once a week</p></td>
-<td><p>626 (14.7)</p></td>
-</tr>
-<tr class="even">
-<td><p>1-3 week</p></td>
-<td><p>3946 (46.8)</p></td>
-<td><p>Twice a week</p></td>
-<td><p>728 (17.1)</p></td>
+<tr class="accent_row even">
+<td style="text-align: left;"><strong>Ethnic background</strong></td>
+<td style="text-align: center;">White</td>
+<td style="text-align: right;">8103 (96.1)</td>
+<td style="text-align: center;">White</td>
+<td style="text-align: right;">3061 (71.7)</td>
 </tr>
 <tr class="odd">
-<td><p>4-6 week</p></td>
-<td><p>2408 (28.6)</p></td>
-<td><p>Three times a week</p></td>
-<td><p>1138 (26.7)</p></td>
+<td style="text-align: left;"><strong>Early life stress</strong></td>
+<td colspan="2" style="text-align: right;">3.57 (0.43-18.50)</td>
+<td colspan="2" style="text-align: right;">1.28 (0.00-6.00)</td>
+</tr>
+<tr class="accent_row even">
+<td rowspan="6" style="text-align: left;"><p><strong>Frequency of participation in physical activity</strong></p></td>
+<td style="text-align: center;">None</td>
+<td style="text-align: right;">128 (1.5)</td>
+<td style="text-align: center;">None</td>
+<td style="text-align: right;">568 (13.3)</td>
+</tr>
+<tr class="accent_row odd">
+<td style="text-align: center;">&lt;1 week</td>
+<td style="text-align: right;">377 (4.5)</td>
+<td style="text-align: center;">Once a week</td>
+<td style="text-align: right;">626 (14.7)</td>
+</tr>
+<tr class="accent_row even">
+<td style="text-align: center;">1-3 week</td>
+<td style="text-align: right;">3946 (46.8)</td>
+<td style="text-align: center;">Twice a week</td>
+<td style="text-align: right;">728 (17.1)</td>
+</tr>
+<tr class="accent_row odd">
+<td style="text-align: center;">4-6 week</td>
+<td style="text-align: right;">2408 (28.6)</td>
+<td style="text-align: center;">Three times a week</td>
+<td style="text-align: right;">1138 (26.7)</td>
+</tr>
+<tr class="accent_row even">
+<td style="text-align: center;">Daily</td>
+<td style="text-align: right;">1566 (18.6)</td>
+<td style="text-align: center;">Four times a week</td>
+<td style="text-align: right;">643 (15.1)</td>
+</tr>
+<tr class="accent_row odd">
+<td colspan="2" style="text-align: center;">&nbsp;</td>
+<td style="text-align: center;">5 or more times a week</td>
+<td style="text-align: right;">563 (13.2)</td>
 </tr>
 <tr class="even">
-<td><p>Daily</p></td>
-<td><p>1566 (18.6)</p></td>
-<td><p>Four times a week</p></td>
-<td><p>643 (15.1)</p></td>
+<td style="text-align: left;"><strong>Sleep duration (hours)</strong></td>
+<td colspan="2" style="text-align: right;">9.81 (6.00-13.00)</td>
+<td colspan="2" style="text-align: right;">8.99 (6.00-12.00)</td>
+</tr>
+<tr class="accent_row odd">
+<td style="text-align: left;"><strong>Mediterranean diet score</strong></td>
+<td colspan="2" style="text-align: right;">3.24 (0.00-7.00)</td>
+<td colspan="2" style="text-align: right;">3.83 (0.00-7.00)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Internalizing symptoms</strong></td>
+<td colspan="2" style="text-align: right;">1.43 (0.00-10.00)</td>
+<td colspan="2" style="text-align: right;">5.75 (0.00-41.00)</td>
+</tr>
+<tr class="accent_row odd">
+<td style="text-align: left;"><strong>Fat mass percentage</strong></td>
+<td colspan="2" style="text-align: right;">24.36 (4.92-56.25)</td>
+<td colspan="2" style="text-align: right;">25.53 (8.49-54.62)</td>
+</tr>
+<tr class="even">
+<td rowspan="4" style="text-align: left;"><strong>Comorbidity risk group</strong></td>
+<td style="text-align: center;">Healthy</td>
+<td style="text-align: right;">5916 (70.2)</td>
+<td style="text-align: center;">Healthy</td>
+<td style="text-align: right;">2789 (65.4)</td>
 </tr>
 <tr class="odd">
-<td><p>&nbsp;</p></td>
-<td><p>&nbsp;</p></td>
-<td><p>5 or more times a week</p></td>
-<td><p>563 (13.2)</p></td>
+<td style="text-align: center;">High internalizing</td>
+<td style="text-align: right;">795 (9.4)</td>
+<td style="text-align: center;">High internalizing</td>
+<td style="text-align: right;">622 (14.6)</td>
 </tr>
 <tr class="even">
-<td colspan="3"><p><strong>Sleep duration (hours)</strong></p></td>
-<td><p>9.81 (6.00-13.00)</p></td>
-<td colspan="2"><p>8.99 (6.00-12.00)</p></td>
+<td style="text-align: center;">High adiposity</td>
+<td style="text-align: right;">1476 (17.5)</td>
+<td style="text-align: center;">High adiposity</td>
+<td style="text-align: right;">637 (14.9)</td>
 </tr>
 <tr class="odd">
-<td colspan="3"><p><strong>Mediterranean diet score</strong></p></td>
-<td><p>3.24 (0.00-7.00)</p></td>
-<td colspan="2"><p>3.83 (0.00-7.00)</p></td>
+<td style="text-align: center;">Comorbidity</td>
+<td style="text-align: right;">241 (2.9)</td>
+<td style="text-align: center;">Comorbidity</td>
+<td style="text-align: right;">219 (5.1)</td>
 </tr>
-<tr class="even">
-<td colspan="3"><p><strong>Internalizing symptoms</strong></p></td>
-<td><p>1.43 (0.00-10.00)</p></td>
-<td colspan="2"><p>5.75 (0.00-41.00)</p></td>
-</tr>
-<tr class="odd">
-<td colspan="3"><p><strong>Fat mass percentage</strong></p></td>
-<td><p>24.36 (4.92-56.25)</p></td>
-<td colspan="2"><p>25.53 (8.49-54.62)</p></td>
-</tr>
-<tr class="even">
-<td rowspan="4"><p><strong>Comorbidity risk group</strong></p></td>
-<td colspan="2"><p>Healthy</p></td>
-<td><p>5916 (70.2)</p></td>
-<td><p>Healthy</p></td>
-<td><p>2789 (65.4)</p></td>
+<tr class="accent_row even">
+<td style="text-align: left;"><strong>Maternal BMI (kg/m<sup>2</sup>)</strong></td>
+<td colspan="2" style="text-align: right;">22.79 (12.49-48.62)</td>
+<td colspan="2" style="text-align: right;">23.46 (14.38-50.21)</td>
 </tr>
 <tr class="odd">
-<td colspan="2"><p>High internalizing</p></td>
-<td><p>795 (9.4)</p></td>
-<td><p>High internalizing</p></td>
-<td><p>622 (14.6)</p></td>
+<td rowspan="3" style="text-align: left;"><strong>Maternal smoking</strong></td>
+<td style="text-align: center;">Never</td>
+<td style="text-align: right;">4412 (52.3)</td>
+<td style="text-align: center;">Never</td>
+<td style="text-align: right;">3234 (75.8)</td>
 </tr>
 <tr class="even">
-<td colspan="2"><p>High adiposity</p></td>
-<td><p>1476 (17.5)</p></td>
-<td><p>High adiposity</p></td>
-<td><p>637 (14.9)</p></td>
+<td style="text-align: center;">Until pregnancy</td>
+<td style="text-align: right;">2524 (30.0)</td>
+<td style="text-align: center;">Until pregnancy</td>
+<td style="text-align: right;">386 (9.0)</td>
 </tr>
 <tr class="odd">
-<td colspan="2"><p>Comorbidity</p></td>
-<td><p>241 (2.9)</p></td>
-<td><p>Comorbidity</p></td>
-<td><p>219 (5.1)</p></td>
+<td style="text-align: center;">During pregnancy</td>
+<td style="text-align: right;">1492 (17.7)</td>
+<td style="text-align: center;">During pregnancy</td>
+<td style="text-align: right;">648 (15.2)</td>
+</tr>
+<tr class="accent_row even">
+<td rowspan="4" style="text-align: left;"><strong>Maternal alcohol consumption</strong></td>
+<td rowspan="4" style="text-align: center;">continuous score<sup>1</sup></td>
+<td rowspan="4" style="text-align: right;">0.73 (0.00-3.50)</td>
+<td style="text-align: center;">Never</td>
+<td style="text-align: right;">1694 (39.7)</td>
+</tr>
+<tr class="accent_row odd">
+<td style="text-align: center;">Until pregnancy</td>
+<td style="text-align: right;">599 (14.0)</td>
+</tr>
+<tr class="accent_row even">
+<td style="text-align: center;">Continued occasionally</td>
+<td style="text-align: right;">1567 (36.7)</td>
+</tr>
+<tr class="accent_row odd">
+<td style="text-align: center;">Continued frequently</td>
+<td style="text-align: right;">405 (9.5)</td>
 </tr>
 <tr class="even">
-<td colspan="3"><p><strong>Maternal BMI (kg/m<sup>2</sup>)</strong></p></td>
-<td><p>22.79 (12.49-48.62)</p></td>
-<td colspan="2"><p>23.46 (14.38-50.21)</p></td>
+<td rowspan="3" style="text-align: left;"><strong>Maternal education</strong><sup>2</sup></td>
+<td style="text-align: center;">Low</td>
+<td style="text-align: right;">4216 (50.0)</td>
+<td style="text-align: center;">Low</td>
+<td style="text-align: right;">1716 (40.2)</td>
 </tr>
 <tr class="odd">
-<td rowspan="3"><p><strong>Maternal smoking</strong></p></td>
-<td colspan="2"><p>Never</p></td>
-<td><p>4412 (52.3)</p></td>
-<td><p>Never</p></td>
-<td><p>3234 (75.8)</p></td>
+<td style="text-align: center;">Medium</td>
+<td style="text-align: right;">3001 (35.6)</td>
+<td style="text-align: center;">Medium</td>
+<td style="text-align: right;">1278 (29.9)</td>
 </tr>
 <tr class="even">
-<td colspan="2"><p>Until pregnancy</p></td>
-<td><p>2524 (30.0)</p></td>
-<td><p>Until pregnancy</p></td>
-<td><p>386 (9.0)</p></td>
+<td style="text-align: center;">High</td>
+<td style="text-align: right;">1212 (14.4)</td>
+<td style="text-align: center;">High</td>
+<td style="text-align: right;">1274 (29.9)</td>
 </tr>
-<tr class="odd">
-<td colspan="2"><p>During pregnancy</p></td>
-<td><p>1492 (17.7)</p></td>
-<td><p>During pregnancy</p></td>
-<td><p>648 (15.2)</p></td>
+</tbody><tfoot>
+<tr class="odd" style="border-style: none; text-align: justify;">
+<td colspan="5" style="border-style: none; font-size: 90%; padding-top: 4px; padding-bottom: 4px; padding-left: 5px; padding-right: 5px"><span> <u>Note</u>: Sample characteristics of each cohort, pooled across 30 imputed datasets. We report mean (range) for continuous variables and n (percentage) of each group for categorical variables.</span></td>
 </tr>
-<tr class="even">
-<td rowspan="4"><p><strong>Maternal alcohol consumption</strong></p></td>
-<td colspan="2" rowspan="4"><p>continuous score<sup>1</sup></p></td>
-<td><p>0.73 (0.00-3.50)</p></td>
-<td><p>Never</p></td>
-<td><p>1694 (39.7)</p></td>
+<tr class="even" style="border-style: none; text-align: justify;">
+<td colspan="5" style="border-style: none; margin: 0px; font-size: 90%; padding-top: 4px; padding-bottom: 4px; padding-left: 5px; padding-right: 5px"><span style="font-size: 75%; vertical-align: 0.4em; position: initial; white-space: nowrap; font-style: italic; font-weight: normal; line-height: 0;"> <sup>1</sup></span><span> higher scores correspond to higher alcohol use frequencies throughout pregnancy.</span></td>
 </tr>
-<tr class="odd">
-<td><p>&nbsp;</p></td>
-<td><p>Until pregnancy</p></td>
-<td><p>599 (14.0)</p></td>
+<tr class="odd" style="border-style: none; text-align: justify;">
+<td colspan="5" style="border-style: none; margin: 0px; font-size: 90%; padding-top: 4px; padding-bottom: 4px; padding-left: 5px; padding-right: 5px"><span style="font-size: 75%; vertical-align: 0.4em; position: initial; white-space: nowrap; font-style: italic; font-weight: normal; line-height: 0;"> <sup>2</sup></span><span> Maternal education: low = 'None", "Certificate of Secondary Education", "Vocational" or "O level" in ALSPAC, "secondary, phase 2" or lower in GenR; medium = "A level" in ALSPAC, "higher, phase 1" in GenR; high = "(College or university) degree" in ALSPAC, "higher, phase 2" in GenR. Categorization based on the International Standard Classification of Education 2011.</span></td>
 </tr>
-<tr class="even">
-<td><p>&nbsp;</p></td>
-<td><p>Continued occasionally</p></td>
-<td><p>1567 (36.7)</p></td>
-</tr>
-<tr class="odd">
-<td><p>&nbsp;</p></td>
-<td><p>Continued frequently</p></td>
-<td><p>405 (9.5)</p></td>
-</tr>
-<tr class="even">
-<td rowspan="3"><p><strong>Maternal education</strong><sup>2</sup></p></td>
-<td colspan="2"><p>Low</p></td>
-<td><p>4216 (50.0)</p></td>
-<td><p>Low</p></td>
-<td><p>1716 (40.2)</p></td>
-</tr>
-<tr class="odd">
-<td colspan="2"><p>Medium</p></td>
-<td><p>3001 (35.6)</p></td>
-<td><p>Medium</p></td>
-<td><p>1278 (29.9)</p></td>
-</tr>
-<tr class="even">
-<td colspan="2"><p>High</p></td>
-<td><p>1212 (14.4)</p></td>
-<td><p>High</p></td>
-<td><p>1274 (29.9)</p></td>
-</tr>
-</tbody>
+</tfoot>
+
 </table>
 </div>
 </figure>
@@ -627,15 +626,51 @@ Generation R (GenR) and ALSPAC cohorts</th>
 </section>
 <section id="main-analyses-1" class="level3">
 <h3 class="anchored" data-anchor-id="main-analyses-1">Main analyses</h3>
-<p>We did not find evidence in support of any of the hypothesised moderation effects (Supplementary Table S3). Increased ELS was significantly associated with higher risk of developing comorbidity (vs.&nbsp;being healthy; Figure 2A; ORs: 1.65-1.67 in ALSPAC and 2.70-2.75 in GenR), but this association was not modified by any of the three lifestyle factors we investigated (Figure 2B-D). Conversely, while comorbidity risk was generally lower in children who engaged in favourable lifestyle behaviours (Figure 2A), this effect was only significant for physical activity and only in one of the two cohorts (ORALSPAC [95%CI] = 0.73 [0.59;0.89]). The magnitude of multicollinearity was low in all the models (VIF ≤ 1.17; see Supplementary Table S3).</p>
+<p>We did not find evidence in support of any of the hypothesised moderation effects (<a href="https://osf.io/x9g6b"><em>Supplementary Table S3</em></a>). Increased ELS was significantly associated with higher risk of developing comorbidity (vs.&nbsp;being healthy; <a href="#fig-3.2" class="quarto-xref">Figure&nbsp;<span>3.2</span></a> A; ORs: 1.65-1.67 in ALSPAC and 2.70-2.75 in GenR), but this association was not modified by any of the three lifestyle factors we investigated (<a href="#fig-3.2" class="quarto-xref">Figure&nbsp;<span>3.2</span></a> B-D).</p>
+<p>Conversely, while comorbidity risk was generally lower in children who engaged in favourable lifestyle behaviours (<a href="#fig-3.2" class="quarto-xref">Figure&nbsp;<span>3.2</span></a> A), this effect was only significant for physical activity and only in one of the two cohorts (OR<em><span class="math inline">\(_{ALSPAC}\)</span></em> [95%CI] = 0.73 [0.59;0.89]). The magnitude of multicollinearity was low in all the models (VIF ≤ 1.17; see <a href="https://osf.io/x9g6b"><em>Supplementary Table S3</em></a>).</p>
+<div id="fig-3.2" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-3.2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="Figures/F2_mainres.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Figure&nbsp;3.2: Main effects and interactions between lifestyle factors and early-life stress on comorbidity risk in ALSPAC and Generation R children (UK, 1992-2006; The Netherlands, 2002-2016) (A) Odd ratios (OR) and their 95% confidence intervals (CI) are represented along the x-axis for the main effects of physical activity, sleep and diet (in black) and for that of ELS (in grey). Statistically significant terms are highlighted in bold. (B-D) The predicted probability of developing comorbidity (y-axis) against ELS exposure levels (x-axis), stratified by lifestyle factor levels (red to green coloured lines). The 95% CIs around the predicted probabilities are also shown for each line (i.e., lifestyle factor level) and their overlap is an indication for the lack of interaction between ELS and physical activity, sleep or diet."><img src="Figures/F2_mainres.png" class="img-fluid figure-img" style="width:100.0%"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-3.2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.2: <strong>Main effects and interactions between lifestyle factors and early-life stress on comorbidity risk in ALSPAC and Generation R children (UK, 1992-2006; The Netherlands, 2002-2016)</strong><br>(A) Odd ratios (OR) and their 95% confidence intervals (CI) are represented along the x-axis for the main effects of physical activity, sleep and diet (in black) and for that of ELS (in grey). Statistically significant terms are highlighted in bold.<br>(B-D) The predicted probability of developing comorbidity (y-axis) against ELS exposure levels (x-axis), stratified by lifestyle factor levels (red to green coloured lines). The 95% CIs around the predicted probabilities are also shown for each line (i.e., lifestyle factor level) and their overlap is an indication for the lack of interaction between ELS and physical activity, sleep or diet.
+</figcaption>
+</figure>
+</div>
 </section>
 <section id="follow-up-analyses-1" class="level3">
 <h3 class="anchored" data-anchor-id="follow-up-analyses-1">Follow-up analyses</h3>
-<p>When internalizing symptoms and adiposity were examined as two separate outcomes, a similar pattern of results emerged (Supplementary Tables S4; Figure 3). ELS was significantly associated with increased internalizing symptoms and adiposity, but neither association was modified by physical activity, sleep or diet. Only the main effect of physical activity on internalizing symptoms was statistically significant in both cohorts (βALSPAC [95%CI] = -0.05 [-0.08;-0.03]; βGenR [95%CI] = -0.05 [-0.09;-0.02]). Engagement in two of the three favourable lifestyle behaviours was linked to lower adiposity levels, but only in one of the two cohorts (βALSPAC [95%CI]: physical activity = -0.08 [-0.10;-0.06]; sleep = -0.02 [-0.05;0.01]). Findings did not change substantially when ELS exposure was restricted to the prenatal or postnatal periods only (Supplementary Table S5), nor when lifestyle factors were dichotomized into adherence and non-adherence to international guidelines (Supplementary Table S6). The non-linear relationships between each lifestyle factor and the main outcomes of interest are represented in Supplementary Figure S1. Only for the relationship between sleep and internalizing symptoms did we find any evidence for a non-linear (inverse logarithmic) trend. We did not find a statistically significant interaction between ELS exposure and maternal BMI on child comorbidity (Supplementary Table S7). The sensitivity analysis conducted in the subsample with complete outcome and moderator data (sample size = ALSPAC: 3680-4237; GenR: 961-2369) also did not impact our main conclusions (Supplementary Table S8).</p>
+<p>When internalizing symptoms and adiposity were examined as two separate outcomes, a similar pattern of results emerged (<a href="https://osf.io/x9g6b"><em>Supplementary Table S4</em></a>; <a href="#fig-3.3" class="quarto-xref">Figure&nbsp;<span>3.3</span></a>). ELS was significantly associated with increased internalizing symptoms and adiposity, but neither association was modified by physical activity, sleep or diet.</p>
+<p>Only the main effect of physical activity on internalizing symptoms was statistically significant in both cohorts (β<em><span class="math inline">\(_{ALSPAC}\)</span></em> [95%CI] = -0.05 [-0.08;-0.03]; β<em><span class="math inline">\(_{GenR}\)</span></em> [95%CI] = -0.05 [-0.09;-0.02]).</p>
+<p>Engagement in two of the three favourable lifestyle behaviours was linked to lower adiposity levels, but only in one of the two cohorts (β<em><span class="math inline">\(_{ALSPAC}\)</span></em> [95%CI]: physical activity = -0.08 [-0.10;-0.06]; sleep = -0.02 [-0.05;0.01]).</p>
+<p>Findings did not change substantially when ELS exposure was restricted to the prenatal or postnatal periods only (<a href="https://osf.io/x9g6b"><em>Supplementary Table S5</em></a>), nor when lifestyle factors were dichotomized into adherence and non-adherence to international guidelines (<a href="https://osf.io/x9g6b"><em>Supplementary Table S6</em></a>). The non-linear relationships between each lifestyle factor and the main outcomes of interest are represented in <a href="https://osf.io/9vky4"><em>Supplementary Figure S1</em></a>. Only for the relationship between sleep and internalizing symptoms did we find any evidence for a non-linear (inverse logarithmic) trend. We did not find a statistically significant interaction between ELS exposure and maternal BMI on child comorbidity (<a href="https://osf.io/x9g6b"><em>Supplementary Table S7</em></a>). The sensitivity analysis conducted in the subsample with complete outcome and moderator data (sample size = ALSPAC: 3680-4237; GenR: 961-2369) also did not impact our main conclusions (<a href="https://osf.io/x9g6b"><em>Supplementary Table S8</em></a>).</p>
+<div id="fig-3.3" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-3.3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="Figures/F3_lineares.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="Figure&nbsp;3.3: Main effects and interactions between lifestyle factors and early-life stress on internalizing symptoms and adiposity in ALSPAC and Generation R children (UK, 1992-2006; The Netherlands, 2002-2016) (A, E). For each outcome (A. Internalizing symptoms; E. Adiposity), the standardized effect estimates and their 95% confidence intervals (CI) are represented along the x-axis for the main effects of physical activity, sleep and diet (in black) and for that of ELS (in grey). Statistically significant terms are highlighted in bold. (B-D) and (F-H). Linear association between ELS exposure on the x-axis and internalizing symptoms (B-D) or adiposity (F-H) on the y-axis, stratified by lifestyle factor levels (red to green coloured lines). The 95%CIs around each slope (i.e., lifestyle factor level) are also shown and their overlap is indication of the lack of interaction between ELS and physical activity, sleep or diet. P-value for the said interaction is also noted at the bottom right of each plot."><img src="Figures/F3_lineares.png" class="img-fluid figure-img" style="width:100.0%"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-3.3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.3: <strong>Main effects and interactions between lifestyle factors and early-life stress on internalizing symptoms and adiposity in ALSPAC and Generation R children (UK, 1992-2006; The Netherlands, 2002-2016)</strong><br>(A, E). For each outcome (A. Internalizing symptoms; E. Adiposity), the standardized effect estimates and their 95% confidence intervals (CI) are represented along the x-axis for the main effects of physical activity, sleep and diet (in black) and for that of ELS (in grey). Statistically significant terms are highlighted in bold.<br>(B-D) and (F-H). Linear association between ELS exposure on the x-axis and internalizing symptoms (B-D) or adiposity (F-H) on the y-axis, stratified by lifestyle factor levels (red to green coloured lines). The 95%CIs around each slope (i.e., lifestyle factor level) are also shown and their overlap is indication of the lack of interaction between ELS and physical activity, sleep or diet. P-value for the said interaction is also noted at the bottom right of each plot.
+</figcaption>
+</figure>
+</div>
 </section>
 </section>
 <section id="discussion" class="level2" data-number="3.4">
 <h2 data-number="3.4" class="anchored" data-anchor-id="discussion"><span class="header-section-number">3.4</span> Discussion</h2>
+<p>In this study based on data from two independent population-based cohorts, we did not find evidence that either physical activity, sleep or dietary behaviour may attenuate the association between ELS exposure and adolescent psycho-physical comorbidity.</p>
+<p>However, at average levels of stress exposure, engaging in more frequent physical activity (more so than sleeping adequately or following a Mediterranean diet) was significantly associated with a reduced risk of developing comorbidity, as well as with lower levels of both internalizing symptoms and adiposity, in one of the cohorts investigated. While the direction of effects was generally consistent across cohorts, only the association between physical activity and internalizing symptoms resulted statistically significant in both ALSPAC and GenR children. Overall, it is important to note that the association between lifestyle behaviours and psycho-physical comorbidity was considerably smaller compared to that between ELS and comorbidity.</p>
+<p>In line with these findings, previous studies conducted in adult populations also showed how the association between retrospectively reported childhood maltreatment and higher odds of psycho-physical comorbidity, was still present after additional adjustment for concurrent lifestyle factors such as smoking, alcohol use, sleep and physical activity <span class="citation" data-cites="Souama2023 Tomasdottir2015">(<a href="#ref-Souama2023" role="doc-biblioref">Souama et al., 2023</a>; <a href="#ref-Tomasdottir2015" role="doc-biblioref">Tomasdottir et al., 2015</a>)</span>, although none of these previous studies formally tested for ELS-by-lifestyle interactions.</p>
+<p>Our results also align with the previously reported protective effects of physical activity (e.g., swimming or cycling) for reducing the risk of depression <span class="citation" data-cites="Choi2019 Choi2020 Firth2020 He2021 Schuch2018">(<a href="#ref-Choi2019" role="doc-biblioref">Choi et al., 2019</a>, <a href="#ref-Choi2020" role="doc-biblioref">2020</a>; <a href="#ref-Firth2020" role="doc-biblioref">Firth et al., 2020</a>; <a href="#ref-He2021" role="doc-biblioref">He et al., 2021</a>; <a href="#ref-Schuch2018" role="doc-biblioref">Schuch et al., 2018</a>)</span>, although this was not specific to children exposed to higher levels of stress <span class="citation" data-cites="Choi2020">(<a href="#ref-Choi2020" role="doc-biblioref">Choi et al., 2020</a>)</span>.</p>
+<p>In contrast, we could not find convincing evidence that either longer sleep duration or improved diet quality would alleviate the risk for depression or cardiometabolic problems (or their combination), as suggested by some previous studies <span class="citation" data-cites="He2021 Katikireddi2017 Lassale2019 Zhai2015">(<a href="#ref-He2021" role="doc-biblioref">He et al., 2021</a>; <a href="#ref-Katikireddi2017" role="doc-biblioref">Katikireddi et al., 2017</a>; <a href="#ref-Lassale2019" role="doc-biblioref">Lassale et al., 2019</a>; <a href="#ref-Zhai2015" role="doc-biblioref">Zhai et al., 2015</a>)</span>. Developmental timing and / or differences in outcome measurement may have played a role in explaining this discrepancy. It is possible, for example, that engaging in healthy lifestyle behaviours later in life may be more beneficial, or that the protective effects of childhood lifestyle behaviours may manifest only later in adulthood. It is also possible that the associations reported in the adult literature may be biased through reverse causation [e.g., depression being a causal risk factor for poor diet and sleep; <span class="citation" data-cites="Choi2020">Choi et al. (<a href="#ref-Choi2020" role="doc-biblioref">2020</a>)</span>].</p>
+<p>One further insight emerging from these analyses was that of a stronger magnitude of association between ELS and comorbidity compared to that between each of the three lifestyle factors and comorbidity. While this result could be interpreted as an indication of the more severe, long-lasting impact of ELS, as discussed elsewhere <span class="citation" data-cites="Henchoz2019 Souama2023 Tomasdottir2015">(<a href="#ref-Henchoz2019" role="doc-biblioref">Henchoz et al., 2019</a>; <a href="#ref-Souama2023" role="doc-biblioref">Souama et al., 2023</a>; <a href="#ref-Tomasdottir2015" role="doc-biblioref">Tomasdottir et al., 2015</a>)</span>, we would like to highlight that differential measurement error could have played a role in explaining this finding. Indeed, our ELS measure was considerably more comprehensive (i.e., comprised of many more items and covering a longer time period) compared to each of the lifestyle factors, which were only assessed at a single time point and based on fewer indicators. It is possible, for example, that the hypothesized moderation effects may emerge when a more long-term engagement in physical activity is considered.</p>
+<p>In addition to this point, a few other study limitations need to be considered when interpreting these results. First, our measurement of ELS, lifestyle behaviours and internalizing symptoms rely primarily on parent reports, which might have introduced information bias. ELS exposure was assessed over a large (~10 years) temporal window, but the measure was inevitably constrained by data availability. Additionally, cohort differences in the reporting of physical activity (i.e., “vigorous physical activity” in ALSPAC, vs.&nbsp;“sports” in GenR) may have contributed to heterogeneous findings for the main effect of physical activity on comorbidity. For example, “sports” can include non-vigorous activities, which are potentially less effective in reducing depressive symptoms <span class="citation" data-cites="Oberste2020">(<a href="#ref-Oberste2020" role="doc-biblioref">Oberste et al., 2020</a>)</span>. Second, while we focused here on three lifestyle markers that are most relevant to the developmental period of interest and may constitute important targets for early prevention, other potentially relevant factors such as smoking, alcohol use or psychological coping strategies, are also likely to be of relevance <span class="citation" data-cites="Hanlon2020 Skou2022">(<a href="#ref-Hanlon2020" role="doc-biblioref">Hanlon et al., 2020</a>; <a href="#ref-Skou2022" role="doc-biblioref">Skou et al., 2022</a>)</span> and should be taken into account in future studies. Further, although we adjusted our analyses for several important confounders and we addressed the challenge of selection bias thoroughly by multiple imputation and sensitivity analyses, we cannot exclude the possibility that residual sampling bias and/or other unmeasured factors (e.g., pubertal status or (epi-)genetic influences) may have influenced our results. For instance, the majority of the children included in our samples were of European descent, and these findings may not be generalizable to different populations. Furthermore, shared biological risk factors for depression and obesity (e.g.&nbsp;dysregulation of the hypothalamic-pituitary-adrenal axis, chronic inflammation, or microbiome dysbiosis; <span class="citation" data-cites="Milaneschi2019">(<a href="#ref-Milaneschi2019" role="doc-biblioref">Milaneschi et al., 2019</a>)</span> could potentially mediate the effect of ELS on psycho-physical comorbidity. Finally, our study focused on one aspect of adolescent mental health, i.e.&nbsp;internalizing symptoms, that is most predictive of future depression/anxiety problems. However, other measures of adolescent behaviour, e.g., externalizing problems, could represent interesting targets for future studies in the field.</p>
+<p>In conclusion, several international guidelines and policies already acknowledge the importance of lifestyle interventions not only for the obesity and poor cardiovascular health crisis, but also with respect to their protective effects against poor mental health <span class="citation" data-cites="AustralianDepartmentofHealth2014 UKDepartmentofHealth2011 NICE2015 Stubbs2018 Tremblay2016">(<a href="#ref-AustralianDepartmentofHealth2014" role="doc-biblioref">Australian Department of Health, 2014</a>; <a href="#ref-UKDepartmentofHealth2011" role="doc-biblioref">D. of Health &amp; Social Care, 2011</a>; <a href="#ref-NICE2015" role="doc-biblioref">N. I. for Health &amp; Care Excellence, 2015</a>; <a href="#ref-Stubbs2018" role="doc-biblioref">Stubbs et al., 2018</a>; <a href="#ref-Tremblay2016" role="doc-biblioref">Tremblay et al., 2016</a>)</span>. Although the current study reports a lack of influence from lifestyle factors, a non-significant interaction should not be interpreted as evidence that adopting a healthy lifestyle is ineffective in mitigating the detrimental consequences of ELS on comorbid internalizing and adiposity in childhood. Instead, our study further emphasizes the need for the investigation of early comorbidity prevention strategies that target children who have experienced ELS, and that more research is warranted to examine the potential moderating effects of a wider range of lifestyle behaviours. </p>
+<section id="conclusions" class="level3">
+<h3 class="anchored" data-anchor-id="conclusions">Conclusions</h3>
+<p>Our study could not detect convincing evidence in support of the hypothesis that the detrimental effects of ELS on psycho-physical comorbidity risk may be attenuated by adopting healthier lifestyle habits in childhood. We found some suggestive evidence that engaging in more frequent physical activity may reduce the risk for comorbidity, irrespective of stress exposure levels. If confirmed in future studies, this set of findings could highlight the need for more comorbidity prevention efforts focused on reducing ELS, in addition to current intervention programmes that focus on lifestyle behaviours such as physical activity.</p>
+</section>
 </section>
 <section id="references" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="references">References</h2>
@@ -654,6 +689,9 @@ Achenbach, T. M. (1999). The child behavior checklist and related instruments [B
 <div id="ref-Achenbach2001" class="csl-entry" role="listitem">
 Achenbach, T. M., &amp; Rescorla, L. (2001). <em>Manual for the ASEBA school-age forms &amp; profiles : An integrated system of multi-informant assessment</em> [Book]. ASEBA Burlington, VT.
 </div>
+<div id="ref-AustralianDepartmentofHealth2014" class="csl-entry" role="listitem">
+Australian Department of Health. (2014). <em>Australia’s physical activity and sedentary behaviour guidelines</em> [Generic]. Department of Health Canberra, Australia. <a href="https://www1.health.gov.au/internet/main/publishing.nsf/Content/health-pubhlth-strateg-phys-act-guidelines">www1.health.gov.au/internet/main/publishing.nsf/Content/health-pubhlth-strateg-phys-act-guidelines</a>
+</div>
 <div id="ref-Bourdon2005" class="csl-entry" role="listitem">
 Bourdon, K. H., Goodman, R., Rae, D. S., Simpson, G., &amp; Koretz, D. S. (2005). The strengths and difficulties questionnaire: U.s. Normative data and psychometric properties [Journal Article]. <em>J Am Acad Child Adolesc Psychiatry</em>, <em>44</em>(6), 557–564. <a href="https://doi.org/10.1097/01.chi.0000159157.57075.c8">https://doi.org/10.1097/01.chi.0000159157.57075.c8</a>
 </div>
@@ -666,8 +704,17 @@ Bright, M. A., Knapp, C., Hinojosa, M. S., Alford, S., &amp; Bonner, B. (2016). 
 <div id="ref-Briguglio2020" class="csl-entry" role="listitem">
 Briguglio, M., Vitale, J. A., Galentino, R., Banfi, G., Zanaboni Dina, C., Bona, A., Panzica, G., Porta, M., Dell’Osso, B., &amp; Glick, I. D. (2020). Healthy eating, physical activity, and sleep hygiene (HEPAS) as the winning triad for sustaining physical and mental health in patients at risk for or with neuropsychiatric disorders: Considerations for clinical practice [Journal Article]. <em>Neuropsychiatr Dis Treat</em>, <em>16</em>, 55–70. <a href="https://doi.org/10.2147/ndt.S229206">https://doi.org/10.2147/ndt.S229206</a>
 </div>
+<div id="ref-Bull2020" class="csl-entry" role="listitem">
+Bull, F. C., Al-Ansari, S. S., Biddle, S., Borodulin, K., Buman, M. P., Cardon, G., Carty, C., Chaput, J. P., Chastin, S., Chou, R., Dempsey, P. C., DiPietro, L., Ekelund, U., Firth, J., Friedenreich, C. M., Garcia, L., Gichu, M., Jago, R., Katzmarzyk, P. T., … Willumsen, J. F. (2020). World health organization 2020 guidelines on physical activity and sedentary behaviour [Journal Article]. <em>Br J Sports Med</em>, <em>54</em>(24), 1451–1462. <a href="https://doi.org/10.1136/bjsports-2020-102955">https://doi.org/10.1136/bjsports-2020-102955</a>
+</div>
 <div id="ref-Buuren2011" class="csl-entry" role="listitem">
 Buuren, S., &amp; Groothuis-Oudshoorn, C. (2011). MICE: Multivariate imputation by chained equations in r [Journal Article]. <em>Journal of Statistical Software</em>, <em>45</em>. <a href="https://doi.org/10.18637/jss.v045.i03">https://doi.org/10.18637/jss.v045.i03</a>
+</div>
+<div id="ref-Choi2019" class="csl-entry" role="listitem">
+Choi, K. W., Chen, C.-Y., Stein, M. B., Klimentidis, Y. C., Wang, M.-J., Koenen, K. C., Smoller, J. W., &amp; Major Depressive Disorder Working Group of the Psychiatric Genomics, C. (2019). Assessment of bidirectional relationships between physical activity and depression among adults: A 2-sample mendelian randomization study [Journal Article]. <em>JAMA Psychiatry</em>, <em>76</em>(4), 399–408. <a href="https://doi.org/10.1001/jamapsychiatry.2018.4175">https://doi.org/10.1001/jamapsychiatry.2018.4175</a>
+</div>
+<div id="ref-Choi2020" class="csl-entry" role="listitem">
+Choi, K. W., Stein, M. B., Nishimi, K. M., Ge, T., Coleman, J. R. I., Chen, C.-Y., Ratanatharathorn, A., Zheutlin, A. B., Dunn, E. C., Breen, G., Koenen, K. C., &amp; Smoller, J. W. (2020). An exposure-wide and mendelian randomization approach to identifying modifiable factors for the prevention of depression [Journal Article]. <em>American Journal of Psychiatry</em>, <em>177</em>(10), 944–954. <a href="https://doi.org/10.1176/appi.ajp.2020.19111158">https://doi.org/10.1176/appi.ajp.2020.19111158</a>
 </div>
 <div id="ref-Cribb2011" class="csl-entry" role="listitem">
 Cribb, V. L., Jones, L. R., Rogers, I. S., Ness, A. R., &amp; Emmett, P. M. (2011). Is maternal education level associated with diet in 10-year-old children? [Journal Article]. <em>Public Health Nutrition</em>, <em>14</em>(11), 2037–2048. <a href="https://doi.org/10.1017/S136898001100036X">https://doi.org/10.1017/S136898001100036X</a>
@@ -705,17 +752,38 @@ Goodman, R. (1997). The strengths and difficulties questionnaire: A research not
 <div id="ref-Goodman1999" class="csl-entry" role="listitem">
 Goodman, R., &amp; Scott, S. (1999). Comparing the strengths and difficulties questionnaire and the child behavior checklist: Is small beautiful? [Journal Article]. <em>Journal of Abnormal Child Psychology</em>, <em>27</em>(1), 17–24. <a href="https://doi.org/10.1023/A:1022658222914">https://doi.org/10.1023/A:1022658222914</a>
 </div>
+<div id="ref-Hanlon2020" class="csl-entry" role="listitem">
+Hanlon, P., McCallum, M., Jani, B. D., McQueenie, R., Lee, D., &amp; Mair, F. S. (2020). Association between childhood maltreatment and the prevalence and complexity of multimorbidity: A cross-sectional analysis of 157,357 UK biobank participants [Journal Article]. <em>Journal of Comorbidity</em>, <em>10</em>, 2235042X10944344.
+</div>
+<div id="ref-He2021" class="csl-entry" role="listitem">
+He, L., Biddle, S. J. H., Lee, J. T., Duolikun, N., Zhang, L., Wang, Z., &amp; Zhao, Y. (2021). The prevalence of multimorbidity and its association with physical activity and sleep duration in middle aged and elderly adults: A longitudinal analysis from china [Journal Article]. <em>International Journal of Behavioral Nutrition and Physical Activity</em>, <em>18</em>(1), 77. <a href="https://doi.org/10.1186/s12966-021-01150-7">https://doi.org/10.1186/s12966-021-01150-7</a>
+</div>
+<div id="ref-UKDepartmentofHealth2011" class="csl-entry" role="listitem">
+Health, D. of, &amp; Social Care. (2011). <em>UK chief medical officers’ physical activity guidelines</em> [Generic]. <a href="https://www.gov.uk/government/news/new-physical-activity-guidelines">www.gov.uk/government/news/new-physical-activity-guidelines</a>
+</div>
+<div id="ref-NICE2015" class="csl-entry" role="listitem">
+Health, N. I. for, &amp; Care Excellence. (2015). <em>Dementia, disability and frailty in later life - mid-life approaches to delay or prevent onset</em> [General]. <a href="https://www.nice.org.uk/guidance/ng16">https://www.nice.org.uk/guidance/ng16</a>
+</div>
+<div id="ref-Henchoz2019" class="csl-entry" role="listitem">
+Henchoz, Y., Seematter-Bagnoud, L., Nanchen, D., Büla, C., Gunten, A. von, Démonet, J.-F., &amp; Santos-Eggimann, B. (2019). Childhood adversity: A gateway to multimorbidity in older age? [Journal Article]. <em>Archives of Gerontology and Geriatrics</em>, <em>80</em>, 31–37. <a href="https://doi.org/10.1016/j.archger.2018.10.003">https://doi.org/10.1016/j.archger.2018.10.003</a>
+</div>
 <div id="ref-Heslehurst2019" class="csl-entry" role="listitem">
 Heslehurst, N., Vieira, R., Akhter, Z., Bailey, H., Slack, E., Ngongalah, L., Pemu, A., &amp; Rankin, J. (2019). The association between maternal body mass index and child obesity: A systematic review and meta-analysis [Journal Article]. <em>PLoS Med</em>, <em>16</em>(6), e1002817. <a href="https://doi.org/10.1371/journal.pmed.1002817">https://doi.org/10.1371/journal.pmed.1002817</a>
 </div>
 <div id="ref-James2013" class="csl-entry" role="listitem">
 James, G., Witten, D., Hastie, T., &amp; Tibshirani, R. (2013). <em>An introduction to statistical learning</em> (Vol. 112) [Book]. Springer.
 </div>
+<div id="ref-Katikireddi2017" class="csl-entry" role="listitem">
+Katikireddi, S. V., Skivington, K., Leyland, A. H., Hunt, K., &amp; Mercer, S. W. (2017). The contribution of risk factors to socioeconomic inequalities in multimorbidity across the lifecourse: A longitudinal analysis of the twenty-07 cohort [Journal Article]. <em>BMC Medicine</em>, <em>15</em>(1), 152. <a href="https://doi.org/10.1186/s12916-017-0913-6">https://doi.org/10.1186/s12916-017-0913-6</a>
+</div>
 <div id="ref-Kooijman2016" class="csl-entry" role="listitem">
 Kooijman, M. N., Kruithof, C. J., Duijn, C. M. van, Duijts, L., Franco, O. H., Ijzendoorn, M. H. van, Jongste, J. C. de, Klaver, C. C. W., Lugt, A. van der, Mackenbach, J. P., Moll, H. A., Peeters, R. P., Raat, H., Rings, E. H. H. M., Rivadeneira, F., Schroeff, M. P. van der, Steegers, E. A. P., Tiemeier, H., Uitterlinden, A. G., … Jaddoe, V. W. V. (2016). The generation r study: Design and cohort update 2017 [Journal Article]. <em>European Journal of Epidemiology</em>, <em>31</em>(12), 1243–1264. <a href="https://doi.org/10.1007/s10654-016-0224-9">https://doi.org/10.1007/s10654-016-0224-9</a>
 </div>
 <div id="ref-Koopman-Verhoeff2019" class="csl-entry" role="listitem">
 Koopman-Verhoeff, M. E., Dries, M. A. van den, Seters, J. J. van, Luijk, M., Tiemeier, H., &amp; Luik, A. I. (2019). Association of sleep problems and melatonin use in school-aged children [Journal Article]. <em>JAMA Pediatr</em>, <em>173</em>(9), 883–885. <a href="https://doi.org/10.1001/jamapediatrics.2019.2084">https://doi.org/10.1001/jamapediatrics.2019.2084</a>
+</div>
+<div id="ref-Lassale2019" class="csl-entry" role="listitem">
+Lassale, C., Batty, G. D., Baghdadli, A., Jacka, F., Sánchez-Villegas, A., Kivimäki, M., &amp; Akbaraly, T. (2019). Healthy dietary indices and risk of depressive outcomes: A systematic review and meta-analysis of observational studies [Journal Article]. <em>Molecular Psychiatry</em>, <em>24</em>(7), 965–986. <a href="https://doi.org/10.1038/s41380-018-0237-8">https://doi.org/10.1038/s41380-018-0237-8</a>
 </div>
 <div id="ref-Launders2022" class="csl-entry" role="listitem">
 Launders, N., Hayes, J. F., Price, G., &amp; Osborn, D. P. J. (2022). Clustering of physical health multimorbidity in people with severe mental illness: An accumulated prevalence analysis of united kingdom primary care data [Journal Article]. <em>PLOS Medicine</em>, <em>19</em>(4), e1003976. <a href="https://doi.org/10.1371/journal.pmed.1003976">https://doi.org/10.1371/journal.pmed.1003976</a>
@@ -735,6 +803,9 @@ Orlando, L., Savel, K. A., Madigan, S., Colasanto, M., &amp; Korczak, D. J. (202
 <div id="ref-Owens2014" class="csl-entry" role="listitem">
 Owens, J., GROUP, A. S. W., ADOLESCENCE, C. O., Au, R., Carskadon, M., Millman, R., Wolfson, A., Braverman, P. K., Adelman, W. P., Breuner, C. C., Levine, D. A., Marcell, A. V., Murray, P. J., &amp; O’Brien, R. F. (2014). Insufficient sleep in adolescents and young adults: An update on causes and consequences [Journal Article]. <em>Pediatrics</em>, <em>134</em>(3), e921–e932. <a href="https://doi.org/10.1542/peds.2014-1696">https://doi.org/10.1542/peds.2014-1696</a>
 </div>
+<div id="ref-Paruthi2016" class="csl-entry" role="listitem">
+Paruthi, S., Brooks, L. J., D’Ambrosio, C., Hall, W. A., Kotagal, S., Lloyd, R. M., Malow, B. A., Maski, K., Nichols, C., Quan, S. F., Rosen, C. L., Troester, M. M., &amp; Wise, M. S. (2016). Recommended amount of sleep for pediatric populations: A consensus statement of the american academy of sleep medicine [Journal Article]. <em>J Clin Sleep Med</em>, <em>12</em>(6), 785–786. <a href="https://doi.org/10.5664/jcsm.5866">https://doi.org/10.5664/jcsm.5866</a>
+</div>
 <div id="ref-Price1995" class="csl-entry" role="listitem">
 Price, G., Paul, A., Key, F., Harter, A., Cole, T., Day, K., &amp; Wadsworth, M. (1995). Measurement of diet in a large national survey: Comparison of computerized and manual coding of records in household measures [Journal Article]. <em>Journal of Human Nutrition and Dietetics</em>, <em>8</em>(6), 417–428.
 </div>
@@ -744,17 +815,32 @@ R Core Team. (2021). <em>R: A language and environment for statistical computing
 <div id="ref-Ronaldson2021" class="csl-entry" role="listitem">
 Ronaldson, A., Arias de la Torre, J., Prina, M., Armstrong, D., Das-Munshi, J., Hatch, S., Stewart, R., Hotopf, M., &amp; Dregan, A. (2021). Associations between physical multimorbidity patterns and common mental health disorders in middle-aged adults: A prospective analysis using data from the UK biobank [Journal Article]. <em>Lancet Reg Health Eur</em>, <em>8</em>, 100149. <a href="https://doi.org/10.1016/j.lanepe.2021.100149">https://doi.org/10.1016/j.lanepe.2021.100149</a>
 </div>
+<div id="ref-Schuch2018" class="csl-entry" role="listitem">
+Schuch, F. B., Vancampfort, D., Firth, J., Rosenbaum, S., Ward, P. B., Silva, E. S., Hallgren, M., Ponce De Leon, A., Dunn, A. L., Deslandes, A. C., Fleck, M. P., Carvalho, A. F., &amp; Stubbs, B. (2018). Physical activity and incident depression: A meta-analysis of prospective cohort studies [Journal Article]. <em>The American Journal of Psychiatry</em>, <em>175</em>(7), 631–648. <a href="https://doi.org/10.1176/appi.ajp.2018.17111194">https://doi.org/10.1176/appi.ajp.2018.17111194</a>
+</div>
 <div id="ref-Schwarzfischer2017" class="csl-entry" role="listitem">
 Schwarzfischer, P., Weber, M., Gruszfeld, D., Socha, P., Luque, V., Escribano, J., Xhonneux, A., Verduci, E., Mariani, B., Koletzko, B., &amp; Grote, V. (2017). BMI and recommended levels of physical activity in school children [Journal Article]. <em>BMC Public Health</em>, <em>17</em>(1), 595. <a href="https://doi.org/10.1186/s12889-017-4492-4">https://doi.org/10.1186/s12889-017-4492-4</a>
 </div>
 <div id="ref-Shafiei2023" class="csl-entry" role="listitem">
 Shafiei, F., Salari-Moghaddam, A., Larijani, B., &amp; Esmaillzadeh, A. (2023). Mediterranean diet and depression: Reanalysis of a meta-analysis [Journal Article]. <em>Nutr Rev</em>, <em>81</em>(7), 889–890. <a href="https://doi.org/10.1093/nutrit/nuad023">https://doi.org/10.1093/nutrit/nuad023</a>
 </div>
+<div id="ref-Skou2022" class="csl-entry" role="listitem">
+Skou, S. T., Mair, F. S., Fortin, M., Guthrie, B., Nunes, B. P., Miranda, J. J., Boyd, C. M., Pati, S., Mtenga, S., &amp; Smith, S. M. (2022). Multimorbidity [Journal Article]. <em>Nature Reviews Disease Primers</em>, <em>8</em>(1), 1–22. <a href="https://doi.org/10.1038/s41572-022-00376-4">https://doi.org/10.1038/s41572-022-00376-4</a>
+</div>
 <div id="ref-Souama2023" class="csl-entry" role="listitem">
 Souama, C., Lamers, F., Milaneschi, Y., Vinkers, C. H., Defina, S., Garvert, L., Stein, F., Woofenden, T., Brosch, K., Dannlowski, U., Galenkamp, H., Graaf, R. de, Jaddoe, V. W. V., Lok, A., Rijn, B. B. van, Völzke, H., Cecil, C. A. M., Felix, J. F., Grabe, H. J., … EarlyCause, consortium. (2023). Depression, cardiometabolic disease, and their co-occurrence after childhood maltreatment: An individual participant data meta-analysis including over 200,000 participants [Journal Article]. <em>BMC Medicine</em>, <em>21</em>(1), 93. <a href="https://doi.org/10.1186/s12916-023-02769-y">https://doi.org/10.1186/s12916-023-02769-y</a>
 </div>
+<div id="ref-Stubbs2018" class="csl-entry" role="listitem">
+Stubbs, B., Vancampfort, D., Hallgren, M., Firth, J., Veronese, N., Solmi, M., Brand, S., Cordes, J., Malchow, B., Gerber, M., Schmitt, A., Correll, C. U., De Hert, M., Gaughran, F., Schneider, F., Kinnafick, F., Falkai, P., Möller, H.-J., &amp; Kahl, K. G. (2018). EPA guidance on physical activity as a treatment for severe mental illness: A meta-review of the evidence and position statement from the european psychiatric association (EPA), supported by the international organization of physical therapists in mental health (IOPTMH) [Journal Article]. <em>European Psychiatry: The Journal of the Association of European Psychiatrists</em>, <em>54</em>, 124–144. <a href="https://doi.org/10.1016/j.eurpsy.2018.07.004">https://doi.org/10.1016/j.eurpsy.2018.07.004</a>
+</div>
 <div id="ref-Tognon2014" class="csl-entry" role="listitem">
 Tognon, G., Hebestreit, A., Lanfer, A., Moreno, L. A., Pala, V., Siani, A., Tornaritis, M., De Henauw, S., Veidebaum, T., Molnár, D., Ahrens, W., &amp; Lissner, L. (2014). Mediterranean diet, overweight and body composition in children from eight european countries: Cross-sectional and prospective results from the IDEFICS study [Journal Article]. <em>Nutr Metab Cardiovasc Dis</em>, <em>24</em>(2), 205–213. <a href="https://doi.org/10.1016/j.numecd.2013.04.013">https://doi.org/10.1016/j.numecd.2013.04.013</a>
+</div>
+<div id="ref-Tomasdottir2015" class="csl-entry" role="listitem">
+Tomasdottir, M. O., Sigurdsson, J. A., Petursson, H., Kirkengen, A. L., Krokstad, S., McEwen, B., Hetlevik, I., &amp; Getz, L. (2015). Self reported childhood difficulties, adult multimorbidity and allostatic load. A cross-sectional analysis of the norwegian HUNT study [Journal Article]. <em>PLOS ONE</em>, <em>10</em>(6), e0130591. <a href="https://doi.org/10.1371/journal.pone.0130591">https://doi.org/10.1371/journal.pone.0130591</a>
+</div>
+<div id="ref-Tremblay2016" class="csl-entry" role="listitem">
+Tremblay, M. S., Carson, V., Chaput, J.-P., Connor Gorber, S., Dinh, T., Duggan, M., Faulkner, G., Gray, C. E., Gruber, R., Janson, K., Janssen, I., Katzmarzyk, P. T., Kho, M. E., Latimer-Cheung, A. E., LeBlanc, C., Okely, A. D., Olds, T., Pate, R. R., Phillips, A., … Zehr, L. (2016). Canadian 24-hour movement guidelines for children and youth: An integration of physical activity, sedentary behaviour, and sleep [Journal Article]. <em>Applied Physiology, Nutrition, and Metabolism = Physiologie Appliquee, Nutrition Et Metabolisme</em>, <em>41</em>(6 Suppl 3), S311–327. <a href="https://doi.org/10.1139/apnm-2016-0151">https://doi.org/10.1139/apnm-2016-0151</a>
 </div>
 <div id="ref-Trichopoulou2003" class="csl-entry" role="listitem">
 Trichopoulou, A., Costacou, T., Bamia, C., &amp; Trichopoulos, D. (2003). Adherence to a mediterranean diet and survival in a greek population [Journal Article]. <em>N Engl J Med</em>, <em>348</em>(26), 2599–2608. <a href="https://doi.org/10.1056/NEJMoa025039">https://doi.org/10.1056/NEJMoa025039</a>
@@ -767,6 +853,9 @@ Weber, D. R., Leonard, M. B., Shults, J., &amp; Zemel, B. S. (2014). A compariso
 </div>
 <div id="ref-Wheatley2020" class="csl-entry" role="listitem">
 Wheatley, C., Wassenaar, T., Salvan, P., Beale, N., Nichols, T., Dawes, H., &amp; Johansen-Berg, H. (2020). Associations between fitness, physical activity and mental health in a community sample of young british adolescents: Baseline data from the fit to study trial [Journal Article]. <em>BMJ Open Sport Exerc Med</em>, <em>6</em>(1), e000819. <a href="https://doi.org/10.1136/bmjsem-2020-000819">https://doi.org/10.1136/bmjsem-2020-000819</a>
+</div>
+<div id="ref-Zhai2015" class="csl-entry" role="listitem">
+Zhai, L., Zhang, H., &amp; Zhang, D. (2015). SLEEP DURATION AND DEPRESSION AMONG ADULTS: A META-ANALYSIS OF PROSPECTIVE STUDIES [Journal Article]. <em>Depression and Anxiety</em>, <em>32</em>(9), 664–670. <a href="https://doi.org/10.1002/da.22386">https://doi.org/10.1002/da.22386</a>
 </div>
 </div>
 </section>

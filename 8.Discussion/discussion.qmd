@@ -13,6 +13,11 @@ Like most previous literatures, children’s stress exposure information was obt
 
 ### Missing piece: resilience 
 
+### Information bias? 
+Our measurement of ELS, lifestyle behaviours and internalizing symptoms rely primarily on parent reports, which might have introduced information bias. does that generalise to self reports? 
+Other measures of adolescent behaviour, e.g., externalizing problems, could represent interesting targets for future studies in the field.
+
+
 ## Alternative modelling methods 
 A cumulative risk approach examines the number of stressors experienced rather than the intensity or the pattern of stress exposure. We define stressors dichotomously and then sum across multiple dichotomous exposures. 
 As an additive model, this technique is a straightforward, way of identifying children at increased odds for developing a range of maladaptive outcomes, including
@@ -66,6 +71,9 @@ but it has significant limitations, particularly in distinguishing between muscl
 ### Alternative modelling methods 
 network 
 
+#### the role of lifestyle and puberty 
+"while we focused here on three lifestyle markers that are most relevant to the developmental period of interest and may constitute important targets for early prevention, other potentially relevant factors such as smoking, alcohol use or psychological coping strategies, are also likely to be of relevance [@Hanlon2020; @Skou2022] and should be taken into account in future studies."
+
 ## So what was this all for? 
 So what was this all for? Excellent question. Kept me up a few nights
 I argued prevention of comorbidity was key, but am I actually any closer, even purely theoretically to a useful insight? 
@@ -74,7 +82,8 @@ I argued prevention of comorbidity was key, but am I actually any closer, even p
 In @sec-chapter3 you can find me saying: *"While these findings certainly support the importance of primary prevention programmes aimed at reducing the incidence of ELS, preventing ELS may not always be possible. As such, there is a need to identify alternative modifiable factors that could mitigate the negative impact of ELS on later health, and inform the development of complementary intervention strategies."* 
 
 #### Lifestyle
-In the same chapter I did not find evidence of such promising "modifiable factors". That was surprising to me, but also, as I later came to find out not so rare in the research on lifestyle factors. 
+In the same chapter I did not find evidence of such promising "modifiable factors". Based on data from two independent population-based cohorts, either physical activity, sleep or dietary behaviour did not attenuate the association between ELS exposure and adolescent psycho-physical comorbidity. That was surprising to me, but also, as I later came to find out not so rare in the research on lifestyle factors. 
+"Developmental timing and / or differences in outcome measurement may have played a role in explaining this discrepancy. It is possible, for example, that engaging in healthy lifestyle behaviours later in life may be more beneficial, or that the protective effects of childhood lifestyle behaviours may manifest only later in adulthood. It is also possible that the associations reported in the adult literature may be biased through reverse causation (e.g., depression being a causal risk factor for poor diet and sleep; (Choi et al., 2020)." "differential measurement error could have played a role in explaining this finding. Indeed, our ELS measure was considerably more comprehensive (i.e., comprised of many more items and covering a longer time period) compared to each of the lifestyle factors, which were only assessed at a single time point and based on fewer indicators. It is possible, for example, that the hypothesized moderation effects may emerge when a more long-term engagement in physical activity is considered."
 
 #### SES 
 What seems to emerge from the studies is that the key factor across physical and mental health was the contextual risk component of the ELS score. Let's unpack that. The key stress indicators within contextual risk are low parental education, financial and neighborhood problems. These are constructs commonly referred to as low socio-economic status (SES). 

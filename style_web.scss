@@ -126,6 +126,10 @@ p {
   vertical-align: middle;
 }
 
+.thesis_tbl .accent_row {
+  background-color: lighten($theme-sand, 10%) !important;
+}
+
 // Figures
 .quarto-figure {
   margin-top: 25px;  // Space above the figure

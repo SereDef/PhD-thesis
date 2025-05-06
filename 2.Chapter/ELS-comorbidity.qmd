@@ -136,7 +136,6 @@ Sample characteristics were pooled across imputed datasets and summarized in @tb
 ### Associations of prenatal ELS with internalizing symptoms and adiposity
 Results of the mediation analysis linking prenatal stress to internalizing and adiposity were highly consistent across cohorts (see @fig-2.2 and online [*Table S2*]({{< var supp2_tables >}})).
 
-
 About ~60% of the total effect (TE) of prenatal stress on internalizing symptoms (TE [95%CI] = GenR: 0.27 [0.23;0.30]; ALSPAC: 0.16 [0.13;0.18]) was mediated through postnatal stress (GenR: 0.16 [0.14;0.19]; ALSPAC: 0.10 [0.08;0.11]).
 The TE of prenatal stress on adiposity (GenR: 0.12 [0.09;0.15]; ALSPAC: 0.04 [0.03;0.06]) was smaller compared to internalizing and largely (~70%) operating via the direct pathway (GenR: 0.08 [0.04;0.12]; ALSPAC: 0.03 [0.01;0.05]).
 
