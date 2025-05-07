@@ -5,6 +5,7 @@
         "covariate",
         "covariates",
         "multicollinearity",
-        "multinomial"
+        "multinomial",
+        "neuroimaging"
     ]
 }

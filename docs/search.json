@@ -453,7 +453,18 @@
     "href": "7.Chapter/arterial-brain.html",
     "title": "7  Arterial health and brain development",
     "section": "",
-    "text": "Abstract\nAdapted from:\nObjective:\nMethod:\nResults:\nConclusion:",
+    "text": "Abstract\nAdapted from:\nBackground: Arterial wall thickness and stiffness, and high blood pressure have been repeatedly associated with poorer brain health. However, previous studies largely focused on mid- or late-life stages. It is unknown whether any arterial health–related brain changes may be observable already in adolescence.\nMethods: We examined whether (1) carotid intima-media thickness, (2) carotid distensibility, and (3) systolic blood pressure and diastolic blood pressure, measured at the age of 10 years, were associated with brain volumes and white matter microstructure (ie, fractional anisotropy and mean diffusivity) at the age of 14 years. In addition to cross-sectional analyses, we explored associations with longitudinal change in each brain outcome from 10 to 14 years. Analyses were based on 5341 children from the Generation R Study.\nResults: Higher diastolic blood pressure was associated with lower total brain volume (β [95% CI] = −0.04 [−0.07; −0.01]) and gray matter volume (β [95% CI] = −0.04 [−0.07; −0.01]) at the age of 14 years, with stronger associations in higher diastolic blood pressure ranges. Similar associations emerged between systolic blood pressure and brain volumes, but these were no longer significant after adjusting for birth weight. No associations were observed between blood pressure and white matter microstructure or between carotid intima-media thickness or distensibility and brain morphology.\nConclusions: Arterial blood pressure, but not intima-media thickness and distensibility, is associated with structural neuroimaging markers in early adolescence. Volumetric measures may be more sensitive to these early arterial health differences compared to microstructural properties of the white matter, but further studies are needed to confirm these results and assess potential causal mechanisms.",
+    "crumbs": [
+      "**PART 2**: Reciprocal relationships between mental and physical health problems",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Arterial health and brain development</span>"
+    ]
+  },
+  {
+    "objectID": "7.Chapter/arterial-brain.html#links",
+    "href": "7.Chapter/arterial-brain.html#links",
+    "title": "7  Arterial health and brain development",
+    "section": "Links",
+    "text": "Links\n\nSupplementary materials\nProject’s code\nOSF Pre-registration",
     "crumbs": [
       "**PART 2**: Reciprocal relationships between mental and physical health problems",
       "<span class='chapter-number'>7</span>  <span class='chapter-title'>Arterial health and brain development</span>"
