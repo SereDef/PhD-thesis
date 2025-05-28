@@ -49,7 +49,9 @@ csl: apa.csl
 bibliography: [references.bib, # TMP
                1.Introduction/introduction_bibliography.bib, 
                2.Chapter/ELS-comorbidity_bibliography.bib,
-               3.Chapter/ELS-lifestyle-moderators_bibliography.bib]
+               3.Chapter/ELS-lifestyle-moderators_bibliography.bib,
+               7.Chapter/arterial-brain_bibliography.bib,
+               ]
 
 # Outputs
 format:

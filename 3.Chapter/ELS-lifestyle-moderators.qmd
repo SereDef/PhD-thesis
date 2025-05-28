@@ -44,7 +44,7 @@ Adapted from:
 :::
 
 ## Keywords {.unnumbered}
-Adverse Childhood Experiences; Comorbidity; Physical Activity; Sleep; Diet, Mediterranean; Depression; Adiposity; moderation analysis.
+Adverse Childhood Experiences; Comorbidity; Physical Activity; Sleep; Diet, Mediterranean; Depression; Adiposity; Moderation analysis.
 
 ## Abbreviations {.unnumbered}
 Avon Longitudinal Study of Parents and Children (ALSPAC), Body Mass Index (BMI), Confidence Interval (CI), Child Behavior Checklist (CBCL), Dual-energy X-ray absorptiometry (DXA), Early Life Stress (ELS), Food Frequency Questionnaire (FFQ), Generation R (GenR), Odds Ratio (OR), Strengths and Difficulties Questionnaire (SDQ), Variance Inflation Factor (VIF), United Kingdom (UK).

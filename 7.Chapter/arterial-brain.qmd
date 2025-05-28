@@ -14,7 +14,7 @@ Defina, S., Silva, C.C.V., Cecil, C.A.M., Tiemeier, H., Felix, J.F., Mutzel, R.L
 ## Abstract {.unnumbered}
  [Background]{.underline}: Arterial wall thickness and stiffness, and high blood pressure have been repeatedly associated with poorer brain health. However, previous studies largely focused on mid- or late-life stages. It is unknown whether any arterial health–related brain changes may be observable already in adolescence.
 
- [Methods]{.underline}: We examined whether *(1)* carotid intima-media thickness, *(2)* carotid distensibility, and *(3)* systolic blood pressure and diastolic blood pressure, measured at the age of 10 years, were associated with brain volumes and white matter microstructure (ie, fractional anisotropy and mean diffusivity) at the age of 14 years. In addition to cross-sectional analyses, we explored associations with longitudinal change in each brain outcome from 10 to 14 years. Analyses were based on 5341 children from the Generation R Study.
+ [Methods]{.underline}: We examined whether *(1)* carotid intima-media thickness, *(2)* carotid distensibility, and *(3)* systolic blood pressure and diastolic blood pressure, measured at the age of 10 years, were associated with brain volumes and white matter microstructure (i.e., fractional anisotropy and mean diffusivity) at the age of 14 years. In addition to cross-sectional analyses, we explored associations with longitudinal change in each brain outcome from 10 to 14 years. Analyses were based on 5341 children from the Generation R Study.
 
  [Results]{.underline}: Higher diastolic blood pressure was associated with lower total brain volume (β [95% CI] = −0.04 [−0.07; −0.01]) and gray matter volume (β [95% CI] = −0.04 [−0.07; −0.01]) at the age of 14 years, with stronger associations in higher diastolic blood pressure ranges. Similar associations emerged between systolic blood pressure and brain volumes, but these were no longer significant after adjusting for birth weight. No associations were observed between blood pressure and white matter microstructure or between carotid intima-media thickness or distensibility and brain morphology.
 
@@ -30,10 +30,155 @@ Defina, S., Silva, C.C.V., Cecil, C.A.M., Tiemeier, H., Felix, J.F., Mutzel, R.L
 * [OSF Pre-registration]({{< var chap7_prereg >}})
 :::
 
+::: {.content-visible unless-format="html"}
+
+**Supplementary materials**: {{< var supp7_general >}}\newline
+![](../img/qrcode_supp3.png){width=20%}
+
+**Project's code**: {{< var chap7_repo >}}\newline
+![](../img/qrcode_chap3_repo.png){width=20%}
+
+**OSF Pre-registration**: {{< var chap7_prereg >}}\newline
+![](../img/qrcode_els_repo.png){width=20%}
+
+:::
+
+## Keywords {.unnumbered}
+Blood pressure; Carotid intima-media thickness; Carotid distensibility; Neuro-imaging; Adolescence.
+
+## Abbreviations {.unnumbered}
+Body Mass Index (BMI), Carotid intima–media thickness (cIMT), Coronary Artery Risk Development in Young Adults (CARDIA), Diffusion tensor imaging (DTI), False discovery rate (FDR), Fractional anisotropy (FA), Framingham Third-Generation Cohort Study (FHS-G3), Grey matter volume (GMV), Magnetic Resonance Images (MRI), Mean diffusivity (MD), Systolic / diastolic blood pressure (SBP / DBP), Total brain volume (TBV).
+
+\newpage
+
 ## Introduction
+While cardiovascular disease remains the leading cause of death worldwide, the global burden of brain disease is rapidly increasing and is often associated with the same risk factors, as highlighted by the latest statistical update from the American Heart Association [@Tsao2022]. Indeed, known cardiovascular risk factors such as hypertension [@Alateeq2022; @Beauchet2013], arterial stiffness [@Badji2019; @Baradaran2020] and atherosclerosis [@Baradaran2020; @Wang2022], have been consistently associated with the pathogenesis of cerebrovascular disease (e.g., stroke and white matter lesions) and cognitive decline in the elderly.
+
+Accumulating evidence further suggests that more subtle vascular health–related brain changes may occur in younger adults, far before evident injury events, and even when the overall vascular burden is low. For example, the Framingham Third-Generation Cohort Study (FHS-G3) investigators reported cross-sectional associations of arterial stiffness with lower grey-matter density and white-matter microstructural integrity, assessed with diffusion tensor imaging (DTI), in the fifth decade of life [@Maillard2017; @Maillard2016]. Higher arterial stiffness was also associated with poorer processing speed and executive function, and with larger lateral ventricular volumes in younger adults (30-45 years) from the FHS-G3 [@Pase2016]. Moreover, in a group of 45-year-old adults from the Coronary Artery Risk Development in Young Adults (CARDIA) Study, higher carotid intima–media thickness (cIMT), a subclinical marker of atherosclerosis, was associated with reduced cerebral blood flow and with poorer cognitive function five years later [@AlHazzouri2015; @Cermakova2020]. In the same cohort, midlife hypertension [@Launer2015] and increasing blood pressure trajectories from young adulthood to middle age [@Hu2022] were associated with lower cerebral perfusion and volumetric markers of poor white- and grey- matter health at age 50. Blood pressure was also linearly associated with reduced grey-matter volumes and white matter microstructural integrity at age 40 in the FHS-G3 sample [@Maillard2012] and with grey matter and white matter lesion volume before the age of 45 in the UK Biobank [@Alateeq2022].
+
+Although analogous neuroimaging studies in children are lacking, there is evidence linking elevated blood pressure with cognitive performance already in childhood [@Lamballais2018; @Lande2019]. Further, related cardiovascular risk factors, such as adiposity [@Silva2021; @Steegers2021] and diabetes [@Redel2022] have been shown to associate with brain structural changes in children and adolescents. However, thus far very little attention has been paid to the potential impact of vascular health on the brain during development, despite evidence that arterial stiffening and thickening, and blood pressure dysregulation begin very early in life [@Kruger2021; @Rosner2013; @Song2020]. From a clinical standpoint, characterizing these associations is a fundamental step in the development of early intervention strategies that may prevent abnormal brain development before irreversible structural damage occurs.
+
+Using data from the Generation R Study, a large population-based birth cohort, we investigated how arterial thickness and distensibility, as well as systolic / diastolic blood pressure (SBP / DBP), measured at age 10 associate with brain morphology and microstructure extracted from MRI scans at age 10 and 14 years.
+
+This study was [pre-registered]({{< var chap7_prereg >}}). Briefly, we hypothesized that: 1) higher cIMT, 2) lower distensibility and 3) higher SBP / DBP would associate with *a)* lower total brain volume, *b)* lower grey-matter volume, *c)* lower global fractional anisotropy and/or *d)* higher mean diffusivity.
 
 ## Methods
+The data that support the findings of this study are available from the corresponding author upon reasonable request.
+
+### Study population
+The study uses data from the Generation R Study, an ongoing population-based prospective cohort study based in the city of Rotterdam, the Netherlands. A detailed cohort description is provided elsewhere [@Kooijman2016]. In summary, the cohort included 9749 children born between April 2002 and January 2006. The analytical sample consisted of 5341 singletons who participated in the baseline (i.e., 10-year) visit and had no siblings in the sample (see [Figure S1]({{< var supp7_general >}})). Of these children, 2054 had complete structural MRI data and 2308 had complete DTI data. Missing values in all variables of interest were imputed by random-forest multiple imputation.
+Ethical standards. The study conforms with the World Medical Association Declaration of Helsinki [-@WorldMedicalAssociation2013]. Written informed consent was obtained from parents. The medical ethical committee of Erasmus MC, University Medical Center Rotterdam approved the study. 
+
+### Arterial health
+At the age of 10 years, carotid artery ultrasound was performed using the Logiq E9 device (GE Medical Systems, Wauwatosa, Wisconsin) while blood pressure was simultaneously assessed at the right brachial artery. Children were in supine position, with their head tilted slightly away from the transducer. The common carotid artery was identified in a longitudinal plane, ~10 mm proximal from the carotid bifurcation. Each common carotid artery was measured three times, resulting in six recordings that ideally included multiple heart cycles.
+
+***Carotid intima–media thickness.*** For each ultrasound recording, and at all R waves of the simultaneous electrocardiogram, cIMT was computed at the far wall as the average distance between lumen-intima and media-adventitia borders. Average cIMT of all frames of the acquired image sequence was then computed. Analyses were performed offline and semiautomatically, using the application Carotid Studio (Cardiovascular Suite; Quipu srl, Pisa, Italy). Overall mean cIMT (millimeters) was standardized using a z-transformation - i.e., (value – sample mean) / sample SD.
+
+***Carotid distensibility.*** The c coefficient, i.e., the relative change in lumen area during systole for a given peripheral pressure change was calculated as the difference between the maximal (diastolic) and minimal (systolic) lumen diameter of the carotid artery. Lumen diameter was computed as the average distance between the far and near media-adventitia interfaces for each frame of the acquired image sequence. Per recording, average distension and diameter values were used to compute the average carotid distensibility. Overall mean carotid distensibility (kPa^−1^ × 10^−3^) was standardized using a z-transformation.
+
+***Blood pressure.*** SBP and DBP were measured at the right brachial artery, four times with 1-min intervals, using the validated automatic sphygmomanometer Datascope Accutorr PlusTM (Paramus, New Jersey, USA). SBP and DBP (mm Hg) were determined by excluding the first measurement and averaging the other measurements, and were standardized using a z-transformation.
+
+### Brain imaging
+At the ages of 10 and 14 years, participants visited the Generation R research center at Erasmus MC – Sophia Children’s Hospital, where brain Magnetic Resonance Images (MRI) were acquired using a single, dedicated 3-Tesla scanner (General Electric MR750w, Milwaukee, WI, USA) with an eight-channel head coil. To minimize head motion, participants were familiarized with the scanner environment using a mock scanner.
+
+***Brain volume.*** High resolution T1-weighted images were obtained with an inversion recovery fast-spoiled gradient recalled sequence (parameters: TR = 8.77 ms, TE = 3.4 ms, TI = 600 ms, flip angle = 10°, FOV = 220×220mm, acquisition matrix = 220×220, slice thickness = 1mm, number of slices = 230, voxel size = 1×1×1mm, ARC Acceleration = 2). Images were processed using FreeSurfer 6.0 [@Fischl2012]. The technical details of these procedures are described elsewhere [@Muetzel2019]. In brief, this included removal of the non-brain tissue, segmentation of white and grey matter structures, tessellation of the grey-white matter boundary, topology correction and surface deformation to identify the cortical grey-white matter and the grey-cerebrospinal fluid boundary. Reconstructions were visually inspected and those with insufficient quality were further excluded [@Muetzel2019].
+
+Global metrics of volume, i.e., total brain (TBV) and total grey matter volume (GMV), as well as specific subcortical structures’ volumes were extracted. Brain metrics were be standardized using a z-transformation.
+
+***White matter microstructure.*** DTI data were obtained using an echo-planar sequence with three b = 0 scans and 35 diffusion-weighted images (b = 1000 s/mm^2^). The following parameters were used: TR = 12.5 ms, TE = 72.8 ms, FOV = 240×240 mm, acquisition matrix = 120×120, slice thickness = 2 mm, number of slices = 65. Images were pre-processed using [FSL 6.0.1](https://fsl.fmrib.ox.ac.uk/fsl/). Briefly, non-brain tissue was removed, images were corrected for eddy current-induced distortions and minor head motion using ‘eddy’, and the diffusion gradient table was rotated accordingly. A diffusion tensor was fit at each voxel using a weighted least squares method, and common scalar metrics including global fractional anisotropy (FA) and mean diffusivity (MD) were computed. FA describes the degree to which water diffuses preferentially along one direction (e.g., along a bundle of myelinated axons) and is sensitive to microstructural changes. MD describes the average diffusion in all directions. White matter tracts, were also delineated using fully-automated probabilistic fiber tractography as implemented in FSL AutoPtx [@DeGroot2013]. Average FA and MD were calculated for each tract. Global and tract-specific FA and MD values were standardized using a z-transformation. Image quality was assessed by manual and automated inspection [@Muetzel2018].
+
+### Covariates
+Information on the maternal age and child ethnic background (based on parental country of origin and dichotomized into European vs. non-European) was collected by questionnaire at enrollment. Date of birth and child sex, weight and gestational age were recorded at birth. Both caregivers reported on their highest completed educational level when children were 6 years old, and these reports were combined into a single "parental education" score. Child height (in m) and weight (in kg) were measured during the 10-years visit, and used to compute body mass index (BMI) z-scores. 
+
+### Statistical analysis
+Analyses were conducted using R version 4.2.0(R Core Team, 2021). All scripts are [publicly available]({{< var chap7_repo >}}).
+
+***Imputation.*** Missing data in all exposures, outcomes and covariates were imputed by random-forest multiple imputation [@Shah2014], using 20 imputed datasets, 10 trees and 40 iterations, as implemented by the mice R package [@Buuren2011]. Details of the imputation model and quality are provided in Supplementary materials ([Methods S1]({{< var supp7_general >}}) and [Table S1]({{< var supp7_general >}})).
+
+***Main analyses.*** All models were fit in each imputed dataset, and pooled across imputations using Rubin's rules [@Rubin1987]. For each exposure of interest (i.e., carotid IMT and distensibility, SBP and DBP), four multiple linear regressions were performed including *a)* TBV, *b)* GMV, *c)* global FA and *d)* global MD, measured at age 14, as dependent variable. We ran a "base model" adjusting for child sex, height, age at MRI assessment and age gap between clinical and MRI assessments, and a "confounder model", which additionally included child ethnicity, BMI z-score, parental education and maternal age. Covariates were identified based on the graphical criteria for confounding ([Figure S2]({{< var supp7_general >}})).
+
+To minimize false positive findings due to multiple testing (k=16), false discovery rate (FDR) correction [@Benjamini2001] was applied to all p-values.
+
+Non-linear terms for each arterial health exposure (i.e., natural splines) were retained in the model when they significantly improved its fit (see [Methods S2]({{< var supp7_general >}})).
+
+***Exploratory follow-up analyses.*** We further assessed associations between each exposure and the longitudinal change in each neuroimaging marker from age 10 to 14 years, using linear mixed-effects models with a random intercept per subject (see [Methods S3]({{< var supp7_general >}}); [@Bates2015]). Note that brain outcomes were not standardized for these analyses to prevent incorrect estimation of the correlation structure.
+
+To further characterize the regional specificity of these effects, we assessed associations with: total intracranial, cerebro-spinal fluid, white matter, cortical and subcortical grey matter volumes, as well as subcortical regional volumes (Accumbens, Amygdala, Caudate, Hippocampus, Pallidum, Putamen, Thalamus); white-matter tracts FA and MD (Cingulate gyrus, Cortico-spinal tract, Uncinate fasciculus, Inferior & Superior longitudinal fasciculus, Major & Minor forceps), and vertex-wise cortical thickness (see [Methods S4]({{< var supp7_general >}})) at age 14. These latter analyses were further adjusted for total intracranial volume.
+
+Finally, since sex differences and premature birth have been implicated in the associations of interest [@Gluckman2008; @Pasha2018], we *a)* investigated effect modification by sex and *b)* additionally adjusted the main models for birthweight and gestational age at birth.
+
+***Sensitivity analyses.*** To assess the impact and adequacy of our sample selection and imputation procedure, we ran all analyses in the full cohort (*n*=9749) and in the subsample with complete outcome data (*n*=2054-2308).
+
+## Results
+Participants characteristics. Sample descriptives are displayed in @tbl-7.1 (see also [Tables S1-S2]({{< var supp7_general >}})).
+
+:::{#tbl-7.1}
+```{=html}
+{{< include "Tables/Table1.html" >}}
+```
+:::
+
+### Main analyses
+An overview of the main results is presented in @fig-7.1. Complete model outputs are reported in supplementary materials ([Table S3]({{< var supp7_general >}})). Neither carotid IMT nor distensibility were significantly associated with any brain outcome (@fig-7.1 A-B, [Table S3]({{< var supp7_general >}})). After adjustment for potential confounders, SBP was (cross-sectionally) associated with lower TBV (β [95%CI] = -0.04 [-0.07;-0.01], P~*FDR*~ = .030) and GMV (β [95%CI] = -0.05 [-0.08;-0.01], P~*FDR*~ = .030) but not with either FA or MD (@fig-7.1 C, [Table S3]({{< var supp7_general >}})). Analogously, DBP was (cross-sectionally) associated with TBV (β [95%CI] = -0.04 [-0.07;-0.01], P~*FDR*~ = .022) and GMV (β [95%CI] = -0.04 [-0.07;-0.01], P~*FDR*~ = .022), but not FA or MD (@fig-7.1 D, [Table S3]({{< var supp7_general >}})).
+
+::: {.content-visible when-format="html"}
+![**Arterial thickness, stiffness and blood pressure and brain morphology at 14 years.**<br>For each exposure of interest: **A.** intima-media thickness (IMT); **B.** carotid distensibility; **C.** Systolic blood pressure (SBP); and **D.** Diastolic blood pressure (DBP), the standardized association estimates and their 95% confidence intervals are displayed on the x-axis for each outcome (total brain volume (TBV) in blue; grey matter volume (GMV) in grey; global fractional anisotropy (FA) in red; and mean diffusivity (MD) in orange). The corresponding FDR-corrected P-values are also reported.](Figures/F1_lineares.png){width=100% #fig-7.1}
+:::
+
+::: {.content-visible unless-format="html"}
+![**Arterial thickness, stiffness and blood pressure and brain morphology at 14 years.**\newline(A-D) For each exposure of interest: **A.** intima-media thickness (IMT); **B.** carotid distensibility; **C.** Systolic blood pressure (SBP); and **D.** Diastolic blood pressure (DBP), the standardized association estimates and their 95% confidence intervals are displayed on the x-axis for each outcome (total brain volume (TBV) in blue; grey matter volume (GMV) in grey; global fractional anisotropy (FA) in red; and mean diffusivity (MD) in orange). The corresponding FDR-corrected P-values are also reported.](Figures/F1_lineares.png){width=100% #fig-7.1}
+:::
+
+We found evidence of a non-linear relationship between SBP and white matter microstructure (P=.032 for FA; P=.023 for MD) and between DBP and brain volumes (P=.012 for TBV; P=.006 for GMV). However, these departures from linearity were small, as shown in @fig-7.2 and [Figure S3]({{< var supp7_general >}}).
+
+::: {.content-visible when-format="html"}
+![**Non-linear relationships between blood pressure and brain morphology at 14 years.**<br>The linear and non-linear relationship between SBP and **A.** FA; and **C.** MD; and between DBP and **B.** TBV; and **D.** GMV. Linear associations (black dashed line) were pooled across datasets (and correspond to the estimates presented in Figure 1), while non-linear associations (green continuous lines) were fit in each imputed dataset individually using natural splines with 4 knots. The gray vertical shadows also mark the –2.5 and +2.5 SD cutoffs of each exposure distribution.](Figures/F2_nonlinres.png){width=100% #fig-7.2}
+:::
+
+::: {.content-visible unless-format="html"}
+![**Non-linear relationships between blood pressure and brain morphology at 14 years.**\newline(A-D) The linear and non-linear relationship between SBP and **A.** FA; and **C.** MD; and between DBP and **B.** TBV; and **D.** GMV. Linear associations (black dashed line) were pooled across datasets (and correspond to the estimates presented in Figure 1), while non-linear associations (green continuous lines) were fit in each imputed dataset individually using natural splines with 4 knots. The gray vertical shadows also mark the –2.5 and +2.5 SD cutoffs of each exposure distribution.](Figures/F2_nonlinres.png){width=100% #fig-7.2}
+:::
+
+### Exploratory follow-up analyses
+In our exploratory longitudinal models, we did not find any significant interaction between arterial health markers and age at MRI measurement ([Table S4]({{< var supp7_general >}}); Figure 3). However, when interaction terms were excluded from the models, we could further confirm a negative main effect of SBP and DBP on total brain and grey matter volumes measured at 10 and 14 years ([Table S5]({{< var supp7_general >}})). Specifically, while TBV increased with age (*b* [95%CI] = 7.0 [6.4; 7.7] cm^3^ per year) each SD increase in SBP was associated with -3.6 [-6.4; -0.8] cm^3^ (P~*FDR*~ =.048) and each SD increase in DBP was associated with -3.4 [-6.1; -0.7] cm^3^ (P~*FDR*~ =.040) TBV. Conversely, GMV showed a slight decline over our age range (*b* [95%CI] = -0.6 [-1.0; -0.2] cm^3^ per year) while each SD increase in SBP was associated with -2.4 [-4.1; -0.7] cm^3^ (P~*FDR*~ =.042) and each SD increase in DBP was associated with -2.2 [-3.8; -0.6] cm^3^ (P~*FDR*~ =.039) GMV.
+
+::: {.content-visible when-format="html"}
+![**Structural brain changes from 10 to 14 years.**<br>The longitudinal change in total brain (A, B) and grey matter volume (C, D) is represented for children with “high” levels of exposure (i.e., > 1 SD above the mean in systolic or diastolic blood pressure; in red), exposure values in the intermediate rage (i.e., between –1 and 1 SD around the mean; in green) or low levels of the exposure (i.e., < –1 SD below the mean; in blue). The distribution of age at MRI measurement is also depicted in grey on the bottom of each graph.](Figures/F3_lmmres.png){width=100% #fig-7.3}
+:::
+
+::: {.content-visible unless-format="html"}
+![**Structural brain changes from 10 to 14 years.**\newline(A-D) The longitudinal change in total brain (A, B) and grey matter volume (C, D) is represented for children with “high” levels of exposure (i.e., > 1 SD above the mean in systolic or diastolic blood pressure; in red), exposure values in the intermediate rage (i.e., between –1 and 1 SD around the mean; in green) or low levels of the exposure (i.e., < –1 SD below the mean; in blue). The distribution of age at MRI measurement is also depicted in grey on the bottom of each graph.](Figures/F3_lmmres.png){width=100% #fig-7.3}
+:::
+
+Associations were largely homogenous between sexes ([Figure S4]({{< var supp7_general >}}), [Table S6]({{< var supp7_general >}})) and did not seem to be explained by differences in cranium size, nor by a significant increase in cerebro-spinal fluid volumes ([Figure S5]({{< var supp7_general >}}), [Table S7]({{< var supp7_general >}})). There were no significant associations between either exposure and total or region-specific subcortical volumes ([Figure S5]({{< var supp7_general >}}), [Table S8]({{< var supp7_general >}})) nor with white matter tracts FA and MD ([Figures S6-S7]({{< var supp7_general >}}), [Tables S9-S10]({{< var supp7_general >}})). SBP was significantly associated with total cortical volume (β [95%CI] = -0.05 [-0.08;-0.01], P~*FDR*~ = .036; see [Figure S5]({{< var supp7_general >}}) and [Table S7]({{< var supp7_general >}})), but no local associations with cortical thickness emerged from the vertex-wise analyses ([Table S11]({{< var supp7_general >}})).
+
+Notably, the associations between SBP and total/grey matter volumes were significantly attenuated after adjusting for birth-related covariates (TBV: β [95%CI] = -0.03 [-0.06; 0.01], P~*FDR*~ = .230; GMV: β [95%CI] = -0.03 [-0.06; 0.00], P~*FDR*~ = .229; see [Table S12]({{< var supp7_general >}})).
+
+### Sensitivity analyses
+Restricting the analyses to participants with complete outcome data (*n* = 2054 for structural MRI and 2308 for DTI) did not substantively change the reported findings, besides a slight increase in effect sizes for both SBP (TBV: β [95%CI] = -0.05 [-0.09;-0.01], P~*FDR*~ = .016; GMV: β [95%CI] = -0.06 [-0.09;-0.02], P~*FDR*~ = .013) and DBP (TBV and GMV: β [95%CI] = -0.05 [-0.09;-0.02], P~*FDR*~ = .012; see [Tables S13-S14]({{< var supp7_general >}})).
 
 ## Discussion
+In this population-based prospective cohort study, we observed that systolic and diastolic blood pressure at age 10 years were associated with lower total and grey matter volumes at age 10 and 14 years. The associations between systolic blood pressure and brain volumes were partially explained by birth-related confounders (particularly birthweight). No significant associations were observed for carotid intima-media thickness or distensibility, nor for white matter microstructural markers. 
+
+### Interpretation of main findings
+To the best of our knowledge, this is the first study to establish a link between high blood pressure and brain volume reduction in the general pediatric population. Together with previous pediatric neuroimaging studies focusing mainly on adiposity [@BrainDev2012; @Silva2021; @Steegers2021], our findings confirm the idea that, already at school age and within subclinical ranges, an adverse cardiovascular profile may negatively impact brain development.
+
+We could not find evidence for a significant role of arterial wall thickness or stiffness on the adolescent brain, as we had expected based on adult reports [@Cermakova2020; @Maillard2016]. This might have been due to insufficient sensitivity of ultrasound measures and/or lack of variability in these markers in healthy pediatric population.
+
+In line with our findings, several previous studies reported a negative association between (diastolic) blood pressure and cognitive function in children and adolescents [@Dawson2021; @Lamballais2018; @Lande2019; @Lucas2022]. The biological substrate underlying these associations, however, is less studied. Interestingly, a few transcranial Doppler ultrasound studies demonstrated blunted cerebrovascular reactivity in hypertensive children [@Lande2019; @Wong2011], however, these were conducted in small samples and suffer from wide inter-observer measurement variability. We corroborated and extended these findings using more stable structural MRI markers, and found that morphological brain outcomes (volumetric measures) may be already sensitive to early increase in arterial blood pressure. This was not true for microstructural properties of the white matter, which was unexpected, as adult studies typically point to impaired white matter integrity as an early marker of neurovascular pathology [@Maillard2012]. However, it is important to note that both macroscopic and microstructural changes reported in older populations may reflect different processes (e.g., cellular atrophy and white matter lesions) compared to earlier developmental windows, where the same neuroimaging markers may underlie, for instance, grey and white matter maturation. Indeed, while grey matter maturation tends to peak already in early adolescence, white matter growth typically doesn’t peak until mid-adulthood, which could partly explain the observed pattern of results [@Groeschel2010].
+
+### Biological mechanisms
+Several potential mechanisms could explain the reported associations. For example, it was been proposed that high blood pressure could cause damage to the neurovasculature and result in reduced cerebral blood perfusion, leading to suboptimal oxygen and nutritional supplies, and potentially altering ongoing neurodevelopmental processes [@Lucas2022]. Additionally, alterations in immune and hypothalamic-pituitary-adrenal axis functioning resulting from chronically high blood pressure could trigger neuroinflammation, further impairing brain development [@Perrotta2018].
+
+### Clinical relevance
+Over the past decades, the prevalence of high blood pressure among children and adolescents has increased dramatically, in concert with the global epidemic of obesity [@Riley2018]. Elevated blood pressure in childhood is known to track into adulthood and increase the risk of cardiovascular disease [@Yang2020]. In our 10-year-old sample, each 6 mmHg increase in diastolic blood pressure (i.e., 1 SD) was followed by a 3.6 cm^3^ reduction in total brain volume, and a 2.3 cm^3^ reduction in grey matter volume four years later. In our longitudinal follow-up analysis, we could further show how this corresponded to about one third of the estimated yearly change in TBV. These results are important from a developmental perspective, since they suggest that early detection and prevention of elevated blood pressure may be relevant not only for long-term cardiovascular health but also for structural brain development. However, whether these associations are clinically relevant (e.g., in terms of cognitive performance or mental health symptomatology) or whether they will evolve into long-term alteration of brain health, needs to be further studied. Nevertheless, pediatric screening for high blood pressure may be a relatively easy measure to implement to monitor and potentially decrease the risk of future brain disease and cognitive impairment.
+
+### Strengths and limitations
+This study used prospectively measured data from a large population-based sample. Detailed and objective measures of both arterial and brain health were available and selection bias due to non-response was addressed thoroughly using multiple imputation and sensitivity analyses. However, it is important to note that, although we adjusted the analyses for several socio-demographic and lifestyle factors known to influence the associations, residual confounding, for example by genetic predisposition, exposure to stress, nutritional intake or physical activity, may still be present. Additionally, note that, for practical reasons, blood pressure was measured in supine position in this study, as opposed to more conventional sitting measures. Further studies are undoubtedly needed to replicate and validate these findings, and to further investigate potential underlying mechanisms and/or modifiable factors that could explain or attenuate these associations.
+
+### Conclusions
+High blood pressure in childhood was associated with suboptimal brain development already in early adolescence, particularly with respect to reduced total brain and grey matter volumes. Pediatric screening for high blood pressure may thus be relevant not only for the prevention of long-term cardiovascular health problems, but also for structural brain development. Identifying such early biomarkers of neurovascular health entails important implications for future clinical and public heath priorities, especially considering the established relationship between these markers and later prognosis of cerebrovascular disease and dementia.
 
 ## References {.unnumbered}
+::: {.sectionrefs}
+:::

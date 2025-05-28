@@ -358,7 +358,7 @@ physical health problems}
 
 \markboth{PREFACE}{PREFACE}
 
-\begin{tcolorbox}[enhanced jigsaw, coltitle=black, opacityback=0, colframe=quarto-callout-note-color-frame, titlerule=0mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Note}, breakable, opacitybacktitle=0.6, toprule=.15mm, leftrule=.75mm, colbacktitle=quarto-callout-note-color!10!white, bottomtitle=1mm, toptitle=1mm, arc=.35mm, colback=white, bottomrule=.15mm, left=2mm, rightrule=.15mm]
+\begin{tcolorbox}[enhanced jigsaw, opacityback=0, breakable, rightrule=.15mm, left=2mm, toptitle=1mm, colframe=quarto-callout-note-color-frame, leftrule=.75mm, opacitybacktitle=0.6, arc=.35mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Note}, toprule=.15mm, coltitle=black, colback=white, bottomtitle=1mm, bottomrule=.15mm, colbacktitle=quarto-callout-note-color!10!white, titlerule=0mm]
 
 This is a work in progress. Stay tuned :)
 
@@ -1736,7 +1736,7 @@ longitudinal study of parents and children: ALSPAC mothers cohort
 Gluckman, P. D., Hanson, M. A., Cooper, C., \& Thornburg, K. L. (2008).
 Effect of in utero and early-life conditions on adult health and disease
 {[}Journal Article{]}. \emph{New England Journal of Medicine},
-\emph{359}(1), 61--73.
+\emph{359}(1), 61--73. \url{https://doi.org/10.1056/NEJMra0708473}
 
 \bibitem[\citeproctext]{ref-Goodman2000}
 Goodman, R., Ford, T., Richards, H., Gatward, R., \& Meltzer, H. (2000).
@@ -1983,7 +1983,7 @@ https://github.com/SereDef/cumulative-ELS-score\newline
 \markright{Keywords}
 
 Adverse Childhood Experiences; Comorbidity; Physical Activity; Sleep;
-Diet, Mediterranean; Depression; Adiposity; moderation analysis.
+Diet, Mediterranean; Depression; Adiposity; Moderation analysis.
 
 \section*{Abbreviations}\label{abbreviations-1}
 \addcontentsline{toc}{section}{Abbreviations}
@@ -3318,7 +3318,7 @@ observable already in adolescence.
 thickness, \emph{(2)} carotid distensibility, and \emph{(3)} systolic
 blood pressure and diastolic blood pressure, measured at the age of 10
 years, were associated with brain volumes and white matter
-microstructure (ie, fractional anisotropy and mean diffusivity) at the
+microstructure (i.e., fractional anisotropy and mean diffusivity) at the
 age of 14 years. In addition to cross-sectional analyses, we explored
 associations with longitudinal change in each brain outcome from 10 to
 14 years. Analyses were based on 5341 children from the Generation R
@@ -3348,35 +3348,998 @@ confirm these results and assess potential causal mechanisms.
 
 \markright{Links}
 
+\textbf{Supplementary materials}: https://osf.io/2f4sg\newline
+\includegraphics[width=0.2\linewidth,height=\textheight,keepaspectratio]{7.Chapter/../img/qrcode_supp3.png}
+
+\textbf{Project's code}:
+https://github.com/SereDef/arterial-health-brain\newline
+\includegraphics[width=0.2\linewidth,height=\textheight,keepaspectratio]{7.Chapter/../img/qrcode_chap3_repo.png}
+
+\textbf{OSF Pre-registration}: https://osf.io/ryc7e\newline
+\includegraphics[width=0.2\linewidth,height=\textheight,keepaspectratio]{7.Chapter/../img/qrcode_els_repo.png}
+
+\section*{Keywords}\label{keywords-2}
+\addcontentsline{toc}{section}{Keywords}
+
+\markright{Keywords}
+
+Blood pressure; Carotid intima-media thickness; Carotid distensibility;
+Neuro-imaging; Adolescence.
+
+\section*{Abbreviations}\label{abbreviations-2}
+\addcontentsline{toc}{section}{Abbreviations}
+
+\markright{Abbreviations}
+
+Body Mass Index (BMI), Carotid intima--media thickness (cIMT), Coronary
+Artery Risk Development in Young Adults (CARDIA), Diffusion tensor
+imaging (DTI), False discovery rate (FDR), Fractional anisotropy (FA),
+Framingham Third-Generation Cohort Study (FHS-G3), Grey matter volume
+(GMV), Magnetic Resonance Images (MRI), Mean diffusivity (MD), Systolic
+/ diastolic blood pressure (SBP / DBP), Total brain volume (TBV).
+
+\newpage
+
 \section{Introduction}\label{introduction-5}
+
+While cardiovascular disease remains the leading cause of death
+worldwide, the global burden of brain disease is rapidly increasing and
+is often associated with the same risk factors, as highlighted by the
+latest statistical update from the American Heart Association (Tsao et
+al., 2022). Indeed, known cardiovascular risk factors such as
+hypertension (Alateeq et al., 2022; Beauchet et al., 2013), arterial
+stiffness (Badji et al., 2019; Baradaran \& Gupta, 2020) and
+atherosclerosis (Baradaran \& Gupta, 2020; Wang et al., 2022), have been
+consistently associated with the pathogenesis of cerebrovascular disease
+(e.g., stroke and white matter lesions) and cognitive decline in the
+elderly.
+
+Accumulating evidence further suggests that more subtle vascular
+health--related brain changes may occur in younger adults, far before
+evident injury events, and even when the overall vascular burden is low.
+For example, the Framingham Third-Generation Cohort Study (FHS-G3)
+investigators reported cross-sectional associations of arterial
+stiffness with lower grey-matter density and white-matter
+microstructural integrity, assessed with diffusion tensor imaging (DTI),
+in the fifth decade of life (Maillard et al., 2016, 2017). Higher
+arterial stiffness was also associated with poorer processing speed and
+executive function, and with larger lateral ventricular volumes in
+younger adults (30-45 years) from the FHS-G3 (Pase et al., 2016).
+Moreover, in a group of 45-year-old adults from the Coronary Artery Risk
+Development in Young Adults (CARDIA) Study, higher carotid intima--media
+thickness (cIMT), a subclinical marker of atherosclerosis, was
+associated with reduced cerebral blood flow and with poorer cognitive
+function five years later (Al Hazzouri et al., 2015; Cermakova et al.,
+2020). In the same cohort, midlife hypertension (Launer et al., 2015)
+and increasing blood pressure trajectories from young adulthood to
+middle age (Hu et al., 2022) were associated with lower cerebral
+perfusion and volumetric markers of poor white- and grey- matter health
+at age 50. Blood pressure was also linearly associated with reduced
+grey-matter volumes and white matter microstructural integrity at age 40
+in the FHS-G3 sample (Maillard et al., 2012) and with grey matter and
+white matter lesion volume before the age of 45 in the UK Biobank
+(Alateeq et al., 2022).
+
+Although analogous neuroimaging studies in children are lacking, there
+is evidence linking elevated blood pressure with cognitive performance
+already in childhood (Lamballais et al., 2018; Lande \& Kupferman,
+2019). Further, related cardiovascular risk factors, such as adiposity
+(Silva et al., 2021; Steegers et al., 2021) and diabetes (Redel et al.,
+2022) have been shown to associate with brain structural changes in
+children and adolescents. However, thus far very little attention has
+been paid to the potential impact of vascular health on the brain during
+development, despite evidence that arterial stiffening and thickening,
+and blood pressure dysregulation begin very early in life (Kruger et
+al., 2021; Rosner et al., 2013; Song et al., 2020). From a clinical
+standpoint, characterizing these associations is a fundamental step in
+the development of early intervention strategies that may prevent
+abnormal brain development before irreversible structural damage occurs.
+
+Using data from the Generation R Study, a large population-based birth
+cohort, we investigated how arterial thickness and distensibility, as
+well as systolic / diastolic blood pressure (SBP / DBP), measured at age
+10 associate with brain morphology and microstructure extracted from MRI
+scans at age 10 and 14 years.
+
+This study was \href{https://osf.io/ryc7e}{pre-registered}. Briefly, we
+hypothesized that: 1) higher cIMT, 2) lower distensibility and 3) higher
+SBP / DBP would associate with \emph{a)} lower total brain volume,
+\emph{b)} lower grey-matter volume, \emph{c)} lower global fractional
+anisotropy and/or \emph{d)} higher mean diffusivity.
 
 \section{Methods}\label{methods-5}
 
+The data that support the findings of this study are available from the
+corresponding author upon reasonable request.
+
+\subsection{Study population}\label{study-population}
+
+The study uses data from the Generation R Study, an ongoing
+population-based prospective cohort study based in the city of
+Rotterdam, the Netherlands. A detailed cohort description is provided
+elsewhere (Kooijman et al., 2016). In summary, the cohort included 9749
+children born between April 2002 and January 2006. The analytical sample
+consisted of 5341 singletons who participated in the baseline (i.e.,
+10-year) visit and had no siblings in the sample (see
+\href{https://osf.io/2f4sg}{Figure S1}). Of these children, 2054 had
+complete structural MRI data and 2308 had complete DTI data. Missing
+values in all variables of interest were imputed by random-forest
+multiple imputation. Ethical standards. The study conforms with the
+World Medical Association Declaration of Helsinki (2013). Written
+informed consent was obtained from parents. The medical ethical
+committee of Erasmus MC, University Medical Center Rotterdam approved
+the study.
+
+\subsection{Arterial health}\label{arterial-health}
+
+At the age of 10 years, carotid artery ultrasound was performed using
+the Logiq E9 device (GE Medical Systems, Wauwatosa, Wisconsin) while
+blood pressure was simultaneously assessed at the right brachial artery.
+Children were in supine position, with their head tilted slightly away
+from the transducer. The common carotid artery was identified in a
+longitudinal plane, \textasciitilde10 mm proximal from the carotid
+bifurcation. Each common carotid artery was measured three times,
+resulting in six recordings that ideally included multiple heart cycles.
+
+\textbf{\emph{Carotid intima--media thickness.}} For each ultrasound
+recording, and at all R waves of the simultaneous electrocardiogram,
+cIMT was computed at the far wall as the average distance between
+lumen-intima and media-adventitia borders. Average cIMT of all frames of
+the acquired image sequence was then computed. Analyses were performed
+offline and semiautomatically, using the application Carotid Studio
+(Cardiovascular Suite; Quipu srl, Pisa, Italy). Overall mean cIMT
+(millimeters) was standardized using a z-transformation - i.e., (value
+-- sample mean) / sample SD.
+
+\textbf{\emph{Carotid distensibility.}} The c coefficient, i.e., the
+relative change in lumen area during systole for a given peripheral
+pressure change was calculated as the difference between the maximal
+(diastolic) and minimal (systolic) lumen diameter of the carotid artery.
+Lumen diameter was computed as the average distance between the far and
+near media-adventitia interfaces for each frame of the acquired image
+sequence. Per recording, average distension and diameter values were
+used to compute the average carotid distensibility. Overall mean carotid
+distensibility (kPa\textsuperscript{−1} × 10\textsuperscript{−3}) was
+standardized using a z-transformation.
+
+\textbf{\emph{Blood pressure.}} SBP and DBP were measured at the right
+brachial artery, four times with 1-min intervals, using the validated
+automatic sphygmomanometer Datascope Accutorr PlusTM (Paramus, New
+Jersey, USA). SBP and DBP (mm Hg) were determined by excluding the first
+measurement and averaging the other measurements, and were standardized
+using a z-transformation.
+
+\subsection{Brain imaging}\label{brain-imaging}
+
+At the ages of 10 and 14 years, participants visited the Generation R
+research center at Erasmus MC -- Sophia Children's Hospital, where brain
+Magnetic Resonance Images (MRI) were acquired using a single, dedicated
+3-Tesla scanner (General Electric MR750w, Milwaukee, WI, USA) with an
+eight-channel head coil. To minimize head motion, participants were
+familiarized with the scanner environment using a mock scanner.
+
+\textbf{\emph{Brain volume.}} High resolution T1-weighted images were
+obtained with an inversion recovery fast-spoiled gradient recalled
+sequence (parameters: TR = 8.77 ms, TE = 3.4 ms, TI = 600 ms, flip angle
+= 10°, FOV = 220×220mm, acquisition matrix = 220×220, slice thickness =
+1mm, number of slices = 230, voxel size = 1×1×1mm, ARC
+Acceleration = 2). Images were processed using FreeSurfer 6.0 (Fischl,
+2012). The technical details of these procedures are described elsewhere
+(Muetzel et al., 2019). In brief, this included removal of the non-brain
+tissue, segmentation of white and grey matter structures, tessellation
+of the grey-white matter boundary, topology correction and surface
+deformation to identify the cortical grey-white matter and the
+grey-cerebrospinal fluid boundary. Reconstructions were visually
+inspected and those with insufficient quality were further excluded
+(Muetzel et al., 2019).
+
+Global metrics of volume, i.e., total brain (TBV) and total grey matter
+volume (GMV), as well as specific subcortical structures' volumes were
+extracted. Brain metrics were be standardized using a z-transformation.
+
+\textbf{\emph{White matter microstructure.}} DTI data were obtained
+using an echo-planar sequence with three b = 0 scans and 35
+diffusion-weighted images (b = 1000 s/mm\textsuperscript{2}). The
+following parameters were used: TR = 12.5 ms, TE = 72.8 ms, FOV =
+240×240 mm, acquisition matrix = 120×120, slice thickness = 2 mm, number
+of slices = 65. Images were pre-processed using
+\href{https://fsl.fmrib.ox.ac.uk/fsl/}{FSL 6.0.1}. Briefly, non-brain
+tissue was removed, images were corrected for eddy current-induced
+distortions and minor head motion using `eddy', and the diffusion
+gradient table was rotated accordingly. A diffusion tensor was fit at
+each voxel using a weighted least squares method, and common scalar
+metrics including global fractional anisotropy (FA) and mean diffusivity
+(MD) were computed. FA describes the degree to which water diffuses
+preferentially along one direction (e.g., along a bundle of myelinated
+axons) and is sensitive to microstructural changes. MD describes the
+average diffusion in all directions. White matter tracts, were also
+delineated using fully-automated probabilistic fiber tractography as
+implemented in FSL AutoPtx (De Groot et al., 2013). Average FA and MD
+were calculated for each tract. Global and tract-specific FA and MD
+values were standardized using a z-transformation. Image quality was
+assessed by manual and automated inspection (Muetzel et al., 2018).
+
+\subsection{Covariates}\label{covariates-1}
+
+Information on the maternal age and child ethnic background (based on
+parental country of origin and dichotomized into European
+vs.~non-European) was collected by questionnaire at enrollment. Date of
+birth and child sex, weight and gestational age were recorded at birth.
+Both caregivers reported on their highest completed educational level
+when children were 6 years old, and these reports were combined into a
+single ``parental education'' score. Child height (in m) and weight (in
+kg) were measured during the 10-years visit, and used to compute body
+mass index (BMI) z-scores.
+
+\subsection{Statistical analysis}\label{statistical-analysis-2}
+
+Analyses were conducted using R version 4.2.0(R Core Team, 2021). All
+scripts are
+\href{https://github.com/SereDef/arterial-health-brain}{publicly
+available}.
+
+\textbf{\emph{Imputation.}} Missing data in all exposures, outcomes and
+covariates were imputed by random-forest multiple imputation (Shah et
+al., 2014), using 20 imputed datasets, 10 trees and 40 iterations, as
+implemented by the mice R package (Buuren \& Groothuis-Oudshoorn, 2011).
+Details of the imputation model and quality are provided in
+Supplementary materials (\href{https://osf.io/2f4sg}{Methods S1} and
+\href{https://osf.io/2f4sg}{Table S1}).
+
+\textbf{\emph{Main analyses.}} All models were fit in each imputed
+dataset, and pooled across imputations using Rubin's rules (Rubin,
+1987). For each exposure of interest (i.e., carotid IMT and
+distensibility, SBP and DBP), four multiple linear regressions were
+performed including \emph{a)} TBV, \emph{b)} GMV, \emph{c)} global FA
+and \emph{d)} global MD, measured at age 14, as dependent variable. We
+ran a ``base model'' adjusting for child sex, height, age at MRI
+assessment and age gap between clinical and MRI assessments, and a
+``confounder model'', which additionally included child ethnicity, BMI
+z-score, parental education and maternal age. Covariates were identified
+based on the graphical criteria for confounding
+(\href{https://osf.io/2f4sg}{Figure S2}).
+
+To minimize false positive findings due to multiple testing (k=16),
+false discovery rate (FDR) correction (Benjamini \& Yekutieli, 2001) was
+applied to all p-values.
+
+Non-linear terms for each arterial health exposure (i.e., natural
+splines) were retained in the model when they significantly improved its
+fit (see \href{https://osf.io/2f4sg}{Methods S2}).
+
+\textbf{\emph{Exploratory follow-up analyses.}} We further assessed
+associations between each exposure and the longitudinal change in each
+neuroimaging marker from age 10 to 14 years, using linear mixed-effects
+models with a random intercept per subject (see
+\href{https://osf.io/2f4sg}{Methods S3}; (Bates et al., 2015)). Note
+that brain outcomes were not standardized for these analyses to prevent
+incorrect estimation of the correlation structure.
+
+To further characterize the regional specificity of these effects, we
+assessed associations with: total intracranial, cerebro-spinal fluid,
+white matter, cortical and subcortical grey matter volumes, as well as
+subcortical regional volumes (Accumbens, Amygdala, Caudate, Hippocampus,
+Pallidum, Putamen, Thalamus); white-matter tracts FA and MD (Cingulate
+gyrus, Cortico-spinal tract, Uncinate fasciculus, Inferior \& Superior
+longitudinal fasciculus, Major \& Minor forceps), and vertex-wise
+cortical thickness (see \href{https://osf.io/2f4sg}{Methods S4}) at age
+14. These latter analyses were further adjusted for total intracranial
+volume.
+
+Finally, since sex differences and premature birth have been implicated
+in the associations of interest (Gluckman et al., 2008; Pasha et al.,
+2018), we \emph{a)} investigated effect modification by sex and
+\emph{b)} additionally adjusted the main models for birthweight and
+gestational age at birth.
+
+\textbf{\emph{Sensitivity analyses.}} To assess the impact and adequacy
+of our sample selection and imputation procedure, we ran all analyses in
+the full cohort (\emph{n}=9749) and in the subsample with complete
+outcome data (\emph{n}=2054-2308).
+
+\section{Results}\label{results-2}
+
+Participants characteristics. Sample descriptives are displayed in
+Table~\ref{tbl-7.1} (see also \href{https://osf.io/2f4sg}{Tables
+S1-S2}).
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}@{}}
+
+\caption{\label{tbl-7.1}}
+
+\tabularnewline
+
+\toprule\noalign{}
+\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{1.0000} + 4\tabcolsep}@{}}{%
+\vtop{\hbox{\strut \textbf{Sample descriptives}}\hbox{\strut Generation
+R (GenR)}}} \\
+\midrule\noalign{}
+\endhead
+\midrule\noalign{}
+\multicolumn{3}{@{}>{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{1.0000} + 4\tabcolsep}@{}}{%
+{ \textsuperscript{a}}{Maternal education: low = ``secondary, phase 2''
+or lower; medium = ``higher, phase 1''; high = ``higher, phase 2''.
+Categorization based on ISCED 2011.}} \\
+\bottomrule\noalign{}
+\endlastfoot
+\textbf{Measure} & \textbf{Time point} & \textbf{Descriptives} \\
+Sex, n (\%) & Birth & ~ \\
+Male & ~ & 2647 (49.6\%) \\
+Female & ~ & 2694 (50.4\%) \\
+Ethnic background, n (\%) & Birth & ~ \\
+European & ~ & 3448 (64.6\%) \\
+Non-European & ~ & 1893 (35.4\%) \\
+Maternal age, years, mean (SD) & Birth & 30.9 (5.0) \\
+Maternal education\textsuperscript{a}, n (\%) & 6y & ~ \\
+Low & ~ & 2447 (45.8\%) \\
+Medium & ~ & 1424 (26.7\%) \\
+High & ~ & 1470 (27.5\%) \\
+Height, cm, mean (SD) & 10y & 141.5 (6.7) \\
+Body mass index (BMI), kg/m\textsuperscript{2}, median {[}range{]} & 10y
+& 17.01 {[}12.02-35.41{]} \\
+Carotid intima-media thickness (IMT), mm, mean (SD) & 10y & 0.46
+(0.04) \\
+Carotid distensibility, kPa\textsuperscript{−1}×10\textsuperscript{−3},
+mean (SD) & 10y & 57.2 (12.4) \\
+Systolic blood pressure (SBP), mm Hg, mean (SD) & 10y & 103 (8) \\
+Diastolic blood pressure (DBP), mm Hg, mean (SD) & 10y & 59 (6) \\
+\multirow{2}{=}{Age (at MRI visit), years, median {[}range{]}} & 10y &
+9.98 {[}8.55-13.00{]} \\
+& 14y & 13.82 {[}12.59-16.68{]} \\
+\multirow{2}{=}{Total brain volume (TBV), cm\textsuperscript{3}, mean
+(SD)} & 10y & 1196.8 (97.5) \\
+& 14y & 1223.8 (95.5) \\
+\multirow{2}{=}{Grey matter volume (GMV), cm\textsuperscript{3}, mean
+(SD)} & 10y & 750.7 (58.6) \\
+& 14y & 748.5 (56.3) \\
+\multirow{2}{=}{Global fractional anisotropy (FA), mean (SD)} & 10y &
+0.54 (0.02) \\
+& 14y & 0.55 (0.01) \\
+\multirow{2}{=}{Global mean diffusivity (MD), mm\textsuperscript{2}/sec
+× 10\textsuperscript{3}, mean (SD)} & 10y & 0.82 (0.02) \\
+& 14y & 0.80 (0.02) \\
+
+\end{longtable}
+
+\subsection{Main analyses}\label{main-analyses-2}
+
+An overview of the main results is presented in Figure~\ref{fig-7.1}.
+Complete model outputs are reported in supplementary materials
+(\href{https://osf.io/2f4sg}{Table S3}). Neither carotid IMT nor
+distensibility were significantly associated with any brain outcome
+(Figure~\ref{fig-7.1} A-B, \href{https://osf.io/2f4sg}{Table S3}). After
+adjustment for potential confounders, SBP was (cross-sectionally)
+associated with lower TBV (β {[}95\%CI{]} = -0.04 {[}-0.07;-0.01{]},
+P\textsubscript{\emph{FDR}} = .030) and GMV (β {[}95\%CI{]} = -0.05
+{[}-0.08;-0.01{]}, P\textsubscript{\emph{FDR}} = .030) but not with
+either FA or MD (Figure~\ref{fig-7.1} C,
+\href{https://osf.io/2f4sg}{Table S3}). Analogously, DBP was
+(cross-sectionally) associated with TBV (β {[}95\%CI{]} = -0.04
+{[}-0.07;-0.01{]}, P\textsubscript{\emph{FDR}} = .022) and GMV (β
+{[}95\%CI{]} = -0.04 {[}-0.07;-0.01{]}, P\textsubscript{\emph{FDR}} =
+.022), but not FA or MD (Figure~\ref{fig-7.1} D,
+\href{https://osf.io/2f4sg}{Table S3}).
+
+\begin{figure}[H]
+
+\centering{
+
+\includegraphics[width=1\linewidth,height=\textheight,keepaspectratio]{7.Chapter/Figures/F1_lineares.png}
+
+}
+
+\caption{\label{fig-7.1}\textbf{Arterial thickness, stiffness and blood
+pressure and brain morphology at 14 years.}\newline(A-D) For each
+exposure of interest: \textbf{A.} intima-media thickness (IMT);
+\textbf{B.} carotid distensibility; \textbf{C.} Systolic blood pressure
+(SBP); and \textbf{D.} Diastolic blood pressure (DBP), the standardized
+association estimates and their 95\% confidence intervals are displayed
+on the x-axis for each outcome (total brain volume (TBV) in blue; grey
+matter volume (GMV) in grey; global fractional anisotropy (FA) in red;
+and mean diffusivity (MD) in orange). The corresponding FDR-corrected
+P-values are also reported.}
+
+\end{figure}%
+
+We found evidence of a non-linear relationship between SBP and white
+matter microstructure (P=.032 for FA; P=.023 for MD) and between DBP and
+brain volumes (P=.012 for TBV; P=.006 for GMV). However, these
+departures from linearity were small, as shown in Figure~\ref{fig-7.2}
+and \href{https://osf.io/2f4sg}{Figure S3}.
+
+\begin{figure}[H]
+
+\centering{
+
+\includegraphics[width=1\linewidth,height=\textheight,keepaspectratio]{7.Chapter/Figures/F2_nonlinres.png}
+
+}
+
+\caption{\label{fig-7.2}\textbf{Non-linear relationships between blood
+pressure and brain morphology at 14 years.}\newline(A-D) The linear and
+non-linear relationship between SBP and \textbf{A.} FA; and \textbf{C.}
+MD; and between DBP and \textbf{B.} TBV; and \textbf{D.} GMV. Linear
+associations (black dashed line) were pooled across datasets (and
+correspond to the estimates presented in Figure 1), while non-linear
+associations (green continuous lines) were fit in each imputed dataset
+individually using natural splines with 4 knots. The gray vertical
+shadows also mark the --2.5 and +2.5 SD cutoffs of each exposure
+distribution.}
+
+\end{figure}%
+
+\subsection{Exploratory follow-up
+analyses}\label{exploratory-follow-up-analyses}
+
+In our exploratory longitudinal models, we did not find any significant
+interaction between arterial health markers and age at MRI measurement
+(\href{https://osf.io/2f4sg}{Table S4}; Figure 3). However, when
+interaction terms were excluded from the models, we could further
+confirm a negative main effect of SBP and DBP on total brain and grey
+matter volumes measured at 10 and 14 years
+(\href{https://osf.io/2f4sg}{Table S5}). Specifically, while TBV
+increased with age (\emph{b} {[}95\%CI{]} = 7.0 {[}6.4; 7.7{]}
+cm\textsuperscript{3} per year) each SD increase in SBP was associated
+with -3.6 {[}-6.4; -0.8{]} cm\textsuperscript{3}
+(P\textsubscript{\emph{FDR}} =.048) and each SD increase in DBP was
+associated with -3.4 {[}-6.1; -0.7{]} cm\textsuperscript{3}
+(P\textsubscript{\emph{FDR}} =.040) TBV. Conversely, GMV showed a slight
+decline over our age range (\emph{b} {[}95\%CI{]} = -0.6 {[}-1.0;
+-0.2{]} cm\textsuperscript{3} per year) while each SD increase in SBP
+was associated with -2.4 {[}-4.1; -0.7{]} cm\textsuperscript{3}
+(P\textsubscript{\emph{FDR}} =.042) and each SD increase in DBP was
+associated with -2.2 {[}-3.8; -0.6{]} cm\textsuperscript{3}
+(P\textsubscript{\emph{FDR}} =.039) GMV.
+
+\begin{figure}[H]
+
+\centering{
+
+\includegraphics[width=1\linewidth,height=\textheight,keepaspectratio]{7.Chapter/Figures/F3_lmmres.png}
+
+}
+
+\caption{\label{fig-7.3}\textbf{Structural brain changes from 10 to 14
+years.}\newline(A-D) The longitudinal change in total brain (A, B) and
+grey matter volume (C, D) is represented for children with ``high''
+levels of exposure (i.e., \textgreater{} 1 SD above the mean in systolic
+or diastolic blood pressure; in red), exposure values in the
+intermediate rage (i.e., between --1 and 1 SD around the mean; in green)
+or low levels of the exposure (i.e., \textless{} --1 SD below the mean;
+in blue). The distribution of age at MRI measurement is also depicted in
+grey on the bottom of each graph.}
+
+\end{figure}%
+
+Associations were largely homogenous between sexes
+(\href{https://osf.io/2f4sg}{Figure S4},
+\href{https://osf.io/2f4sg}{Table S6}) and did not seem to be explained
+by differences in cranium size, nor by a significant increase in
+cerebro-spinal fluid volumes (\href{https://osf.io/2f4sg}{Figure S5},
+\href{https://osf.io/2f4sg}{Table S7}). There were no significant
+associations between either exposure and total or region-specific
+subcortical volumes (\href{https://osf.io/2f4sg}{Figure S5},
+\href{https://osf.io/2f4sg}{Table S8}) nor with white matter tracts FA
+and MD (\href{https://osf.io/2f4sg}{Figures S6-S7},
+\href{https://osf.io/2f4sg}{Tables S9-S10}). SBP was significantly
+associated with total cortical volume (β {[}95\%CI{]} = -0.05
+{[}-0.08;-0.01{]}, P\textsubscript{\emph{FDR}} = .036; see
+\href{https://osf.io/2f4sg}{Figure S5} and
+\href{https://osf.io/2f4sg}{Table S7}), but no local associations with
+cortical thickness emerged from the vertex-wise analyses
+(\href{https://osf.io/2f4sg}{Table S11}).
+
+Notably, the associations between SBP and total/grey matter volumes were
+significantly attenuated after adjusting for birth-related covariates
+(TBV: β {[}95\%CI{]} = -0.03 {[}-0.06; 0.01{]},
+P\textsubscript{\emph{FDR}} = .230; GMV: β {[}95\%CI{]} = -0.03
+{[}-0.06; 0.00{]}, P\textsubscript{\emph{FDR}} = .229; see
+\href{https://osf.io/2f4sg}{Table S12}).
+
+\subsection{Sensitivity analyses}\label{sensitivity-analyses-1}
+
+Restricting the analyses to participants with complete outcome data
+(\emph{n} = 2054 for structural MRI and 2308 for DTI) did not
+substantively change the reported findings, besides a slight increase in
+effect sizes for both SBP (TBV: β {[}95\%CI{]} = -0.05
+{[}-0.09;-0.01{]}, P\textsubscript{\emph{FDR}} = .016; GMV: β
+{[}95\%CI{]} = -0.06 {[}-0.09;-0.02{]}, P\textsubscript{\emph{FDR}} =
+.013) and DBP (TBV and GMV: β {[}95\%CI{]} = -0.05 {[}-0.09;-0.02{]},
+P\textsubscript{\emph{FDR}} = .012; see
+\href{https://osf.io/2f4sg}{Tables S13-S14}).
+
 \section{Discussion}\label{discussion-5}
+
+In this population-based prospective cohort study, we observed that
+systolic and diastolic blood pressure at age 10 years were associated
+with lower total and grey matter volumes at age 10 and 14 years. The
+associations between systolic blood pressure and brain volumes were
+partially explained by birth-related confounders (particularly
+birthweight). No significant associations were observed for carotid
+intima-media thickness or distensibility, nor for white matter
+microstructural markers.
+
+\subsection{Interpretation of main
+findings}\label{interpretation-of-main-findings}
+
+To the best of our knowledge, this is the first study to establish a
+link between high blood pressure and brain volume reduction in the
+general pediatric population. Together with previous pediatric
+neuroimaging studies focusing mainly on adiposity (Brain Development
+Cooperative Group, 2012; Silva et al., 2021; Steegers et al., 2021), our
+findings confirm the idea that, already at school age and within
+subclinical ranges, an adverse cardiovascular profile may negatively
+impact brain development.
+
+We could not find evidence for a significant role of arterial wall
+thickness or stiffness on the adolescent brain, as we had expected based
+on adult reports (Cermakova et al., 2020; Maillard et al., 2016). This
+might have been due to insufficient sensitivity of ultrasound measures
+and/or lack of variability in these markers in healthy pediatric
+population.
+
+In line with our findings, several previous studies reported a negative
+association between (diastolic) blood pressure and cognitive function in
+children and adolescents (Dawson et al., 2021; Lamballais et al., 2018;
+Lande \& Kupferman, 2019; Lucas et al., 2022). The biological substrate
+underlying these associations, however, is less studied. Interestingly,
+a few transcranial Doppler ultrasound studies demonstrated blunted
+cerebrovascular reactivity in hypertensive children (Lande \& Kupferman,
+2019; Wong et al., 2011), however, these were conducted in small samples
+and suffer from wide inter-observer measurement variability. We
+corroborated and extended these findings using more stable structural
+MRI markers, and found that morphological brain outcomes (volumetric
+measures) may be already sensitive to early increase in arterial blood
+pressure. This was not true for microstructural properties of the white
+matter, which was unexpected, as adult studies typically point to
+impaired white matter integrity as an early marker of neurovascular
+pathology (Maillard et al., 2012). However, it is important to note that
+both macroscopic and microstructural changes reported in older
+populations may reflect different processes (e.g., cellular atrophy and
+white matter lesions) compared to earlier developmental windows, where
+the same neuroimaging markers may underlie, for instance, grey and white
+matter maturation. Indeed, while grey matter maturation tends to peak
+already in early adolescence, white matter growth typically doesn't peak
+until mid-adulthood, which could partly explain the observed pattern of
+results (Groeschel et al., 2010).
+
+\subsection{Biological mechanisms}\label{biological-mechanisms}
+
+Several potential mechanisms could explain the reported associations.
+For example, it was been proposed that high blood pressure could cause
+damage to the neurovasculature and result in reduced cerebral blood
+perfusion, leading to suboptimal oxygen and nutritional supplies, and
+potentially altering ongoing neurodevelopmental processes (Lucas et al.,
+2022). Additionally, alterations in immune and
+hypothalamic-pituitary-adrenal axis functioning resulting from
+chronically high blood pressure could trigger neuroinflammation, further
+impairing brain development (Perrotta et al., 2018).
+
+\subsection{Clinical relevance}\label{clinical-relevance}
+
+Over the past decades, the prevalence of high blood pressure among
+children and adolescents has increased dramatically, in concert with the
+global epidemic of obesity (Riley et al., 2018). Elevated blood pressure
+in childhood is known to track into adulthood and increase the risk of
+cardiovascular disease (Yang et al., 2020). In our 10-year-old sample,
+each 6 mmHg increase in diastolic blood pressure (i.e., 1 SD) was
+followed by a 3.6 cm\textsuperscript{3} reduction in total brain volume,
+and a 2.3 cm\textsuperscript{3} reduction in grey matter volume four
+years later. In our longitudinal follow-up analysis, we could further
+show how this corresponded to about one third of the estimated yearly
+change in TBV. These results are important from a developmental
+perspective, since they suggest that early detection and prevention of
+elevated blood pressure may be relevant not only for long-term
+cardiovascular health but also for structural brain development.
+However, whether these associations are clinically relevant (e.g., in
+terms of cognitive performance or mental health symptomatology) or
+whether they will evolve into long-term alteration of brain health,
+needs to be further studied. Nevertheless, pediatric screening for high
+blood pressure may be a relatively easy measure to implement to monitor
+and potentially decrease the risk of future brain disease and cognitive
+impairment.
+
+\subsection{Strengths and limitations}\label{strengths-and-limitations}
+
+This study used prospectively measured data from a large
+population-based sample. Detailed and objective measures of both
+arterial and brain health were available and selection bias due to
+non-response was addressed thoroughly using multiple imputation and
+sensitivity analyses. However, it is important to note that, although we
+adjusted the analyses for several socio-demographic and lifestyle
+factors known to influence the associations, residual confounding, for
+example by genetic predisposition, exposure to stress, nutritional
+intake or physical activity, may still be present. Additionally, note
+that, for practical reasons, blood pressure was measured in supine
+position in this study, as opposed to more conventional sitting
+measures. Further studies are undoubtedly needed to replicate and
+validate these findings, and to further investigate potential underlying
+mechanisms and/or modifiable factors that could explain or attenuate
+these associations.
+
+\subsection{Conclusions}\label{conclusions-1}
+
+High blood pressure in childhood was associated with suboptimal brain
+development already in early adolescence, particularly with respect to
+reduced total brain and grey matter volumes. Pediatric screening for
+high blood pressure may thus be relevant not only for the prevention of
+long-term cardiovascular health problems, but also for structural brain
+development. Identifying such early biomarkers of neurovascular health
+entails important implications for future clinical and public heath
+priorities, especially considering the established relationship between
+these markers and later prognosis of cerebrovascular disease and
+dementia.
 
 \section*{References}\label{references-6}
 \addcontentsline{toc}{section}{References}
 
 \markright{References}
 
+\phantomsection\label{refs--7}
+\begin{CSLReferences}{1}{0}
+\bibitem[\citeproctext]{ref-AlHazzouri2015}
+Al Hazzouri, A. Z., Vittinghoff, E., Sidney, S., Reis, J. P., Jacobs Jr,
+D. R., \& Yaffe, K. (2015). Intima-media thickness and cognitive
+function in stroke-free middle-aged adults: Findings from the coronary
+artery risk development in young adults study {[}Journal Article{]}.
+\emph{Stroke}, \emph{46}(8), 2190--2196.
+
+\bibitem[\citeproctext]{ref-Alateeq2022}
+Alateeq, K., Walsh, E. I., Abhayaratna, W. P., \& Cherbuin, N. (2022).
+Effects of higher normal blood pressure on brain are detectable before
+middle-age and differ by sex {[}Journal Article{]}. \emph{Journal of
+Clinical Medicine}, \emph{11}(11), 3127.
+\url{https://doi.org/10.3390/jcm11113127}
+
+\bibitem[\citeproctext]{ref-Badji2019}
+Badji, A., Sabra, D., Bherer, L., Cohen-Adad, J., Girouard, H., \&
+Gauthier, C. J. (2019). Arterial stiffness and brain integrity: A review
+of MRI findings {[}Journal Article{]}. \emph{Ageing Research Reviews},
+\emph{53}, 100907.
+https://doi.org/\url{https://doi.org/10.1016/j.arr.2019.05.001}
+
+\bibitem[\citeproctext]{ref-Baradaran2020}
+Baradaran, H., \& Gupta, A. (2020). Brain imaging biomarkers of carotid
+artery disease {[}Journal Article{]}. \emph{Annals of Translational
+Medicine}, \emph{8}(19), 1277--1277.
+\url{https://doi.org/10.21037/atm-20-1939}
+
+\bibitem[\citeproctext]{ref-Bates2015}
+Bates, D., Mächler, M., Bolker, B., \& Walker, S. (2015). Fitting linear
+mixed-effects models using lme4 {[}Journal Article{]}. \emph{Journal of
+Statistical Software}, \emph{67}(1), 1--48.
+\url{https://doi.org/10.18637/jss.v067.i01}
+
+\bibitem[\citeproctext]{ref-Beauchet2013}
+Beauchet, O., Celle, S., Roche, F., Bartha, R., Montero-Odasso, M.,
+Allali, G., \& Annweiler, C. (2013). Blood pressure levels and brain
+volume reduction: A systematic review and meta-analysis {[}Journal
+Article{]}. \emph{J Hypertens}, \emph{31}(8), 1502--1516.
+\url{https://doi.org/10.1097/HJH.0b013e32836184b5}
+
+\bibitem[\citeproctext]{ref-Benjamini2001}
+Benjamini, Y., \& Yekutieli, D. (2001). The control of the false
+discovery rate in multiple testing under dependency {[}Journal
+Article{]}. \emph{Annals of Statistics}, 1165--1188.
+
+\bibitem[\citeproctext]{ref-BrainDev2012}
+Brain Development Cooperative Group. (2012). Total and regional brain
+volumes in a population-based normative sample from 4 to 18 years: The
+NIH MRI study of normal brain development {[}Journal Article{]}.
+\emph{Cerebral Cortex}, \emph{22}(1), 1--12.
+
+\bibitem[\citeproctext]{ref-Buuren2011}
+Buuren, S., \& Groothuis-Oudshoorn, C. (2011). MICE: Multivariate
+imputation by chained equations in r {[}Journal Article{]}.
+\emph{Journal of Statistical Software}, \emph{45}.
+\url{https://doi.org/10.18637/jss.v045.i03}
+
+\bibitem[\citeproctext]{ref-Cermakova2020}
+Cermakova, P., Ding, J., Meirelles, O., Reis, J., Religa, D., Schreiner,
+P. J., Jacobs, D. R., Bryan, R. N., \& Launer, L. J. (2020). Carotid
+intima-media thickness and markers of brain health in a biracial
+middle-aged cohort: CARDIA brain MRI sub-study {[}Journal Article{]}.
+\emph{The Journals of Gerontology. Series A, Biological Sciences and
+Medical Sciences}, \emph{75}(2), 380--386.
+\url{https://doi.org/10.1093/gerona/glz039}
+
+\bibitem[\citeproctext]{ref-Dawson2021}
+Dawson, A. E., Kallash, M., Spencer, J. D., \& Wilson, C. S. (2021). The
+pressure's on: Understanding neurocognitive and psychological
+associations with pediatric hypertension to inform comprehensive care
+{[}Journal Article{]}. \emph{Pediatric Nephrology}, \emph{36}(12),
+3869--3883. \url{https://doi.org/10.1007/s00467-021-05077-w}
+
+\bibitem[\citeproctext]{ref-DeGroot2013}
+De Groot, M., Vernooij, M. W., Klein, S., Ikram, M. A., Vos, F. M.,
+Smith, S. M., Niessen, W. J., \& Andersson, J. L. (2013). Improving
+alignment in tract-based spatial statistics: Evaluation and optimization
+of image registration {[}Journal Article{]}. \emph{Neuroimage},
+\emph{76}, 400--411.
+
+\bibitem[\citeproctext]{ref-Fischl2012}
+Fischl, B. (2012). FreeSurfer {[}Journal Article{]}. \emph{Neuroimage},
+\emph{62}(2), 774--781.
+\url{https://doi.org/10.1016/j.neuroimage.2012.01.021}
+
+\bibitem[\citeproctext]{ref-Gluckman2008}
+Gluckman, P. D., Hanson, M. A., Cooper, C., \& Thornburg, K. L. (2008).
+Effect of in utero and early-life conditions on adult health and disease
+{[}Journal Article{]}. \emph{New England Journal of Medicine},
+\emph{359}(1), 61--73. \url{https://doi.org/10.1056/NEJMra0708473}
+
+\bibitem[\citeproctext]{ref-Groeschel2010}
+Groeschel, S., Vollmer, B., King, M. D., \& Connelly, A. (2010).
+Developmental changes in cerebral grey and white matter volume from
+infancy to adulthood {[}Journal Article{]}. \emph{International Journal
+of Developmental Neuroscience}, \emph{28}(6), 481--489.
+https://doi.org/\url{https://doi.org/10.1016/j.ijdevneu.2010.06.004}
+
+\bibitem[\citeproctext]{ref-Hanlon2020}
+Hanlon, P., McCallum, M., Jani, B. D., McQueenie, R., Lee, D., \& Mair,
+F. S. (2020). Association between childhood maltreatment and the
+prevalence and complexity of multimorbidity: A cross-sectional analysis
+of 157,357 UK biobank participants {[}Journal Article{]}. \emph{Journal
+of Comorbidity}, \emph{10}, 2235042X10944344.
+
+\bibitem[\citeproctext]{ref-Hu2022}
+Hu, Y.-H., Halstead, M. R., Bryan, R. N., Schreiner, P. J., Jacobs, J.,
+David R., Sidney, S., Lewis, C. E., \& Launer, L. J. (2022). Association
+of early adulthood 25-year blood pressure trajectories with cerebral
+lesions and brain structure in midlife {[}Journal Article{]}. \emph{JAMA
+Network Open}, \emph{5}(3), e221175--e221175.
+\url{https://doi.org/10.1001/jamanetworkopen.2022.1175}
+
+\bibitem[\citeproctext]{ref-Kooijman2016}
+Kooijman, M. N., Kruithof, C. J., Duijn, C. M. van, Duijts, L., Franco,
+O. H., Ijzendoorn, M. H. van, Jongste, J. C. de, Klaver, C. C. W., Lugt,
+A. van der, Mackenbach, J. P., Moll, H. A., Peeters, R. P., Raat, H.,
+Rings, E. H. H. M., Rivadeneira, F., Schroeff, M. P. van der, Steegers,
+E. A. P., Tiemeier, H., Uitterlinden, A. G., \ldots{} Jaddoe, V. W. V.
+(2016). The generation r study: Design and cohort update 2017 {[}Journal
+Article{]}. \emph{European Journal of Epidemiology}, \emph{31}(12),
+1243--1264. \url{https://doi.org/10.1007/s10654-016-0224-9}
+
+\bibitem[\citeproctext]{ref-Kruger2021}
+Kruger, R., Gafane-Matemane, L. F., \& Kagura, J. (2021). Racial
+differences of early vascular aging in children and adolescents
+{[}Journal Article{]}. \emph{Pediatric Nephrology}, \emph{36}(5),
+1087--1108. \url{https://doi.org/10.1007/s00467-020-04593-5}
+
+\bibitem[\citeproctext]{ref-Lamballais2018}
+Lamballais, S., Sajjad, A., Leening, M. J. G., Gaillard, R., Franco, O.
+H., Mattace‐Raso, F. U. S., Jaddoe, V. W. V., Roza, S. J., Tiemeier, H.,
+\& Ikram, M. A. (2018). Association of blood pressure and arterial
+stiffness with cognition in 2 population-based child and adult cohorts
+{[}Journal Article{]}. \emph{Journal of the American Heart Association},
+\emph{7}(21), e009847. \url{https://doi.org/doi:10.1161/JAHA.118.009847}
+
+\bibitem[\citeproctext]{ref-Lande2019}
+Lande, M. B., \& Kupferman, J. C. (2019). Blood pressure and cognitive
+function in children and adolescents {[}Journal Article{]}.
+\emph{Hypertension}, \emph{73}(3), 532--540.
+\url{https://doi.org/doi:10.1161/HYPERTENSIONAHA.118.11686}
+
+\bibitem[\citeproctext]{ref-Launer2015}
+Launer, L. J., Lewis, C. E., Schreiner, P. J., Sidney, S., Battapady,
+H., Jacobs, D. R., Lim, K. O., D'Esposito, M., Zhang, Q., \& Reis, J.
+(2015). Vascular factors and multiple measures of early brain health:
+CARDIA brain MRI study {[}Journal Article{]}. \emph{PloS One},
+\emph{10}(3), e0122138.
+
+\bibitem[\citeproctext]{ref-Lucas2022}
+Lucas, I., Puteikis, K., Sinha, M. D., Litwin, M., Merkevicius, K.,
+Azukaitis, K., Rus, R., Pac, M., Obrycki, L., Bårdsen, T.,
+Śladowska-Kozłowska, J., Sagsak, E., Lurbe, E., Jiménez-Murcia, S.,
+Jankauskiene, A., \& Fernández-Aranda, F. (2022). Knowledge gaps and
+future directions in cognitive functions in children and adolescents
+with primary arterial hypertension: A systematic review {[}Journal
+Article{]}. \emph{Front Cardiovasc Med}, \emph{9}, 973793.
+\url{https://doi.org/10.3389/fcvm.2022.973793}
+
+\bibitem[\citeproctext]{ref-Maillard2017}
+Maillard, P., Mitchell, G. F., Himali, J. J., Beiser, A., Fletcher, E.,
+Tsao, C. W., Pase, M. P., Satizabal, C. L., Vasan, R. S., \& Seshadri,
+S. (2017). Aortic stiffness, increased white matter free water, and
+altered microstructural integrity: A continuum of injury {[}Journal
+Article{]}. \emph{Stroke}, \emph{48}(6), 1567--1573.
+
+\bibitem[\citeproctext]{ref-Maillard2016}
+Maillard, P., Mitchell, G. F., Himali, J. J., Beiser, A., Tsao, C. W.,
+Pase, M. P., Satizabal, C. L., Vasan, R. S., Seshadri, S., \& DeCarli,
+C. (2016). Effects of arterial stiffness on brain integrity in young
+adults from the framingham heart study {[}Journal Article{]}.
+\emph{Stroke}, \emph{47}(4), 1030--1036.
+
+\bibitem[\citeproctext]{ref-Maillard2012}
+Maillard, P., Seshadri, S., Beiser, A., Himali, J. J., Au, R., Fletcher,
+E., Carmichael, O., Wolf, P. A., \& DeCarli, C. (2012). Effects of
+systolic blood pressure on white-matter integrity in young adults in the
+framingham heart study: A cross-sectional study {[}Journal Article{]}.
+\emph{The Lancet Neurology}, \emph{11}(12), 1039--1047.
+
+\bibitem[\citeproctext]{ref-Muetzel2018}
+Muetzel, R. L., Blanken, L. M. E., Ende, J. van der, El Marroun, H.,
+Shaw, P., Sudre, G., Lugt, A. van der, Jaddoe, V. W. V., Verhulst, F.
+C., Tiemeier, H., \& White, T. (2018). Tracking brain development and
+dimensional psychiatric symptoms in children: A longitudinal
+population-based neuroimaging study {[}Journal Article{]}. \emph{Am J
+Psychiatry}, \emph{175}(1), 54--62.
+\url{https://doi.org/10.1176/appi.ajp.2017.16070813}
+
+\bibitem[\citeproctext]{ref-Muetzel2019}
+Muetzel, R. L., Mulder, R. H., Lamballais, S., Cortes Hidalgo, A. P.,
+Jansen, P., Güroğlu, B., Vernooiji, M. W., Hillegers, M., White, T., El
+Marroun, H., \& Tiemeier, H. (2019). Frequent bullying involvement and
+brain morphology in children {[}Journal Article{]}. \emph{Frontiers in
+Psychiatry}, \emph{10}. \url{https://doi.org/10.3389/fpsyt.2019.00696}
+
+\bibitem[\citeproctext]{ref-Pase2016}
+Pase, M. P., Himali, J. J., Mitchell, G. F., Beiser, A., Maillard, P.,
+Tsao, C., Larson, M. G., DeCarli, C., Vasan, R. S., \& Seshadri, S.
+(2016). Association of aortic stiffness with cognition and brain aging
+in young and middle-aged adults {[}Journal Article{]}.
+\emph{Hypertension}, \emph{67}(3), 513--519.
+\url{https://doi.org/doi:10.1161/HYPERTENSIONAHA.115.06610}
+
+\bibitem[\citeproctext]{ref-Pasha2018}
+Pasha, E. P., Birdsill, A. C., Oleson, S., Tanaka, H., \& Haley, A. P.
+(2018). Associations of carotid arterial compliance and white matter
+diffusion metrics during midlife: Modulation by sex {[}Journal
+Article{]}. \emph{Neurobiology of Aging}, \emph{66}, 59--67.
+https://doi.org/\url{https://doi.org/10.1016/j.neurobiolaging.2018.02.012}
+
+\bibitem[\citeproctext]{ref-Perrotta2018}
+Perrotta, M., Lembo, G., \& Carnevale, D. (2018). The interactions of
+the immune system and the brain in hypertension {[}Journal Article{]}.
+\emph{Current Hypertension Reports}, \emph{20}(1), 7.
+\url{https://doi.org/10.1007/s11906-018-0808-8}
+
+\bibitem[\citeproctext]{ref-Redel2022}
+Redel, J. M., DiFrancesco, M., Lee, G. R., Ziv, A., Dolan, L. M., Brady,
+C. C., \& Shah, A. S. (2022). Cerebral blood flow is lower in youth with
+type 2 diabetes compared to obese controls: A pilot study {[}Journal
+Article{]}. \emph{Pediatric Diabetes}, \emph{23}(3), 291--300.
+https://doi.org/\url{https://doi.org/10.1111/pedi.13313}
+
+\bibitem[\citeproctext]{ref-Riley2018}
+Riley, M., Hernandez, A. K., \& Kuznia, A. L. (2018). High blood
+pressure in children and adolescents {[}Journal Article{]}. \emph{Am Fam
+Physician}, \emph{98}(8), 486--494.
+
+\bibitem[\citeproctext]{ref-Rosner2013}
+Rosner, B., Cook, N. R., Daniels, S., \& Falkner, B. (2013). Childhood
+blood pressure trends and risk factors for high blood pressure: The
+NHANES experience 1988-2008 {[}Journal Article{]}. \emph{Hypertension},
+\emph{62}(2), 247--254.
+
+\bibitem[\citeproctext]{ref-Rubin1987}
+Rubin, D. B. (1987). \emph{Multiple imputation for nonresponse in
+surveys}. John Wiley \& Sons.
+\url{https://doi.org/10.1002/9780470316696}
+
+\bibitem[\citeproctext]{ref-Shah2014}
+Shah, A. D., Bartlett, J. W., Carpenter, J., Nicholas, O., \& Hemingway,
+H. (2014). Comparison of random forest and parametric imputation models
+for imputing missing data using MICE: A CALIBER study {[}Journal
+Article{]}. \emph{Am J Epidemiol}, \emph{179}(6), 764--774.
+\url{https://doi.org/10.1093/aje/kwt312}
+
+\bibitem[\citeproctext]{ref-Silva2021}
+Silva, C. C. V., Jaddoe, V. W. V., Muetzel, R. L., Santos, S., \& El
+Marroun, H. (2021). Body fat, cardiovascular risk factors and brain
+structure in school-age children {[}Journal Article{]}.
+\emph{International Journal of Obesity}, \emph{45}(11), 2425--2431.
+\url{https://doi.org/10.1038/s41366-021-00913-3}
+
+\bibitem[\citeproctext]{ref-Skou2022}
+Skou, S. T., Mair, F. S., Fortin, M., Guthrie, B., Nunes, B. P.,
+Miranda, J. J., Boyd, C. M., Pati, S., Mtenga, S., \& Smith, S. M.
+(2022). Multimorbidity {[}Journal Article{]}. \emph{Nature Reviews
+Disease Primers}, \emph{8}(1), 1--22.
+\url{https://doi.org/10.1038/s41572-022-00376-4}
+
+\bibitem[\citeproctext]{ref-Song2020}
+Song, P., Fang, Z., Wang, H., Cai, Y., Rahimi, K., Zhu, Y., Fowkes, F.
+G. R., Fowkes, F. J., \& Rudan, I. (2020). Global and regional
+prevalence, burden, and risk factors for carotid atherosclerosis: A
+systematic review, meta-analysis, and modelling study {[}Journal
+Article{]}. \emph{The Lancet Global Health}, \emph{8}(5), e721--e729.
+
+\bibitem[\citeproctext]{ref-Steegers2021}
+Steegers, C., Blok, E., Lamballais, S., Jaddoe, V., Bernardoni, F.,
+Vernooij, M., Ende, J. van der, Hillegers, M., Micali, N., Ehrlich, S.,
+Jansen, P., Dieleman, G., \& White, T. (2021). The association between
+body mass index and brain morphology in children: A population-based
+study {[}Journal Article{]}. \emph{Brain Struct Funct}, \emph{226}(3),
+787--800. \url{https://doi.org/10.1007/s00429-020-02209-0}
+
+\bibitem[\citeproctext]{ref-Tsao2022}
+Tsao, C. W., Aday, A. W., Almarzooq, Z. I., Alonso, A., Beaton, A. Z.,
+Bittencourt, M. S., Boehme, A. K., Buxton, A. E., Carson, A. P.,
+Commodore-Mensah, Y., Elkind, M. S. V., Evenson, K. R., Eze-Nliam, C.,
+Ferguson, J. F., Generoso, G., Ho, J. E., Kalani, R., Khan, S. S.,
+Kissela, B. M., \ldots{} null, null. (2022). Heart disease and stroke
+statistics --- 2022 update: A report from the american heart association
+{[}Journal Article{]}. \emph{Circulation}, \emph{145}(8), e153--e639.
+\url{https://doi.org/10.1161/CIR.0000000000001052}
+
+\bibitem[\citeproctext]{ref-Wang2022}
+Wang, W., Norby, F. L., Alonso, A., Gottesman, R. F., Jack, Jr.,
+Clifford R., Meyer, M. L., Knopman, D. S., Sullivan, K. J., Hughes, T.
+M., Lakshminarayan, K., \& Lutsey, P. L. (2022). Association of carotid
+intima-media thickness with brain MRI markers in the atherosclerosis
+risk in communities neurocognitive study (ARIC-NCS) {[}Journal
+Article{]}. \emph{Journal of Stroke and Cerebrovascular Diseases},
+\emph{31}(5).
+\url{https://doi.org/10.1016/j.jstrokecerebrovasdis.2022.106388}
+
+\bibitem[\citeproctext]{ref-Wong2011}
+Wong, L. J., Kupferman, J. C., Prohovnik, I., Kirkham, F. J., Goodman,
+S., Paterno, K., Sharma, M., Brosgol, Y., \& Pavlakis, S. G. (2011).
+Hypertension impairs vascular reactivity in the pediatric brain
+{[}Journal Article{]}. \emph{Stroke}, \emph{42}(7), 1834--1838.
+
+\bibitem[\citeproctext]{ref-WorldMedicalAssociation2013}
+World Medical Association. (2013). World medical association declaration
+of helsinki: Ethical principles for medical research involving human
+subjects {[}Journal Article{]}. \emph{JAMA}, \emph{310}(20), 2191--2194.
+\url{https://doi.org/10.1001/jama.2013.281053}
+
+\bibitem[\citeproctext]{ref-Yang2020}
+Yang, L., Magnussen, C. G., Yang, L., Bovet, P., \& Xi, B. (2020).
+Elevated blood pressure in childhood or adolescence and cardiovascular
+outcomes in adulthood {[}Journal Article{]}. \emph{Hypertension},
+\emph{75}(4), 948--955.
+\url{https://doi.org/doi:10.1161/HYPERTENSIONAHA.119.14168}
+
+\end{CSLReferences}
+
 \bookmarksetup{startatroot}
 
 \chapter{General discussion}\label{general-discussion}
 
-In this dissertation \ldots{} We focus on adolescence, a critical
-developmental period, when many mental health problems first emerge, and
-early signs of cardio-metabolic dysregulation begin to manifest. By
-examining these relationships prospectively, this thesis seeks to
-provide a clearer understanding of how ELS impacts psycho-physical
-health during this formative stage of life.
+In this dissertation we we observed that systolic and diastolic blood
+pressure at age 10 years were associated with lower total and grey
+matter volumes at age 10 and 14 years. We focus on adolescence, a
+critical developmental period, when many mental health problems first
+emerge, and early signs of cardio-metabolic dysregulation begin to
+manifest. By examining these relationships prospectively, this thesis'
+goal was to provide a clearer understanding of \textbf{(a)} how ELS
+impacts psycho-physical health and \textbf{(b)} how mental and physical
+health influence each other, during this critical, formative stage of
+life.
 
-I started this book with a confession: I hated writing this. Since you
-meade it this far (or anyway happened to open this doomed chapter), you
-won the dubious reward of knowing why. Here is a collection of thing I
-would have done differently, followed by a few things I wish we all did
-differently.
+From a clinical standpoint, characterizing these associations is a
+fundamental step in the development of early intervention strategies
+that may prevent mental and physical health problems before the onset of
+more severe symptoms and irreversible structural changes (e.g.~to the
+brain, the heart or the arteries).
+
+Now, I started this book with a confession: I absolutely hated writing
+this thesis, down to almost every paragraph. But, because you made it
+this far - or anyway you happened to open the book on this doomed last
+chapter - you won the dubious reward of getting to know why. Here is a
+collection of things I would have done differently, followed by a few
+things I wish we all did differently.
 
 \section{Modelling ELS}\label{modelling-els}
+
+In the four chapter enclosed in Part I of this thesis, I have tried to
+map the influence of ELS on physical and mental health, including some
+biomarkers. I say ``influence'' with cognition, mind you. I saw you
+raising your eyebrow. ``Causal wording, rephrase'' is among the most
+common ``co-author comments'' I've seen across the years, which should
+have surprised me after 3 university degrees, in three different fields,
+all dominated by the same mantra: ``correlation is not causation''.
+
+\subsection{Causal(-ish) inferences}\label{causal-ish-inferences}
+
+This comes from a good place of course, becasue it is so true and also
+so frequently i want to shout it at
 
 \subsection{Parental reports}\label{parental-reports}
 
@@ -3445,6 +4408,16 @@ consideration. Use of additive models of multiple risk factors is a
 common approach for dealing with this dilemma.
 
 \section{Modelling comorbidity}\label{modelling-comorbidity}
+
+``Together with previous pediatric neuroimaging studies focusing mainly
+on adiposity (Brain Development Cooperative Group, 2012; Silva et al.,
+2021; Steegers et al., 2021), our findings confirm the idea that,
+already at school age and within subclinical ranges, an adverse
+cardiovascular profile may negatively impact brain development.''
+
+Additionally, alterations in immune and hypothalamic-pituitary-adrenal
+axis functioning resulting from chronically high blood pressure could
+trigger neuroinflammation, further impairing brain development
 
 \subsection{old data, old insights: mental
 health}\label{old-data-old-insights-mental-health}
@@ -3574,9 +4547,30 @@ writing this was so much harder then I expected, and in all honesty this
 is a big part of why. potential publication bias may limit the
 generalizability of our conclusions. Studies with null findings are less
 likely to be published than those with statistically significant
-results.
+results. journals should not gatekeep knowledge.
 
-journals should not gatekeep knowledge
+The academic publishing dream: You do the research - You write the paper
+- You review someone else's paper (for free) - Then you pay to publish
+your own - And your university pays again so others can read it.
+Meanwhile, publishers sit back and make hugh profits --- built on public
+funding, unpaid labor, and a prestige system they didn't create but
+fully exploit. And we keep playing along. Maybe it's time we stop
+pretending this is normal. There are alternatives. Fair, open,
+non-profit models exist --- run by researchers for researchers. Think
+community-owned journals, preprints, and platforms that don't turn
+scientific knowledge into a paywall business. We don't need to burn down
+the system --- we just need to stop feeding it. It is about time
+academics and academic leaders learn the craft of negotiating. Had they
+had it, things might have ended differently and they (and the tax payer)
+would not have been exploited in this ridiculous way. Perhaps it is not
+too late yet: get organised and bargain. Publishers are not invincible!
+If there is such a sincere agreement in academic community that the
+current model is not sustainable, then where are lawsuits? And why such
+lawsuits are not brought up by national-level funding watchdogs, as
+after all it is mostly public funding that's being extracted via
+scientific publication process to\ldots{} where?
+
+https://news.justia.com/antitrust-lawsuit-brought-against-academic-publishers-for-peer-review-and-submission-restrictions/
 
 code is the scientific product
 
@@ -3584,27 +4578,6 @@ code is the scientific product
 \addcontentsline{toc}{section}{References}
 
 \markright{References}
-
-\section*{References}\label{bibliography--7}
-\addcontentsline{toc}{section}{References}
-
-\phantomsection\label{refs--7}
-\begin{CSLReferences}{1}{0}
-\bibitem[\citeproctext]{ref-Hanlon2020}
-Hanlon, P., McCallum, M., Jani, B. D., McQueenie, R., Lee, D., \& Mair,
-F. S. (2020). Association between childhood maltreatment and the
-prevalence and complexity of multimorbidity: A cross-sectional analysis
-of 157,357 UK biobank participants {[}Journal Article{]}. \emph{Journal
-of Comorbidity}, \emph{10}, 2235042X10944344.
-
-\bibitem[\citeproctext]{ref-Skou2022}
-Skou, S. T., Mair, F. S., Fortin, M., Guthrie, B., Nunes, B. P.,
-Miranda, J. J., Boyd, C. M., Pati, S., Mtenga, S., \& Smith, S. M.
-(2022). Multimorbidity {[}Journal Article{]}. \emph{Nature Reviews
-Disease Primers}, \emph{8}(1), 1--22.
-\url{https://doi.org/10.1038/s41572-022-00376-4}
-
-\end{CSLReferences}
 
 
 

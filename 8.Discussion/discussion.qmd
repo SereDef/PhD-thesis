@@ -1,12 +1,20 @@
 
 # General discussion
 
-In this dissertation ...
-We focus on adolescence, a critical developmental period, when many mental health problems first emerge, and early signs of cardio-metabolic dysregulation begin to manifest. By examining these relationships prospectively, this thesis seeks to provide a clearer understanding of how ELS impacts psycho-physical health during this formative stage of life.
+In this dissertation we 
+we observed that systolic and diastolic blood pressure at age 10 years were associated with lower total and grey matter volumes at age 10 and 14 years.
+We focus on adolescence, a critical developmental period, when many mental health problems first emerge, and early signs of cardio-metabolic dysregulation begin to manifest. By examining these relationships prospectively, this thesis' goal was to provide a clearer understanding of **(a)** how ELS impacts psycho-physical health and **(b)** how mental and physical health influence each other, during this critical, formative stage of life.
 
-I started this book with a confession: I hated writing this. Since you meade it this far (or anyway happened to open this doomed chapter), you won the dubious reward of knowing why. Here is a collection of thing I would have done differently, followed by a few things I wish we all did differently.  
+From a clinical standpoint, characterizing these associations is a fundamental step in the development of early intervention strategies that may prevent mental and physical health problems before the onset of more severe symptoms and irreversible structural changes (e.g. to the brain, the heart or the arteries).
+
+Now, I started this book with a confession: I absolutely hated writing this thesis, down to almost every paragraph. But, because you made it this far - or anyway you happened to open the book on this doomed last chapter - you won the dubious reward of getting to know why. 
+Here is a collection of things I would have done differently, followed by a few things I wish we all did differently.
 
 ## Modelling ELS
+In the four chapter enclosed in Part I of this thesis, I have tried to map the influence of ELS on physical and mental health, including some biomarkers. I say "influence" with cognition, mind you. I saw you raising your eyebrow. "Causal wording, rephrase" is among the most common "co-author comments" I've seen across the years, which should have surprised me after 3 university degrees, in three different fields, all dominated by the same mantra: "correlation is not causation". 
+
+### Causal(-ish) inferences
+This comes from a good place of course, becasue it is so true and also so frequently i want to shout it at 
 
 ### Parental reports 
 Like most previous literatures, children’s stress exposure information was obtained via parental report and thus likely reflect a combination of parents' own stress experiences, psychological state, and personality. 
@@ -50,6 +58,10 @@ models of multiple risk factors is a common approach for dealing
 with this dilemma.
 
 ## Modelling comorbidity 
+
+"Together with previous pediatric neuroimaging studies focusing mainly on adiposity [@BrainDev2012; @Silva2021; @Steegers2021], our findings confirm the idea that, already at school age and within subclinical ranges, an adverse cardiovascular profile may negatively impact brain development."
+
+Additionally, alterations in immune and hypothalamic-pituitary-adrenal axis functioning resulting from chronically high blood pressure could trigger neuroinflammation, further impairing brain development
 
 ### old data, old insights: mental health
 How do we measure mental health? Badly
@@ -96,8 +108,20 @@ Before I let you go, dear reader, there is one more thing I need to get off my c
 potential publication bias may limit the generalizability of
 our conclusions. Studies with null findings are less likely to be
 published than those with statistically significant results. 
+journals should not gatekeep knowledge.
 
-journals should not gatekeep knowledge 
+The academic publishing dream: You do the research - You write the paper - You review someone else's paper (for free) - Then you pay to publish your own - And your university pays again so others can read it.
+Meanwhile, publishers sit back and make hugh profits — built on public funding, unpaid labor, and a prestige system they didn’t create but fully exploit.
+And we keep playing along.
+Maybe it’s time we stop pretending this is normal. There are alternatives. Fair, open, non-profit models exist — run by researchers for researchers. Think community-owned journals, preprints, and platforms that don't turn scientific knowledge into a paywall business. We don’t need to burn down the system — we just need to stop feeding it.
+It is about time academics and academic leaders learn the craft of negotiating. Had they had it, things might have ended differently and they (and the tax payer) would not have been exploited in this ridiculous way. Perhaps it is not too late yet: get organised and bargain. Publishers are not invincible!
+If there is such a sincere agreement in academic community that the current model is not sustainable, then where are lawsuits?
+And why such lawsuits are not brought up by national-level funding watchdogs, as after all it is mostly public funding that's being extracted via scientific publication process to... where?
+
+https://news.justia.com/antitrust-lawsuit-brought-against-academic-publishers-for-peer-review-and-submission-restrictions/
+
+
+
 
 code is the scientific product
 
