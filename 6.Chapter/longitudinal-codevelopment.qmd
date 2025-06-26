@@ -8,23 +8,50 @@ Adapted from:
 :::
 
 ::: {.manuscript-authors} 
-Defina, S., Cecil, C.A.M., Felix, J.F., Walton, E., & Tiemeier, H. (*under revision*)
+Defina, S., Cecil, C.A.M., Felix, J.F., Walton, E., & Tiemeier, H. (*in press*) *Journal of Child Psychology and Psychiatry* [DOI]({{< var chap6_preprint >}})
 :::
 
 ## Abstract {.unnumbered}
- [Objective]{.underline}: 
+ [Background]{.underline}: Depressive symptoms and cardio-metabolic risk factors often co-occur. However, our understanding of the potential mechanisms and temporal dynamics underlying their co-development remains elusive.
 
- [Method]{.underline}: 
+ [Methods]{.underline}: This population-based cohort study examined bidirectional longitudinal associations between depressive symptoms and cardio-metabolic risk factors from age 10 to 25 years, using prospective data from the ALSPAC Study. Participants with at least one (of six) follow-up measurement for each outcome were included in the analyses. We measured depressive symptoms through self- as well as parent-reports, and assessed several cardio-metabolic risk factors (including adiposity measures, lipid profiles and inflammation).
 
- [Results]{.underline}: 
+ [Results]{.underline}: Among our 7970 (47% male, 96% White) participants, we found bidirectional, within-person associations between self-reported depressive symptoms and adiposity (i.e., fat/lean mass index, but not body mass index), across the study period. Adiposity was more stable over time (*β* [range] = 0.75 [0.54; 0.84]), compared to depressive symptoms (0.26 [0.12; 0.38]), and it had a stronger prospective (i.e., cross-lagged) association with future depressive symptoms (0.07 [0.03, 0.13]) compared to that between depressive symptom and future adiposity (0.04 [0.03, 0.06]). The magnitude of these associations reached its peak between 14 and 16 years. We did not find evidence of cross-lagged associations in either direction between depressive symptoms and waist circumference, insulin, triglycerides, LDL cholesterol or C-reactive protein.
 
- [Conclusion]{.underline}: 
+ [Conclusions]{.underline}: These findings suggest a bidirectional relationship between depressive symptoms and cardio-metabolic risk factors, particularly adiposity (i.e., fat/lean mass). Adiposity showed a stronger prospective association with future depressive symptoms, than vice versa, however their relationship revealed more reciprocal than previously thought.
 
 \newpage
 
-## Introduction
+## Links {.unnumbered}
 
-In summary, this book has no content whatsoever [@Fraser2013; @Boyd2012]. But I shall write it anyway cause. Cause I kind of do have no choice so, checking justification works
+::: {.content-visible when-format="html"}
+* [Web application]({{< var chap6_app >}})
+* [Supplementary materials]({{< var supp6_general >}})
+* [Project's code]({{< var chap6_repo >}})
+* [Pre-print]({{< var chap6_preprint >}})
+:::
+
+::: {.content-visible unless-format="html"}
+
+**Web application**: {{< var chap6_app >}}\newline
+![](../img/qrcode_chap6_app.png){width=20%}
+
+**Supplementary materials**: {{< var supp6_general >}}\newline
+![](../img/qrcode_supp6.png){width=20%}
+
+**Project's code**: {{< var chap6_repo >}}\newline
+![](../img/qrcode_chap6_repo.png){width=20%}
+
+**Pre-print**: {{< var chap6_preprint >}}\newline
+:::
+
+## Keywords {.unnumbered}
+Depressive symptoms; Cardio-metabolic risk; Comorbidity; Longitudinal; ALSPAC.
+
+## Abbreviations {.unnumbered}
+Avon Longitudinal Study of Adults and Children (ALSPAC), Autoregressive Latent Trajectory Model with Structured Residuals (ALT-SR), Body Mass Index (BMI), C-reactive protein (CRP), Fat Mass Index (FMI), High- / Low-Density Lipoprotein (HDL / LDL [cholesterol]), Lean Mass Index (LMI), Random-Intercept Cross-Lag Panel Model (RI-CLPM), Short Mood and Feelings Questionnaire (SMFQ).
+
+## Introduction
 
 ## Methods
 

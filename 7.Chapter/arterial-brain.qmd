@@ -33,10 +33,10 @@ Defina, S., Silva, C.C.V., Cecil, C.A.M., Tiemeier, H., Felix, J.F., Mutzel, R.L
 ::: {.content-visible unless-format="html"}
 
 **Supplementary materials**: {{< var supp7_general >}}\newline
-![](../img/qrcode_supp3.png){width=20%}
+![](../img/qrcode_supp7.png){width=20%}
 
 **Project's code**: {{< var chap7_repo >}}\newline
-![](../img/qrcode_chap3_repo.png){width=20%}
+![](../img/qrcode_chap7_repo.png){width=20%}
 
 **OSF Pre-registration**: {{< var chap7_prereg >}}\newline
 ![](../img/qrcode_els_repo.png){width=20%}

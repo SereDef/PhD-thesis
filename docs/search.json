@@ -398,7 +398,40 @@
     "href": "6.Chapter/longitudinal-codevelopment.html",
     "title": "6  Longitudinal psycho-physical co-development",
     "section": "",
-    "text": "Abstract\nAdapted from:\nObjective:\nMethod:\nResults:\nConclusion:",
+    "text": "Abstract\nAdapted from:\nBackground: Depressive symptoms and cardio-metabolic risk factors often co-occur. However, our understanding of the potential mechanisms and temporal dynamics underlying their co-development remains elusive.\nMethods: This population-based cohort study examined bidirectional longitudinal associations between depressive symptoms and cardio-metabolic risk factors from age 10 to 25 years, using prospective data from the ALSPAC Study. Participants with at least one (of six) follow-up measurement for each outcome were included in the analyses. We measured depressive symptoms through self- as well as parent-reports, and assessed several cardio-metabolic risk factors (including adiposity measures, lipid profiles and inflammation).\nResults: Among our 7970 (47% male, 96% White) participants, we found bidirectional, within-person associations between self-reported depressive symptoms and adiposity (i.e., fat/lean mass index, but not body mass index), across the study period. Adiposity was more stable over time (β [range] = 0.75 [0.54; 0.84]), compared to depressive symptoms (0.26 [0.12; 0.38]), and it had a stronger prospective (i.e., cross-lagged) association with future depressive symptoms (0.07 [0.03, 0.13]) compared to that between depressive symptom and future adiposity (0.04 [0.03, 0.06]). The magnitude of these associations reached its peak between 14 and 16 years. We did not find evidence of cross-lagged associations in either direction between depressive symptoms and waist circumference, insulin, triglycerides, LDL cholesterol or C-reactive protein.\nConclusions: These findings suggest a bidirectional relationship between depressive symptoms and cardio-metabolic risk factors, particularly adiposity (i.e., fat/lean mass). Adiposity showed a stronger prospective association with future depressive symptoms, than vice versa, however their relationship revealed more reciprocal than previously thought.",
+    "crumbs": [
+      "**PART 2**: Reciprocal relationships between mental and physical health problems",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Longitudinal psycho-physical co-development</span>"
+    ]
+  },
+  {
+    "objectID": "6.Chapter/longitudinal-codevelopment.html#links",
+    "href": "6.Chapter/longitudinal-codevelopment.html#links",
+    "title": "6  Longitudinal psycho-physical co-development",
+    "section": "Links",
+    "text": "Links\n\nWeb application\nSupplementary materials\nProject’s code\nPre-print",
+    "crumbs": [
+      "**PART 2**: Reciprocal relationships between mental and physical health problems",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Longitudinal psycho-physical co-development</span>"
+    ]
+  },
+  {
+    "objectID": "6.Chapter/longitudinal-codevelopment.html#keywords",
+    "href": "6.Chapter/longitudinal-codevelopment.html#keywords",
+    "title": "6  Longitudinal psycho-physical co-development",
+    "section": "Keywords",
+    "text": "Keywords\nDepressive symptoms; Cardio-metabolic risk; Comorbidity; Longitudinal; ALSPAC.",
+    "crumbs": [
+      "**PART 2**: Reciprocal relationships between mental and physical health problems",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Longitudinal psycho-physical co-development</span>"
+    ]
+  },
+  {
+    "objectID": "6.Chapter/longitudinal-codevelopment.html#abbreviations",
+    "href": "6.Chapter/longitudinal-codevelopment.html#abbreviations",
+    "title": "6  Longitudinal psycho-physical co-development",
+    "section": "Abbreviations",
+    "text": "Abbreviations\nAvon Longitudinal Study of Adults and Children (ALSPAC), Autoregressive Latent Trajectory Model with Structured Residuals (ALT-SR), Body Mass Index (BMI), C-reactive protein (CRP), Fat Mass Index (FMI), High- / Low-Density Lipoprotein (HDL / LDL [cholesterol]), Lean Mass Index (LMI), Random-Intercept Cross-Lag Panel Model (RI-CLPM), Short Mood and Feelings Questionnaire (SMFQ).",
     "crumbs": [
       "**PART 2**: Reciprocal relationships between mental and physical health problems",
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>Longitudinal psycho-physical co-development</span>"
@@ -409,7 +442,7 @@
     "href": "6.Chapter/longitudinal-codevelopment.html#introduction",
     "title": "6  Longitudinal psycho-physical co-development",
     "section": "6.1 Introduction",
-    "text": "6.1 Introduction\nIn summary, this book has no content whatsoever (Boyd et al., 2012; Fraser et al., 2013). But I shall write it anyway cause. Cause I kind of do have no choice so, checking justification works",
+    "text": "6.1 Introduction",
     "crumbs": [
       "**PART 2**: Reciprocal relationships between mental and physical health problems",
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>Longitudinal psycho-physical co-development</span>"
@@ -442,7 +475,7 @@
     "href": "6.Chapter/longitudinal-codevelopment.html#references",
     "title": "6  Longitudinal psycho-physical co-development",
     "section": "References",
-    "text": "References\n\n\n\n\nBoyd, A., Golding, J., Macleod, J., Lawlor, D. A., Fraser, A., Henderson, J., Molloy, L., Ness, A., Ring, S., & Davey Smith, G. (2012). Cohort profile: The ’children of the 90s’—the index offspring of the avon longitudinal study of parents and children [Journal Article]. International Journal of Epidemiology, 42(1), 111–127. https://doi.org/10.1093/ije/dys064\n\n\nFraser, A., Macdonald-Wallis, C., Tilling, K., Boyd, A., Golding, J., Davey Smith, G., Henderson, J., Macleod, J., Molloy, L., Ness, A., Ring, S., Nelson, S. M., & Lawlor, D. A. (2013). Cohort profile: The avon longitudinal study of parents and children: ALSPAC mothers cohort [Journal Article]. Int J Epidemiol, 42(1), 97–110. https://doi.org/10.1093/ije/dys066",
+    "text": "References",
     "crumbs": [
       "**PART 2**: Reciprocal relationships between mental and physical health problems",
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>Longitudinal psycho-physical co-development</span>"
