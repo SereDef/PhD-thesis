@@ -51,8 +51,7 @@ bibliography: [references.bib, # TMP
                2.Chapter/ELS-comorbidity_bibliography.bib,
                3.Chapter/ELS-lifestyle-moderators_bibliography.bib,
                6.Chapter/longitudinal-codevelopment_bibliography.bib,
-               7.Chapter/arterial-brain_bibliography.bib,
-               ]
+               7.Chapter/arterial-brain_bibliography.bib]
 
 # Outputs
 format:
@@ -86,7 +85,3 @@ format:
       - section-bibliographies  # Display references after every chapter
     reference-section-title: References
     citeproc: true # false is recommended but does not work 
-
-
-
-
