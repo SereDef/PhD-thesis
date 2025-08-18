@@ -52,8 +52,118 @@ Depressive symptoms; Cardio-metabolic risk; Comorbidity; Longitudinal; ALSPAC.
 Avon Longitudinal Study of Adults and Children (ALSPAC), Autoregressive Latent Trajectory Model with Structured Residuals (ALT-SR), Body Mass Index (BMI), C-reactive protein (CRP), Fat Mass Index (FMI), High- / Low-Density Lipoprotein (HDL / LDL [cholesterol]), Lean Mass Index (LMI), Random-Intercept Cross-Lag Panel Model (RI-CLPM), Short Mood and Feelings Questionnaire (SMFQ).
 
 ## Introduction
+Over 20% of the general population faces at least one depressive episode in their lifetime [@Gutiérrez-Rojas2020] and a growing number of adolescents experience depressive symptoms before the age of 20 years [@Keeley2021; @Patalay2019]. Concurrently, the prevalence of child obesity and related cardio-metabolic risk factors is alarmingly high, affecting one in three children and almost half of young adults [@NCD-RisC2017; @WHO2022]. Moreover, depressive symptoms and cardio-metabolic risk factors often co-occur [@Anwar2018; @Blasco2020; @Gutiérrez-Rojas2020]. For example, a large meta-analysis showed that people suffering from depression had a 58% higher risk of developing obesity, while individuals with obesity had a 55% elevated risk of developing depression, compared to the general population [@Luppino2010].
+
+Several potential mechanisms have been proposed to explain this observed comorbidity, both in adults [@Carey2014; @Milaneschi2019] and children [@Defina2023; @Sutaria2019]. However, scientific efforts to empirically model the co-developmental processes that may underlie this comorbidity (i.e., temporal precedence and/or bidirectional relationships) have been sparse, inconsistent, and mostly focused on adult or aging populations [@Forman-Hoffman2007; @Konttinen2014] and/or genetic liabilities [@Chen2023; @Jokela2023].
+
+In the pediatric literature, a small number of studies have investigated longitudinal relationships between body mass index (BMI) and internalizing / emotional problems (an early marker of depressive symptoms) [@Bradley2008; @Jansen2013; @Patalay2019; @Zhou2022]. The majority of these studies found higher BMI to precede increases in internalizing symptoms, but not the other way around [@Bradley2008; @Jansen2013; @Patalay2019], in line with some (but not all, e.g. @Chen2023) Mendelian randomization studies investigating the causal effect of obesity on depression [@Jokela2023]. A more recent investigation however, did identify reciprocal relationships between BMI and internalizing symptoms, by employing more advanced modeling frameworks, capable of decomposing between- and within-person variances over time [@Zhou2022].
+
+Importantly, while changes in fat mass are hypothesized to be a key mechanism in these studies, they rely exclusively on BMI measures, which cannot discriminate between fat mass and lean (e.g. muscle) mass, and are thus a suboptimal measure of cardio-metabolic risk [@Dencker2007; @Liu2013; @Vanderwall2017]. Moreover, existing evidence largely relies on parental reports of depressive symptoms, which may be less sensitive compared to self-reports [@Cohen2019]. Finally, these studies only investigated relatively short follow-up periods and early developmental windows (i.e., 1 to 5 years, from childhood to early adolescence), leaving the period between adolescence to young adulthood, which is when these conditions typically find their onset, largely unexplored.
+
+To address these gaps, we aimed to characterize the temporal dynamics underlying the (co-)development of depressive symptoms and cardio-metabolic risk as they unfold jointly across 15 years, from the age of 10 to 25 years. We investigated several cardio-metabolic risk factors (including total fat and lean mass) and multi-informant reports on depressive symptoms.
+
+In the spirit of open science, we also provide an open-source interactive web-application that can be used, alongside this article, to flexibly explore our results and verify their robustness across multiple outcomes and analytical choices.
 
 ## Methods
+### Sample and measures
+This study is based on data from the Avon Longitudinal Study of Parents and Children (ALSPAC). Pregnant women resident in Avon (UK) with expected delivery dates between 1st April 1991 and 31st December 1992 were invited to take part in the study. The initial number of pregnancies enrolled was 14,541, with 13,988 children who were alive at 1 year of age. When children were approximately 7 years old, additional eligible cases were re-invited, resulting in a total sample of 15,447 pregnancies and 14,901 children who were alive at 1 year of age [@Boyd2012; @Fraser2013; @Northstone2019]. Study data were collected and managed using REDCap electronic data capture tools hosted at the University of Bristol [@Harris2009]. Please note that the ALSPAC website contains details of all the data that is available through a fully searchable data dictionary and variable search tool (http://www.bristol.ac.uk/alspac/researchers/our-data/).
+
+#### Ethical considerations
+Ethical approval for the study was obtained from the ALSPAC Ethics and Law Committee and the Local Research Ethics Committees. Informed consent was obtained from participants' parents.
+
+#### Depressive symptoms
+Depressive symptoms were repeatedly measured using the Short Mood and Feelings Questionnaire (SMFQ) [@Angold1995; @Kwong2019]. The instrument includes 13 items referred to the past two weeks and scored between 0–2 (i.e., *"not true"* / *"sometimes true"* / *"true"*). A summary score ranging between 0–26 was computed at each occasion, with higher scores indicating greater depressive symptoms (@fig-6.1 A). The SMFQ was administered to the child/young person on six occasions between the ages of 10 and 25 years (at the median ages of 10.6, 12.8, 13.8, 16.6, 17.8, and 23.8 years). The questionnaire was also completed by participants' parents (most commonly mothers) on four additional occasions (when children were on average 9.6, 11.7, 31.1, and 16.7 years old) which were used in secondary analyses.
+
+#### Cardio-metabolic risk markers
+The primary cardio-metabolic measure examined in this study was fat mass index (FMI; @fig-6.1 B), computed as participants' total body fat mass divided by their squared height (kg/m2). Total body fat mass was derived from whole body dual energy X-ray absorptiometry (DXA) scans at six occasions (at median ages of 9.8, 11.8, 13.8, 15.4, 17.8, and 24.5 years) [@Dangardt2019].
+
+Ten other cardio-metabolic risk factors were further examined in secondary analyses, including lean mass index (LMI), body mass index (BMI), waist circumference, android fat mass, high-density lipoprotein (HDL) and low-density lipoprotein (LDL) cholesterol levels, triglycerides, insulin, and C-reactive protein (CRP) (see [*Appendix S1*]({{< var supp6_general >}}, [*Figure S1*]({{< var supp6_general >}}).
+
+#### Sample demographics
+Participant sex was measured at birth. Participants' parents further reported on their ethnical identity (at recruitment) and their educational attainment (when children were 5 years old).
+
+### Statistical analyses
+Analyses were conducted using R version 4.2.2 [@R2021]; model specification and fit was implemented in lavaan (version 0.6–16) [@Rosseel2012]. All scripts are publicly available [here]({{< var chap6_repo >}}).
+
+#### Data pre-processing
+To ensure optimal model conversion, we first performed data cleaning by setting extreme outlier values (i.e., > 5 interquartile ranges above the third quartile or below the first quartile) to missing. We then transformed the data to reduce skewness, using a square root transformation (for depressive symptoms scores; see @fig-6.1 A) or a ln transformation (for cardio-metabolic risk markers; see @fig-6.1 B). Finally, we performed min-max normalization (see @eq-normalization) to rescale of all variables to a [0, 1] range.
+$$ 
+x_{norm} = \frac{x - \min(x)}{\max(x) - \min(x)} 
+$$ {#eq-normalization}
+
+This procedure allowed us to obtain comparable estimates across different units and improve model convergence, while preserving relative differences within each variable over time (e.g. mean variations).
+
+#### Main analyses
+We fit a lag-1 random-intercept cross-lag panel model (RI-CLPM) [@Hamaker2015] to characterize the relationship between self-reported depressive symptoms and fat mass index across 6 time points (~10, 12, 14, 16, 18 and 24 years). The model was specified as a structural equation model composed of four parts (see also [*Appendix S2*]({{< var supp6_general >}}, [*Figure S2*]({{< var supp6_general >}}))
+
+1.	A between-person part, consisting of the “random intercepts” ($η_{\ dep}$ and $η_{\ FMI}$). These are latent variables that have each measurement occasion as indicator and factor loadings set to 1. They reflect stable (i.e., "time-invariant") between-person differences (e.g., some children may have systematically higher fat mass over time compared to others).
+2.	A within-person part, consisting of "within-unit fluctuations": time-specific residual terms specified as latent variables with factor loading set to 1, and (measurement error) variances set to 0. They represent random changes that make observations unique, allowing individuals to differ (from themselves) at each occasion. For example, these could reflect a life event that raises/lowers a person's depression at a given time $t$.
+3.	The (lag-1) regressions between the within-unit components: i.e. the auto-regressive and cross-lagged terms. 
+    a)	auto-regressive terms quantify the persistence (or "inertia") of a construct, i.e. its tendency to retain its state over time. For example, AR~* dep*~ captures the proportion of past depression that persists directly to the next measurement occasion.
+    b)	In contrast, cross-lagged relations measure the proportion of past variance in one variable that is reflected in the other variable at the next measurement occasion, and are therefore used to infer (Granger) causality. For example, CL~* dep*~ indicates how much within-person variance in depression at time $t$ is uniquely explained by FMI at time point $t$ – 1 (controlling for the persistence of past values of depression).
+4.	Covariances in the between- and within- person part.
+    a)	To control for between-person trends that may confound the (within-person) system dynamics reflected by auto-regressive and cross-lagged terms, the covariance between $η_{\ dep}$ and $η_{\ FMI}$ is freely estimated.
+    b)	Similarly, because within-unit fluctuations may be non-independent (e.g., when a random change affects both variables simultaneously) this is modelled by estimating their covariance within each wave.
+
+Full information maximum likelihood (FIML) estimation was used to account for missing patterns that may not conform to MCAR. Coefficients were standardized and conventional robust standard errors were used to compute 95% confidence intervals (95%CI).
+
+Model fit was evaluated using the Root Mean Square Error of Approximation (RMSEA), the Comparative Fit Index (CFI), the Tucker Lewis Index (TLI), and the Standardized Root Mean Square Residual (SRMR). We considered model fit to be adequate when: RMSEA ≤ 0.05, CFI and TLI ≥ 0.95, and SRMR < 0.08 [@Kline2016].
+
+#### Exploratory analyses
+We further conducted three sets of exploratory follow-up analyses.
+
+a)	We replaced FMI with each of 10 alternative cardio-metabolic risk markers, including measures of adiposity (i.e., BMI, LMI, android fat mass and waist circumference), lipid profiles (i.e., HDL and LDL cholesterol levels, and triglycerides), insulin levels and inflammation (i.e., CRP).
+b)	We replaced self-reported depressive symptoms scores with maternal reports (at the available time points).
+c)	Estimated an Autoregressive Latent Trajectory Model with Structured Residuals (ALT-SR) with linear latent growth as an alternative to the RI-CLPM. Briefly, the ALT-SR is a more flexible modelling approach, which allows to explicitly model developmental trends (i.e. latent random slopes), in addition to the stable trait-like between-person differences (i.e., latent random intercepts) [@Curran2014].
+
+Note that the project [web-application]({{< var chap6_app >}}) offers the opportunity for researchers to interact with model settings and examine the robustness of findings against violations of modelling assumptions, such as the temporal stability of the between- and within-person components ([*Appendix S2*]({{< var supp6_general >}})).
+
+## Results
+### Descriptive statistics
+Sample descriptives are presented in @tbl-6.1 and @fig-6.1. The main analytical sample consisted of 7970 (47% male) participants, who had at least one measurement of depressive symptoms and FMI; 96% of participants' parents identified as ethnically "White".
+
+Both depressive symptoms and FMI increased slightly with age (see @fig-6.1 A-B); their cross-sectional correlations ranged from 0.00 to 0.17 (r mean = 0.10; @fig-6.1 C).
+
+Girls had systematically higher FMI compared to boys across time points, and they reported higher depressive symptoms scores from the ages of 14 years onwards.
+
+::: {.content-visible when-format="html"}
+![**Main outcomes descriptives**<br>(A, B) The distribution of observed values for SMFQ depressive scores (A) and fat mass index (B) is presented on the y-axis against measurement time (x-axis). In the violin plots, lighter colors are used to represent the original value distributions, while darker colors represent the same variable distributions and after data transformation was applied (i.e., square root for depressive symptoms scores and log transformation for FMI). The line graph connects the median points (in the original data scale) at each timepoint. (C) The univariate, pairwise Pearson correlation coefficients between each repeated measure of depressive symptoms (Dep) and fat mass index (FMI).](Figures/F1_maindesc.png){width=100% #fig-6.1}
+:::
+
+::: {.content-visible unless-format="html"}
+![**Main outcomes descriptives**\newline(A, B) The distribution of observed values for SMFQ depressive scores (A) and fat mass index (B) is presented on the y-axis against measurement time (x-axis). In the violin plots, lighter colors are used to represent the original value distributions, while darker colors represent the same variable distributions and after data transformation was applied (i.e., square root for depressive symptoms scores and log transformation for FMI). The line graph connects the median points (in the original data scale) at each timepoint. (C) The univariate, pairwise Pearson correlation coefficients between each repeated measure of depressive symptoms (Dep) and fat mass index (FMI).](Figures/F1_maindesc.png){width=100% #fig-6.1}
+:::
+
+:::{#tbl-6.1}
+```{=html}
+{{< include "Tables/Table1.html" >}}
+```
+:::
+
+### Main results
+Results of the main analyses, examining the co-development of depressive symptoms and FMI, are summarized in @tbl-6.2 and @fig-6.2. The model showed good fit ($χ^2$(37) = 356.77, *p*<0.001; RMSEA [95%CI] = 0.033 [0.030-0.036]; CFI = 0.991; TLI = 0.983; SRMR = 0.027).
+
+We found positive auto-regressive associations, indicating substantial within-person stability over time in FMI (mean $β$ [range] = 0.75 [0.54; 0.84], SE = 0.016) and, to a lower extent, in depressive symptoms ($β$ [range] = 0.26 [0.12; 0.38], SE = 0.022).
+
+After accounting for within-person (i.e., autoregressive associations) and between-person stability (i.e., random intercepts), the following within-person cross-lag dynamics emerged from our models (@tbl-6.2): higher FMI was associated with increased subsequent depressive symptoms across the study period, except between 12 and 14 years ($β$ [range] = 0.07 [0.03, 0.13], SE = 0.030); higher depressive symptoms were associated with increased subsequent FMI, although these associations were weaker on average, compared to those between FMI and future depressive symptoms ($β$ [range] = 0.04 [0.03, 0.06], SE = 0.01).
+
+:::{#tbl-6.2}
+```{=html}
+{{< include "Tables/Table2.html" >}}
+```
+:::
+
+::: {.content-visible when-format="html"}
+![**RI-CLPM of depressive symptoms and FMI**<br>Results of the main analysis (i.e., beta values and their 95% confidence intervals) are displayed within their implied directed graph. Autoregressive associations are shown in red for FMI and in blue for depressive symptoms (Dep), while cross-lag effects are shown in yellow for FMI to depressive symptoms paths and in purple for depressive symptoms to FMI paths. Grey boxed enclose the correlation coefficients (and their 95% confidence intervals) between the two random intercepts, as well as the cross-sectional correlations between the two outcomes at each measurement wave.](Figures/F2_resdag.png){width=100% #fig-6.2}
+:::
+
+::: {.content-visible unless-format="html"}
+![**RI-CLPM of depressive symptoms and FMI**\newline(A) Results of the main analysis (i.e., beta values and their 95% confidence intervals) are displayed within their implied directed graph. Autoregressive associations are shown in red for FMI and in blue for depressive symptoms (Dep), while cross-lag effects are shown in yellow for FMI to depressive symptoms paths and in purple for depressive symptoms to FMI paths. Grey boxed enclose the correlation coefficients (and their 95% confidence intervals) between the two random intercepts, as well as the cross-sectional correlations between the two outcomes at each measurement wave.](Figures/F2_resdag.png){width=100% #fig-6.2}
+:::
+
+We additionally found a positive correlation between the random intercepts ($r$ [95%CI] = 0.11 [0.06-0.16]), suggesting some stability of between-person associations between depressive symptoms and FMI.
+
+### Exploratory analysis results
 
 ## Discussion
 
