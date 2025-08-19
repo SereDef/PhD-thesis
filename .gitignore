@@ -1,7 +1,7 @@
 .DS_Store
 .Rhistory
 
-site_libs/
+# site_libs/
 # docs/site_libs/*
 
 /.quarto/
