@@ -1,77 +1,77 @@
 
 # General discussion
 
-In this dissertation we 
-we observed that systolic and diastolic blood pressure at age 10 years were associated with lower total and grey matter volumes at age 10 and 14 years.
+In this dissertation we ... 
+
 We focus on adolescence, a critical developmental period, when many mental health problems first emerge, and early signs of cardio-metabolic dysregulation begin to manifest. By examining these relationships prospectively, this thesis' goal was to provide a clearer understanding of **(a)** how ELS impacts psycho-physical health and **(b)** how mental and physical health influence each other, during this critical, formative stage of life.
+
+Some **key findings** / insights we gathered across this thesis:
+
+Part I:
+- (@sec-chapter2)
+- (@sec-chapter3)
+- (@sec-chapter4)
+- (@sec-chapter5)
+
+Part II:
+
+- There is a reciprocal, prospective association between depressive symptoms and adiposity (i.e., fat/lean mass index, but not body mass index) from age 10 to 25 years; In addition to these within-person associations (which are directional and time-specific) there are stable between-person associations (likely reflecting the contribution of "time-invariant" shared risk factors) between depressive symptoms and adiposity (@sec-chapter6)
+- Systolic and Diastolic blood pressure (but Intima-media thickness or arterial distensibility) at age 10 years were associated with lower total and grey matter volumes already before 15 years of age (@sec-chapter7)
 
 From a clinical standpoint, characterizing these associations is a fundamental step in the development of early intervention strategies that may prevent mental and physical health problems before the onset of more severe symptoms and irreversible structural changes (e.g. to the brain, the heart or the arteries).
 
 Now, I started this book with a confession: I absolutely hated writing this thesis, down to almost every paragraph. But, because you made it this far - or anyway you happened to open the book on this doomed last chapter - you won the dubious reward of getting to know why. 
 Here is a collection of things I would have done differently, followed by a few things I wish we all did differently.
 
-## Modelling ELS
-In the four chapter enclosed in Part I of this thesis, I have tried to map the influence of ELS on physical and mental health, including some biomarkers. I say "influence" with cognition, mind you. I saw you raising your eyebrow. "Causal wording, rephrase" is among the most common "co-author comments" I've seen across the years, which should have surprised me after 3 university degrees, in three different fields, all dominated by the same mantra: "correlation is not causation". 
+## What we *measure* and what we *mean*
+If you want to know whether something in true, you'll need evidence. To get evidence you'll need data. Before you can start collecting data, you need to know how to measure. A fundamental step in human research (one that often goes wrong) is translating what we *mean* into a quantity to measure. 
 
-### Causal(-ish) inferences
-This comes from a good place of course, becasue it is so true and also so frequently i want to shout it at 
+### Modelling ELS
+In this dissertation, we use a cumulative risk approach. We define "stressors" dichotomously (i.e., "it happened" vs. "It didn't happen") and then we sum across these multiple dichotomous indicators to obtain someone's "stress exposure". Let's stress then the first important aspect of using this measure: we examine the *number of stressors* experienced, rather than the *intensity* or the *pattern* of stress exposure. 
 
-### Parental reports 
-Like most previous literatures, children’s stress exposure information was obtained via parental report and thus likely reflect a combination of parents' own stress experiences, psychological state, and personality. 
+This comes with several covenient advantages and as many drawbacks.
 
-### Missing piece: resilience 
+#### Cumulative risk
+Cumulative risk scores are a straightforward way of identifying children at increased odds for developing a range of maladaptive outcomes. They are popular across fields -- genetics parallel. They are a simple way to inject some order into a very complex world.
 
-### Information bias? 
-Our measurement of ELS, lifestyle behaviours and internalizing symptoms rely primarily on parent reports, which might have introduced information bias. does that generalise to self reports? 
-Other measures of adolescent behaviour, e.g., externalizing problems, could represent interesting targets for future studies in the field.
+The fundamental problem is that different sources of stress have different statistical properties. For example, some stressors are (largely) independent from one another (e.g., sickness and burglary), some may be mutually exclusive (e.g. death of a parent and divorce), others overlap (e.g., material deprivation and overcrowding). For example, many low-income families live in substardard housing, located in high crime neighborhoods; their children may attend schools with inadequate facilities, staffed by less experienced teachers; and many live in single parent households.
 
+Combining multiple stress exposures in one single composite score is one way to capture this complexity. This technique has been argues to enhance prediction in several ways. For example, by reducing measurement error, enhancing validity (because no one single measure adequately captures the meaning and the variance of the construct of interest). Cumulative scores also avoid the issue of collinear predictors in the same general linear model, which may lead to unstable estimates and diminish statistical power. 
 
-## Alternative modelling methods 
-A cumulative risk approach examines the number of stressors experienced rather than the intensity or the pattern of stress exposure. We define stressors dichotomously and then sum across multiple dichotomous exposures. 
-As an additive model, this technique is a straightforward, way of identifying children at increased odds for developing a range of maladaptive outcomes, including
-cognitive deficits, behavioral adjustment problems, and poor physical health.
+Indeed, picking a single stressor, say noise exposure, without taking into account overlapping risk factors could overestimate the harmful impacts of that predictor. On the other hand noise by itself may have negligible impact except when accompanied by household disadvantage. In the latter case, by isolating the singular impact of noise exposure we might erroneously conclude that noise does not matter. Another way to think about this is that perhaps there is no *main effect* of noise but an interaction or moderator effect.Noise matters but only in the presence of certain other variables. 
 
-Multiple stressors exposures can sometimes overlap (e.g., harsh and unresponsive parenting) or be independent (e.g., life events), but in each case prediction is enhanced by combining multiple risks in the model.
-Multiple stressors exposures can sometimes overlap (e.g., material deprivation and overcrowding) or be independent (e.g., death of a parent and overcrowding), but in each case prediction is enhanced by combining multiple risks in the model. There are several advantages of formulating indices of multiple stress exposures into a composite score. Measurement error is reduced, validity is enhanced because no one singular measure adequately captures the full meaning of the construct of interest, avoids the issue of collinear predictors in the same general linear model, which may lead to unstable estimates and diminish statistical power.
-For example, many low-income families live in substardard housing, located in high crime neighborhoods; their children may attend schools with inadequate facilities, staffed by less experienced teachers; and many live in single parent households.
+No free lunch:
+It does not take into account interaction between the individual stressors. The use interactive, nonadditive model of multiple risks is often not possible when a large number of risk factors are under consideration. Using additive models is a common approach for dealing with this dilemma.
 
-it does not take into account interaction between the individual stressors
-Singling out the effects of school
-noise exposure on reading quality without taking into account
-these overlapping risk factors for reading deficits could overestimate the harmful impacts of noise on reading deficits. On the other
-hand, noise by itself may have negligible impact on reading
-deficits except when accompanied by household disadvantage or
-only if the exposure happens within the context of a school with
-inadequate facilities and staff. In the latter case, by isolating the
-singular impact of noise exposure as a risk factor for reading
-deficits, we might erroneously conclude that noise does not matter.
-It may in fact be a contributing risk factor for reading deficits but
-only when considered within the natural ecological context
-wherein high noise schools typically operate. Another way to think
-about this is that perhaps there is no main effect of noise on
-reading deficits but an interaction or moderator effect. Noise
-matters but only in the presence of certain other variables. As
-we explain below however, the use of an interactive, nonadditive
-model of multiple risk exposure is often not possible when a large
-number of risk factors are under consideration. Use of additive
-models of multiple risk factors is a common approach for dealing
-with this dilemma.
+But is there a "better" way? 
 
-## Modelling comorbidity 
+#### Stress "patterns"
+- prediction model rf 
 
-"Together with previous pediatric neuroimaging studies focusing mainly on adiposity [@BrainDev2012; @Silva2021; @Steegers2021], our findings confirm the idea that, already at school age and within subclinical ranges, an adverse cardiovascular profile may negatively impact brain development."
+#### missing pieces: resilience and stress intensity
+- difficult to measure
 
-Additionally, alterations in immune and hypothalamic-pituitary-adrenal axis functioning resulting from chronically high blood pressure could trigger neuroinflammation, further impairing brain development
+#### Parental reports 
+Like most studies in the literature, information about childhood (and gestational) stress exposure was obtained by asking their parents. This is obviously a major limitation in this field of research. At best, these reports are likely to reflect a combination of parents' own stress experiences, psychological state, and personality...
 
-### old data, old insights: mental health
+### Modelling (adolescent) mental health
+
+- are we asking the right people? parental reports 
+- are we asking the right questions (probably not)? --> old data: old insights
+- the "implicit" causal model of cumulative mental health scores 
+- alterative approaches: network analysis 
+
 How do we measure mental health? Badly
 In this thesis, we relied on standardized questionnaires, such as the Strengths and Difficulties Questionnaire (SDQ), which provide a composite score of emotional and behavioral difficulties. While these tools are widely used and validated, they are not without limitations. Self-reports and parent-reports are subject to biases, including social desirability and recall bias. Furthermore, these measures often fail to capture the dynamic and context-dependent nature of mental health, which can fluctuate over time and across environments. 
 
 Future research should aim to integrate multi-method approaches, combining self-reports, observational data, and physiological markers, to provide a more comprehensive assessment of mental health.
 
-### old data, old insights: BMI
-Measuring mental health is an inherently hard task: it requires coming up with a tangible (or better, measurable) quantity to stand in for an abstract, multifaceted and frustratingly complex construct. You would  think the job is considerably easier when the object of study is something like adiposity, which enjoys a much longer, solid tradition of objective measurement and clinical usefulness. Well, let's talk about BMI. 
+Note: Other measures of adolescent behaviour, e.g., externalizing problems, could represent interesting targets for future studies in the field....
 
+### Modelling (adolescent) cardio-metabolic risk
+Measuring mental health is an inherently hard task: it requires coming up with a tangible (or better, measurable) quantity to stand in for an abstract, multifaceted and frustratingly complex construct. You would  think the job is considerably easier when the object of study is something like adiposity, which enjoys a much longer, solid tradition of objective measurement and clinical usefulness. Well, let's talk about that. 
+
+#### BMI
 In this thesis, we made out best effort to stir away from BMI when we measured adiposity and here is a few thoughts on why i'd defend this choice.
 
 The concept of BMI was introduced in 1835 by Adolphe Quetelet, a Belgian astronomer. Quetelet became increasing interested in defining the characteristics of the "average man" (l'*homme moyen*, to use his words)... among French and Scottish conscripts. (a concept than was about to become very popular among Eugenics enthusiasts)
@@ -80,50 +80,96 @@ BMI has since become a widely used tool in public health and clinical settings, 
 
 but it has significant limitations, particularly in distinguishing between muscle and fat mass, and in accounting for variations in body composition across different populations.
 
-### Alternative modelling methods 
-network 
+#### CRP
 
-#### the role of lifestyle and puberty 
-"while we focused here on three lifestyle markers that are most relevant to the developmental period of interest and may constitute important targets for early prevention, other potentially relevant factors such as smoking, alcohol use or psychological coping strategies, are also likely to be of relevance [@Hanlon2020; @Skou2022] and should be taken into account in future studies."
 
-## So what was this all for? 
+### Modelling comorbidity 
+
+"Together with previous pediatric neuroimaging studies focusing mainly on adiposity [@BrainDev2012; @Silva2021; @Steegers2021], our findings confirm the idea that, already at school age and within subclinical ranges, an adverse cardiovascular profile may negatively impact brain development."
+
+Additionally, alterations in immune and hypothalamic-pituitary-adrenal axis functioning resulting from chronically high blood pressure could trigger neuroinflammation, further impairing brain development
+
+- network model
+
+- temporal scale
+- direction 
+- "proximal" causes 
+
+
+## Causal*-ish* inferences
+In the four chapters enclosed in Part I of this thesis, I have tried to map the influence of ELS on physical and mental health, including some biomarkers. Part II then focused on the reciprocal influence between physical and mental health conditions. I say "influence" with cognition, mind you. I saw you raising your eyebrow. *"Causal wording, rephrase"* is among the most common co-author comments I've seen across the years, which should have surprised me after 3 university degrees, in three different fields, all dominated by the same mantra: "correlation is not causation". 
+
+#### "good" and "bad" causal variables
+
+- 
+- good causes but bad predictors (I don't think so)
+
+#### Where (the hell) is **time**?
+Do bike accidents cause bruises? 
+
+#### Measurement error and information bias
+Our measurement of ELS, of the lifestyle behaviours and of internalizing / depressive symptoms rely primarily on parent reports, which might have introduced information bias. 
+
+@sec-chapter6 also shows these are not necessarily good proxies compared to self reports... 
+
+#### Selection bias
+Let's talk about something we did do right (I think)
+
+- lifestyle interventions based on observational studies? 
+
+#### *unethical* causal models 
+
+- socio-economic status as a confounder
+- ethnicity 
+
+In some chapters, ethnicity was reduces to "White" vs. "non-White" (most often becasue of limitaiton of the data), however this is a major limitation. 
+
+## Science is dead (and we have killed it)
+Before I let you go, dear reader, there is one more thing I need to get off my chest, if you'll let me. I began this book with a confession: writing this was so much harder then I expected, and in all honesty this is a big part of why. 
+
+### This is grim, I mean really grim
+Studies with null findings are less likely to be published than those with statistically significant results. 
+
+#### code is the scientific product, the paper is just advertisement
+
+### On the professionalization of science 
+- git 
+- testing
+
+### On the uselessness of journals
+Journals should not gatekeep knowledge. 
+
+The academic publishing dream: You do the research - You write the paper - You review someone else's paper (for free) - Then you pay to publish your own - And your university pays again so others can read it.
+Meanwhile, publishers sit back and make hugh profits — built on public funding, unpaid labor, and a prestige system they didn’t create but fully exploit.
+
+And we keep playing along
+
+Maybe it’s time we stop pretending this is normal. There are alternatives. Fair, open, non-profit models exist — run by researchers for researchers. Think community-owned journals, preprints, and platforms that don't turn scientific knowledge into a paywall business. We don’t need to burn down the system — we just need to stop feeding it.
+
+It is about time academics and academic leaders learn the craft of negotiating. Had they had it, things might have ended differently and they (and the tax payer) would not have been exploited in this ridiculous way. Perhaps it is not too late yet: get organised and bargain. Publishers are not invincible!
+If there is such a sincere agreement in academic community that the current model is not sustainable, then where are lawsuits?
+
+And why such lawsuits are not brought up by national-level funding watchdogs, as after all it is mostly public funding that's being extracted via scientific publication process to... where?
+
+https://news.justia.com/antitrust-lawsuit-brought-against-academic-publishers-for-peer-review-and-submission-restrictions/
+
+## Conclusions
+Children starve and I still write bs
+
+### So what was this all for? 
 So what was this all for? Excellent question. Kept me up a few nights
 I argued prevention of comorbidity was key, but am I actually any closer, even purely theoretically to a useful insight? 
 
 ### Preventing ELS
 In @sec-chapter3 you can find me saying: *"While these findings certainly support the importance of primary prevention programmes aimed at reducing the incidence of ELS, preventing ELS may not always be possible. As such, there is a need to identify alternative modifiable factors that could mitigate the negative impact of ELS on later health, and inform the development of complementary intervention strategies."* 
 
-#### Lifestyle
-In the same chapter I did not find evidence of such promising "modifiable factors". Based on data from two independent population-based cohorts, either physical activity, sleep or dietary behaviour did not attenuate the association between ELS exposure and adolescent psycho-physical comorbidity. That was surprising to me, but also, as I later came to find out not so rare in the research on lifestyle factors. 
-"Developmental timing and / or differences in outcome measurement may have played a role in explaining this discrepancy. It is possible, for example, that engaging in healthy lifestyle behaviours later in life may be more beneficial, or that the protective effects of childhood lifestyle behaviours may manifest only later in adulthood. It is also possible that the associations reported in the adult literature may be biased through reverse causation (e.g., depression being a causal risk factor for poor diet and sleep; (Choi et al., 2020)." "differential measurement error could have played a role in explaining this finding. Indeed, our ELS measure was considerably more comprehensive (i.e., comprised of many more items and covering a longer time period) compared to each of the lifestyle factors, which were only assessed at a single time point and based on fewer indicators. It is possible, for example, that the hypothesized moderation effects may emerge when a more long-term engagement in physical activity is considered."
-
 #### SES 
 What seems to emerge from the studies is that the key factor across physical and mental health was the contextual risk component of the ELS score. Let's unpack that. The key stress indicators within contextual risk are low parental education, financial and neighborhood problems. These are constructs commonly referred to as low socio-economic status (SES). 
 
-## Ethnicity 
-In some chapters, ethnicity was reduces to "White" vs. "non-White" (most often becasue of limitaiton of the data), however this is a major limitation. 
+#### Lifestyle
+In the same chapter I did not find evidence of such promising "modifiable factors". Based on data from two independent population-based cohorts, either physical activity, sleep or dietary behaviour did not attenuate the association between ELS exposure and adolescent psycho-physical comorbidity. That was surprising to me, but also, as I later came to find out not so rare in the research on lifestyle factors. 
 
-## Science is dead, and we killed it 
-Before I let you go, dear reader, there is one more thing I need to get off my chest, if you'll let me. I began this book with a confession: writing this was so much harder then I expected, and in all honesty this is a big part of why. 
-potential publication bias may limit the generalizability of
-our conclusions. Studies with null findings are less likely to be
-published than those with statistically significant results. 
-journals should not gatekeep knowledge.
-
-The academic publishing dream: You do the research - You write the paper - You review someone else's paper (for free) - Then you pay to publish your own - And your university pays again so others can read it.
-Meanwhile, publishers sit back and make hugh profits — built on public funding, unpaid labor, and a prestige system they didn’t create but fully exploit.
-And we keep playing along.
-Maybe it’s time we stop pretending this is normal. There are alternatives. Fair, open, non-profit models exist — run by researchers for researchers. Think community-owned journals, preprints, and platforms that don't turn scientific knowledge into a paywall business. We don’t need to burn down the system — we just need to stop feeding it.
-It is about time academics and academic leaders learn the craft of negotiating. Had they had it, things might have ended differently and they (and the tax payer) would not have been exploited in this ridiculous way. Perhaps it is not too late yet: get organised and bargain. Publishers are not invincible!
-If there is such a sincere agreement in academic community that the current model is not sustainable, then where are lawsuits?
-And why such lawsuits are not brought up by national-level funding watchdogs, as after all it is mostly public funding that's being extracted via scientific publication process to... where?
-
-https://news.justia.com/antitrust-lawsuit-brought-against-academic-publishers-for-peer-review-and-submission-restrictions/
-
-
-
-
-code is the scientific product
+"Developmental timing and / or differences in outcome measurement may have played a role in explaining this discrepancy. It is possible, for example, that engaging in healthy lifestyle behaviours later in life may be more beneficial, or that the protective effects of childhood lifestyle behaviours may manifest only later in adulthood. It is also possible that the associations reported in the adult literature may be biased through reverse causation (e.g., depression being a causal risk factor for poor diet and sleep; (Choi et al., 2020)." "differential measurement error could have played a role in explaining this finding. Indeed, our ELS measure was considerably more comprehensive (i.e., comprised of many more items and covering a longer time period) compared to each of the lifestyle factors, which were only assessed at a single time point and based on fewer indicators. It is possible, for example, that the hypothesized moderation effects may emerge when a more long-term engagement in physical activity is considered."
 
 
 ## References {.unnumbered}
