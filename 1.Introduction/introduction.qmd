@@ -49,6 +49,19 @@ This thesis (@fig-thesis-summary B) aims to address some of these limitations an
 
 In **Part 2** I will then characterize the reciprocal relationship between mental and cardio-metabolic health across childhood and adolescence. @sec-chapter6 examines the longitudinal co-development of depressive symptoms and several markers of cardio-metabolic health from childhood to early adulthood. In @sec-chapter7, I assess the relationship between early cardio-vascular health markers (i.e., arterial health and blood pressure) and the developing brain. 
 
+## This thesis: setting
+To address the questions in each of the chapters of this thesis, we leveraged data from two longitudinal population-based birth cohorts: the Generation R Study and the Avon Longitudinal Study of Parents and Children (ALSPAC). These are among the world's largest resources for developmental science, both in terms of sample size and because of the breadth of measures that have been collected repeatedly over the first two decades of life (i.e. from fetal life to early adulthood).
+
+### The Generation R Study
+The Generation R Study is a population-based birth cohort based in Rotterdam (the Netherlands). The study enrolled 9,778 pregnant women who delivered their babies between April 2002 and January 2006 [@Kooijman2016; **NEW DESIGN PAPER**]. Mothers, fathers and children are in ongoing follow-up, which includes questionnaires, interviews, biological sampling and detailed study center visits at 3/4-year intervals [@Kooijman2016; **NEW DESIGN PAPER**]. Please note that further details about Generation R data are available through a fully searchable data dictionary app ([GuRu](https://seredef-guru.share.connect.posit.cloud/)) that was developed alongside this thesis. 
+
+Generation R data was used in @sec-chapter2, @sec-chapter3, @sec-chapter4, @sec-chapter5, and @sec-chapter7. The response rate at the 14 years follow-up (when most of the outcomes in this thesis have been measured) was 64%. 
+
+### The ALSPAC study
+The ALSPAC study is a population-based birth cohort based in Avon (United Kingdom). The study enrolled 14,541 pregnant women with expected delivery dates between 1st April 1991 and 31st December 1992; 13,988 children were alive at 1 year of age. When children were approximately 7 years old, additional eligible cases were re-invited, resulting in a total sample of 15,447 pregnancies and 14,901 children who were alive at 1 year of age [@Boyd2012; @Fraser2013; @Northstone2019]. Study data were collected and managed using REDCap electronic data capture tools hosted at the University of Bristol [@Harris2009]. Please note that the [ALSPAC website](http://www.bristol.ac.uk/alspac/researchers/our-data/) contains details of all the data that is available through a fully searchable data dictionary and variable search tool. 
+
+ALSPAC data was used in @sec-chapter2, @sec-chapter3, and @sec-chapter6. The response rate at the 14 years follow-up (when most of the outcomes in this thesis have been measured) was 61%.
+
 ## References {.unnumbered}
 ::: {.sectionrefs}
 :::
