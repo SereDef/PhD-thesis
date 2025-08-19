@@ -131,6 +131,14 @@ p {
 
 .thesis_tbl .accent_row {
   background-color: lighten($theme-sand, 10%) !important;
+  text-align: center !important;
+  vertical-align: middle !important;
+}
+
+.thesis_tbl .vertical_label {
+  writing-mode: horizontal-tb;
+  text-align: center !important;
+  vertical-align: middle !important;
 }
 
 // Figures
